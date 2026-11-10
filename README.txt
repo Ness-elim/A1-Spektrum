@@ -1,26 +1,13 @@
-Spektrum Deutsch A1+ Interactive Study App — v1.1
-==================================================
+Spektrum Deutsch A1+ Interactive Study App — v2.7.0
+===================================================
 
-Open index.html to study locally. No server is required for the core app.
+Open index.html to study locally or host on GitHub Pages.
 
-v1.1 changes
-------------
-- Vocabulary Review now follows the DeutschPath mechanism: immediate German flip card, due/new/alignment/next-review indicators, Again/Hard/Good only, the same SRS intervals, pronunciation and shadowing.
-- Vocabulary Testing keeps evidence separate from review. Only a correct typed Full Recall confirms a word as learned; guided spelling/context/article modes add supporting evidence.
-- The review/testing bank now uses 526 clean chapter vocabulary/phrase cards built from the official Schubert Deutsch–Englisch and Deutsch–Arabisch “Wörter und Wendungen” lists. English is primary; Arabic appears when Arabic Help is enabled.
-- Contribution counting was rebuilt. A day has eight independent study sections; each section can raise the square only once, repeated actions cannot inflate it, unmarking an exercise adds nothing, Vocabulary Review and Vocabulary Testing are tracked separately, and legacy v1.0 point totals are migrated to unique sections rather than reused as raw points.
-- Desktop and mobile hamburger behavior remains fixed.
-
-Course content
---------------
-- 12 chapters
-- 255 main-course activities
-- 134 Vertiefung activities
-- 46 chapter-test activities
-- source book pages 9–271 integrated in-app
-- Start Deutsch 1 appendix and structure reference
-- all 126 supplied MP3 recordings
-
-Progress
---------
-Progress is stored in the browser using the same storage key as v1.0, so existing exercise progress/answers remain available when the new version is opened in the same browser context/path policy. A JSON backup/import option is also available in Settings.
+v2.7.0 changes (Multi-Device Sync & Anti-Wipe Protection)
+---------------------------------------------------------
+- Fixed the multi-device progress wipe bug: previously, navigating to Settings on a second (empty) device called save() and set localUpdatedAt = Date.now(), causing cloudSyncNow() to think the empty device was "newer" and overwrite the cloud backup with an empty state.
+- separated view-navigation state (saveViewOnly) from study progress saves (save).
+- Added Smart Union Merging (mergeStudyStates) and Anti-Wipe Guard (stateRichness): an empty device can never overwrite remote progress, and syncing across two devices merges completed exercises, answers, streak days, and vocabulary progress from both devices without losing either.
+- Added Direct GitHub Repository Sync (via GitHub API to data/user-progress.json) AND automatic startup loading of ./data/user-progress.json from your GitHub Pages repository.
+- Added Quick Progress Recovery in Settings so you can restore completed status, model answers, and seen vocabulary for any previously completed chapters in one click.
+- Added Automatic Local Safety Snapshots (keeps up to 12 snapshots before any sync, import, or reset).

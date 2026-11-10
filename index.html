@@ -38,6 +38,26 @@
   </main>
 </div>
 <div class="viewer" id="viewer"><button class="viewer-close" id="viewerClose">×</button><div id="viewerBody"></div></div>
+<div class="german-kb-dock" id="germanKeyboardDock">
+  <div class="german-kb-panel" id="germanKeyboardPanel" hidden>
+    <div class="german-kb-head">
+      <span class="muted" id="germanKeyboardStatus">Select a text box to insert German letters</span>
+      <button type="button" class="german-kb-close" id="germanKeyboardClose" aria-label="Close keyboard">×</button>
+    </div>
+    <div class="german-kb-keys">
+      <button type="button" class="german-key" data-char="ä">ä</button>
+      <button type="button" class="german-key" data-char="ö">ö</button>
+      <button type="button" class="german-key" data-char="ü">ü</button>
+      <button type="button" class="german-key" data-char="ß">ß</button>
+      <button type="button" class="german-key" data-char="Ä">Ä</button>
+      <button type="button" class="german-key" data-char="Ö">Ö</button>
+      <button type="button" class="german-key" data-char="Ü">Ü</button>
+      <button type="button" class="german-key" data-char="€">€</button>
+    </div>
+  </div>
+  <button type="button" class="german-kb-toggle" id="germanKeyboardToggle" aria-expanded="false">ä ö ü ß</button>
+</div>
+<script>if('serviceWorker'in navigator&&/^https?:$/i.test(location.protocol)){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}))}</script>
 <script src="data/content.js"></script>
 <script src="app.js"></script>
 </body>
