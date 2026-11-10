@@ -1,13 +1,14 @@
-Spektrum Deutsch A1+ Interactive Study App — v2.7.0
+Spektrum Deutsch A1+ Interactive Study App — v2.6.0
 ===================================================
 
-Open index.html to study locally or host on GitHub Pages.
+Open index.html to study locally. No server is required for the core app.
 
-v2.7.0 changes (Multi-Device Sync & Anti-Wipe Protection)
----------------------------------------------------------
-- Fixed the multi-device progress wipe bug: previously, navigating to Settings on a second (empty) device called save() and set localUpdatedAt = Date.now(), causing cloudSyncNow() to think the empty device was "newer" and overwrite the cloud backup with an empty state.
-- separated view-navigation state (saveViewOnly) from study progress saves (save).
-- Added Smart Union Merging (mergeStudyStates) and Anti-Wipe Guard (stateRichness): an empty device can never overwrite remote progress, and syncing across two devices merges completed exercises, answers, streak days, and vocabulary progress from both devices without losing either.
-- Added Direct GitHub Repository Sync (via GitHub API to data/user-progress.json) AND automatic startup loading of ./data/user-progress.json from your GitHub Pages repository.
-- Added Quick Progress Recovery in Settings so you can restore completed status, model answers, and seen vocabulary for any previously completed chapters in one click.
-- Added Automatic Local Safety Snapshots (keeps up to 12 snapshots before any sync, import, or reset).
+v2.6.0 changes (Study Workspace Redesign)
+-----------------------------------------
+- Redesigned Chapter Study and Start Deutsch 1 Exam pages so you never have to scroll up and down between the book visual and the answer fields:
+  1. Side-by-Side Split View (◫ Split, default): Places the book visual + audio player in the left pane and the answer inputs in the right pane. Both panes stay fixed in your viewport and scroll independently.
+  2. Pinned Top View (⊟ Pinned top): Pins the exercise visual at the top of the screen while answer inputs scroll directly underneath (ideal for narrower windows or wide tables).
+  3. Classic Stacked View (▭ Stacked): Traditional top-to-bottom layout.
+- Added instant Column Ratio selector (50/50, 55/45, 62/38), Swap Sides button (⇄ Swap), and inline Source Visual Zoom (− / 100% / +) right inside the question pane.
+- Added a collapsible Exercise List toggle (☰ Exercises) and a quick Exercise Jump dropdown in the study toolbar to free up 260px of horizontal screen width for side-by-side study.
+- Includes all v2.5.0 improvements (English-first default, floating German letters keyboard ä/ö/ü/ß, interactive R/F & A/B/C choice pills, restored Word Review & Shadowing Lab, accurate Progress vocabulary counters, cleaned Discovered Words, and PWA icons).
