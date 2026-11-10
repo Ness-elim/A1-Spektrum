@@ -1,7 +1,7 @@
 // Spektrum A1+ v2.4.3 — Recall default + inline missing-letter completion.
 (()=>{
 'use strict';
-const APP_VERSION='v2.6.0';
+const APP_VERSION='v2.7.0';
 // Spektrum A1+ patch v2.0 — cumulative v1.9 base; Word Review removed from UI; Vocabulary Bank split into words vs sentences/phrases
 const D=window.SPEKTRUM_DATA;
 const V=D.reviewVocabulary||D.vocabulary||[];
@@ -75,12 +75,117 @@ const addDays=(date,n)=>{const d=new Date(date+'T12:00:00');d.setDate(d.getDate(
 const storageKey='spektrum-a1-study-v1';
 const syncConfigKey='spektrum-a1-cloud-sync-v1';
 const syncMetaKey='spektrum-a1-cloud-meta-v1';
+const snapshotsKey='spektrum-a1-snapshots-v1';
 const CONTRIBUTION_SECTIONS=['Practice','Reading','Listening','Vocabulary','Word Test','Grammar','Writing','Speaking'];
 const baseState=()=>({schema:2,completed:{},answers:{},events:{},vocab:{},vocabExposure:{review:[],study:[],test:[],book:[]},vocabDiscovery:{included:[],excluded:[],manual:[]},learningDB:{words:{}},settings:{theme:'light',arabicHelp:false,sidebarCollapsed:false,studyLayout:'split',studyRatio:'55-45',studySwap:false,sourceZoom:100,activityListCollapsed:true},last:{page:'home',chapter:1,section:'Main course',activity:null}});
-const hadStoredProgress=(()=>{try{return !!localStorage.getItem(storageKey)}catch{return false}})();
+function stateRichness(s){
+  if(!s||typeof s!=='object')return {completed:0,answers:0,vocab:0,events:0,score:0};
+  const comp=Object.values(s.completed||{}).filter(Boolean).length;
+  const ans=Object.values(s.answers||{}).filter(r=>r&&(r.savedAt||r.check||(Array.isArray(r.lines)&&r.lines.some(Boolean))||(Array.isArray(r.choices)&&r.choices.some(Boolean))||String(r.text||r.email||r.speaking1||'').trim())).length;
+  const voc=Object.values(s.vocab||{}).filter(r=>r&&(r.status&&r.status!=='new'||r.reviews>0||r.repetitions>0)).length;
+  const ldb=Object.values(s.learningDB?.words||{}).filter(w=>w&&((w.fullRecallCorrect||0)+(w.missingCorrect||0)+(w.contextCorrect||0)+(w.articleCorrect||0))>0).length;
+  const ev=Object.keys(s.events||{}).length;
+  return {completed:comp,answers:ans,vocab:Math.max(voc,ldb),events:ev,score:comp*10+ans*6+Math.max(voc,ldb)*4+ev*5};
+}
+function mergeStudyStates(localRaw,remoteRaw,prefer='auto'){
+  const loc=normalizeLoadedState(localRaw||baseState()),rem=normalizeLoadedState(remoteRaw||baseState());
+  const locR=stateRichness(loc),remR=stateRichness(rem);
+  const primary=prefer==='local'?loc:prefer==='remote'?rem:(remR.score>locR.score?rem:loc);
+  const out=baseState();
+  out.settings={...out.settings,...loc.settings,...(prefer==='remote'?rem.settings:{})};
+  out.last={...(remR.score>locR.score?rem.last:loc.last)};
+  // 1. Merge completed exercises (union)
+  out.completed={...rem.completed,...loc.completed};
+  Object.keys(out.completed).forEach(k=>{if(rem.completed?.[k]||loc.completed?.[k])out.completed[k]=true});
+  // 2. Merge answers (keep whichever has newer savedAt/checkedAt or higher check score)
+  const allAnsIds=new Set([...Object.keys(rem.answers||{}),...Object.keys(loc.answers||{})]);
+  allAnsIds.forEach(id=>{
+    const a=loc.answers?.[id],b=rem.answers?.[id];
+    if(a&&!b){out.answers[id]=a;return}
+    if(b&&!a){out.answers[id]=b;return}
+    const aScore=Number(a?.check?.score||-1),bScore=Number(b?.check?.score||-1);
+    if(aScore!==bScore){out.answers[id]=aScore>bScore?a:b;return}
+    const aTime=Date.parse(a?.savedAt||a?.check?.checkedAt||0)||0,bTime=Date.parse(b?.savedAt||b?.check?.checkedAt||0)||0;
+    out.answers[id]=bTime>aTime?b:a;
+  });
+  // 3. Merge contribution events (union sections and items per day)
+  const allDays=new Set([...Object.keys(rem.events||{}),...Object.keys(loc.events||{})]);
+  allDays.forEach(day=>{
+    const ea=loc.events?.[day]||{},eb=rem.events?.[day]||{};
+    const sections=unique([...(ea.sections||[]),...(eb.sections||[])].map(normalizeContributionKind));
+    const items=unique([...(ea.items||[]),...(eb.items||[])]);
+    if(sections.length||items.length)out.events[day]={sections,items};
+  });
+  // 4. Merge vocab records
+  const allVocIds=new Set([...Object.keys(rem.vocab||{}),...Object.keys(loc.vocab||{})]);
+  const statusRank={new:0,seen:1,learning:2,review:2,familiar:3,confirmed:4,strong:5,mastered:6};
+  allVocIds.forEach(id=>{
+    const va=loc.vocab?.[id],vb=rem.vocab?.[id];
+    if(va&&!vb){out.vocab[id]=va;return}
+    if(vb&&!va){out.vocab[id]=vb;return}
+    const best=(statusRank[vb.status]||0)>(statusRank[va.status]||0)||(+vb.reviews||0)>(+va.reviews||0)?vb:va;
+    out.vocab[id]={
+      ...va,...vb,
+      status:best.status,
+      interval:Math.max(+va.interval||0,+vb.interval||0),
+      repetitions:Math.max(+va.repetitions||0,+vb.repetitions||0),
+      reviews:Math.max(+va.reviews||0,+vb.reviews||0),
+      due:(vb.last&&(!va.last||vb.last>va.last))?vb.due:(va.due||vb.due||today()),
+      last:[va.last,vb.last].filter(Boolean).sort().pop()||null,
+      en:String(va.en||vb.en||''),
+      ar:String(va.ar||vb.ar||'')
+    };
+  });
+  // 5. Merge learningDB.words evidence
+  const allLdbIds=new Set([...Object.keys(rem.learningDB?.words||{}),...Object.keys(loc.learningDB?.words||{})]);
+  allLdbIds.forEach(id=>{
+    const wa=loc.learningDB?.words?.[id],wb=rem.learningDB?.words?.[id];
+    if(wa&&!wb){out.learningDB.words[id]=wa;return}
+    if(wb&&!wa){out.learningDB.words[id]=wb;return}
+    out.learningDB.words[id]={
+      fullRecallCorrect:Math.max(+wa.fullRecallCorrect||0,+wb.fullRecallCorrect||0),
+      fullRecallWrong:Math.max(+wa.fullRecallWrong||0,+wb.fullRecallWrong||0),
+      missingCorrect:Math.max(+wa.missingCorrect||0,+wb.missingCorrect||0),
+      missingWrong:Math.max(+wa.missingWrong||0,+wb.missingWrong||0),
+      contextCorrect:Math.max(+wa.contextCorrect||0,+wb.contextCorrect||0),
+      contextWrong:Math.max(+wa.contextWrong||0,+wb.contextWrong||0),
+      articleCorrect:Math.max(+wa.articleCorrect||0,+wb.articleCorrect||0),
+      articleWrong:Math.max(+wa.articleWrong||0,+wb.articleWrong||0),
+      fullRecallDates:unique([...(wa.fullRecallDates||[]),...(wb.fullRecallDates||[])]),
+      correctDates:unique([...(wa.correctDates||[]),...(wb.correctDates||[])]),
+      lastFullRecallResult:wa.lastFullRecallResult==='correct'||wb.lastFullRecallResult==='correct'?'correct':(wa.lastFullRecallResult||wb.lastFullRecallResult||null)
+    };
+  });
+  // 6. Merge exposure & discovery
+  ['review','study','test','book'].forEach(k=>{
+    out.vocabExposure[k]=unique([...(rem.vocabExposure?.[k]||[]),...(loc.vocabExposure?.[k]||[])]);
+  });
+  const manualMap=new Map();
+  [...(rem.vocabDiscovery?.manual||[]),...(loc.vocabDiscovery?.manual||[])].forEach(item=>{if(item?.id)manualMap.set(item.id,item)});
+  out.vocabDiscovery={
+    included:unique([...(rem.vocabDiscovery?.included||[]),...(loc.vocabDiscovery?.included||[])]),
+    excluded:unique([...(rem.vocabDiscovery?.excluded||[]),...(loc.vocabDiscovery?.excluded||[])]),
+    manual:[...manualMap.values()]
+  };
+  out.vocabDiscovery.included=out.vocabDiscovery.included.filter(id=>!out.vocabDiscovery.excluded.includes(id));
+  return normalizeLoadedState(out);
+}
+function loadSnapshots(){try{const arr=JSON.parse(localStorage.getItem(snapshotsKey)||'[]');return Array.isArray(arr)?arr:[]}catch{return[]}}
+function saveSnapshot(reason='Auto-backup',customState=null){
+  try{
+    const target=customState||state,r=stateRichness(target);
+    if(r.score<=0)return false;
+    const list=loadSnapshots();
+    if(list.length&&list[0].richness?.score===r.score&&Date.now()-list[0].createdAt<60000)return false;
+    const entry={id:'snap-'+Date.now().toString(36),createdAt:Date.now(),reason,richness:r,state:JSON.parse(JSON.stringify(target))};
+    const next=[entry,...list].slice(0,12);
+    localStorage.setItem(snapshotsKey,JSON.stringify(next));
+    return true;
+  }catch{return false}
+}
 let state=loadState(); let reviewQueue=[],cardIndex=0,reviewChapter=null,reviewQueueInfo=null,reviewAutoFlipTimer=null,wordTestSession=null,wordAdvanceTimer=null,wordCountdownTimer=null,vocabularyBankMode='words'; let current={page:'home',chapter:1,section:'Main course',activity:null};
 let syncConfig=loadSyncConfig(),syncMeta=loadSyncMeta(),syncSaveTimer=null,syncBusy=false,cloudBootstrapping=true,lastCloudCheck=0;
-if(!syncMeta.localUpdatedAt&&hadStoredProgress){syncMeta.localUpdatedAt=Date.now();saveSyncMeta()}
+if(!syncMeta.localUpdatedAt&&stateRichness(state).score>0){syncMeta.localUpdatedAt=Date.now();saveSyncMeta()}
 function discoverySearchText(text){return ` ${norm(text).replace(/[^a-z0-9äöüß-]+/gi,' ').replace(/\s+/g,' ').trim()} `}
 function discoveryTextContains(text,term){const target=norm(term).replace(/[^a-z0-9äöüß-]+/gi,' ').trim();return target.length>=3&&text.includes(` ${target} `)}
 function backfillDiscoveredState(target){
@@ -162,23 +267,213 @@ function normalizeContributionKind(kind){const k=String(kind||'').trim();if(CONT
 function normalizeEvents(raw){const out={};Object.entries(raw||{}).forEach(([day,e])=>{if(!/^\d{4}-\d{2}-\d{2}$/.test(day))return;const src=e&&typeof e==='object'?e:{};const sections=unique([...(src.sections||[]),...(src.kinds||[])].map(normalizeContributionKind));const items=unique(src.items||[]);if(sections.length||items.length)out[day]={sections,items};});return out}
 function normalizeLoadedState(s){const b=baseState(),merged={...b,...((s&&typeof s==='object')?s:{}),settings:{...b.settings,...((s&&s.settings)||{})},last:{...b.last,...((s&&s.last)||{})}};merged.events=normalizeEvents(s&&s.events);merged.vocabExposure={...b.vocabExposure,...((s&&s.vocabExposure)||{})};Object.keys(merged.vocabExposure).forEach(k=>merged.vocabExposure[k]=unique(merged.vocabExposure[k]));merged.vocabDiscovery={included:unique(s&&s.vocabDiscovery&&s.vocabDiscovery.included),excluded:unique(s&&s.vocabDiscovery&&s.vocabDiscovery.excluded),manual:Array.isArray(s&&s.vocabDiscovery&&s.vocabDiscovery.manual)?s.vocabDiscovery.manual.filter(v=>v&&v.id&&v.term):[]};merged.vocabDiscovery.included=merged.vocabDiscovery.included.filter(id=>!merged.vocabDiscovery.excluded.includes(id));merged.learningDB={words:{...((s&&s.learningDB&&s.learningDB.words)||{})}};merged.schema=2;return backfillDiscoveredState(merged)}
 function loadState(){try{const s=JSON.parse(localStorage.getItem(storageKey)||'null');return s?normalizeLoadedState(s):baseState()}catch{return baseState()}}
-function loadSyncConfig(){try{const s=JSON.parse(localStorage.getItem(syncConfigKey)||'null')||{};return {url:String(s.url||''),key:String(s.key||'')}}catch{return {url:'',key:''}}}
-function loadSyncMeta(){try{return {...{localUpdatedAt:0,lastPullAt:0,lastPushAt:0,lastError:''},...(JSON.parse(localStorage.getItem(syncMetaKey)||'null')||{})}}catch{return {localUpdatedAt:0,lastPullAt:0,lastPushAt:0,lastError:''}}}
+function defaultUseStaticSeed(){try{const v=localStorage.getItem('spektrum-a1-use-seed');return v===null?true:v==='1'}catch{return true}}
+function setUseStaticSeed(on){try{localStorage.setItem('spektrum-a1-use-seed',on?'1':'0')}catch{}}
+function detectGithubRepoFromLocation(){
+  try{
+    const host=String(location.hostname||'').toLowerCase(),path=String(location.pathname||'').replace(/^\/+|\/+$/g,'').split('/');
+    if(host.endsWith('.github.io')){
+      const owner=host.replace(/\.github\.io$/,''),repo=path[0]&&!path[0].endsWith('.html')?path[0]:`${owner}.github.io`;
+      if(owner&&repo)return `${owner}/${repo}`;
+    }
+  }catch{}
+  return '';
+}
+function loadSyncConfig(){
+  try{
+    const s=JSON.parse(localStorage.getItem(syncConfigKey)||'null')||{};
+    return {
+      provider:String(s.provider||(s.ghToken?'github':'gas')),
+      url:String(s.url||''),
+      key:String(s.key||''),
+      ghRepo:String(s.ghRepo||detectGithubRepoFromLocation()||''),
+      ghBranch:String(s.ghBranch||'main'),
+      ghPath:String(s.ghPath||'data/user-progress.json'),
+      ghToken:String(s.ghToken||'')
+    };
+  }catch{
+    return {provider:'github',url:'',key:'',ghRepo:detectGithubRepoFromLocation(),ghBranch:'main',ghPath:'data/user-progress.json',ghToken:''};
+  }
+}
+function loadSyncMeta(){try{return {...{localUpdatedAt:0,lastPullAt:0,lastPushAt:0,lastError:'',ghSha:''},...(JSON.parse(localStorage.getItem(syncMetaKey)||'null')||{})}}catch{return {localUpdatedAt:0,lastPullAt:0,lastPushAt:0,lastError:'',ghSha:''}}}
 function saveSyncConfig(){try{localStorage.setItem(syncConfigKey,JSON.stringify(syncConfig))}catch{}}
 function saveSyncMeta(){try{localStorage.setItem(syncMetaKey,JSON.stringify(syncMeta))}catch{}}
 function cleanSyncUrl(url){return String(url||'').trim().replace(/\?.*$/,'').replace(/\/$/,'')}
-function cloudReady(){return /^https:\/\/script\.google\.com\/macros\/s\/[^/]+\/exec$/i.test(syncConfig.url||'')&&String(syncConfig.key||'').length>=16}
+function gasReady(){return /^https:\/\/script\.google\.com\/macros\/s\/[^/]+\/exec$/i.test(syncConfig.url||'')&&String(syncConfig.key||'').length>=16}
+function githubReady(){return /^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/.test(String(syncConfig.ghRepo||'').trim())&&String(syncConfig.ghToken||'').trim().length>=10}
+function cloudReady(){return syncConfig.provider==='github'?githubReady():(gasReady()||githubReady())}
 function generateSyncKey(){const bytes=new Uint8Array(18);if(globalThis.crypto?.getRandomValues)crypto.getRandomValues(bytes);else for(let i=0;i<bytes.length;i++)bytes[i]=Math.floor(Math.random()*256);return Array.from(bytes,b=>b.toString(16).padStart(2,'0')).join('')}
 function syncTime(ts){if(!ts)return'Never';try{return new Date(ts).toLocaleString()}catch{return'Unknown'}}
 function setCloudStatus(message,type=''){const el=$('#cloudSyncStatus');if(!el)return;el.textContent=message;el.dataset.state=type}
-function scheduleCloudPush(){if(cloudBootstrapping||!cloudReady())return;clearTimeout(syncSaveTimer);syncSaveTimer=setTimeout(()=>cloudPush({silent:true}),1400)}
+function scheduleCloudPush(){if(cloudBootstrapping||!cloudReady())return;clearTimeout(syncSaveTimer);syncSaveTimer=setTimeout(()=>cloudSyncNow({silent:true}),1800)}
+function saveViewOnly(){try{localStorage.setItem(storageKey,JSON.stringify(state))}catch{}updateStreakUI()}
 function save(){try{localStorage.setItem(storageKey,JSON.stringify(state))}catch{}if(!cloudBootstrapping){syncMeta.localUpdatedAt=Date.now();syncMeta.lastError='';saveSyncMeta();scheduleCloudPush()}updateStreakUI()}
-function cloudJsonp(action,timeout=12000){return new Promise((resolve,reject)=>{if(!cloudReady())return reject(new Error('Cloud sync is not configured.'));const callback='__spektrumCloud_'+Date.now()+'_'+Math.random().toString(36).slice(2),script=document.createElement('script'),timer=setTimeout(()=>finish(new Error('Cloud request timed out.')),timeout);function finish(err,data){clearTimeout(timer);try{delete window[callback]}catch{}script.remove();err?reject(err):resolve(data)}window[callback]=data=>finish(null,data);script.onerror=()=>finish(new Error('Could not reach the cloud sync service.'));const sep=syncConfig.url.includes('?')?'&':'?';script.src=`${syncConfig.url}${sep}action=${encodeURIComponent(action)}&key=${encodeURIComponent(syncConfig.key)}&callback=${encodeURIComponent(callback)}&_=${Date.now()}`;document.head.appendChild(script)})}
-async function cloudPull({apply=true,silent=false}={}){if(!cloudReady())throw new Error('Enter the Web App URL and a sync key first.');const data=await cloudJsonp('pull');if(!data?.ok)throw new Error(data?.error||'Cloud pull failed.');syncMeta.lastPullAt=Date.now();syncMeta.lastError='';saveSyncMeta();if(!data.found||!data.record){if(!silent)setCloudStatus('Cloud connected. No saved progress exists there yet.','ok');return {found:false}}const remoteAt=Number(data.record.updatedAt||0),remoteState=data.record.state;if(apply&&remoteState&&typeof remoteState==='object'){cloudBootstrapping=true;state=normalizeLoadedState(remoteState);try{localStorage.setItem(storageKey,JSON.stringify(state))}catch{}syncMeta.localUpdatedAt=remoteAt||Date.now();syncMeta.lastPullAt=Date.now();syncMeta.lastError='';saveSyncMeta();applyThemeWithoutSave(state.settings.theme||'light');applySidebar();const page=state.last?.page==='review'?'wordtest':state.last?.page||'home';if(page==='chapter')openChapter(state.last.chapter||1,state.last.section||'Main course',state.last.activity||null);else showPage(page);cloudBootstrapping=false;if(!silent)setCloudStatus(`Downloaded cloud progress · ${syncTime(remoteAt)}`,'ok')}return {found:true,updatedAt:remoteAt,state:remoteState}}
-async function cloudPush({silent=false,force=false}={}){if(!cloudReady())throw new Error('Enter the Web App URL and a sync key first.');if(syncBusy&&!force)return;syncBusy=true;try{const updatedAt=syncMeta.localUpdatedAt||Date.now();syncMeta.localUpdatedAt=updatedAt;saveSyncMeta();await fetch(syncConfig.url,{method:'POST',mode:'no-cors',cache:'no-store',headers:{'Content-Type':'text/plain;charset=UTF-8'},body:JSON.stringify({action:'push',key:syncConfig.key,updatedAt,state})});syncMeta.lastPushAt=Date.now();syncMeta.lastError='';saveSyncMeta();if(!silent)setCloudStatus(`Upload sent · ${syncTime(syncMeta.lastPushAt)}`,'ok')}catch(error){syncMeta.lastError=String(error?.message||error);saveSyncMeta();if(!silent)setCloudStatus(`Sync error: ${syncMeta.lastError}`,'error');throw error}finally{syncBusy=false}}
-async function cloudSyncNow({silent=false,prefer=null}={}){if(!cloudReady())return false;if(syncBusy)return false;syncBusy=true;try{if(!silent)setCloudStatus('Checking cloud…','busy');const data=await cloudJsonp('pull');if(!data?.ok)throw new Error(data?.error||'Cloud check failed.');syncMeta.lastPullAt=Date.now();const remote=data.found?data.record:null,remoteAt=Number(remote?.updatedAt||0),localAt=Number(syncMeta.localUpdatedAt||0);if(prefer==='remote'&&remote?.state){syncBusy=false;await cloudPull({apply:true,silent});return true}if(prefer==='local'){syncBusy=false;await cloudPush({silent,force:true});return true}if(remote?.state&&remoteAt>localAt){syncBusy=false;await cloudPull({apply:true,silent});return true}if(!remote||localAt>remoteAt){syncBusy=false;await cloudPush({silent,force:true});return true}syncMeta.lastError='';saveSyncMeta();if(!silent)setCloudStatus(`Up to date · ${syncTime(remoteAt||localAt)}`,'ok');return true}catch(error){syncMeta.lastError=String(error?.message||error);saveSyncMeta();if(!silent)setCloudStatus(`Sync error: ${syncMeta.lastError}`,'error');return false}finally{syncBusy=false}}
+function applyMergedStateToUI(nextState,remoteAt){
+  const prevBoot=cloudBootstrapping;cloudBootstrapping=true;
+  state=normalizeLoadedState(nextState);
+  setUseStaticSeed(true);
+  try{localStorage.setItem(storageKey,JSON.stringify(state))}catch{}
+  syncMeta.localUpdatedAt=remoteAt||Date.now();syncMeta.lastPullAt=Date.now();syncMeta.lastError='';saveSyncMeta();
+  applyThemeWithoutSave(state.settings.theme||'light');applySidebar();updateStreakUI();updateStartDeutschNavIcon();
+  const page=current.page||state.last?.page||'home';
+  if(page==='chapter')openChapter(current.chapter||state.last.chapter||1,current.section||state.last.section||'Main course',current.activity||state.last.activity||null);
+  else showPage(page);
+  cloudBootstrapping=prevBoot;
+}
+function utf8ToBase64(str){const bytes=new TextEncoder().encode(str);let bin='';for(let i=0;i<bytes.length;i++)bin+=String.fromCharCode(bytes[i]);return btoa(bin)}
+function base64ToUtf8(b64){const bin=atob(String(b64||'').replace(/\s+/g,''));const bytes=new Uint8Array(bin.length);for(let i=0;i<bin.length;i++)bytes[i]=bin.charCodeAt(i);return new TextDecoder().decode(bytes)}
+async function githubFetchRecord(){
+  const repo=String(syncConfig.ghRepo||'').trim(),branch=String(syncConfig.ghBranch||'main').trim()||'main',path=String(syncConfig.ghPath||'data/user-progress.json').trim().replace(/^\/+/,'');
+  const res=await fetch(`https://api.github.com/repos/${repo}/contents/${path}?ref=${encodeURIComponent(branch)}&_=${Date.now()}`,{
+    headers:{'Accept':'application/vnd.github+json','Authorization':`Bearer ${syncConfig.ghToken.trim()}`}
+  });
+  if(res.status===404)return {found:false};
+  if(!res.ok){const err=await res.json().catch(()=>({}));throw new Error(err.message||`GitHub API error (${res.status})`)}
+  const info=await res.json();
+  syncMeta.ghSha=info.sha||'';saveSyncMeta();
+  const raw=JSON.parse(base64ToUtf8(info.content||''));
+  const record=raw&&raw.state?raw:{updatedAt:Date.now(),state:raw};
+  return {found:true,sha:info.sha,updatedAt:Number(record.updatedAt||Date.now()),state:record.state};
+}
+async function githubPushRecord(stateToPush,updatedAt){
+  const repo=String(syncConfig.ghRepo||'').trim(),branch=String(syncConfig.ghBranch||'main').trim()||'main',path=String(syncConfig.ghPath||'data/user-progress.json').trim().replace(/^\/+/,'');
+  let sha=syncMeta.ghSha||'';
+  if(!sha){try{const cur=await githubFetchRecord();if(cur.found)sha=cur.sha||''}catch{}}
+  const payload={updatedAt:updatedAt||Date.now(),appVersion:APP_VERSION,richness:stateRichness(stateToPush),state:stateToPush};
+  const body={message:`Sync study progress (${stateRichness(stateToPush).completed} exercises, ${stateRichness(stateToPush).vocab} words)`,content:utf8ToBase64(JSON.stringify(payload,null,2)),branch};
+  if(sha)body.sha=sha;
+  const res=await fetch(`https://api.github.com/repos/${repo}/contents/${path}`,{
+    method:'PUT',
+    headers:{'Accept':'application/vnd.github+json','Authorization':`Bearer ${syncConfig.ghToken.trim()}`,'Content-Type':'application/json'},
+    body:JSON.stringify(body)
+  });
+  if(!res.ok){const err=await res.json().catch(()=>({}));throw new Error(err.message||`GitHub push failed (${res.status})`)}
+  const out=await res.json();
+  syncMeta.ghSha=out?.content?.sha||sha;syncMeta.lastPushAt=Date.now();syncMeta.lastError='';saveSyncMeta();
+  return out;
+}
+function cloudJsonp(action,timeout=12000){return new Promise((resolve,reject)=>{if(!gasReady())return reject(new Error('Google Apps Script sync is not configured.'));const callback='__spektrumCloud_'+Date.now()+'_'+Math.random().toString(36).slice(2),script=document.createElement('script'),timer=setTimeout(()=>finish(new Error('Cloud request timed out.')),timeout);function finish(err,data){clearTimeout(timer);try{delete window[callback]}catch{}script.remove();err?reject(err):resolve(data)}window[callback]=data=>finish(null,data);script.onerror=()=>finish(new Error('Could not reach the cloud sync service.'));const sep=syncConfig.url.includes('?')?'&':'?';script.src=`${syncConfig.url}${sep}action=${encodeURIComponent(action)}&key=${encodeURIComponent(syncConfig.key)}&callback=${encodeURIComponent(callback)}&_=${Date.now()}`;document.head.appendChild(script)})}
+async function fetchRemoteRecord(){
+  if(syncConfig.provider==='github'&&githubReady())return await githubFetchRecord();
+  if(gasReady()){
+    const data=await cloudJsonp('pull');
+    if(!data?.ok)throw new Error(data?.error||'Cloud pull failed.');
+    if(!data.found||!data.record)return {found:false};
+    return {found:true,updatedAt:Number(data.record.updatedAt||0),state:data.record.state};
+  }
+  if(githubReady())return await githubFetchRecord();
+  throw new Error('Configure GitHub Sync or Google Apps Script URL first.');
+}
+async function pushRemoteRecord(stateToPush,updatedAt){
+  if(syncConfig.provider==='github'&&githubReady())return await githubPushRecord(stateToPush,updatedAt);
+  if(gasReady()){
+    await fetch(syncConfig.url,{method:'POST',mode:'no-cors',cache:'no-store',headers:{'Content-Type':'text/plain;charset=UTF-8'},body:JSON.stringify({action:'push',key:syncConfig.key,updatedAt,state:stateToPush})});
+    syncMeta.lastPushAt=Date.now();syncMeta.lastError='';saveSyncMeta();
+    return true;
+  }
+  if(githubReady())return await githubPushRecord(stateToPush,updatedAt);
+  throw new Error('Configure GitHub Sync or Google Apps Script URL first.');
+}
+async function cloudPull({apply=true,silent=false,merge=true}={}){
+  const rec=await fetchRemoteRecord();
+  syncMeta.lastPullAt=Date.now();syncMeta.lastError='';saveSyncMeta();
+  if(!rec.found||!rec.state){if(!silent)setCloudStatus('Connected. No saved progress exists on the remote yet.','ok');return {found:false}}
+  if(apply&&typeof rec.state==='object'){
+    saveSnapshot('Before cloud pull');
+    const nextState=merge?mergeStudyStates(state,rec.state,'remote'):normalizeLoadedState(rec.state);
+    applyMergedStateToUI(nextState,rec.updatedAt);
+    if(!silent)setCloudStatus(`Synced remote progress (${stateRichness(state).completed} exercises) · ${syncTime(rec.updatedAt)}`,'ok');
+  }
+  return rec;
+}
+async function cloudPush({silent=false,force=false}={}){
+  if(syncBusy&&!force)return;
+  const locR=stateRichness(state);
+  if(locR.score===0&&!force){
+    if(!silent)setCloudStatus('Blocked empty upload to protect your remote progress.','ok');
+    return false;
+  }
+  syncBusy=true;
+  try{
+    const updatedAt=syncMeta.localUpdatedAt||Date.now();
+    syncMeta.localUpdatedAt=updatedAt;saveSyncMeta();
+    await pushRemoteRecord(state,updatedAt);
+    if(!silent)setCloudStatus(`Uploaded progress (${locR.completed} exercises) · ${syncTime(syncMeta.lastPushAt)}`,'ok');
+    return true;
+  }catch(error){
+    syncMeta.lastError=String(error?.message||error);saveSyncMeta();
+    if(!silent)setCloudStatus(`Sync error: ${syncMeta.lastError}`,'error');
+    throw error;
+  }finally{syncBusy=false}
+}
+async function cloudSyncNow({silent=false,prefer=null}={}){
+  if(!cloudReady())return false;if(syncBusy)return false;syncBusy=true;
+  try{
+    if(!silent)setCloudStatus('Syncing & merging progress…','busy');
+    const remote=await fetchRemoteRecord();
+    syncMeta.lastPullAt=Date.now();
+    const locR=stateRichness(state),remR=remote.found?stateRichness(remote.state):{score:0,completed:0};
+    if(!remote.found||!remote.state){
+      syncBusy=false;
+      if(locR.score>0)await cloudPush({silent,force:true});
+      else if(!silent)setCloudStatus('Connected · waiting for study activity before first upload.','ok');
+      return true;
+    }
+    // ANTI-WIPE & SMART MERGE: Never let an empty or smaller state wipe out remote progress!
+    saveSnapshot('Before sync merge');
+    if(prefer==='remote'){
+      applyMergedStateToUI(remote.state,remote.updatedAt);
+      if(!silent)setCloudStatus(`Restored remote copy (${remR.completed} exercises) · ${syncTime(remote.updatedAt)}`,'ok');
+      return true;
+    }
+    const merged=mergeStudyStates(state,remote.state,prefer==='local'?'local':'auto');
+    const mergedR=stateRichness(merged);
+    applyMergedStateToUI(merged,Math.max(Number(remote.updatedAt||0),Number(syncMeta.localUpdatedAt||0)));
+    // Push merged state back if local added anything new or prefer==='local'
+    if(prefer==='local'||mergedR.score>remR.score||(Number(syncMeta.localUpdatedAt||0)>Number(remote.updatedAt||0)&&locR.score>0)){
+      syncBusy=false;
+      await cloudPush({silent:true,force:true});
+    }
+    syncMeta.lastError='';saveSyncMeta();
+    if(!silent)setCloudStatus(`Synced & merged (${mergedR.completed} exercises, ${mergedR.vocab} words) · ${syncTime(Date.now())}`,'ok');
+    return true;
+  }catch(error){
+    syncMeta.lastError=String(error?.message||error);saveSyncMeta();
+    if(!silent)setCloudStatus(`Sync error: ${syncMeta.lastError}`,'error');
+    return false;
+  }finally{syncBusy=false}
+}
 function applyThemeWithoutSave(t){state.settings.theme=t;document.documentElement.dataset.theme=t}
-async function cloudStartupSync(){cloudBootstrapping=false;if(!cloudReady())return;await cloudSyncNow({silent:true});lastCloudCheck=Date.now()}
+async function tryLoadRepoProgressSeed(){
+  if(!defaultUseStaticSeed())return false;
+  try{
+    if(window.SPEKTRUM_USER_PROGRESS&&typeof window.SPEKTRUM_USER_PROGRESS==='object'){
+      const seedState=window.SPEKTRUM_USER_PROGRESS.state||window.SPEKTRUM_USER_PROGRESS;
+      if(stateRichness(seedState).score>stateRichness(state).score){
+        saveSnapshot('Before repo seed merge');
+        applyMergedStateToUI(mergeStudyStates(state,seedState,'remote'),Date.now());
+        return true;
+      }
+    }
+    if(/^https?:$/i.test(location.protocol)){
+      const res=await fetch(`./data/user-progress.json?_=${Date.now()}`,{cache:'no-store'});
+      if(res.ok){
+        const raw=await res.json();
+        const seedState=raw&&raw.state?raw.state:raw;
+        if(stateRichness(seedState).score>0){
+          const merged=mergeStudyStates(state,seedState,'auto');
+          if(stateRichness(merged).score>stateRichness(state).score){
+            saveSnapshot('Before repo user-progress.json merge');
+            applyMergedStateToUI(merged,Number(raw?.updatedAt||Date.now()));
+            return true;
+          }
+        }
+      }
+    }
+  }catch{}
+  return false;
+}
+async function cloudStartupSync(){cloudBootstrapping=false;await tryLoadRepoProgressSeed();if(!cloudReady())return;await cloudSyncNow({silent:true});lastCloudCheck=Date.now()}
 function maybeCheckCloud(){if(!cloudReady()||document.hidden||Date.now()-lastCloudCheck<30000)return;lastCloudCheck=Date.now();cloudSyncNow({silent:true})}
 function handleCloudOnline(){if(!cloudReady())return;clearTimeout(syncSaveTimer);lastCloudCheck=Date.now();cloudSyncNow({silent:true})}
 function event(kind,id){const section=normalizeContributionKind(kind);if(!section)return;const d=today();const e=state.events[d]||{sections:[],items:[]};e.sections=unique([...(e.sections||[]),section]);if(id)e.items=unique([...(e.items||[]),id]);state.events[d]=e;save()}
@@ -198,7 +493,7 @@ function setTitle(title,eyebrow='Personal study app'){$('#pageTitle').textConten
 function closeMenu(){$('#sidebar').classList.remove('open');$('#backdrop').classList.remove('active')}
 function navActive(page){$$('.nav-item').forEach(b=>b.classList.toggle('active',b.dataset.page===page))}
 function removeLegacyWordReviewUI(){/* Word Review & Shadowing Lab restored in v2.5 */}
-function showPage(page,arg){current.page=page;state.last.page=page;save();navActive(page);closeMenu();window.scrollTo(0,0);({home:renderHome,chapters:renderChapters,vocabulary:renderVocabulary,review:renderReview,wordtest:renderWordTest,audio:renderAudio,exam:renderExam,structures:renderStructures,search:renderSearch,progress:renderProgress,settings:renderSettings}[page]||renderHome)(arg)}
+function showPage(page,arg){current.page=page;state.last.page=page;saveViewOnly();navActive(page);closeMenu();window.scrollTo(0,0);({home:renderHome,chapters:renderChapters,vocabulary:renderVocabulary,review:renderReview,wordtest:renderWordTest,audio:renderAudio,exam:renderExam,structures:renderStructures,search:renderSearch,progress:renderProgress,settings:renderSettings}[page]||renderHome)(arg)}
 
 function renderHeatmap(){const cells=[],end=new Date();end.setHours(12,0,0,0);const start=new Date(end);start.setDate(end.getDate()-363);let active=0,total=0;for(let i=0;i<364;i++){const d=new Date(start);d.setDate(start.getDate()+i);const k=`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;const sections=contributionSections(k),l=sections.length;if(l){active++;total+=l}cells.push(`<span class="heat-cell l${l}${k===today()?' today':''}" title="${k}: ${l}/8 sections${l?' · '+sections.join(', '):''}"></span>`)}const t=contributionSections(today()),avg=active?(total/active).toFixed(1):'0';return `<div class="contribution-summary">${active} contribution day${active===1?'':'s'} · average ${avg}/8 · today ${t.length}/8</div><div class="heat-wrap"><div class="heatmap">${cells.join('')}</div></div><div class="contribution-sections">${CONTRIBUTION_SECTIONS.map(x=>`<span class="${t.includes(x)?'active':''}">${t.includes(x)?'✓ ':''}${x}</span>`).join('')}</div>`}
 function nextIncomplete(){return D.activities.find(a=>a.chapter&&a.section==='Main course'&&!completed(a.id))||D.activities.find(a=>a.chapter&&!completed(a.id))}
@@ -212,7 +507,7 @@ function renderHome(){setTitle('Home');const p=overallProgress(),next=nextIncomp
 $('#continueBtn').onclick=()=>next?openActivity(next.id):showPage('chapters');$('#openChapters').onclick=$('#allCh').onclick=()=>showPage('chapters');$$('[data-open-activity]').forEach(e=>e.onclick=()=>openActivity(e.dataset.openActivity));$$('[data-ch]').forEach(e=>e.onclick=()=>openChapter(+e.dataset.ch));}
 function chapterCard(ch){const p=chapterProgress(ch.id);return `<article class="chapter-card" data-ch="${ch.id}" style="cursor:pointer"><span class="badge">KAPITEL ${ch.id}</span><h3>${esc(ch.title)}</h3><p>${esc(ch.summary)}</p><div class="progress-bar"><span style="width:${p.pct}%"></span></div><small class="muted">${p.done}/${p.total} activities · ${ch.audioCount} audio tracks · ${p.pct}%</small></article>`}
 function renderChapters(){setTitle('Chapters','12 chapters · complete book flow');$('#pageHost').innerHTML=`<section class="panel" style="margin-top:0"><div class="panel-head"><div><h2>Course map</h2><p class="muted">Open any chapter. Main course, Vertiefung, overview pages and the chapter test are kept separate.</p></div></div><div class="grid chapter-grid">${D.chapters.map(ch=>chapterCard(ch)).join('')}</div></section>`;$$('[data-ch]').forEach(e=>e.onclick=()=>openChapter(+e.dataset.ch))}
-function openChapter(ch,section='Main course',aid=null){current={page:'chapter',chapter:ch,section,activity:aid};state.last={page:'chapter',chapter:ch,section,activity:aid};save();navActive('chapters');renderChapter()}
+function openChapter(ch,section='Main course',aid=null){current={page:'chapter',chapter:ch,section,activity:aid};state.last={page:'chapter',chapter:ch,section,activity:aid};saveViewOnly();navActive('chapters');renderChapter()}
 function openActivity(id){const a=D.activities.find(x=>x.id===id);if(!a)return;openChapter(a.chapter,a.section,id)}
 function renderChapter(){const ch=D.chapters.find(x=>x.id===current.chapter);setTitle(`Kapitel ${ch.id}: ${ch.title}`,`Book pages ${ch.bookPages}`);let sec=current.section||'Main course';const secNames=['Main course','Vertiefung','Übersichten','Abschlusstest','Book pages'];let acts=sec==='Book pages'?[]:chapterActivities(ch.id).filter(a=>a.section===sec);if(sec==='Main course')acts=[...chapterActivities(ch.id).filter(a=>a.section==='Overview'),...acts];let a=current.activity?acts.find(x=>x.id===current.activity):null;if(!a&&acts.length)a=acts.find(x=>!completed(x.id))||acts[0];if(a)current.activity=a.id;
 $('#pageHost').innerHTML=`<div class="chapter-top"><div><span class="badge">KAPITEL ${ch.id}</span><h2 style="margin:8px 0 4px">${esc(ch.title)}</h2><span class="muted">${esc(ch.summary)}</span></div><div><strong>${chapterProgress(ch.id).pct}%</strong> complete</div></div><div class="chapter-tabs">${secNames.map(s=>`<button class="${s===sec?'primary':'ghost'}" data-sec="${s}">${s}</button>`).join('')}</div><div id="chapterBody"></div>`;
@@ -541,7 +836,152 @@ function renderAppendixActivity(id){const arr=startDeutschExamPages(),a=arr.find
 function renderStructures(){setTitle('Structure Reference','Book appendix pages 263–271');const arr=D.appendix.filter(a=>a.section==='Structure reference');$('#pageHost').innerHTML=`<section class="panel" style="margin-top:0"><div class="panel-head"><div><h2>Grammar reference</h2><p class="muted">The complete structure overview from the book, available as high-resolution integrated pages.</p></div></div><div class="page-browser">${arr.map(a=>`<div class="page-thumb" data-page-img="${a.page}"><img loading="lazy" src="${pageImage(a.page)}"><div><b>Page ${a.page}</b></div></div>`).join('')}</div></section>`;$$('[data-page-img]').forEach(e=>e.onclick=()=>showViewer(+e.dataset.pageImg))}
 function renderSearch(){setTitle('Search book','Search all extracted text');$('#pageHost').innerHTML=`<section class="panel" style="margin-top:0"><h2>Search all chapters</h2><div class="word-toolbar"><input class="search-input" id="bookSearch" autofocus placeholder="e.g. Perfekt, Arzt, Hotel, Einladung…"><select class="select-input" id="searchScope"><option value="all">All</option>${D.chapters.map(c=>`<option value="${c.id}">Kapitel ${c.id}</option>`).join('')}<option value="appendix">Appendix</option></select></div><div id="searchResults" class="search-results"></div></section>`;const go=()=>{const q=norm($('#bookSearch').value),scope=$('#searchScope').value;if(q.length<2){$('#searchResults').innerHTML='<p class="muted">Type at least two characters.</p>';return}let res=[];for(const a of D.activities){if(scope!=='all'&&scope!=='appendix'&&String(a.chapter)!==scope)continue;if(scope==='appendix')continue;const hay=norm(`${a.label} ${a.title} ${a.text}`);if(hay.includes(q))res.push({kind:'activity',a,score:hay.startsWith(q)?0:1})}for(const p of D.pages){if(scope!=='all'&&scope!=='appendix'&&String(p.chapter)!==scope)continue;if(scope==='appendix'&&p.page<255)continue;const hay=norm(p.text);if(hay.includes(q))res.push({kind:'page',p,score:2})}res=res.sort((x,y)=>x.score-y.score).slice(0,80);$('#searchResults').innerHTML=res.map((r,i)=>r.kind==='activity'?`<div class="search-result" data-result-act="${r.a.id}"><b>Kapitel ${r.a.chapter} · ${esc(r.a.label)} ${esc(r.a.title)}</b><div class="muted">Page ${r.a.page} · ${r.a.tags.join(' / ')}</div></div>`:`<div class="search-result" data-result-page="${r.p.page}"><b>Book page ${r.p.page}</b><div class="muted">${r.p.chapter?`Kapitel ${r.p.chapter} · ${r.p.section}`:'Appendix'}</div></div>`).join('')||'<p class="muted">No matches.</p>';$$('[data-result-act]').forEach(e=>e.onclick=()=>openActivity(e.dataset.resultAct));$$('[data-result-page]').forEach(e=>e.onclick=()=>showViewer(+e.dataset.resultPage))};$('#bookSearch').oninput=go;$('#searchScope').onchange=go}
 function renderProgress(){setTitle('Progress',cloudReady()?'Stored locally + cloud sync':'Stored locally on this device');const overall=overallProgress(),wordsPool=wordTestPool(),phrasesPool=PHRASE_TESTS;$('#pageHost').innerHTML=`<section class="panel" style="margin-top:0"><div class="panel-head"><div><h2>Overall course</h2><p class="muted">Completion is based on real exercise cards, not a manual chapter switch.</p></div><strong style="font-size:30px">${overall.pct}%</strong></div><div class="progress-bar"><span style="width:${overall.pct}%"></span></div></section><section class="panel"><h2>By chapter</h2>${D.chapters.map(c=>{const p=chapterProgress(c.id);return `<div style="margin:15px 0"><div style="display:flex;justify-content:space-between"><b>Kapitel ${c.id} · ${esc(c.title)}</b><span>${p.done}/${p.total}</span></div><div class="progress-bar"><span style="width:${p.pct}%"></span></div></div>`}).join('')}</section><section class="panel"><div class="panel-head"><h2>Contribution history</h2><span class="badge">Current streak ${streak()} days</span></div>${renderHeatmap()}</section><section class="panel"><div class="panel-head"><div><h2>Vocabulary states</h2><p class="muted">Tracked separately for lexical words (${wordsPool.length}) and sentences/phrases (${phrasesPool.length}).</p></div></div><div class="settings-row" style="font-weight:800;font-size:13px;color:var(--muted)"><span>State</span><span>Words / Phrases</span></div>${['new','seen','confirmed','strong','mastered','review'].map(s=>{const wCount=wordsPool.filter(v=>vocabStatus(v)===s).length,pCount=phrasesPool.filter(v=>vocabStatus(v)===s).length;return `<div class="settings-row"><span class="status-chip status-${s}">${statusLabel(s)}</span><b>${wCount} words · ${pCount} phrases</b></div>`}).join('')}</section>`}
-function renderSettings(){setTitle('Settings');const connected=cloudReady();$('#pageHost').innerHTML=`<section class="panel" style="margin-top:0"><h2>Study display</h2><div class="settings-row"><div><b>Arabic help</b><p class="muted">English interface remains primary; Arabic help appears below exercises.</p></div><select id="arabicSetting"><option value="on">On</option><option value="off">Off</option></select></div><div class="settings-row"><div><b>Appearance</b></div><select id="themeSetting"><option value="light">Light</option><option value="dark">Dark</option></select></div><div class="settings-row"><div><b>Desktop sidebar</b><p class="muted">The hamburger button is always visible on laptop/desktop and toggles the sidebar.</p></div><select id="sidebarSetting"><option value="open">Open</option><option value="collapsed">Collapsed</option></select></div><div class="settings-row"><div><b>Exercise study layout</b><p class="muted">Keep the book visual and answer inputs visible at the same time without scrolling up and down.</p></div><select id="studyLayoutSetting"><option value="split">Side-by-side Split (Recommended)</option><option value="pinned">Pinned Top</option><option value="stacked">Classic Stacked</option></select></div></section><section class="panel"><div class="panel-head"><div><h2>Cloud sync</h2><p class="muted">Keep progress on this device and mirror it to your private Google Drive through a Google Apps Script Web App. Use the same URL and sync key on your other devices.</p></div><span class="badge">${connected?'Connected':'Not connected'}</span></div><label class="field-label" for="cloudUrl">Apps Script Web App URL</label><input class="answer-input" id="cloudUrl" inputmode="url" autocomplete="off" placeholder="https://script.google.com/macros/s/.../exec" value="${esc(syncConfig.url||'')}"><label class="field-label" for="cloudKey" style="margin-top:12px">Sync key</label><div style="display:flex;gap:8px;align-items:center"><input class="answer-input" id="cloudKey" autocomplete="off" spellcheck="false" placeholder="Use the same private key on every device" value="${esc(syncConfig.key||'')}"><button class="ghost" id="generateCloudKey" type="button">Generate</button></div><p class="muted">Treat the sync key like a password. It is stored only in this browser and is not included in exported progress backups.</p><div class="button-row"><button class="primary" id="saveCloudSync">Save & sync</button><button class="secondary" id="pullCloud" ${connected?'':'disabled'}>Use cloud copy</button><button class="secondary" id="pushCloud" ${connected?'':'disabled'}>Upload this device</button><button class="ghost" id="disconnectCloud" ${connected?'':'disabled'}>Disconnect</button></div><div class="notice" id="cloudSyncStatus" data-state="${syncMeta.lastError?'error':connected?'ok':''}">${syncMeta.lastError?`Last error: ${esc(syncMeta.lastError)}`:connected?`Automatic sync is on · last cloud check ${syncTime(syncMeta.lastPullAt)} · last upload ${syncTime(syncMeta.lastPushAt)}`:'Enter your deployed Apps Script URL and a sync key, then choose Save & sync.'}</div></section><section class="panel"><h2>Backup</h2><p class="muted">Export answers, exercise progress, streak/contribution data and vocabulary states. Voice recordings are stored separately in the browser and are not included in JSON backup.</p><div class="button-row"><button class="secondary" id="exportBtn">Export progress</button><label class="ghost" style="cursor:pointer">Import progress<input id="importFile" type="file" accept="application/json" hidden></label><button class="danger" id="resetBtn">Reset progress</button></div></section><section class="panel"><div class="settings-row"><div><b>App version</b><p class="muted">Spektrum A1+</p></div><span class="badge">${esc(APP_VERSION)}</span></div></section><section class="panel"><h2>Content status</h2><p>The app contains all 12 chapters, 255 main-course activities, all 134 numbered Vertiefung exercises, 46 chapter-test activities, the complete supplied book pages 9–271, the Start Deutsch 1 appendix, structure reference, all 126 supplied MP3 files, and a separated vocabulary system with a 493-item lexical word bank plus a dedicated sentences/phrases pool used by Vocabulary Bank and Vocabulary Testing.</p><p class="muted">The exact original source visual is retained in every activity/source-page view, so diagrams, tables and reading layouts are never silently lost. Automatic checking is enabled only for objective activities whose answers have been verified and structured. Open writing and speaking tasks remain self-assessed rather than being falsely graded.</p></section>`;$('#arabicSetting').value=state.settings.arabicHelp?'on':'off';$('#themeSetting').value=state.settings.theme;$('#sidebarSetting').value=state.settings.sidebarCollapsed?'collapsed':'open';if($('#studyLayoutSetting')){$('#studyLayoutSetting').value=studyLayoutMode();$('#studyLayoutSetting').onchange=e=>{state.settings.studyLayout=e.target.value;save()}}$('#arabicSetting').onchange=e=>{state.settings.arabicHelp=e.target.value==='on';save()};$('#themeSetting').onchange=e=>applyTheme(e.target.value);$('#sidebarSetting').onchange=e=>{state.settings.sidebarCollapsed=e.target.value==='collapsed';applySidebar();save()};$('#generateCloudKey').onclick=()=>{$('#cloudKey').value=generateSyncKey()};$('#saveCloudSync').onclick=async()=>{const url=cleanSyncUrl($('#cloudUrl').value),key=String($('#cloudKey').value||'').trim();if(!/^https:\/\/script\.google\.com\/macros\/s\/[^/]+\/exec$/i.test(url)){setCloudStatus('Use the deployed Apps Script Web App URL ending in /exec.','error');return}if(key.length<16){setCloudStatus('The sync key must be at least 16 characters.','error');return}syncConfig={url,key};saveSyncConfig();setCloudStatus('Connecting…','busy');await cloudSyncNow({silent:false});renderSettings()};$('#pullCloud').onclick=async()=>{if(!confirm('Replace this device’s current progress with the cloud copy?'))return;await cloudSyncNow({silent:false,prefer:'remote'})};$('#pushCloud').onclick=async()=>{if(!confirm('Upload this device’s progress to the cloud? Newer cloud data is protected from older writes.'))return;syncMeta.localUpdatedAt=Date.now();saveSyncMeta();await cloudSyncNow({silent:false,prefer:'local'})};$('#disconnectCloud').onclick=()=>{if(!confirm('Disconnect cloud sync on this device? Your local progress and cloud copy will both remain.'))return;syncConfig={url:'',key:''};saveSyncConfig();clearTimeout(syncSaveTimer);renderSettings()};$('#exportBtn').onclick=()=>{const blob=new Blob([JSON.stringify(state,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='spektrum-a1-progress-backup.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1200)};$('#importFile').onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{state=normalizeLoadedState(JSON.parse(r.result));save();applyThemeWithoutSave(state.settings.theme);applySidebar();alert('Progress imported successfully.');renderSettings()}catch{alert('This backup could not be imported.')}};r.readAsText(f)};$('#resetBtn').onclick=()=>{if(confirm('Reset all exercise answers, progress, vocabulary states and contribution history?')){state=baseState();save();applyThemeWithoutSave('light');applySidebar();showPage('home')}}}
+function bulkRecoverChapterProgress(chId,secScope,fillAnswers=true){
+  saveSnapshot(`Before bulk recovery (K${chId})`);
+  const targetCh=chId==='all'?null:+chId;
+  const acts=D.activities.filter(a=>a.chapter&&(!targetCh||a.chapter===targetCh)&&!['Overview','Übersichten'].includes(a.section)&&(secScope==='all'||a.section===secScope));
+  let count=0;
+  acts.forEach(a=>{
+    state.completed[a.id]=true;count++;
+    const spec=correctionSpec(a);
+    if(fillAnswers&&spec&&Array.isArray(spec.fields)){
+      const lines=spec.fields.map(f=>f.unordered?.length?f.unordered.join(', '):(f.answers?.[0]||''));
+      state.answers[a.id]={lines,savedAt:new Date().toISOString(),check:{score:spec.fields.length,total:spec.fields.length,results:spec.fields.map(()=>true),checkedAt:new Date().toISOString()}};
+    }
+    markStudyVocabulary(a);
+  });
+  if(count>0)event('Practice',`recover-k${chId}`);
+  setUseStaticSeed(true);
+  save();
+  return count;
+}
+function renderSettings(){
+  setTitle('Settings','Sync, Recovery & Preferences');
+  const connected=cloudReady(),prov=syncConfig.provider||'github',snaps=loadSnapshots(),rich=stateRichness(state);
+  $('#pageHost').innerHTML=`
+  <section class="panel" style="margin-top:0">
+    <div class="panel-head"><div><h2>Multi-Device Sync (GitHub & Cloud)</h2><p class="muted"><b>Anti-Wipe Protection Active:</b> Opening the app on a second empty device will never overwrite your saved progress. Progress from both devices is automatically merged.</p></div><span class="badge">${connected?'Connected':'Not connected'}</span></div>
+    <label class="field-label" for="syncProvider">Sync Method</label>
+    <select class="wide-select" id="syncProvider">
+      <option value="github" ${prov==='github'?'selected':''}>GitHub Repository Sync (Recommended for GitHub Pages)</option>
+      <option value="gas" ${prov==='gas'?'selected':''}>Google Drive (via Google Apps Script Web App)</option>
+    </select>
+    <div id="githubSyncBox" class="${prov==='github'?'':'hidden'}" style="margin-top:12px">
+      <div class="notice" style="margin-bottom:12px"><b>How GitHub Sync works:</b> Static websites on GitHub Pages cannot save browser data to your repository automatically unless connected to the GitHub API or saved as <code>data/user-progress.json</code>. Enter your repository name and a GitHub Personal Access Token (with <code>Contents: Read & write</code> permission on your repo), or click <b>Download data/user-progress.json</b> below and place it inside your repo's <code>data/</code> folder so every device loads your progress automatically!</div>
+      <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px">
+        <div><label class="field-label" for="ghRepo">GitHub Repository (owner/repo)</label><input class="answer-input" style="width:100%" id="ghRepo" placeholder="e.g. username/spektrum-a1" value="${esc(syncConfig.ghRepo||detectGithubRepoFromLocation()||'')}"></div>
+        <div><label class="field-label" for="ghBranch">Branch</label><input class="answer-input" style="width:100%" id="ghBranch" placeholder="main" value="${esc(syncConfig.ghBranch||'main')}"></div>
+        <div><label class="field-label" for="ghPath">Progress File Path in Repo</label><input class="answer-input" style="width:100%" id="ghPath" placeholder="data/user-progress.json" value="${esc(syncConfig.ghPath||'data/user-progress.json')}"></div>
+      </div>
+      <label class="field-label" for="ghToken" style="margin-top:10px">GitHub Personal Access Token (Fine-grained or Classic)</label>
+      <input class="answer-input" style="width:100%" id="ghToken" type="password" autocomplete="off" spellcheck="false" placeholder="github_pat_... or ghp_..." value="${esc(syncConfig.ghToken||'')}">
+    </div>
+    <div id="gasSyncBox" class="${prov==='gas'?'':'hidden'}" style="margin-top:12px">
+      <label class="field-label" for="cloudUrl">Apps Script Web App URL</label>
+      <input class="answer-input" style="width:100%" id="cloudUrl" inputmode="url" autocomplete="off" placeholder="https://script.google.com/macros/s/.../exec" value="${esc(syncConfig.url||'')}">
+      <label class="field-label" for="cloudKey" style="margin-top:12px">Sync key</label>
+      <div style="display:flex;gap:8px;align-items:center"><input class="answer-input" style="flex:1" id="cloudKey" autocomplete="off" spellcheck="false" placeholder="Use the same private key on every device" value="${esc(syncConfig.key||'')}"><button class="ghost" id="generateCloudKey" type="button">Generate</button></div>
+    </div>
+    <div class="button-row" style="margin-top:14px">
+      <button class="primary" id="saveCloudSync">Save & Smart Sync</button>
+      <button class="secondary" id="pullCloud" ${connected?'':'disabled'}>Merge from remote</button>
+      <button class="secondary" id="pushCloud" ${connected?'':'disabled'}>Force upload this device</button>
+      <button class="ghost" id="disconnectCloud" ${connected?'':'disabled'}>Disconnect</button>
+    </div>
+    <div class="notice" id="cloudSyncStatus" style="margin-top:12px" data-state="${syncMeta.lastError?'error':connected?'ok':''}">${syncMeta.lastError?`Last error: ${esc(syncMeta.lastError)}`:connected?`Smart Sync is active · last check ${syncTime(syncMeta.lastPullAt)} · last upload ${syncTime(syncMeta.lastPushAt)}`:'Choose GitHub Repository Sync or Google Apps Script above, then click Save & Smart Sync.'}</div>
+  </section>
+
+  <section class="panel">
+    <div class="panel-head"><div><h2>Quick Progress Recovery & Chapter Restore</h2><p class="muted">Lost progress after switching devices? Instantly restore completed status, verified model answers, and seen vocabulary for any chapters you already finished.</p></div><span class="badge">${rich.completed} exercises done</span></div>
+    <div class="word-toolbar" style="margin-bottom:10px">
+      <select class="select-input" id="recoverChapterSelect">
+        ${D.chapters.map(c=>`<option value="${c.id}">Kapitel ${c.id} · ${esc(c.title)} (${chapterProgress(c.id).done}/${chapterProgress(c.id).total})</option>`).join('')}
+      </select>
+      <select class="select-input" id="recoverSectionSelect">
+        <option value="all">All chapter sections (Main + Vertiefung + Test)</option>
+        <option value="Main course">Main course only</option>
+        <option value="Vertiefung">Vertiefung only</option>
+        <option value="Abschlusstest">Abschlusstest (Chapter test) only</option>
+      </select>
+      <label style="display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700"><input type="checkbox" id="recoverFillAnswers" checked> Fill official answers</label>
+      <button class="primary" id="runQuickRecover" type="button">✓ Restore selected chapter</button>
+    </div>
+    <p class="muted" id="recoverFeedback" style="margin:4px 0 0"></p>
+  </section>
+
+  <section class="panel">
+    <div class="panel-head"><div><h2>Backup & GitHub Repo File (<code>user-progress.json</code>)</h2><p class="muted">You can download <code>user-progress.json</code> and commit it inside your GitHub repository’s <code>data/</code> folder (<code>a1/data/user-progress.json</code>). Every device that opens your GitHub Pages link will automatically load and merge it on startup!</p></div></div>
+    <div class="button-row">
+      <button class="primary" id="exportRepoSeedBtn" type="button">⬇ Download user-progress.json (for GitHub data/ folder)</button>
+      <button class="secondary" id="exportBtn" type="button">Export backup JSON</button>
+      <label class="secondary" style="cursor:pointer">Import & Merge backup<input id="importFile" type="file" accept="application/json" hidden></label>
+      <button class="danger" id="resetBtn" type="button">Reset progress</button>
+    </div>
+    ${snaps.length?`<div style="margin-top:16px;border-top:1px solid var(--border);padding-top:14px"><h3>Automatic Local Safety Snapshots (${snaps.length})</h3><p class="muted">Saved automatically before syncs, imports, and resets on this browser.</p><div class="answer-grid">${snaps.map(s=>`<div class="settings-row" style="padding:8px 0"><div><b>${esc(s.reason||'Snapshot')}</b> · <small class="muted">${syncTime(s.createdAt)}</small><div class="muted" style="font-size:12px">${s.richness?.completed||0} exercises · ${s.richness?.answers||0} answers · ${s.richness?.vocab||0} words</div></div><button class="secondary restore-snap-btn" data-snap-id="${esc(s.id)}" type="button">Restore & Merge</button></div>`).join('')}</div></div>`:''}
+  </section>
+
+  <section class="panel"><h2>Study display</h2><div class="settings-row"><div><b>Exercise study layout</b><p class="muted">Keep the book visual and answer inputs visible at the same time without scrolling up and down.</p></div><select id="studyLayoutSetting"><option value="split">Side-by-side Split (Recommended)</option><option value="pinned">Pinned Top</option><option value="stacked">Classic Stacked</option></select></div><div class="settings-row"><div><b>Appearance</b></div><select id="themeSetting"><option value="light">Light</option><option value="dark">Dark</option></select></div><div class="settings-row"><div><b>Desktop sidebar</b><p class="muted">The hamburger button is always visible on laptop/desktop and toggles the sidebar.</p></div><select id="sidebarSetting"><option value="open">Open</option><option value="collapsed">Collapsed</option></select></div><div class="settings-row"><div><b>Arabic help</b><p class="muted">English interface is primary; optional Arabic instructions appear only when enabled.</p></div><select id="arabicSetting"><option value="on">On</option><option value="off">Off</option></select></div></section>
+  <section class="panel"><div class="settings-row"><div><b>App version</b><p class="muted">Spektrum A1+</p></div><span class="badge">${esc(APP_VERSION)}</span></div></section>`;
+
+  $('#arabicSetting').value=state.settings.arabicHelp?'on':'off';
+  $('#themeSetting').value=state.settings.theme;
+  $('#sidebarSetting').value=state.settings.sidebarCollapsed?'collapsed':'open';
+  if($('#studyLayoutSetting')){$('#studyLayoutSetting').value=studyLayoutMode();$('#studyLayoutSetting').onchange=e=>{state.settings.studyLayout=e.target.value;save()}}
+  $('#arabicSetting').onchange=e=>{state.settings.arabicHelp=e.target.value==='on';save()};
+  $('#themeSetting').onchange=e=>applyTheme(e.target.value);
+  $('#sidebarSetting').onchange=e=>{state.settings.sidebarCollapsed=e.target.value==='collapsed';applySidebar();save()};
+  $('#syncProvider').onchange=e=>{
+    syncConfig.provider=e.target.value;
+    $('#githubSyncBox').classList.toggle('hidden',syncConfig.provider!=='github');
+    $('#gasSyncBox').classList.toggle('hidden',syncConfig.provider!=='gas');
+  };
+  if($('#generateCloudKey'))$('#generateCloudKey').onclick=()=>{$('#cloudKey').value=generateSyncKey()};
+  $('#saveCloudSync').onclick=async()=>{
+    const provider=$('#syncProvider').value;
+    if(provider==='github'){
+      const ghRepo=String($('#ghRepo').value||'').trim().replace(/^https?:\/\/github\.com\//i,'').replace(/\.git$/i,'').replace(/^\/+|\/+$/g,'');
+      const ghBranch=String($('#ghBranch').value||'main').trim()||'main';
+      const ghPath=String($('#ghPath').value||'data/user-progress.json').trim()||'data/user-progress.json';
+      const ghToken=String($('#ghToken').value||'').trim();
+      if(!/^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/.test(ghRepo)){setCloudStatus('Enter your GitHub repository in owner/repo format (e.g. username/spektrum-a1).','error');return}
+      if(ghToken.length<10){setCloudStatus('Enter a valid GitHub Personal Access Token with Contents Read & Write permission.','error');return}
+      syncConfig={...syncConfig,provider:'github',ghRepo,ghBranch,ghPath,ghToken};
+      saveSyncConfig();setCloudStatus('Connecting to GitHub repository…','busy');
+      await cloudSyncNow({silent:false});renderSettings();
+    }else{
+      const url=cleanSyncUrl($('#cloudUrl').value),key=String($('#cloudKey').value||'').trim();
+      if(!/^https:\/\/script\.google\.com\/macros\/s\/[^/]+\/exec$/i.test(url)){setCloudStatus('Use the deployed Apps Script Web App URL ending in /exec.','error');return}
+      if(key.length<16){setCloudStatus('The sync key must be at least 16 characters.','error');return}
+      syncConfig={...syncConfig,provider:'gas',url,key};
+      saveSyncConfig();setCloudStatus('Connecting to Google Apps Script…','busy');
+      await cloudSyncNow({silent:false});renderSettings();
+    }
+  };
+  $('#pullCloud').onclick=async()=>{await cloudPull({apply:true,silent:false,merge:true});renderSettings()};
+  $('#pushCloud').onclick=async()=>{if(stateRichness(state).score===0&&!confirm('This device currently has 0 completed exercises. Are you sure you want to force-upload an empty state?'))return;syncMeta.localUpdatedAt=Date.now();saveSyncMeta();await cloudPush({silent:false,force:true});renderSettings()};
+  $('#disconnectCloud').onclick=()=>{if(!confirm('Disconnect remote sync on this device? Your local progress and remote copy will both remain safe.'))return;syncConfig={...syncConfig,url:'',key:'',ghToken:''};saveSyncConfig();clearTimeout(syncSaveTimer);renderSettings()};
+  $('#runQuickRecover').onclick=()=>{
+    const ch=$('#recoverChapterSelect').value,sec=$('#recoverSectionSelect').value,fill=$('#recoverFillAnswers').checked;
+    const n=bulkRecoverChapterProgress(ch,sec,fill);
+    $('#recoverFeedback').textContent=`✓ Restored ${n} activities in Kapitel ${ch} (${sec}).`;
+    setTimeout(()=>renderSettings(),700);
+  };
+  $$('.restore-snap-btn').forEach(btn=>btn.onclick=()=>{
+    const snap=loadSnapshots().find(x=>x.id===btn.dataset.snapId);
+    if(!snap?.state)return;
+    saveSnapshot('Before snapshot restore');
+    state=mergeStudyStates(state,snap.state,'remote');
+    save();renderSettings();
+  });
+  $('#exportRepoSeedBtn').onclick=()=>{
+    const payload={updatedAt:Date.now(),appVersion:APP_VERSION,richness:stateRichness(state),state};
+    const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'}),a=document.createElement('a');
+    a.href=URL.createObjectURL(blob);a.download='user-progress.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1200);
+  };
+  $('#exportBtn').onclick=()=>{const blob=new Blob([JSON.stringify(state,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='spektrum-a1-progress-backup.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1200)};
+  $('#importFile').onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const parsed=JSON.parse(r.result),incoming=parsed?.state&&typeof parsed.state==='object'?parsed.state:parsed;saveSnapshot('Before JSON import');state=mergeStudyStates(state,incoming,'remote');setUseStaticSeed(true);save();applyThemeWithoutSave(state.settings.theme);applySidebar();alert(`Progress imported and merged (${stateRichness(state).completed} completed exercises).`);renderSettings()}catch{alert('This backup could not be imported.')}};r.readAsText(f)};
+  $('#resetBtn').onclick=()=>{if(confirm('Reset all exercise answers, progress, vocabulary states and contribution history on this device? (A local snapshot will be saved first)')){saveSnapshot('Before manual reset');setUseStaticSeed(false);state=baseState();try{localStorage.setItem(storageKey,JSON.stringify(state))}catch{}syncMeta.localUpdatedAt=0;saveSyncMeta();applyThemeWithoutSave('light');applySidebar();showPage('home')}};
+}
 function applyTheme(t){state.settings.theme=t;document.documentElement.dataset.theme=t;save()}
 function applySidebar(){const mobile=matchMedia('(max-width:820px)').matches;if(!mobile)$('#appShell').classList.toggle('sidebar-collapsed',!!state.settings.sidebarCollapsed);else $('#appShell').classList.remove('sidebar-collapsed')}
 function toggleMenu(){if(matchMedia('(max-width:820px)').matches){$('#sidebar').classList.toggle('open');$('#backdrop').classList.toggle('active')}else{state.settings.sidebarCollapsed=!state.settings.sidebarCollapsed;applySidebar();save()}}
