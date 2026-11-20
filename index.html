@@ -17,6 +17,7 @@
       <button class="nav-item" data-page="chapters"><span class="nav-icon">▦</span><span>Chapters</span></button>
       <button class="nav-item" data-page="vocabulary"><span class="nav-icon">Aa</span><span>Vocabulary</span></button>
       <button class="nav-item" data-page="review"><span class="nav-icon">↻</span><span>Word Review</span></button>
+      <button class="nav-item" data-page="mistakes" aria-label="Review mistakes"><span class="nav-icon" aria-hidden="true">↺</span><span>Review Mistakes</span></button>
       <button class="nav-item" data-page="wordtest"><span class="nav-icon">✓</span><span>Vocabulary Testing</span></button>
       <button class="nav-item" data-page="audio"><span class="nav-icon">♫</span><span>Audio Library</span></button>
       <button class="nav-item" data-page="exam"><span class="nav-icon">✓</span><span>Start Deutsch 1</span></button>
@@ -38,25 +39,26 @@
   </main>
 </div>
 <div class="viewer" id="viewer"><button class="viewer-close" id="viewerClose">×</button><div id="viewerBody"></div></div>
-<div class="german-kb-dock" id="germanKeyboardDock">
+<aside class="german-kb-dock" id="germanKeyboardDock" aria-label="Character palette">
+  <button type="button" class="german-kb-toggle" id="germanKeyboardToggle" aria-label="German letters" aria-controls="germanKeyboardPanel" aria-expanded="false" title="German letters">
+    <span class="german-kb-mark" aria-hidden="true">ä</span>
+    <span class="german-kb-title">German letters</span>
+    <span class="german-kb-chevron" aria-hidden="true"></span>
+  </button>
   <div class="german-kb-panel" id="germanKeyboardPanel" hidden>
-    <div class="german-kb-head">
-      <span class="muted" id="germanKeyboardStatus">Select a text box to insert German letters</span>
-      <button type="button" class="german-kb-close" id="germanKeyboardClose" aria-label="Close keyboard">×</button>
+    <div class="german-kb-keys" role="group" aria-label="Insert a character">
+      <button type="button" class="german-key" data-char="ä" aria-label="ä · Lowercase a with umlaut">ä</button>
+      <button type="button" class="german-key" data-char="ö" aria-label="ö · Lowercase o with umlaut">ö</button>
+      <button type="button" class="german-key" data-char="ü" aria-label="ü · Lowercase u with umlaut">ü</button>
+      <button type="button" class="german-key" data-char="ß" aria-label="ß · Eszett">ß</button>
+      <button type="button" class="german-key" data-char="Ä" aria-label="Ä · Capital A with umlaut">Ä</button>
+      <button type="button" class="german-key" data-char="Ö" aria-label="Ö · Capital O with umlaut">Ö</button>
+      <button type="button" class="german-key" data-char="Ü" aria-label="Ü · Capital U with umlaut">Ü</button>
+      <button type="button" class="german-key" data-char="€" aria-label="€ · Euro sign">€</button>
     </div>
-    <div class="german-kb-keys">
-      <button type="button" class="german-key" data-char="ä">ä</button>
-      <button type="button" class="german-key" data-char="ö">ö</button>
-      <button type="button" class="german-key" data-char="ü">ü</button>
-      <button type="button" class="german-key" data-char="ß">ß</button>
-      <button type="button" class="german-key" data-char="Ä">Ä</button>
-      <button type="button" class="german-key" data-char="Ö">Ö</button>
-      <button type="button" class="german-key" data-char="Ü">Ü</button>
-      <button type="button" class="german-key" data-char="€">€</button>
-    </div>
+    <p class="german-kb-status" id="germanKeyboardStatus" role="status">Select a text field to type.</p>
   </div>
-  <button type="button" class="german-kb-toggle" id="germanKeyboardToggle" aria-expanded="false">ä ö ü ß</button>
-</div>
+</aside>
 <script>if('serviceWorker'in navigator&&/^https?:$/i.test(location.protocol)){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}))}</script>
 <script src="data/content.js"></script>
 <script src="data/study-banks.js"></script>

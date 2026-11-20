@@ -68,6 +68,18 @@
     return out;
   }
   const union = (a, b) => [...new Set([...(a || []), ...(b || [])])].sort();
+  // Drafts have no visible correction, but a saved draft does not resolve a mistake.
+  function lastFieldCheck(record, index) {
+    if (!record) return null;
+    const check = record.check;
+    const correct = check?.results?.[index];
+    const value = String(record.lines?.[index] ?? '');
+    if (typeof correct === 'boolean' && value.trim() && String(check.checkedValues?.[index] ?? value) === value) {
+      return { correct, time: timestamp(check.checkedAtByField?.[index] || check.checkedAt || record.savedAt) };
+    }
+    const previous = record.lastChecks?.[index];
+    return typeof previous?.correct === 'boolean' ? { correct: previous.correct, time: timestamp(previous.time) } : null;
+  }
   function mergePartialAnswer(a,b,base) {
     if(!Array.isArray(a?.lines)||!Array.isArray(b?.lines)||(!Array.isArray(a.lineUpdatedAt)&&!Array.isArray(b.lineUpdatedAt)))return base;
     const total=Math.max(a.lines.length,b.lines.length),next=clone(base);
@@ -90,6 +102,14 @@
         checkedValues:selected.map(field=>field.result===null?null:field.value),checkedAtByField,
         checkedAt:checkedAtByField.filter(Boolean).sort().pop()};
     }else delete next.check;
+    delete next.lastChecks;
+    selected.forEach((field, index) => {
+      if (field.result !== null) return;
+      const left = lastFieldCheck(a, index), right = lastFieldCheck(b, index);
+      let latest = left || right;
+      if (left && right && (right.time > left.time || (right.time === left.time && !right.correct))) latest = right;
+      if (latest) (next.lastChecks ??= {})[index] = latest;
+    });
     return next;
   }
   function merge(local, remote) {
@@ -156,5 +176,5 @@
     const { completed, answers, vocab, learningDB, vocabDiscovery, vocabExposure, events, revisions } = s;
     return stable({ completed, answers, vocab, learningDB, vocabDiscovery, vocabExposure, events, revisions });
   }
-  return { capture, stamp, merge, signature };
+  return { capture, stamp, merge, signature, lastFieldCheck };
 });

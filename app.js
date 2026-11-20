@@ -1,7 +1,7 @@
 // Spektrum A1+ — study interface and persistence.
 (()=>{
 'use strict';
-const APP_VERSION='v2.10.1';
+const APP_VERSION='v2.11.1';
 const Sync=window.SpektrumSync;
 // Spektrum A1+ patch v2.0 — cumulative v1.9 base; Word Review removed from UI; Vocabulary Bank split into words vs sentences/phrases
 const D=window.SPEKTRUM_DATA;
@@ -106,6 +106,14 @@ function prepareCorrectionRecord(spec,record,values,index=null,now=Date.now()){
   progress.checkedCount=progress.results.filter(r=>r!==null).length;
   if(progress.checkedCount)next.check={...progress,checkedAt:progress.checkedAtByField.filter(Boolean).sort().pop()};
   else delete next.check;
+  const lastChecks = {};
+  spec.fields.forEach((field, i) => {
+    if (progress.results[i] !== null) return;
+    const previous = Sync.lastFieldCheck(record, i);
+    if (previous) lastChecks[i] = previous;
+  });
+  if (Object.keys(lastChecks).length) next.lastChecks = lastChecks;
+  else delete next.lastChecks;
   return next;
 }
 function applyCorrectionFeedback(a,spec,values){
@@ -476,6 +484,10 @@ function save(){
   }
   updateStreakUI();return saved;
 }
+function backgroundRefreshAllowed(){
+  if(current.page==='mistakes')return !$('#mistakeAnswerForm');
+  return !['chapter','exam','wordtest','review'].includes(current.page);
+}
 function applyMergedStateToUI(nextState,remoteAt,{render=true}={}){
   const prevBoot=cloudBootstrapping;cloudBootstrapping=true;
   try{
@@ -583,7 +595,7 @@ async function cloudSyncNow({silent=false,prefer=null,upload=true}={}){
     const changed=Sync.signature(merged)!==Sync.signature(state);
     if(changed){
       saveSnapshot('Before sync merge');
-      const render=!silent||!['chapter','exam','wordtest','review'].includes(current.page);
+      const render=!silent||backgroundRefreshAllowed();
       applyMergedStateToUI(merged,remote.updatedAt,{render});
     }
     if(upload&&prefer!=='remote'&&(prefer==='local'||Sync.signature(merged)!==Sync.signature(normalizedRemote))){
@@ -622,7 +634,7 @@ async function tryLoadRepoProgressSeed(){
           const merged=mergeStudyStates(state,seedState,'auto');
           if(Sync.signature(merged)!==Sync.signature(state)){
             saveSnapshot('Before repo user-progress.json merge');
-            applyMergedStateToUI(merged,Number(raw?.updatedAt||Date.now()),{render:!['chapter','exam','wordtest','review'].includes(current.page)});
+            applyMergedStateToUI(merged,Number(raw?.updatedAt||Date.now()),{render:backgroundRefreshAllowed()});
             return true;
           }
         }
@@ -651,7 +663,7 @@ function setTitle(title,eyebrow='Personal study app'){$('#pageTitle').textConten
 function closeMenu(){$('#sidebar').classList.remove('open');$('#backdrop').classList.remove('active')}
 function navActive(page){$$('.nav-item').forEach(b=>b.classList.toggle('active',b.dataset.page===page))}
 function removeLegacyWordReviewUI(){/* Word Review & Shadowing Lab restored in v2.5 */}
-function showPage(page,arg){current.page=page;state.last.page=page;saveViewOnly();navActive(page);closeMenu();window.scrollTo(0,0);({home:renderHome,chapters:renderChapters,vocabulary:renderVocabulary,review:renderReview,wordtest:renderWordTest,audio:renderAudio,exam:renderExam,structures:renderStructures,search:renderSearch,progress:renderProgress,settings:renderSettings}[page]||renderHome)(arg)}
+function showPage(page,arg){current.page=page;state.last.page=page;saveViewOnly();navActive(page);closeMenu();window.scrollTo(0,0);({home:renderHome,chapters:renderChapters,vocabulary:renderVocabulary,review:renderReview,mistakes:renderMistakeReview,wordtest:renderWordTest,audio:renderAudio,exam:renderExam,structures:renderStructures,search:renderSearch,progress:renderProgress,settings:renderSettings}[page]||renderHome)(arg)}
 
 function renderHeatmap(){const cells=[],end=new Date();end.setHours(12,0,0,0);const start=new Date(end);start.setDate(end.getDate()-363);let active=0,total=0;for(let i=0;i<364;i++){const d=new Date(start);d.setDate(start.getDate()+i);const k=`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;const sections=contributionSections(k),l=sections.length;if(l){active++;total+=l}cells.push(`<span class="heat-cell l${l}${k===today()?' today':''}" title="${k}: ${l}/8 sections${l?' · '+sections.join(', '):''}"></span>`)}const t=contributionSections(today()),avg=active?(total/active).toFixed(1):'0';return `<div class="contribution-summary">${active} contribution day${active===1?'':'s'} · average ${avg}/8 · today ${t.length}/8</div><div class="heat-wrap"><div class="heatmap">${cells.join('')}</div></div><div class="contribution-sections">${CONTRIBUTION_SECTIONS.map(x=>`<span class="${t.includes(x)?'active':''}">${t.includes(x)?'✓ ':''}${x}</span>`).join('')}</div>`}
 function nextIncomplete(){return D.activities.find(a=>a.chapter&&a.section==='Main course'&&!completed(a.id))||D.activities.find(a=>a.chapter&&!completed(a.id))}
@@ -663,13 +675,116 @@ function renderHome(){setTitle('Home');const p=overallProgress(),next=nextIncomp
 <section class="panel"><div class="panel-head"><div><h2>Contribution</h2><p class="muted">Each of the 8 study sections adds at most one level per day. Repeating the same section never inflates the square, and unmarking an exercise never adds activity.</p></div><span class="badge">Today ${contributionLevel(today())}/8</span></div>${renderHeatmap()}</section>
 <section class="panel"><div class="panel-head"><div><h2>Chapters</h2><p class="muted">Progress is calculated from actual activities.</p></div><button class="secondary" id="allCh">View all</button></div><div class="grid chapter-grid">${D.chapters.slice(0,6).map(ch=>chapterCard(ch)).join('')}</div></section>`;
 $('#continueBtn').onclick=()=>next?openActivity(next.id):showPage('chapters');$('#openChapters').onclick=$('#allCh').onclick=()=>showPage('chapters');$$('[data-open-activity]').forEach(e=>e.onclick=()=>openActivity(e.dataset.openActivity));$$('[data-ch]').forEach(e=>e.onclick=()=>openChapter(+e.dataset.ch));}
+function mistakeIndices(activity) {
+  const record = state.answers[activity.id];
+  const spec = correctionSpec(activity);
+  if (!record || !spec) return [];
+  return spec.fields.flatMap((_, index) => Sync.lastFieldCheck(record, index)?.correct === false ? [index] : []);
+}
+function mistakeCountLabel(activity) {
+  const count = mistakeIndices(activity).length;
+  return count ? count + (count === 1 ? ' mistake' : ' mistakes') : '';
+}
+function mistakeOptionSuffix(activity) {
+  const label = mistakeCountLabel(activity);
+  return label ? ' · ' + label : '';
+}
+function refreshActivityMistakes(activity) {
+  const badge = $('[data-mistakes-for="' + activity.id + '"]');
+  if (badge) badge.textContent = mistakeCountLabel(activity);
+  const option = $('#quickActSelect option[value="' + activity.id + '"]');
+  if (option) option.textContent = (completed(activity.id) ? '✓ ' : '') + activity.label + ' · ' + activity.title + ' (p.' + activity.page + ')' + mistakeOptionSuffix(activity);
+}
+function pendingMistakes() {
+  return [...D.activities, ...startDeutschExamPages()].flatMap(activity =>
+    mistakeIndices(activity).map(index => ({activity, index, time: Sync.lastFieldCheck(state.answers[activity.id], index).time}))
+  ).sort((left, right) => left.time - right.time);
+}
+function selectMistakeSession(items) {
+  const groups = new Map();
+  for (const item of items) {
+    const chapter = item.activity.chapter || 'exam';
+    if (!groups.has(chapter)) groups.set(chapter, []);
+    groups.get(chapter).push(item);
+  }
+  const session = [];
+  for (let round = 0; session.length < Math.min(5, items.length); round++) {
+    for (const group of groups.values()) {
+      if (group[round]) session.push(group[round]);
+      if (session.length === 5) break;
+    }
+  }
+  return session;
+}
+function renderMistakeReview() {
+  const items = pendingMistakes();
+  setTitle('Review Mistakes', 'Exercise review');
+  const panel = $('#pageHost');
+  if (!items.length) {
+    panel.innerHTML = '<section class="panel mistake-overview"><h2>No mistakes to review</h2><p class="muted">Questions you answer incorrectly in the chapters and Start Deutsch 1 appear here.</p></section>';
+    return;
+  }
+  const count = Math.min(5, items.length);
+  panel.innerHTML = '<section class="panel mistake-overview"><h2>' + items.length + (items.length === 1 ? ' question' : ' questions') + ' to review</h2><button class="primary" id="startMistakes">Review ' + count + (count === 1 ? ' question' : ' questions') + '</button></section>';
+  $('#startMistakes').onclick = () => renderMistakeQuestion(selectMistakeSession(pendingMistakes()), 0);
+}
+function renderMistakeQuestion(session, position) {
+  // An answer may have been corrected on another device since this session began.
+  while (position < session.length) {
+    const {activity, index} = session[position];
+    if (Sync.lastFieldCheck(state.answers[activity.id], index)?.correct === false) break;
+    position++;
+  }
+  if (position >= session.length) { renderMistakeReview(); return; }
+  const {activity, index} = session[position];
+  const spec = correctionSpec(activity), field = spec.fields[index];
+  const location = activity.chapter ? 'Kapitel ' + activity.chapter : 'Start Deutsch 1';
+  const prompt = field.prompt || field.label || 'Question ' + (index + 1);
+  const panel = $('#pageHost');
+  panel.innerHTML = 
+    '<article class="panel mistake-session"><div class="mistake-session-head"><span>Question ' + (position + 1) + ' of ' + session.length + '</span><button class="ghost" id="endMistakes">End review</button></div>' +
+    '<div class="muted">' + esc(location) + ' · p. ' + esc(activity.page) + '</div><h2>' + esc(activity.label) + ' · ' + esc(activity.title) + '</h2>' +
+    '<div class="mistake-question-layout"><div class="mistake-source">' + audioHtml(activity) + renderStudySource(activity) + '</div>' +
+    '<form id="mistakeAnswerForm"><h3 id="correction-prompt-' + index + '">' + esc(prompt) + '</h3>' + renderCorrectionFieldInput(field, index, '', spec) +
+    '<div class="button-row"><button class="primary" id="checkMistake" disabled>Check answer</button><button type="button" class="ghost" id="nextMistake">Skip</button></div>' +
+    '<p class="mistake-feedback" id="correction-feedback-' + index + '" role="status"></p></form></div></article>';
+  drawSourceCanvases();
+  wireStudyWorkspaceControls(panel, () => renderMistakeQuestion(session, position));
+  $$('.full-page', panel).forEach(button => button.onclick = () => showViewer(Number(button.dataset.fullPage)));
+  $$('.rate', panel).forEach(button => button.onclick = () => { button.closest('.audio-box').querySelector('audio').playbackRate = Number(button.dataset.rate); });
+  wireCorrectionChoices(panel);
+  const form = $('#mistakeAnswerForm'), input = $('.wb-line', form), check = $('#checkMistake'), next = $('#nextMistake');
+  const feedback = $('.mistake-feedback', form);
+  $('#endMistakes').onclick = renderMistakeReview;
+  next.onclick = () => renderMistakeQuestion(session, position + 1);
+  input.addEventListener('input', () => { check.disabled = !input.value.trim(); feedback.textContent = ''; });
+  form.onsubmit = event => {
+    event.preventDefault();
+    if (check.disabled || !input.value.trim()) return;
+    const record = state.answers[activity.id];
+    if (Sync.lastFieldCheck(record, index)?.correct !== false) { next.onclick(); return; }
+    // Use the current record so that other questions, drafts and exam writing are preserved.
+    const values = [...(record.lines || [])];
+    values[index] = input.value;
+    storeCorrectionAnswers(activity, spec, values, index);
+    const correct = state.answers[activity.id].check.results[index];
+    feedback.textContent = correct ? '✓ Correct. Removed from your mistakes.' : 'Try again. This question is still in your review list.';
+    feedback.classList.toggle('correct', correct);
+    if (correct) {
+      check.disabled = true; input.disabled = true;
+      $$('.wb-corr-pill', form).forEach(button => { button.disabled = true; });
+    }
+    next.textContent = position + 1 === session.length ? 'Finish review' : 'Next question';
+  };
+}
+
 function chapterCard(ch){const p=chapterProgress(ch.id);return `<article class="chapter-card" data-ch="${ch.id}" style="cursor:pointer"><span class="badge">KAPITEL ${ch.id}</span><h3>${esc(ch.title)}</h3><p>${esc(ch.summary)}</p><div class="progress-bar"><span style="width:${p.pct}%"></span></div><small class="muted">${p.done}/${p.total} activities · ${ch.audioCount} audio tracks · ${p.pct}%</small></article>`}
 function renderChapters(){setTitle('Chapters','12 chapters · complete book flow');$('#pageHost').innerHTML=`<section class="panel" style="margin-top:0"><div class="panel-head"><div><h2>Course map</h2><p class="muted">Open any chapter. Main course, Vertiefung, overview pages and the chapter test are kept separate.</p></div></div><div class="grid chapter-grid">${D.chapters.map(ch=>chapterCard(ch)).join('')}</div></section>`;$$('[data-ch]').forEach(e=>e.onclick=()=>openChapter(+e.dataset.ch))}
 function openChapter(ch,section='Main course',aid=null){current={page:'chapter',chapter:ch,section,activity:aid};state.last={page:'chapter',chapter:ch,section,activity:aid};saveViewOnly();navActive('chapters');renderChapter()}
 function openActivity(id){const a=D.activities.find(x=>x.id===id);if(!a)return;openChapter(a.chapter,a.section,id)}
 function renderChapter(){const ch=D.chapters.find(x=>x.id===current.chapter);setTitle(`Kapitel ${ch.id}: ${ch.title}`,`Book pages ${ch.bookPages}`);let sec=current.section||'Main course';const secNames=['Main course','Vertiefung','Übersichten','Abschlusstest','Book pages'];let acts=sec==='Book pages'?[]:chapterActivities(ch.id).filter(a=>a.section===sec);if(sec==='Main course')acts=[...chapterActivities(ch.id).filter(a=>a.section==='Overview'),...acts];let a=current.activity?acts.find(x=>x.id===current.activity):null;if(!a&&acts.length)a=acts.find(x=>!completed(x.id))||acts[0];if(a)current.activity=a.id;state.last={...current};saveViewOnly();
 $('#pageHost').innerHTML=`<div class="chapter-top"><div><span class="badge">KAPITEL ${ch.id}</span><h2 style="margin:8px 0 4px">${esc(ch.title)}</h2><span class="muted">${esc(ch.summary)}</span></div><div><strong>${chapterProgress(ch.id).pct}%</strong> complete</div></div><div class="chapter-tabs">${secNames.map(s=>`<button class="${s===sec?'primary':'ghost'}" data-sec="${s}">${s}</button>`).join('')}</div><div id="chapterBody"></div>`;
-$$('[data-sec]').forEach(b=>b.onclick=()=>{current.section=b.dataset.sec;current.activity=null;renderChapter()});if(sec==='Book pages'){renderBookPages(ch.id);return}$('#chapterBody').innerHTML=`<div class="chapter-layout ${isActivityListCollapsed()?'list-collapsed':''}"><aside class="activity-list">${acts.map(x=>`<button class="activity-link ${x.id===a?.id?'active':''} ${completed(x.id)?'done':''}" data-aid="${x.id}"><span><b>${esc(x.label)}</b> ${esc(x.title)}<small>p. ${x.page} · ${x.tags.slice(0,2).join(' / ')}</small></span></button>`).join('')}</aside><div id="activityHost"></div></div>`;$$('[data-aid]').forEach(b=>b.onclick=()=>{current.activity=b.dataset.aid;renderChapter()});if(a)renderActivity(a,acts)}
+$$('[data-sec]').forEach(b=>b.onclick=()=>{current.section=b.dataset.sec;current.activity=null;renderChapter()});if(sec==='Book pages'){renderBookPages(ch.id);return}$('#chapterBody').innerHTML=`<div class="chapter-layout ${isActivityListCollapsed()?'list-collapsed':''}"><aside class="activity-list">${acts.map(x=>`<button class="activity-link ${x.id===a?.id?'active':''} ${completed(x.id)?'done':''}" data-aid="${x.id}"><span><b>${esc(x.label)}</b> ${esc(x.title)}<small>p. ${x.page} · ${x.tags.slice(0,2).join(' / ')}</small><small class="mistake-count" data-mistakes-for="${esc(x.id)}">${mistakeCountLabel(x)}</small></span></button>`).join('')}</aside><div id="activityHost"></div></div>`;$$('[data-aid]').forEach(b=>b.onclick=()=>{current.activity=b.dataset.aid;renderChapter()});if(a)renderActivity(a,acts)}
 function renderBookPages(ch){const pages=chapterPages(ch);$('#chapterBody').innerHTML=`<section class="panel"><div class="panel-head"><div><h2>Complete source pages</h2><p class="muted">This tab guarantees that every diagram, table, reading passage and exercise remains available exactly as supplied, even when the text extraction is imperfect.</p></div></div><div class="page-browser">${pages.map(p=>`<div class="page-thumb" data-page-img="${p.page}"><img loading="lazy" src="${pageImage(p.page)}"><div><b>Page ${p.page}</b><small class="muted"> · ${esc(p.section)}</small></div></div>`).join('')}</div></section>`;$$('[data-page-img]').forEach(e=>e.onclick=()=>showViewer(+e.dataset.pageImg))}
 function arabicHelp(kind){const m={fill:'املأ الفراغات كما في التمرين الأصلي. استخدم الصورة الأصلية أعلاه لمعرفة موضع كل فراغ.',truefalse:'اختر صحيح أو خطأ لكل بند كما في الكتاب.',abc:'اختر A أو B أو C لكل سؤال.',choice:'اختر الإجابات بحسب التمرين ثم سجّلها هنا.',match:'طابق العناصر كما في الكتاب وسجّل أزواج الإجابات.',writing:'اكتب إجابتك كاملة هنا. ستبقى محفوظة على هذا الجهاز.',speaking:'نفّذ تمرين المحادثة كما هو في الكتاب. يمكنك تسجيل صوتك أو كتابة ملاحظاتك.',listening:'استمع إلى التسجيل ثم نفّذ المطلوب في التمرين الأصلي.',reading:'اقرأ النص كاملًا ثم أجب عن الأسئلة كما في الكتاب.',reference:'هذه صفحة مرجعية للمراجعة؛ لا تحتاج إلى إجابة إلزامية.',practice:'نفّذ المطلوب كما يظهر في التمرين الأصلي ثم احفظ إجابتك.'};return state.settings.arabicHelp?`<div class="arabic-help">${m[kind]||m.practice}</div>`:''}
 function studyLayoutMode(){return ['split','pinned','stacked'].includes(state.settings?.studyLayout)?state.settings.studyLayout:'split'}
@@ -678,10 +793,10 @@ function studySwapSides(){return !!state.settings?.studySwap}
 function sourceZoomPct(){const z=Number(state.settings?.sourceZoom)||100;return Math.max(70,Math.min(190,z))}
 function isActivityListCollapsed(){return state.settings?.activityListCollapsed!==false}
 function sourceCanvas(a){const zoom=sourceZoomPct();return a.regions.map((r,i)=>`<div class="source-card"><div class="source-head"><div><b>Original exercise visual</b> · p. ${r.page}${i?' · part '+(i+1):''}</div><div class="source-actions"><button type="button" class="ghost source-zoom-btn" data-zoom-delta="-15" title="Zoom out">−</button><button type="button" class="ghost source-zoom-reset" title="Reset zoom to 100%">${zoom}%</button><button type="button" class="ghost source-zoom-btn" data-zoom-delta="15" title="Zoom in">+</button><button type="button" class="ghost full-page" data-full-page="${r.page}" title="Open full page">⛶ Full page</button></div></div><div class="source-canvas-scroll"><canvas class="source-canvas" style="width:${zoom}%" data-page="${r.page}" data-y0="${r.y0}" data-y1="${r.y1}"></canvas></div></div>`).join('')}
-function renderStudyLayoutToolbar(a,opts={}){const layout=studyLayoutMode(),ratio=studyRatioMode(),swap=studySwapSides(),listCollapsed=isActivityListCollapsed(),hasList=!!opts.hasList,acts=opts.acts||[],idx=opts.idx??-1;return `<div class="study-workspace-bar">${hasList?`<div class="study-nav-cluster"><button type="button" class="${listCollapsed?'ghost':'secondary'} toggle-act-list" id="toggleActListBtn" title="Show or hide exercise sidebar">☰ ${listCollapsed?'Exercises':'Hide list'} (${acts.length})</button><select class="select-input compact-act-select" id="quickActSelect" aria-label="Jump to exercise">${acts.map(x=>`<option value="${x.id}" ${x.id===a.id?'selected':''}>${completed(x.id)?'✓ ':''}${esc(x.label)} · ${esc(x.title)} (p.${x.page})</option>`).join('')}</select><div class="study-prev-next"><button type="button" class="ghost" id="topPrevAct" ${idx<=0?'disabled':''} title="Previous exercise">←</button><button type="button" class="ghost" id="topNextAct" ${idx<0||idx>=acts.length-1?'disabled':''} title="Next exercise">→</button></div></div>`:`<div class="study-nav-cluster"><span class="muted"><b>Split Study View:</b> Question visual and answer sheet stay visible together</span></div>`}<div class="study-layout-controls" role="group" aria-label="Study layout mode"><span class="muted study-layout-label">Layout:</span><button type="button" class="layout-pill ${layout==='split'?'active':''}" data-study-layout="split" title="Side-by-side: Question and Answers scroll independently side by side">◫ Split</button><button type="button" class="layout-pill ${layout==='pinned'?'active':''}" data-study-layout="pinned" title="Pinned Top: Question stays pinned at top while you scroll answers below">⊟ Pinned top</button><button type="button" class="layout-pill ${layout==='stacked'?'active':''}" data-study-layout="stacked" title="Stacked: Classic vertical page">▭ Stacked</button>${layout==='split'?`<select class="select-input ratio-select" id="studyRatioSelect" title="Column width ratio"><option value="50-50" ${ratio==='50-50'?'selected':''}>50 / 50</option><option value="55-45" ${ratio==='55-45'?'selected':''}>55 / 45</option><option value="62-38" ${ratio==='62-38'?'selected':''}>62 / 38</option></select><button type="button" class="layout-pill ${swap?'active':''}" id="studySwapBtn" title="Swap left and right panes">⇄ Swap</button>`:''}</div></div>`}
+function renderStudyLayoutToolbar(a,opts={}){const layout=studyLayoutMode(),ratio=studyRatioMode(),swap=studySwapSides(),listCollapsed=isActivityListCollapsed(),hasList=!!opts.hasList,acts=opts.acts||[],idx=opts.idx??-1;return `<div class="study-workspace-bar">${hasList?`<div class="study-nav-cluster"><button type="button" class="${listCollapsed?'ghost':'secondary'} toggle-act-list" id="toggleActListBtn" title="Show or hide exercise sidebar">☰ ${listCollapsed?'Exercises':'Hide list'} (${acts.length})</button><select class="select-input compact-act-select" id="quickActSelect" aria-label="Jump to exercise">${acts.map(x=>`<option value="${x.id}" ${x.id===a.id?'selected':''}>${completed(x.id)?'✓ ':''}${esc(x.label)} · ${esc(x.title)} (p.${x.page})${mistakeOptionSuffix(x)}</option>`).join('')}</select><div class="study-prev-next"><button type="button" class="ghost" id="topPrevAct" ${idx<=0?'disabled':''} title="Previous exercise">←</button><button type="button" class="ghost" id="topNextAct" ${idx<0||idx>=acts.length-1?'disabled':''} title="Next exercise">→</button></div></div>`:`<div class="study-nav-cluster"><span class="muted"><b>Split Study View:</b> Question visual and answer sheet stay visible together</span></div>`}<div class="study-layout-controls" role="group" aria-label="Study layout mode"><span class="muted study-layout-label">Layout:</span><button type="button" class="layout-pill ${layout==='split'?'active':''}" data-study-layout="split" title="Side-by-side: Question and Answers scroll independently side by side">◫ Split</button><button type="button" class="layout-pill ${layout==='pinned'?'active':''}" data-study-layout="pinned" title="Pinned Top: Question stays pinned at top while you scroll answers below">⊟ Pinned top</button><button type="button" class="layout-pill ${layout==='stacked'?'active':''}" data-study-layout="stacked" title="Stacked: Classic vertical page">▭ Stacked</button>${layout==='split'?`<select class="select-input ratio-select" id="studyRatioSelect" title="Column width ratio"><option value="50-50" ${ratio==='50-50'?'selected':''}>50 / 50</option><option value="55-45" ${ratio==='55-45'?'selected':''}>55 / 45</option><option value="62-38" ${ratio==='62-38'?'selected':''}>62 / 38</option></select><button type="button" class="layout-pill ${swap?'active':''}" id="studySwapBtn" title="Swap left and right panes">⇄ Swap</button>`:''}</div></div>`}
 function wireStudyWorkspaceControls(host,rerender){$$('[data-study-layout]',host).forEach(btn=>btn.onclick=()=>{state.settings.studyLayout=btn.dataset.studyLayout;save();rerender()});const ratioSel=$('#studyRatioSelect',host);if(ratioSel)ratioSel.onchange=()=>{state.settings.studyRatio=ratioSel.value;save();const split=$('.study-split',host);if(split)split.dataset.ratio=ratioSel.value};const swapBtn=$('#studySwapBtn',host);if(swapBtn)swapBtn.onclick=()=>{state.settings.studySwap=!studySwapSides();save();const split=$('.study-split',host);if(split)split.classList.toggle('swapped',studySwapSides());swapBtn.classList.toggle('active',studySwapSides())};const applyZoom=(newZ)=>{state.settings.sourceZoom=Math.max(70,Math.min(190,newZ));save();const z=sourceZoomPct();$$('.source-canvas',host).forEach(c=>{c.style.width=z+'%'});$$('.source-zoom-reset',host).forEach(b=>{b.textContent=z+'%'})};$$('.source-zoom-btn',host).forEach(btn=>btn.onclick=()=>applyZoom(sourceZoomPct()+(+btn.dataset.zoomDelta||0)));$$('.source-zoom-reset',host).forEach(btn=>btn.onclick=()=>applyZoom(100))}
 function audioHtml(a){if(!a.audio?.length)return '';return a.audio.map(r=>`<div class="audio-box"><div><b>🎧 Track ${r.track??''}</b>${r.label?` · ${esc(r.label)}`:''}</div><audio controls preload="none" data-audio-id="${a.id}" src="${esc(r.file)}"></audio><div class="rate-buttons"><button class="ghost rate" data-rate="0.75">0.75×</button><button class="ghost rate" data-rate="0.9">0.9×</button><button class="ghost rate" data-rate="1">1×</button><button class="ghost rate" data-rate="1.25">1.25×</button></div></div>`).join('')}
-function renderActivity(a,sectionActs){const host=$('#activityHost');const same=Array.isArray(sectionActs)&&sectionActs.length?sectionActs:D.activities.filter(x=>x.chapter===a.chapter&&x.section===a.section);const idx=same.findIndex(x=>x.id===a.id);const layout=studyLayoutMode(),ratio=studyRatioMode(),swap=studySwapSides();host.innerHTML=`${renderStudyLayoutToolbar(a,{hasList:true,acts:same,idx})}<article class="activity-card study-card layout-${layout}"><div class="activity-card-head"><div><div>${a.tags.map(t=>`<span class="tag">${esc(t)}</span>`).join('')} <span class="muted">page ${a.page}</span></div><h2>${esc(a.label)} · ${esc(a.title)}</h2></div><button class="${completed(a.id)?'secondary':'primary'}" id="completeBtnTop" type="button">${completed(a.id)?'✓ Completed':'Mark complete'}</button></div><div class="study-split ${swap?'swapped':''}" data-layout="${layout}" data-ratio="${ratio}"><div class="study-source-pane"><div class="study-pane-label"><span>📖 Question & Source Visual (p. ${a.page})</span><small class="muted">Scroll or zoom independently</small></div>${audioHtml(a)}${renderStudySource(a)}</div><div class="study-work-pane"><div class="study-pane-label"><span>✍️ Your Work & Answers</span><small class="muted">${correctionSpec(a)?'Auto-checked':'Saved on device'}</small></div>${arabicHelp(a.kind)}<div class="workbench">${workbench(a)}</div><div class="completion-bar"><div class="button-row"><button class="ghost" id="prevAct" ${idx<=0?'disabled':''}>← Previous</button><button class="ghost" id="nextAct" ${idx<0||idx>=same.length-1?'disabled':''}>Next →</button></div><button class="${completed(a.id)?'secondary':'primary'}" id="completeBtn">${completed(a.id)?'✓ Completed':'Mark complete'}</button></div></div></div></article>`;drawSourceCanvases();wireStudyWorkspaceControls(host,()=>renderActivity(a,same));const toggleList=$('#toggleActListBtn',host);if(toggleList)toggleList.onclick=()=>{state.settings.activityListCollapsed=!isActivityListCollapsed();save();$('.chapter-layout')?.classList.toggle('list-collapsed',isActivityListCollapsed());toggleList.className=`${isActivityListCollapsed()?'ghost':'secondary'} toggle-act-list`;toggleList.textContent=`☰ ${isActivityListCollapsed()?'Exercises':'Hide list'} (${same.length})`};const quickSel=$('#quickActSelect',host);if(quickSel)quickSel.onchange=()=>{current.activity=quickSel.value;state.last.activity=quickSel.value;save();renderChapter()};$$('.full-page',host).forEach(b=>b.onclick=()=>showViewer(+b.dataset.fullPage));$$('.rate',host).forEach(b=>b.onclick=()=>{const audio=b.closest('.audio-box').querySelector('audio');audio.playbackRate=+b.dataset.rate});$$('audio[data-audio-id]',host).forEach(el=>el.onplay=()=>{event('Listening',a.id);markStudyVocabulary(a)});wireWorkbench(a);const onComplete=()=>{toggleComplete(a.id,!completed(a.id));renderChapter()};$('#completeBtn').onclick=onComplete;$('#completeBtnTop').onclick=onComplete;const goPrev=()=>{if(idx>0){current.activity=same[idx-1].id;state.last.activity=current.activity;save();renderChapter()}};const goNext=()=>{if(idx<same.length-1){current.activity=same[idx+1].id;state.last.activity=current.activity;save();renderChapter()}};$('#prevAct').onclick=goPrev;$('#nextAct').onclick=goNext;if($('#topPrevAct'))$('#topPrevAct').onclick=goPrev;if($('#topNextAct'))$('#topNextAct').onclick=goNext}
+function renderActivity(a,sectionActs){const host=$('#activityHost');const same=Array.isArray(sectionActs)&&sectionActs.length?sectionActs:D.activities.filter(x=>x.chapter===a.chapter&&x.section===a.section);const idx=same.findIndex(x=>x.id===a.id);const layout=studyLayoutMode(),ratio=studyRatioMode(),swap=studySwapSides();host.innerHTML=`${renderStudyLayoutToolbar(a,{hasList:true,acts:same,idx})}<article class="activity-card study-card layout-${layout}"><div class="activity-card-head"><div><div>${a.tags.map(t=>`<span class="tag">${esc(t)}</span>`).join('')} <span class="muted">page ${a.page}</span></div><h2>${esc(a.label)} · ${esc(a.title)}</h2></div><button class="${completed(a.id)?'secondary':'primary'}" id="completeBtnTop" type="button">${completed(a.id)?'✓ Completed':'Mark complete'}</button></div><div class="study-split ${swap?'swapped':''}" data-layout="${layout}" data-ratio="${ratio}"><div class="study-source-pane"><div class="study-pane-label"><span>📖 Question & Source Visual (p. ${a.page})</span><small class="muted">Scroll or zoom independently</small></div>${audioHtml(a)}${renderStudySource(a)}</div><div class="study-work-pane"><div class="study-pane-label"><span>✍️ Your Work & Answers</span><small class="muted">${correctionSpec(a)?'Auto-checked':'Saved on device'}</small></div>${arabicHelp(a.kind)}<div class="workbench">${workbench(a)}</div><div class="completion-bar"><div class="button-row"><button class="ghost" id="prevAct" ${idx<=0?'disabled':''}>← Previous</button><button class="ghost" id="nextAct" ${idx<0||idx>=same.length-1?'disabled':''}>Next →</button></div><button class="${completed(a.id)?'secondary':'primary'}" id="completeBtn">${completed(a.id)?'✓ Completed':'Mark complete'}</button></div></div></div></article>`;drawSourceCanvases();wireStudyWorkspaceControls(host,()=>renderActivity(a,same));const toggleList=$('#toggleActListBtn',host);if(toggleList)toggleList.onclick=()=>{state.settings.activityListCollapsed=!isActivityListCollapsed();save();$('.chapter-layout')?.classList.toggle('list-collapsed',isActivityListCollapsed());toggleList.className=`${isActivityListCollapsed()?'ghost':'secondary'} toggle-act-list`;toggleList.textContent=`☰ ${isActivityListCollapsed()?'Exercises':'Hide list'} (${same.length})`};const quickSel=$('#quickActSelect',host);if(quickSel)quickSel.onchange=()=>{current.activity=quickSel.value;state.last.activity=quickSel.value;save();renderChapter()};$$('.full-page',host).forEach(b=>b.onclick=()=>showViewer(+b.dataset.fullPage));$$('.rate',host).forEach(b=>b.onclick=()=>{const audio=b.closest('.audio-box').querySelector('audio');audio.playbackRate=+b.dataset.rate});$$('audio[data-audio-id]',host).forEach(el=>el.onplay=()=>{event('Listening',a.id);markStudyVocabulary(a)});wireWorkbench(a,()=>refreshActivityMistakes(a));const onComplete=()=>{toggleComplete(a.id,!completed(a.id));renderChapter()};$('#completeBtn').onclick=onComplete;$('#completeBtnTop').onclick=onComplete;const goPrev=()=>{if(idx>0){current.activity=same[idx-1].id;state.last.activity=current.activity;save();renderChapter()}};const goNext=()=>{if(idx<same.length-1){current.activity=same[idx+1].id;state.last.activity=current.activity;save();renderChapter()}};$('#prevAct').onclick=goPrev;$('#nextAct').onclick=goNext;if($('#topPrevAct'))$('#topPrevAct').onclick=goPrev;if($('#topNextAct'))$('#topNextAct').onclick=goNext}
 function primaryContributionForActivity(a){if(a.kind==='speaking'||a.tags.includes('Speaking')||a.tags.includes('Pronunciation'))return'Speaking';if(a.tags.includes('Writing'))return'Writing';if(a.tags.includes('Grammar'))return'Grammar';if(a.tags.includes('Reading'))return'Reading';if(a.tags.includes('Vocabulary'))return'Vocabulary';if(a.tags.includes('Listening'))return'Listening';return'Practice'}
 function studySearchText(value){return ` ${String(value||'').toLocaleLowerCase('de-DE').replace(/ß/g,'ss').replace(/ä/g,'ae').replace(/ö/g,'oe').replace(/ü/g,'ue').replace(/[^a-z0-9-]+/g,' ').replace(/\s+/g,' ').trim()} `}
 function studyContainsItem(hay,item){const target=studySearchText(bareWord(item)).trim();return target.length>=3&&hay.includes(` ${target} `)}
@@ -690,6 +805,13 @@ function markStudyVocabulary(a){const hay=studySearchText(`${a.title||''} ${a.te
 function workbench(a){const ans=state.answers[a.id]||{},spec=correctionSpec(a),model=modelAnswer(a);if(spec)return renderCorrectionWorkbench(a,ans,spec);if(a.kind==='truefalse'||a.kind==='abc'){const opts=a.kind==='truefalse'?['R','F']:['A','B','C'];return `<div class="answer-grid">${Array.from({length:a.nitems||1},(_,i)=>`<div class="answer-row"><span>${i+1}</span><div class="choice-pills" data-q="${i}">${opts.map(o=>`<button class="wb-choice ${(ans.choices?.[i]===o)?'selected':''}" data-value="${o}">${o}</button>`).join('')}</div></div>`).join('')}</div><button class="secondary save-work">Save answers</button>${model?`<details class="model-check"><summary>Self-check / model guidance</summary><p>${esc(model)}</p></details>`:''}`}
 if(['fill','match','choice'].includes(a.kind)){const vals=ans.lines||[];return `<div class="answer-grid" id="lineAnswers">${Array.from({length:Math.max(a.nitems||1,vals.length||0)},(_,i)=>`<div class="answer-row"><span>${i+1}</span><input class="answer-input wb-line" value="${esc(vals[i]||'')}" placeholder="Answer ${i+1}"></div>`).join('')}</div><div class="button-row"><button class="ghost" id="addLine">+ Add answer line</button><button class="secondary save-work">Save answers</button></div>${model?`<details class="model-check"><summary>Self-check / model guidance</summary><p>${esc(model)}</p></details>`:''}`}
 const text=ans.text||'';return `${a.kind==='speaking'?`<div class="recording-box"><b>Voice practice</b><p class="muted">Record yourself doing the speaking task. Recording support depends on browser permissions.</p><div class="button-row"><button class="ghost" id="recordBtn">● Start recording</button><button class="ghost hidden" id="stopRecord">■ Stop</button></div><audio id="recordPlayback" controls class="hidden"></audio></div>`:''}<textarea class="free-area" id="freeAnswer" placeholder="Write your answer, notes, transcript, or speaking outline here…">${esc(text)}</textarea><button class="secondary save-work" style="margin-top:9px">Save work</button>${model?`<details class="model-check"><summary>Self-check / model guidance</summary><p>${esc(model)}</p></details>`:''}`}
+function wireCorrectionChoices(host){
+    $$('.wb-corr-pill',host).forEach(button=>button.addEventListener('click',()=>{
+      const group=button.closest('[data-correction-choice]'),input=$('input.wb-line',group);if(!input)return;
+      $$('.wb-corr-pill',group).forEach(option=>{const selected=option===button;option.classList.toggle('selected',selected);option.setAttribute('aria-pressed',String(selected))});
+      input.value=button.dataset.value||'';input.dispatchEvent(new Event('input',{bubbles:true}));
+    }));
+}
 function wireWorkbench(a,onSaved=()=>{}){
   const host=$('#activityHost')||$('#examHost'),spec=correctionSpec(a);
   if(spec){
@@ -709,11 +831,7 @@ function wireWorkbench(a,onSaved=()=>{}){
       input.addEventListener('input',repaint);
       input.addEventListener('keydown',event=>{if(event.key==='Enter'&&!event.isComposing){event.preventDefault();checkField(i)}});
     });
-    $$('.wb-corr-pill',host).forEach(button=>button.addEventListener('click',()=>{
-      const group=button.closest('[data-correction-choice]'),input=$('input.wb-line',group);if(!input)return;
-      $$('.wb-corr-pill',group).forEach(option=>{const selected=option===button;option.classList.toggle('selected',selected);option.setAttribute('aria-pressed',String(selected))});
-      input.value=button.dataset.value||'';input.dispatchEvent(new Event('input',{bubbles:true}));
-    }));
+    wireCorrectionChoices(host);
     repaint();wireRecorder(a);return;
   }
   const saveBtn=$('.save-work',host);if($('#addLine',host))$('#addLine',host).onclick=()=>{const wrap=$('#lineAnswers',host),i=$$('.wb-line',wrap).length;wrap.insertAdjacentHTML('beforeend',`<div class="answer-row"><span>${i+1}</span><input class="answer-input wb-line" placeholder="Answer ${i+1}"></div>`)};$$('.wb-choice',host).forEach(b=>b.onclick=()=>{const row=b.closest('[data-q]');$$('.wb-choice',row).forEach(x=>x.classList.remove('selected'));b.classList.add('selected')});if(saveBtn)saveBtn.onclick=()=>{const rec=state.answers[a.id]||{};if($('#freeAnswer',host))rec.text=$('#freeAnswer',host).value;const lines=$$('.wb-line',host);if(lines.length)rec.lines=lines.map(x=>x.value);const choices=$$('[data-q]',host);if(choices.length)rec.choices=choices.map(r=>$('.selected',r)?.dataset.value||'');rec.savedAt=new Date().toISOString();state.answers[a.id]=rec;event(primaryContributionForActivity(a),a.id);markStudyVocabulary(a);saveBtn.textContent='Saved ✓';setTimeout(()=>saveBtn.textContent=a.kind==='writing'||a.kind==='speaking'?'Save work':'Save answers',900);save()};wireRecorder(a)}
@@ -1188,12 +1306,92 @@ function toggleMenu(){if(matchMedia('(max-width:820px)').matches){$('#sidebar').
 
 
 // v1.2 — DeutschPath-style German letter keyboard
-const GERMAN_KEYBOARD_KEY='spektrumA1GermanKeyboardOpen';
-let germanKeyboardTarget=null;
-function isGermanTypingField(el){return !!el&&((el.tagName==='TEXTAREA')||(el.tagName==='INPUT'&&!['button','submit','reset','checkbox','radio','file','range','number','date','color'].includes((el.type||'text').toLowerCase())))&&!el.disabled&&!el.readOnly}
-function setGermanKeyboardOpen(open){const panel=$('#germanKeyboardPanel'),toggle=$('#germanKeyboardToggle');if(!panel||!toggle)return;panel.hidden=!open;toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'Hide ä ö ü ß':'ä ö ü ß · German letters';try{localStorage.setItem(GERMAN_KEYBOARD_KEY,open?'1':'0')}catch(error){}}
-function insertGermanCharacter(char){const target=isGermanTypingField(germanKeyboardTarget)?germanKeyboardTarget:(isGermanTypingField(document.activeElement)?document.activeElement:null),status=$('#germanKeyboardStatus');if(!target){if(status)status.textContent='Select a text box first.';return}target.focus();const start=Number.isInteger(target.selectionStart)?target.selectionStart:target.value.length,end=Number.isInteger(target.selectionEnd)?target.selectionEnd:start;if(typeof target.setRangeText==='function')target.setRangeText(char,start,end,'end');else target.value=target.value.slice(0,start)+char+target.value.slice(end);target.dispatchEvent(new Event('input',{bubbles:true}));target.dispatchEvent(new Event('change',{bubbles:true}));if(status)status.textContent=`Inserted ${char}`}
-function initGermanKeyboard(){const toggle=$('#germanKeyboardToggle'),close=$('#germanKeyboardClose');if(!toggle)return;document.addEventListener('focusin',event=>{if(isGermanTypingField(event.target)){germanKeyboardTarget=event.target;const status=$('#germanKeyboardStatus');if(status)status.textContent=`Ready for ${event.target.getAttribute('placeholder')||event.target.id||'selected field'}.`}});toggle.addEventListener('click',()=>setGermanKeyboardOpen($('#germanKeyboardPanel').hidden));close?.addEventListener('click',()=>setGermanKeyboardOpen(false));$$('.german-key').forEach(button=>button.addEventListener('mousedown',event=>event.preventDefault()));$$('.german-key').forEach(button=>button.addEventListener('click',()=>insertGermanCharacter(button.dataset.char||button.textContent)));let open=false;try{open=localStorage.getItem(GERMAN_KEYBOARD_KEY)==='1'}catch(error){}setGermanKeyboardOpen(open)}
+const GERMAN_KEYBOARD_KEY = 'spektrumA1GermanKeyboardOpen';
+function initGermanKeyboard() {
+  const dock = $('#germanKeyboardDock'), panel = $('#germanKeyboardPanel');
+  const toggle = $('#germanKeyboardToggle'), status = $('#germanKeyboardStatus');
+  const keys = $$('.german-key', dock);
+  let target = null;
+
+  function canInsert(field) {
+    const textInput = field?.tagName === 'INPUT' && ['text', 'search', 'url', 'tel'].includes(field.type);
+    return field?.isConnected && (textInput || field.tagName === 'TEXTAREA') &&
+      !field.disabled && !field.readOnly && field.getClientRects().length > 0 && !field.closest('[inert]');
+  }
+  function updateTarget(field) {
+    target = canInsert(field) ? field : null;
+    dock.classList.toggle('has-target', !!target);
+    keys.forEach(key => { key.disabled = !target; });
+    const label = target?.labels?.[0]?.textContent || target?.getAttribute('aria-label') ||
+      document.getElementById(target?.getAttribute('aria-labelledby'))?.textContent || target?.placeholder;
+    const message = target ? 'Typing in ' + (label?.trim() || 'selected field') : 'Select a text field to type.';
+    if (status.textContent !== message) status.textContent = message;
+  }
+  function positionPalette() {
+    const viewport = window.visualViewport;
+    if (!viewport) return;
+    const inset = Math.max(0, window.innerHeight - viewport.height - viewport.offsetTop);
+    dock.style.setProperty('--keyboard-inset', inset + 'px');
+    dock.style.setProperty('--keyboard-height', Math.max(0, viewport.height - 28) + 'px');
+  }
+  function setOpen(open) {
+    panel.hidden = !open;
+    dock.classList.toggle('is-open', open);
+    toggle.setAttribute('aria-expanded', String(open));
+    if (open) updateTarget(target);
+    positionPalette();
+    try { localStorage.setItem(GERMAN_KEYBOARD_KEY, open ? '1' : '0'); } catch {}
+  }
+  function insert(character) {
+    if (!canInsert(target)) { updateTarget(null); return; }
+    const field = target;
+    const start = field.selectionStart, end = field.selectionEnd;
+    if (field.maxLength >= 0 && field.value.length - (end - start) + character.length > field.maxLength) {
+      status.textContent = 'Select a character to replace.';
+      field.focus({preventScroll: true});
+      return;
+    }
+    field.focus({preventScroll: true});
+    field.setRangeText(character, start, end, 'end');
+    field.dispatchEvent(new Event('input', {bubbles: true}));
+    field.dispatchEvent(new Event('change', {bubbles: true}));
+    updateTarget(target);
+  }
+  document.addEventListener('focusin', event => {
+    if (dock.contains(event.target)) return;
+    const dialog = event.target.closest('dialog[open]');
+    if (dialog && !dialog.contains(dock)) dialog.appendChild(dock);
+    if (canInsert(event.target)) updateTarget(event.target);
+    else if (event.target.matches('input, textarea') || (dialog && !dialog.contains(target))) updateTarget(null);
+  });
+  // A native dialog makes controls outside it inert. Return the palette when it closes.
+  document.addEventListener('close', event => {
+    if (event.target.tagName === 'DIALOG' && !event.target.open && event.target.contains(dock)) {
+      document.body.appendChild(dock);
+      updateTarget(document.activeElement);
+    }
+  }, true);
+  new MutationObserver(() => {
+    if (target && !canInsert(target)) updateTarget(null);
+  }).observe(document.body, {childList: true, subtree: true, attributes: true, attributeFilter: ['hidden','disabled','readonly']});
+  dock.addEventListener('pointerdown', event => {
+    if (event.button === 0 && canInsert(target) && event.target.closest('button')) event.preventDefault();
+  });
+  toggle.addEventListener('click', () => setOpen(panel.hidden));
+  keys.forEach(key => key.addEventListener('click', () => insert(key.dataset.char)));
+  document.addEventListener('keydown', event => {
+    if (event.key !== 'Escape' || panel.hidden || !(dock.contains(event.target) || event.target === target)) return;
+    event.preventDefault(); event.stopImmediatePropagation();
+    setOpen(false);
+    if (dock.contains(document.activeElement)) (target || toggle).focus({preventScroll: true});
+  }, true);
+  window.visualViewport?.addEventListener('resize', positionPalette);
+  window.visualViewport?.addEventListener('scroll', positionPalette);
+  updateTarget(document.activeElement);
+  let open = false;
+  try { open = localStorage.getItem(GERMAN_KEYBOARD_KEY) === '1'; } catch {}
+  setOpen(open);
+}
 
 function applyLevelBranding(){const mark=$('.brand-mark');if(mark){mark.textContent='A1+';mark.setAttribute('aria-label','A1+ level');mark.title='Spektrum A1+'}}
 removeLegacyWordReviewUI();applyLevelBranding();$$('.nav-item').forEach(b=>b.onclick=()=>showPage(b.dataset.page));$('#menuBtn').onclick=toggleMenu;$('#backdrop').onclick=closeMenu;$('#themeBtn').onclick=()=>applyTheme(state.settings.theme==='dark'?'light':'dark');$('#streakPill').onclick=()=>showPage('progress');$('#searchQuick').onclick=()=>showPage('search');$('#viewerClose').onclick=closeViewer;$('#viewer').onclick=e=>{if(e.target===$('#viewer'))closeViewer()};document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('#studyWordDialog')?.open)closeViewer()});window.addEventListener('resize',applySidebar);window.addEventListener('focus',maybeCheckCloud);document.addEventListener('visibilitychange',maybeCheckCloud);window.addEventListener('online',handleCloudOnline);
