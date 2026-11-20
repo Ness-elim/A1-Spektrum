@@ -1,4 +1,4 @@
-# Spektrum A1+ Interactive — v1.1 content status
+# Spektrum A1+ Interactive — content status (app v2.10.1)
 
 ## Complete book coverage
 - 12/12 chapters are present.
@@ -27,3 +27,23 @@
 
 ## Source limitations
 The separate official Lösungsheft was not supplied with the user files, so the app does not invent official answer keys. The supplied audio archive also did not contain the appendix listening recordings for Start Deutsch 1.
+
+## Application maintenance — v2.8.0
+- Book content, vocabulary entries, images and audio are unchanged by this maintenance release.
+- Vocabulary banks and correction/model-answer data are now in `data/study-banks.js`.
+- Revision-aware sync, visible storage failures, exam DOM fixes and regression checks are documented in `README.txt`.
+
+## Per-question checking — v2.9.0
+- Each answer has an independent check button and saved result, including exam questions.
+- Unchecked answers remain neutral; editing one answer preserves the results of the others.
+- Existing answer keys and book content are unchanged.
+
+## Save words while reading — v2.10.0
+- Optional clickable Study text in activities, exams and full-page reading.
+- Confirmation, editable meaning and source sentence; no automatic translation.
+- Duplicate checks span all existing vocabulary banks and reuse matching cards.
+- Saved from texts is a dedicated review list; test inclusion remains separate.
+
+## Image visibility — v2.10.1
+- Book images stay visible with word collection enabled.
+- Clickable Study text is an expandable section below the image.

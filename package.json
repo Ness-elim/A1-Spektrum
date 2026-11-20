@@ -1,0 +1,12 @@
+{
+  "name": "spektrum-a1-study",
+  "version": "2.10.1",
+  "private": true,
+  "scripts": {
+    "test": "node --test",
+    "test:browser": "node tests/browser-smoke.cjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
