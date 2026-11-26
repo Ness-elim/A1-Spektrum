@@ -35144,25 +35144,29 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "14.30 Uhr"
-          ]
+          ],
+          "prompt": "Welche Uhrzeit hören Sie als Erstes? Schreiben Sie sie in Ziffern."
         },
         {
           "label": "2",
           "answers": [
             "10.15 Uhr"
-          ]
+          ],
+          "prompt": "Welche Uhrzeit hören Sie als Zweites? Schreiben Sie sie in Ziffern."
         },
         {
           "label": "3",
           "answers": [
             "15.40 Uhr"
-          ]
+          ],
+          "prompt": "Welche Uhrzeit hören Sie als Drittes? Schreiben Sie sie in Ziffern."
         },
         {
           "label": "4",
           "answers": [
             "13.45 Uhr"
-          ]
+          ],
+          "prompt": "Welche Uhrzeit hören Sie als Viertes? Schreiben Sie sie in Ziffern."
         }
       ]
     },
@@ -35172,27 +35176,31 @@ window.SPEKTRUM_BANKS={
           "label": "Frage 1",
           "answers": [
             "Wann beginnt der Unterricht?"
-          ]
+          ],
+          "prompt": "Welche Frage passt zur Antwort „Der Unterricht beginnt um 18.30 Uhr.“?"
         },
         {
           "label": "Frage 2",
           "answers": [
             "Wie lange dauert er?",
             "Wie lange dauert der Unterricht?"
-          ]
+          ],
+          "prompt": "Welche Frage passt zur Antwort „Er dauert zwei Stunden.“?"
         },
         {
           "label": "Frage 3",
           "answers": [
             "Wie lange geht das Fußballspiel?",
             "Von wann bis wann geht das Fußballspiel?"
-          ]
+          ],
+          "prompt": "Welche Frage passt zur Antwort „Das Fußballspiel geht von 19.00 bis 21.00 Uhr.“?"
         },
         {
           "label": "Frage 4",
           "answers": [
             "Hast du am Montag Zeit?"
-          ]
+          ],
+          "prompt": "Welche Frage passt zur Antwort „Am Montag habe ich leider keine Zeit.“?"
         }
       ]
     },
@@ -35202,25 +35210,29 @@ window.SPEKTRUM_BANKS={
           "label": "Wochentag mit -o- 1",
           "answers": [
             "Montag"
-          ]
+          ],
+          "prompt": "Welcher Wochentag mit o kommt direkt nach Sonntag?"
         },
         {
           "label": "Wochentag mit -o- 2",
           "answers": [
             "Mittwoch"
-          ]
+          ],
+          "prompt": "Welcher Wochentag mit o liegt zwischen Dienstag und Donnerstag?"
         },
         {
           "label": "Wochentag mit -o- 3",
           "answers": [
             "Donnerstag"
-          ]
+          ],
+          "prompt": "Welcher Wochentag mit o kommt nach Mittwoch?"
         },
         {
           "label": "Wochentag mit -o- 4",
           "answers": [
             "Sonntag"
-          ]
+          ],
+          "prompt": "Welcher Wochentag mit o ist der letzte Tag der Woche?"
         }
       ]
     },
@@ -35230,25 +35242,29 @@ window.SPEKTRUM_BANKS={
           "label": "12 …",
           "answers": [
             "Monate"
-          ]
+          ],
+          "prompt": "Ein Jahr hat 12 ___. Ergänzen Sie das Nomen im Plural."
         },
         {
           "label": "52 …",
           "answers": [
             "Wochen"
-          ]
+          ],
+          "prompt": "Ein Jahr hat 52 ___. Ergänzen Sie das Nomen im Plural."
         },
         {
           "label": "525 600 …",
           "answers": [
             "Minuten"
-          ]
+          ],
+          "prompt": "Ein Jahr hat 525 600 ___. Ergänzen Sie das Nomen im Plural."
         },
         {
           "label": "31 536 000 …",
           "answers": [
             "Sekunden"
-          ]
+          ],
+          "prompt": "Ein Jahr hat 31 536 000 ___. Ergänzen Sie das Nomen im Plural."
         }
       ]
     },
@@ -35258,61 +35274,71 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "Um 8.30 Uhr frühstückt sie"
-          ]
+          ],
+          "prompt": "Was macht Anna? 8.30 Uhr · frühstücken. Bilden Sie einen Satz."
         },
         {
           "label": "2",
           "answers": [
             "Um 9.00 Uhr fährt sie ins Büro"
-          ]
+          ],
+          "prompt": "Was macht Anna? 9.00 Uhr · ins Büro fahren. Bilden Sie einen Satz."
         },
         {
           "label": "3",
           "answers": [
             "Von 9.30 Uhr bis 18.00 Uhr arbeitet sie"
-          ]
+          ],
+          "prompt": "Was macht Anna? 9.30 bis 18.00 Uhr · arbeiten. Bilden Sie einen Satz."
         },
         {
           "label": "4",
           "answers": [
             "Sie ruft viele Kollegen an"
-          ]
+          ],
+          "prompt": "Was macht Anna? viele Kollegen anrufen. Bilden Sie einen Satz."
         },
         {
           "label": "5",
           "answers": [
             "Sie liest drei Berichte"
-          ]
+          ],
+          "prompt": "Was macht Anna? drei Berichte lesen. Bilden Sie einen Satz."
         },
         {
           "label": "6",
           "answers": [
             "Sie schreibt viele E-Mails"
-          ]
+          ],
+          "prompt": "Was macht Anna? viele E-Mails schreiben. Bilden Sie einen Satz."
         },
         {
           "label": "7",
           "answers": [
             "Um 12.00 Uhr macht sie Pause"
-          ]
+          ],
+          "prompt": "Was macht Anna? 12.00 Uhr · Pause machen. Bilden Sie einen Satz."
         },
         {
           "label": "8",
           "answers": [
             "Nachmittags präsentiert sie ein Projekt"
-          ]
+          ],
+          "prompt": "Was macht Anna? nachmittags · ein Projekt präsentieren. Bilden Sie einen Satz."
         },
         {
           "label": "9",
           "answers": [
             "Abends sieht sie fern"
-          ]
+          ],
+          "prompt": "Was macht Anna? abends · fernsehen. Bilden Sie einen Satz."
         },
         {
           "label": "10",
           "answers": [
             "Um 23.00 Uhr geht sie ins Bett"
-          ]
+          ],
+          "prompt": "Was macht Anna? 23.00 Uhr · ins Bett gehen. Bilden Sie einen Satz."
         }
       ]
     },
@@ -35322,49 +35348,57 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "Nudeln"
-          ]
+          ],
+          "prompt": "Was mag Petra? Nennen Sie die abgebildeten Teigwaren im Plural."
         },
         {
           "label": "2",
           "answers": [
             "Erdbeeren"
-          ]
+          ],
+          "prompt": "Welche roten Beeren mag Petra? Schreiben Sie den Plural."
         },
         {
           "label": "3",
           "answers": [
             "Kartoffeln"
-          ]
+          ],
+          "prompt": "Welche Knollen mag Petra? Schreiben Sie den Plural."
         },
         {
           "label": "4",
           "answers": [
             "Eier"
-          ]
+          ],
+          "prompt": "Was mag Petra vom Huhn? Schreiben Sie den Plural."
         },
         {
           "label": "5",
           "answers": [
             "einen Löffel"
-          ]
+          ],
+          "prompt": "Was braucht Petra, um Suppe zu essen? Ergänzen Sie mit Artikel im Akkusativ."
         },
         {
           "label": "6",
           "answers": [
             "einen Topf"
-          ]
+          ],
+          "prompt": "Welches Gefäß braucht Petra zum Kochen? Ergänzen Sie mit Artikel im Akkusativ."
         },
         {
           "label": "7",
           "answers": [
             "einen Teller"
-          ]
+          ],
+          "prompt": "Worauf kann Petra das Essen servieren? Ergänzen Sie mit Artikel im Akkusativ."
         },
         {
           "label": "8",
           "answers": [
             "eine Tasse"
-          ]
+          ],
+          "prompt": "Woraus kann Petra Kaffee trinken? Ergänzen Sie mit Artikel im Akkusativ."
         }
       ]
     },
@@ -35374,25 +35408,29 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "Milchprodukte"
-          ]
+          ],
+          "prompt": "Wie heißt der Oberbegriff? Käse · Quark · Joghurt."
         },
         {
           "label": "2",
           "answers": [
             "Gemüse"
-          ]
+          ],
+          "prompt": "Wie heißt der Oberbegriff? Gurken · Kraut."
         },
         {
           "label": "3",
           "answers": [
             "Getreideprodukte"
-          ]
+          ],
+          "prompt": "Wie heißt der Oberbegriff? Kuchen · Brötchen."
         },
         {
           "label": "4",
           "answers": [
             "Obst"
-          ]
+          ],
+          "prompt": "Wie heißt der Oberbegriff? Ananas · Birnen."
         }
       ]
     },
@@ -35402,25 +35440,29 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "Magst du Bananen"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: du · mögen · Bananen?"
         },
         {
           "label": "2",
           "answers": [
             "Wir gehen heute nicht ins Restaurant"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: wir · ins Restaurant · heute · gehen · nicht"
         },
         {
           "label": "3",
           "answers": [
             "Mein Mann kann nicht kochen"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: mein Mann · kochen · können · nicht"
         },
         {
           "label": "4",
           "answers": [
             "Max schmeckt das Schnitzel nicht gut"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: Max · das Schnitzel · gut · nicht · schmecken"
         }
       ]
     },
@@ -35432,7 +35474,8 @@ window.SPEKTRUM_BANKS={
             "möchte",
             "nehme",
             "trinke"
-          ]
+          ],
+          "prompt": "Ich ___ ein Mineralwasser ohne Sprudel."
         },
         {
           "label": "2",
@@ -35440,7 +35483,8 @@ window.SPEKTRUM_BANKS={
             "nehme",
             "esse",
             "möchte"
-          ]
+          ],
+          "prompt": "Ich ___ als Vorspeise die Tomatensuppe."
         },
         {
           "label": "3",
@@ -35448,7 +35492,8 @@ window.SPEKTRUM_BANKS={
             "esse",
             "nehme",
             "möchte"
-          ]
+          ],
+          "prompt": "Ich ___ Nudeln mit Hühnerfleisch."
         },
         {
           "label": "4",
@@ -35457,7 +35502,8 @@ window.SPEKTRUM_BANKS={
             "Möchtest",
             "Isst",
             "Nimmst"
-          ]
+          ],
+          "prompt": "___ du keine Vorspeise?"
         }
       ]
     },
@@ -35467,43 +35513,50 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "Er ist in den Park gegangen"
-          ]
+          ],
+          "prompt": "Was hat Adam gestern gemacht? (in den Park)"
         },
         {
           "label": "2",
           "answers": [
             "Er hat ein Brötchen gegessen"
-          ]
+          ],
+          "prompt": "Was hat Adam gegessen? (ein Brötchen)"
         },
         {
           "label": "3",
           "answers": [
             "Er hat einen Bericht gelesen"
-          ]
+          ],
+          "prompt": "Was hat er gelesen? (Bericht)"
         },
         {
           "label": "4",
           "answers": [
             "Er hat Kaffee getrunken"
-          ]
+          ],
+          "prompt": "Was hat er getrunken? (Kaffee)"
         },
         {
           "label": "5",
           "answers": [
             "Er hat mit Lisa gesprochen"
-          ]
+          ],
+          "prompt": "Mit wem hat er gesprochen? (mit Lisa)"
         },
         {
           "label": "6",
           "answers": [
             "Er hat für eine Prüfung gelernt"
-          ]
+          ],
+          "prompt": "Wofür hat Adam gelernt? (für eine Prüfung)"
         },
         {
           "label": "7",
           "answers": [
             "Er hat gut geschlafen"
-          ]
+          ],
+          "prompt": "Wie hat er geschlafen? (gut)"
         }
       ]
     },
@@ -35513,55 +35566,64 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "war"
-          ]
+          ],
+          "prompt": "Mein Wochenende ___ prima. (sein)"
         },
         {
           "label": "2",
           "answers": [
             "besucht"
-          ]
+          ],
+          "prompt": "Ich habe Franz in München ___. (besuchen)"
         },
         {
           "label": "3",
           "answers": [
             "gespielt"
-          ]
+          ],
+          "prompt": "Wir haben am Samstag drei Stunden Fußball ___. (spielen)"
         },
         {
           "label": "4",
           "answers": [
             "hatten"
-          ]
+          ],
+          "prompt": "Wir ___ großen Spaß. (haben)"
         },
         {
           "label": "5",
           "answers": [
             "ferngesehen"
-          ]
+          ],
+          "prompt": "Am Abend haben wir ___. (fernsehen)"
         },
         {
           "label": "6",
           "answers": [
             "geschlafen"
-          ]
+          ],
+          "prompt": "Am Sonntag haben wir lange ___. (schlafen)"
         },
         {
           "label": "7",
           "answers": [
             "gegessen"
-          ]
+          ],
+          "prompt": "Mittags haben wir in einem spanischen Restaurant ___. (essen)"
         },
         {
           "label": "8",
           "answers": [
             "gegangen"
-          ]
+          ],
+          "prompt": "Nachmittags sind wir ins Kino ___. (gehen)"
         },
         {
           "label": "9",
           "answers": [
             "gesehen"
-          ]
+          ],
+          "prompt": "Wir haben Terminator 10 ___. (sehen)"
         }
       ]
     },
@@ -35571,13 +35633,15 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "Ich lerne viel und ich habe gute Noten"
-          ]
+          ],
+          "prompt": "Verbinden Sie mit und: ich · viel lernen + gute Noten · haben · ich"
         },
         {
           "label": "2",
           "answers": [
             "Paul geht in die Bibliothek und Paula besucht eine Vorlesung"
-          ]
+          ],
+          "prompt": "Verbinden Sie mit und: Paul · in die Bibliothek · gehen + Paula · eine Vorlesung · besuchen"
         }
       ]
     },
@@ -35587,50 +35651,58 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "surfen"
-          ]
+          ],
+          "prompt": "Sie ___ im Internet."
         },
         {
           "label": "2",
           "answers": [
             "kommunizieren"
-          ]
+          ],
+          "prompt": "Sie ___ in sozialen Netzwerken."
         },
         {
           "label": "3",
           "answers": [
             "unternehmen"
-          ]
+          ],
+          "prompt": "Sie ___ etwas mit der Familie."
         },
         {
           "label": "4",
           "answers": [
             "tun"
-          ]
+          ],
+          "prompt": "Sie ___ nichts."
         },
         {
           "label": "5",
           "answers": [
             "treiben",
             "machen"
-          ]
+          ],
+          "prompt": "Sie ___ nicht so viel Sport."
         },
         {
           "label": "6",
           "answers": [
             "arbeiten"
-          ]
+          ],
+          "prompt": "Sie ___ im Garten."
         },
         {
           "label": "7",
           "answers": [
             "fahren"
-          ]
+          ],
+          "prompt": "Sie ___ Rad."
         },
         {
           "label": "8",
           "answers": [
             "gehen"
-          ]
+          ],
+          "prompt": "Sie ___ spazieren."
         }
       ]
     },
@@ -35640,25 +35712,29 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "Arzt"
-          ]
+          ],
+          "prompt": "Ich bin krank. Ich gehe zum ___"
         },
         {
           "label": "2",
           "answers": [
             "Kopfschmerzen"
-          ]
+          ],
+          "prompt": "Mein Kopf tut weh. Ich habe ___"
         },
         {
           "label": "3",
           "answers": [
             "Apotheke"
-          ]
+          ],
+          "prompt": "Die Medikamente hole ich aus der ___"
         },
         {
           "label": "4",
           "answers": [
             "Krankenversicherung"
-          ]
+          ],
+          "prompt": "Ich habe eine gesetzliche ___"
         }
       ]
     },
@@ -35668,26 +35744,30 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "das Ohr"
-          ]
+          ],
+          "prompt": "Mit welchem Körperteil hört man? Schreiben Sie das Wort mit Artikel."
         },
         {
           "label": "2",
           "answers": [
             "der Fuß"
-          ]
+          ],
+          "prompt": "Auf welchem Körperteil steht man? Schreiben Sie das Wort mit Artikel."
         },
         {
           "label": "3",
           "answers": [
             "das Auge"
-          ]
+          ],
+          "prompt": "Mit welchem Körperteil sieht man? Schreiben Sie das Wort mit Artikel."
         },
         {
           "label": "4",
           "answers": [
             "die Hand",
             "der Finger"
-          ]
+          ],
+          "prompt": "Mit welchem Körperteil greift man? Schreiben Sie das Wort mit Artikel."
         }
       ]
     },
@@ -35697,49 +35777,57 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "Essen Sie Obst und Gemüse"
-          ]
+          ],
+          "prompt": "Geben Sie den Tipp in der Sie-Form: Obst und Gemüse essen."
         },
         {
           "label": "2",
           "answers": [
             "Iss Obst und Gemüse"
-          ]
+          ],
+          "prompt": "Geben Sie den Tipp in der du-Form: Obst und Gemüse essen."
         },
         {
           "label": "3",
           "answers": [
             "Treiben Sie keinen Sport"
-          ]
+          ],
+          "prompt": "Geben Sie den Tipp in der Sie-Form: keinen Sport treiben."
         },
         {
           "label": "4",
           "answers": [
             "Treib keinen Sport"
-          ]
+          ],
+          "prompt": "Geben Sie den Tipp in der du-Form: keinen Sport treiben."
         },
         {
           "label": "5",
           "answers": [
             "Nehmen Sie Tabletten"
-          ]
+          ],
+          "prompt": "Geben Sie den Tipp in der Sie-Form: Tabletten nehmen."
         },
         {
           "label": "6",
           "answers": [
             "Nimm Tabletten"
-          ]
+          ],
+          "prompt": "Geben Sie den Tipp in der du-Form: Tabletten nehmen."
         },
         {
           "label": "7",
           "answers": [
             "Bleiben Sie drei Tage im Bett"
-          ]
+          ],
+          "prompt": "Geben Sie den Tipp in der Sie-Form: drei Tage im Bett bleiben."
         },
         {
           "label": "8",
           "answers": [
             "Bleib drei Tage im Bett"
-          ]
+          ],
+          "prompt": "Geben Sie den Tipp in der du-Form: drei Tage im Bett bleiben."
         }
       ]
     },
@@ -35749,25 +35837,29 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "höchsten"
-          ]
+          ],
+          "prompt": "hoch In Spanien ist der Anteil an Wohneigentum am ___"
         },
         {
           "label": "2",
           "answers": [
             "meisten"
-          ]
+          ],
+          "prompt": "viel Die ___ Menschen wohnen zur Miete."
         },
         {
           "label": "3",
           "answers": [
             "teuerste"
-          ]
+          ],
+          "prompt": "teuer Die ___ Stadt in Österreich ist Innsbruck."
         },
         {
           "label": "4",
           "answers": [
             "lautesten"
-          ]
+          ],
+          "prompt": "laut Direkt in der Innenstadt ist es am ___"
         }
       ]
     },
@@ -35777,26 +35869,30 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "Peter liegt auf dem Sofa"
-          ]
+          ],
+          "prompt": "Wo liegt Peter?"
         },
         {
           "label": "2",
           "answers": [
             "Die Stiefel stehen vor der Tür",
             "Die Stiefel stehen im Flur"
-          ]
+          ],
+          "prompt": "Wo stehen die Stiefel?"
         },
         {
           "label": "3",
           "answers": [
             "Der Spiegel hängt über dem Waschbecken"
-          ]
+          ],
+          "prompt": "Wo hängt der Spiegel?"
         },
         {
           "label": "4",
           "answers": [
             "Der Saft ist im Kühlschrank"
-          ]
+          ],
+          "prompt": "Wo ist der Saft?"
         }
       ]
     },
@@ -35806,49 +35902,57 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "Etage"
-          ]
+          ],
+          "prompt": "Die Wohnung liegt in der 15. E___."
         },
         {
           "label": "2",
           "answers": [
             "Westen"
-          ]
+          ],
+          "prompt": "Sie liegt im Wes___ von Berlin."
         },
         {
           "label": "3",
           "answers": [
             "Stadtrand"
-          ]
+          ],
+          "prompt": "Das Haus ist am Stadtra___."
         },
         {
           "label": "4",
           "answers": [
             "Garten"
-          ]
+          ],
+          "prompt": "Es hat einen schönen Ga___."
         },
         {
           "label": "5",
           "answers": [
             "Einkaufsmöglichkeiten"
-          ]
+          ],
+          "prompt": "Im Stadtzentrum gibt es gute Einkaufs___."
         },
         {
           "label": "6",
           "answers": [
             "Lärm"
-          ]
+          ],
+          "prompt": "Es gibt aber auch viel Lä___."
         },
         {
           "label": "7",
           "answers": [
             "Land"
-          ]
+          ],
+          "prompt": "Peters Einfamilienhaus ist auf dem La___."
         },
         {
           "label": "8",
           "answers": [
             "Vorteil"
-          ]
+          ],
+          "prompt": "Dort ist es schön ruhig. Das ist ein Vor___."
         }
       ]
     },
@@ -35859,20 +35963,23 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "putzen",
             "sauber machen"
-          ]
+          ],
+          "prompt": "Ich muss noch das Bad ___."
         },
         {
           "label": "2",
           "answers": [
             "waschen",
             "bügeln"
-          ]
+          ],
+          "prompt": "Ich muss noch die Wäsche ___."
         },
         {
           "label": "3",
           "answers": [
             "saugen"
-          ]
+          ],
+          "prompt": "Ich muss noch Staub ___."
         },
         {
           "label": "4",
@@ -35880,7 +35987,8 @@ window.SPEKTRUM_BANKS={
             "spülen",
             "abspülen",
             "abwaschen"
-          ]
+          ],
+          "prompt": "Ich muss noch Geschirr ___."
         }
       ]
     },
@@ -35890,37 +35998,43 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "geöffnet"
-          ]
+          ],
+          "prompt": "Wann hat das Kunstmuseum ___? - Von 10.00 bis 18.00 Uhr."
         },
         {
           "label": "2",
           "answers": [
             "beginnt"
-          ]
+          ],
+          "prompt": "Wann ___ das Konzert? - Um 20.00 Uhr."
         },
         {
           "label": "3",
           "answers": [
             "kostet"
-          ]
+          ],
+          "prompt": "Wie viel ___ eine Eintrittskarte? - 55 Euro."
         },
         {
           "label": "4",
           "answers": [
             "kaufen"
-          ]
+          ],
+          "prompt": "Wo kann ich die Karten ___? -An der Abendkasse."
         },
         {
           "label": "5",
           "answers": [
             "komme"
-          ]
+          ],
+          "prompt": "Wie ___ ich zur Philharmonie? - Mit der S-Bahn oder der Buslinie 100."
         },
         {
           "label": "6",
           "answers": [
             "Gibt"
-          ]
+          ],
+          "prompt": "___ es in der Nähe der Philharmonie ein Restaurant? - Ja, sehr viele."
         }
       ]
     },
@@ -35930,62 +36044,72 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "am"
-          ]
+          ],
+          "prompt": "Ich habe ___ 22. Mai Geburtstag."
         },
         {
           "label": "2",
           "answers": [
             "dich"
-          ]
+          ],
+          "prompt": "Ich möchte ___ gerne zu einer kleinen Party einladen."
         },
         {
           "label": "3",
           "answers": [
             "einladen"
-          ]
+          ],
+          "prompt": "Ich möchte dich gerne zu einer kleinen Party ___."
         },
         {
           "label": "4",
           "answers": [
             "um"
-          ]
+          ],
+          "prompt": "Die Party beginnt ___ 19.00 Uhr."
         },
         {
           "label": "5",
           "answers": [
             "freue"
-          ]
+          ],
+          "prompt": "Ich ___ mich auf dich."
         },
         {
           "label": "6",
           "answers": [
             "Liebe"
-          ]
+          ],
+          "prompt": "___ Marie,"
         },
         {
           "label": "7",
           "answers": [
             "gern",
             "gerne"
-          ]
+          ],
+          "prompt": "Ich komme ___."
         },
         {
           "label": "8",
           "answers": [
             "Wunsch"
-          ]
+          ],
+          "prompt": "Hast du einen besonderen ___?"
         },
         {
           "label": "9",
           "answers": [
             "Soll"
-          ]
+          ],
+          "prompt": "___ ich etwas mitbringen?"
         },
         {
           "label": "10",
           "answers": [
             "einen"
-          ]
+          ],
+          "prompt": "Zum Beispiel ___ leckeren Schokoladenkuchen von unserem Bäcker?"
         }
       ]
     },
@@ -35995,25 +36119,29 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "musste"
-          ]
+          ],
+          "prompt": "Ich wollte wirklich kommen, aber ich ___ noch arbeiten. (müssen)"
         },
         {
           "label": "2",
           "answers": [
             "konnte"
-          ]
+          ],
+          "prompt": "Paul ___ leider auch nicht kommen. (können)"
         },
         {
           "label": "3",
           "answers": [
             "musste"
-          ]
+          ],
+          "prompt": "Er ___ noch für seine Prüfung lernen. (müssen)"
         },
         {
           "label": "4",
           "answers": [
             "durfte"
-          ]
+          ],
+          "prompt": "Otto ___ nicht kommen, sein Arzt hat es verboten. (dürfen)"
         }
       ]
     },
@@ -36023,31 +36151,36 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "interessant"
-          ]
+          ],
+          "prompt": "Die Touristen finden die Themen Zeitgeschichte und Kultur besonders in___."
         },
         {
           "label": "2",
           "answers": [
             "streiken"
-          ]
+          ],
+          "prompt": "Heute str___ die Piloten der Lufthansa."
         },
         {
           "label": "3",
           "answers": [
             "Ministerpräsident"
-          ]
+          ],
+          "prompt": "Der chinesische Minist___ besucht Deutschland."
         },
         {
           "label": "4",
           "answers": [
             "Gespräche"
-          ]
+          ],
+          "prompt": "Es finden Ge___ im Bundeskanzleramt statt."
         },
         {
           "label": "5",
           "answers": [
             "Zusammenarbeit"
-          ]
+          ],
+          "prompt": "Ein Thema ist die wirtschaftliche Zu___."
         }
       ]
     },
@@ -36125,49 +36258,57 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "Tag"
-          ]
+          ],
+          "prompt": "Eva: Guten ___!"
         },
         {
           "label": "2",
           "answers": [
             "Name"
-          ]
+          ],
+          "prompt": "Eva: Mein ___ ist Eva."
         },
         {
           "label": "3",
           "answers": [
             "heißt"
-          ]
+          ],
+          "prompt": "Wie ___ du?"
         },
         {
           "label": "4",
           "answers": [
             "Ich"
-          ]
+          ],
+          "prompt": "Eduardo: ___ heiße Eduardo."
         },
         {
           "label": "5",
           "answers": [
             "kommst"
-          ]
+          ],
+          "prompt": "Eva: Woher ___ du, Eduardo?"
         },
         {
           "label": "6",
           "answers": [
             "aus"
-          ]
+          ],
+          "prompt": "Eduardo: Ich komme ___ Spanien."
         },
         {
           "label": "7",
           "answers": [
             "wohnst"
-          ]
+          ],
+          "prompt": "Eva: Und wo ___ du?"
         },
         {
           "label": "8",
           "answers": [
             "in"
-          ]
+          ],
+          "prompt": "Eduardo: Ich wohne ___ Sevilla."
         }
       ]
     },
@@ -36177,49 +36318,57 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "heißt"
-          ]
+          ],
+          "prompt": "Florian: Wie ___ du?"
         },
         {
           "label": "2",
           "answers": [
             "heiße"
-          ]
+          ],
+          "prompt": "Lena: Ich ___ Lena."
         },
         {
           "label": "3",
           "answers": [
             "kommst"
-          ]
+          ],
+          "prompt": "Florian: Woher ___ du, Lena?"
         },
         {
           "label": "4",
           "answers": [
             "komme"
-          ]
+          ],
+          "prompt": "Lena: Ich ___ aus Polen."
         },
         {
           "label": "5",
           "answers": [
             "komme"
-          ]
+          ],
+          "prompt": "Florian: Ich ___ aus der Schweiz."
         },
         {
           "label": "6",
           "answers": [
             "wohne"
-          ]
+          ],
+          "prompt": "Florian: Ich ___ in Basel."
         },
         {
           "label": "7",
           "answers": [
             "wohnst"
-          ]
+          ],
+          "prompt": "Florian: Und wo ___ du?"
         },
         {
           "label": "8",
           "answers": [
             "wohne"
-          ]
+          ],
+          "prompt": "Lena: Ich ___ in Warschau."
         }
       ]
     },
@@ -36229,85 +36378,99 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "bin"
-          ]
+          ],
+          "prompt": "Hallo, ich ___ (sein) Marie."
         },
         {
           "label": "2",
           "answers": [
             "ist"
-          ]
+          ],
+          "prompt": "Das ___ (sein) Adam."
         },
         {
           "label": "3",
           "answers": [
             "kommst"
-          ]
+          ],
+          "prompt": "Woher ___ (kommen) du, Susanne?"
         },
         {
           "label": "4",
           "answers": [
             "komme"
-          ]
+          ],
+          "prompt": "Ich ___ (kommen) aus Österreich."
         },
         {
           "label": "5",
           "answers": [
             "kommt"
-          ]
+          ],
+          "prompt": "Woher ___ (kommen) ihr?"
         },
         {
           "label": "6",
           "answers": [
             "kommen"
-          ]
+          ],
+          "prompt": "Wir ___ (kommen) aus Tschechien."
         },
         {
           "label": "7",
           "answers": [
             "Wohnt"
-          ]
+          ],
+          "prompt": "___ (wohnen) ihr in Prag?"
         },
         {
           "label": "8",
           "answers": [
             "wohnen"
-          ]
+          ],
+          "prompt": "Ja, wir ___ (wohnen) in Prag."
         },
         {
           "label": "9",
           "answers": [
             "macht"
-          ]
+          ],
+          "prompt": "Was ___ (machen) ihr hier in Berlin?"
         },
         {
           "label": "10",
           "answers": [
             "lernen"
-          ]
+          ],
+          "prompt": "Wir ___ (lernen) Deutsch."
         },
         {
           "label": "11",
           "answers": [
             "sprecht"
-          ]
+          ],
+          "prompt": "Welche Sprachen ___ (sprechen) ihr noch?"
         },
         {
           "label": "12",
           "answers": [
             "sprechen"
-          ]
+          ],
+          "prompt": "Wir ___ (sprechen) Tschechisch, Englisch und ein bisschen Russisch."
         },
         {
           "label": "13",
           "answers": [
             "spreche"
-          ]
+          ],
+          "prompt": "Ich ___ (sprechen) Deutsch, Englisch und auch ein bisschen Russisch."
         },
         {
           "label": "14",
           "answers": [
             "sprichst"
-          ]
+          ],
+          "prompt": "Du ___ (sprechen) Russisch!"
         }
       ]
     },
@@ -36317,141 +36480,155 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "Woher"
-          ]
+          ],
+          "prompt": "___ kommst du?"
         },
         {
           "label": "2",
           "answers": [
             "du"
-          ]
+          ],
+          "prompt": "Sprichst ___ Englisch?"
         },
         {
           "label": "3",
           "answers": [
             "Welche"
-          ]
+          ],
+          "prompt": "___ Sprache lernst du?"
         },
         {
           "label": "4",
           "answers": [
             "Was"
-          ]
+          ],
+          "prompt": "___ machst du hier in Berlin?"
         },
         {
           "label": "5",
           "answers": [
             "in"
-          ]
+          ],
+          "prompt": "Wohnt ihr auch ___ Wien?"
         },
         {
           "label": "6",
           "answers": [
             "ihr"
-          ]
+          ],
+          "prompt": "Hört ___ gern Musik?"
         },
         {
           "label": "7",
           "answers": [
             "sprecht"
-          ]
+          ],
+          "prompt": "Welche Sprachen ___ ihr?"
         },
         {
           "label": "8",
           "answers": [
             "ihr"
-          ]
+          ],
+          "prompt": "Fotografiert ___ gern?"
         },
         {
           "label": "9",
           "answers": [
             "Spielt"
-          ]
+          ],
+          "prompt": "___ ihr gern Fußball?"
         },
         {
           "label": "10",
           "answers": [
             "heißen"
-          ]
+          ],
+          "prompt": "Guten Tag. Wie ___ Sie?"
         },
         {
           "label": "11",
           "answers": [
             "Sie"
-          ]
+          ],
+          "prompt": "Wohnen ___ auch im Hotel Merkur?"
         },
         {
           "label": "12",
           "answers": [
             "machen"
-          ]
+          ],
+          "prompt": "Was ___ Sie hier in Wien?"
         },
         {
           "label": "13",
           "answers": [
             "kommen"
-          ]
+          ],
+          "prompt": "Woher ___ Sie?"
         },
         {
           "label": "14",
           "answers": [
             "gern"
-          ]
+          ],
+          "prompt": "Tanzen Sie ___?"
         }
       ]
     },
     "k1-u9-p21-417": {
       "fields": [
         {
-          "prompt": "Question word — Österreich",
+          "prompt": "___ kommen Sie? (Österreich)",
           "answers": [
             "Woher"
           ],
           "label": "1q"
         },
         {
-          "prompt": "Answer — Österreich",
+          "prompt": "Antworten Sie mit einem ganzen Satz zur Herkunft. (Österreich)",
           "answers": [
             "Ich komme aus Österreich"
           ],
           "label": "1a"
         },
         {
-          "prompt": "Question word — Wien",
+          "prompt": "___ wohnen Sie? (Wien)",
           "answers": [
             "Wo"
           ],
           "label": "2q"
         },
         {
-          "prompt": "Answer — Wien",
+          "prompt": "Antworten Sie mit einem ganzen Satz zum Wohnort. (Wien)",
           "answers": [
             "Ich wohne in Wien"
           ],
           "label": "2a"
         },
         {
-          "prompt": "Question word — Deutsch und Englisch",
+          "prompt": "___ Sprachen sprechen Sie?",
           "answers": [
             "Welche"
           ],
           "label": "3q"
         },
         {
-          "prompt": "Answer — Deutsch und Englisch",
+          "prompt": "Antworten Sie mit beiden Sprachen. (Deutsch und Englisch)",
           "answers": [
             "Ich spreche Deutsch und Englisch"
           ],
           "label": "3a"
         },
         {
-          "prompt": "Question word — Japanisch",
+          "prompt": "___ lernen Sie jetzt?",
           "answers": [
             "Was"
           ],
           "label": "4q"
         },
         {
-          "prompt": "Answer — Japanisch",
+          "prompt": "Antworten Sie mit der Sprache, die Sie jetzt lernen. (Japanisch)",
           "answers": [
             "Ich lerne jetzt Japanisch",
             "Ich lerne Japanisch"
@@ -36459,14 +36636,14 @@ window.SPEKTRUM_BANKS={
           "label": "4a"
         },
         {
-          "prompt": "Question word — kochen und schwimmen",
+          "prompt": "___ machen Sie gern?",
           "answers": [
             "Was"
           ],
           "label": "5q"
         },
         {
-          "prompt": "Answer — kochen und schwimmen",
+          "prompt": "Antworten Sie mit den beiden Hobbys. (kochen und schwimmen)",
           "answers": [
             "Ich koche und schwimme gern"
           ],
@@ -36480,49 +36657,57 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "ist"
-          ]
+          ],
+          "prompt": "Mein Name ___ Christian."
         },
         {
           "label": "2",
           "answers": [
             "Woher"
-          ]
+          ],
+          "prompt": "___ kommst du?"
         },
         {
           "label": "3",
           "answers": [
             "wohnt"
-          ]
+          ],
+          "prompt": "Wo ___ Paola?"
         },
         {
           "label": "4",
           "answers": [
             "lernen"
-          ]
+          ],
+          "prompt": "Lara und Anne ___ jetzt Englisch."
         },
         {
           "label": "5",
           "answers": [
             "du"
-          ]
+          ],
+          "prompt": "Welche Sprachen sprichst ___?"
         },
         {
           "label": "6",
           "answers": [
             "Tanzt"
-          ]
+          ],
+          "prompt": "___ ihr gern?"
         },
         {
           "label": "7",
           "answers": [
             "Wir"
-          ]
+          ],
+          "prompt": "___ spielen gern Fußball."
         },
         {
           "label": "8",
           "answers": [
             "Welche"
-          ]
+          ],
+          "prompt": "___ Sprachen sprechen Sie?"
         }
       ]
     },
@@ -36532,50 +36717,58 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "Sie"
-          ]
+          ],
+          "prompt": "Wie heißen ___?"
         },
         {
           "label": "2",
           "answers": [
             "Woher"
-          ]
+          ],
+          "prompt": "___ kommen Sie?"
         },
         {
           "label": "3",
           "answers": [
             "Wo"
-          ]
+          ],
+          "prompt": "___ wohnen Sie?"
         },
         {
           "label": "4",
           "answers": [
             "Was"
-          ]
+          ],
+          "prompt": "___ machen Sie gern?"
         },
         {
           "label": "5",
           "answers": [
             "Hören",
             "Machen"
-          ]
+          ],
+          "prompt": "___ Sie gern Musik?"
         },
         {
           "label": "6",
           "answers": [
             "Welche"
-          ]
+          ],
+          "prompt": "___ Sprachen sprechen Sie?"
         },
         {
           "label": "7",
           "answers": [
             "Sprechen"
-          ]
+          ],
+          "prompt": "___ Sie Deutsch?"
         },
         {
           "label": "8",
           "answers": [
             "Spielen"
-          ]
+          ],
+          "prompt": "___ Sie gern Tennis?"
         }
       ]
     },
@@ -36585,25 +36778,29 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "Sie wohnt in Stockholm"
-          ]
+          ],
+          "prompt": "in Stockholm · sie · wohnen"
         },
         {
           "label": "2",
           "answers": [
             "Sie spricht Schwedisch, Englisch und Deutsch"
-          ]
+          ],
+          "prompt": "sie · Schwedisch, Englisch und Deutsch · sprechen"
         },
         {
           "label": "3",
           "answers": [
             "Viktoria fotografiert gern"
-          ]
+          ],
+          "prompt": "Viktoria · gern · fotografieren"
         },
         {
           "label": "4",
           "answers": [
             "Sie lernt jetzt Französisch"
-          ]
+          ],
+          "prompt": "lernen · Französisch · sie · jetzt"
         }
       ]
     },
@@ -36613,37 +36810,43 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "schreibe"
-          ]
+          ],
+          "prompt": "Ich ___ viele E-Mails."
         },
         {
           "label": "2",
           "answers": [
             "arbeitet"
-          ]
+          ],
+          "prompt": "Otto Wichtig ___ als Manager."
         },
         {
           "label": "3",
           "answers": [
             "präsentiert"
-          ]
+          ],
+          "prompt": "Er ___ oft Projekte."
         },
         {
           "label": "4",
           "answers": [
             "malt"
-          ]
+          ],
+          "prompt": "Die Künstlerin ___ Bilder."
         },
         {
           "label": "5",
           "answers": [
             "ist"
-          ]
+          ],
+          "prompt": "Knut ___ Student."
         },
         {
           "label": "6",
           "answers": [
             "entwickelt"
-          ]
+          ],
+          "prompt": "Der Informatiker ___ Computerspiele."
         }
       ]
     },
@@ -36653,73 +36856,85 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "ein Stuhl"
-          ]
+          ],
+          "prompt": "Im Büro: ein St__l"
         },
         {
           "label": "2",
           "answers": [
             "ein Tisch"
-          ]
+          ],
+          "prompt": "Im Büro: ein __sch"
         },
         {
           "label": "3",
           "answers": [
             "eine Lampe"
-          ]
+          ],
+          "prompt": "Im Büro: eine __mpe"
         },
         {
           "label": "4",
           "answers": [
             "ein Telefon"
-          ]
+          ],
+          "prompt": "Im Büro: ein _e_e_on"
         },
         {
           "label": "5",
           "answers": [
             "ein Stift"
-          ]
+          ],
+          "prompt": "Im Büro: ein __ift"
         },
         {
           "label": "6",
           "answers": [
             "eine Brille"
-          ]
+          ],
+          "prompt": "Im Büro: eine B__ll_"
         },
         {
           "label": "7",
           "answers": [
             "ein Bildschirm"
-          ]
+          ],
+          "prompt": "Im Büro: ein Bild___"
         },
         {
           "label": "8",
           "answers": [
             "ein Kalender"
-          ]
+          ],
+          "prompt": "Im Büro: ein K_l__der"
         },
         {
           "label": "9",
           "answers": [
             "der Bruder"
-          ]
+          ],
+          "prompt": "Wie heißt die männliche Person zu „die Schwester“?"
         },
         {
           "label": "10",
           "answers": [
             "der Sohn"
-          ]
+          ],
+          "prompt": "Wie heißt die männliche Person zu „die Tochter“?"
         },
         {
           "label": "11",
           "answers": [
             "der Vater"
-          ]
+          ],
+          "prompt": "Wie heißt die männliche Person zu „die Mutter“?"
         },
         {
           "label": "12",
           "answers": [
             "der Onkel"
-          ]
+          ],
+          "prompt": "Wie heißt die männliche Person zu „die Tante“?"
         }
       ]
     },
@@ -36729,25 +36944,29 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "deine"
-          ]
+          ],
+          "prompt": "du: Wie ist ___ Adresse? (die Adresse)"
         },
         {
           "label": "2",
           "answers": [
             "seine"
-          ]
+          ],
+          "prompt": "Max: Wie ist ___ Telefonnummer? (die Telefonnummer)"
         },
         {
           "label": "3",
           "answers": [
             "Ihre"
-          ]
+          ],
+          "prompt": "Sie: Was sind ___ Hobbys? (die Hobbys, Pl.)"
         },
         {
           "label": "4",
           "answers": [
             "ihre"
-          ]
+          ],
+          "prompt": "sie: Was ist ___ Muttersprache? (die Muttersprache)"
         }
       ]
     },
@@ -36757,25 +36976,29 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "Ich komme aus Schweden"
-          ]
+          ],
+          "prompt": "Antworten Sie auf die Frage nach Ihrer Herkunft (Schweden)."
         },
         {
           "label": "2",
           "answers": [
             "Ich studiere Journalistik"
-          ]
+          ],
+          "prompt": "Antworten Sie auf die Frage nach Ihrem Studium (Journalistik)."
         },
         {
           "label": "3",
           "answers": [
             "Aber ich lese auch viele Bücher auf Englisch"
-          ]
+          ],
+          "prompt": "Ergänzen Sie den Gegensatz: aber · auch viele Bücher · auf Englisch lesen."
         },
         {
           "label": "4",
           "answers": [
             "Welche Sprachen sprichst du"
-          ]
+          ],
+          "prompt": "Fragen Sie nach den Sprachen Ihres Gesprächspartners."
         }
       ]
     },
@@ -36785,31 +37008,36 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "einen Computer"
-          ]
+          ],
+          "prompt": "Womit kann Anton im Büro Programme benutzen? (Akkusativ mit Artikel)"
         },
         {
           "label": "2",
           "answers": [
             "ein Telefon"
-          ]
+          ],
+          "prompt": "Womit kann Anton Kunden anrufen? (Akkusativ mit Artikel)"
         },
         {
           "label": "3",
           "answers": [
             "eine Lampe"
-          ]
+          ],
+          "prompt": "Was braucht Anton für Licht? (Akkusativ mit Artikel)"
         },
         {
           "label": "4",
           "answers": [
             "einen Bildschirm"
-          ]
+          ],
+          "prompt": "Worauf sieht Anton die Anzeige des Computers? (Akkusativ mit Artikel)"
         },
         {
           "label": "5",
           "answers": [
             "einen Kalender"
-          ]
+          ],
+          "prompt": "Worin kann Anton seine Termine eintragen? (Akkusativ mit Artikel)"
         }
       ]
     },
@@ -36821,7 +37049,8 @@ window.SPEKTRUM_BANKS={
             "Ich möchte bitte einen Kaffee",
             "Ich nehme einen Kaffee",
             "Ich trinke einen Kaffee"
-          ]
+          ],
+          "prompt": "Bestellen Sie einen Kaffee."
         },
         {
           "label": "2",
@@ -36829,26 +37058,30 @@ window.SPEKTRUM_BANKS={
             "Ich möchte bitte noch einen Orangensaft",
             "Ich nehme noch einen Orangensaft",
             "Ich trinke noch einen Orangensaft"
-          ]
+          ],
+          "prompt": "Bestellen Sie zusätzlich einen Orangensaft."
         },
         {
           "label": "3",
           "answers": [
             "Wie viel kostet ein Käsebrötchen",
             "Was kostet ein Käsebrötchen"
-          ]
+          ],
+          "prompt": "Fragen Sie nach dem Preis eines Käsebrötchens."
         },
         {
           "label": "4",
           "answers": [
             "Dann nehme ich auch noch ein Käsebrötchen"
-          ]
+          ],
+          "prompt": "Bestellen Sie auch noch ein Käsebrötchen."
         },
         {
           "label": "5",
           "answers": [
             "Ich möchte bitte zahlen"
-          ]
+          ],
+          "prompt": "Bitten Sie um die Rechnung."
         }
       ]
     },
@@ -36858,43 +37091,50 @@ window.SPEKTRUM_BANKS={
           "label": "Verb 1",
           "answers": [
             "war"
-          ]
+          ],
+          "prompt": "Ich ___ heute mit Klaus in einem Restaurant."
         },
         {
           "label": "Verb 2",
           "answers": [
             "war"
-          ]
+          ],
+          "prompt": "Das Essen ___ sehr lecker!"
         },
         {
           "label": "Verb 3",
           "answers": [
             "besuchen"
-          ]
+          ],
+          "prompt": "Wir ___ jetzt noch ein Museum, die Hamburger Kunsthalle."
         },
         {
           "label": "Verb 4",
           "answers": [
             "wohne"
-          ]
+          ],
+          "prompt": "Ich ___ im Hotel Atlantik."
         },
         {
           "label": "Verb 5",
           "answers": [
             "ist"
-          ]
+          ],
+          "prompt": "Das Zimmer ___ sehr schön."
         },
         {
           "label": "Verb 6",
           "answers": [
             "Möchtest"
-          ]
+          ],
+          "prompt": "___ du heute Abend ein Glas Wein trinken?"
         },
         {
           "label": "Verb 7",
           "answers": [
             "fahre"
-          ]
+          ],
+          "prompt": "Morgen ___ ich zurück nach Berlin."
         }
       ]
     },
@@ -36905,21 +37145,24 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "Wie lange möchten Sie bleiben",
             "Wie lange bleiben Sie"
-          ]
+          ],
+          "prompt": "Wie fragen Sie nach der Dauer des Aufenthalts?"
         },
         {
           "label": "2",
           "answers": [
             "Was kostet das Zimmer",
             "Wie viel kostet das Zimmer"
-          ]
+          ],
+          "prompt": "Wie fragen Sie nach dem Zimmerpreis?"
         },
         {
           "label": "3",
           "answers": [
             "Wie möchten Sie zahlen",
             "Wie möchten Sie bezahlen"
-          ]
+          ],
+          "prompt": "Wie fragen Sie nach der Zahlungsweise?"
         }
       ]
     },
@@ -37370,7 +37613,7 @@ window.SPEKTRUM_BANKS={
     "k1-a22-p18-239": {
       "fields": [
         {
-          "prompt": "Begrüßung 2",
+          "prompt": "Wie grüßen 64 Prozent der Österreicher laut der Studie?",
           "answers": [
             "Grüß Gott",
             "Grüss Gott",
@@ -37378,32 +37621,32 @@ window.SPEKTRUM_BANKS={
           ]
         },
         {
-          "prompt": "Begrüßung 3",
+          "prompt": "Wie grüßen 34 Prozent der Österreicher?",
           "answers": [
             "Servus"
           ]
         },
         {
-          "prompt": "Begrüßung 4",
+          "prompt": "Wie grüßen 7 Prozent der Österreicher?",
           "answers": [
             "Guten Tag"
           ]
         },
         {
-          "prompt": "Verabschiedung 1",
+          "prompt": "Wie verabschieden sich laut Text viele Männer informell?",
           "answers": [
             "Servus"
           ]
         },
         {
-          "prompt": "Verabschiedung 2",
+          "prompt": "Wie verabschieden sich laut Text viele Frauen informell?",
           "answers": [
             "Tschüss",
             "Tschüs"
           ]
         },
         {
-          "prompt": "Verabschiedung 3",
+          "prompt": "Wie verabschiedet man sich formell?",
           "answers": [
             "Auf Wiedersehen"
           ]
@@ -37770,85 +38013,99 @@ window.SPEKTRUM_BANKS={
           "label": "c · Dialog 1 · Frage",
           "answers": [
             "Ist das deine Zeitung?"
-          ]
+          ],
+          "prompt": "Fragen Sie, wem der Gegenstand gehört: Zeitung."
         },
         {
           "label": "c · Dialog 1 · Antwort",
           "answers": [
             "Ja, das ist meine Zeitung."
-          ]
+          ],
+          "prompt": "Antworten Sie auf die Frage nach dem Besitzer: Zeitung · ja."
         },
         {
           "label": "c · Dialog 2 · Frage",
           "answers": [
             "Ist das deine Uhr?"
-          ]
+          ],
+          "prompt": "Fragen Sie, wem der Gegenstand gehört: Uhr."
         },
         {
           "label": "c · Dialog 2 · Antwort",
           "answers": [
             "Ja, das ist meine Uhr."
-          ]
+          ],
+          "prompt": "Antworten Sie auf die Frage nach dem Besitzer: Uhr · ja."
         },
         {
           "label": "c · Dialog 3 · Frage",
           "answers": [
             "Ist das dein Handy?"
-          ]
+          ],
+          "prompt": "Fragen Sie, wem der Gegenstand gehört: Handy."
         },
         {
           "label": "c · Dialog 3 · Antwort",
           "answers": [
             "Nein, das ist das Handy von Frau Krause."
-          ]
+          ],
+          "prompt": "Antworten Sie auf die Frage nach dem Besitzer: Handy · nein · Frau Krause."
         },
         {
           "label": "c · Dialog 4 · Frage",
           "answers": [
             "Ist das dein Auto?"
-          ]
+          ],
+          "prompt": "Fragen Sie, wem der Gegenstand gehört: Auto."
         },
         {
           "label": "c · Dialog 4 · Antwort",
           "answers": [
             "Ja, das ist mein Auto."
-          ]
+          ],
+          "prompt": "Antworten Sie auf die Frage nach dem Besitzer: Auto · ja."
         },
         {
           "label": "c · Dialog 5 · Frage",
           "answers": [
             "Ist das dein Schlüssel?"
-          ]
+          ],
+          "prompt": "Fragen Sie, wem der Gegenstand gehört: Schlüssel."
         },
         {
           "label": "c · Dialog 5 · Antwort",
           "answers": [
             "Ja, das ist mein Schlüssel."
-          ]
+          ],
+          "prompt": "Antworten Sie auf die Frage nach dem Besitzer: Schlüssel · ja."
         },
         {
           "label": "c · Dialog 6 · Frage",
           "answers": [
             "Ist das dein Stuhl?"
-          ]
+          ],
+          "prompt": "Fragen Sie, wem der Gegenstand gehört: Stuhl."
         },
         {
           "label": "c · Dialog 6 · Antwort",
           "answers": [
             "Nein, das ist der Stuhl von Jürgen."
-          ]
+          ],
+          "prompt": "Antworten Sie auf die Frage nach dem Besitzer: Stuhl · nein · Jürgen."
         },
         {
           "label": "c · Dialog 7 · Frage",
           "answers": [
             "Ist das dein Lehrbuch?"
-          ]
+          ],
+          "prompt": "Fragen Sie, wem der Gegenstand gehört: Lehrbuch."
         },
         {
           "label": "c · Dialog 7 · Antwort",
           "answers": [
             "Ja, das ist mein Lehrbuch."
-          ]
+          ],
+          "prompt": "Antworten Sie auf die Frage nach dem Besitzer: Lehrbuch · ja."
         }
       ]
     },
@@ -37889,105 +38146,105 @@ window.SPEKTRUM_BANKS={
     "k2-a15-p35-299": {
       "fields": [
         {
-          "prompt": "Item 1",
+          "prompt": "Wie viele Stühle sind im Lehrerzimmer?",
           "answers": [
             "18 Stühle"
           ],
           "label": "1"
         },
         {
-          "prompt": "Item 2",
+          "prompt": "Wie viele Stifte sind im Lehrerzimmer?",
           "answers": [
             "17 Stifte"
           ],
           "label": "2"
         },
         {
-          "prompt": "Item 3",
+          "prompt": "Wie viele Drucker sind im Lehrerzimmer?",
           "answers": [
             "2 Drucker"
           ],
           "label": "3"
         },
         {
-          "prompt": "Item 4",
+          "prompt": "Wie viele Schlüssel sind im Lehrerzimmer?",
           "answers": [
             "12 Schlüssel"
           ],
           "label": "4"
         },
         {
-          "prompt": "Item 5",
+          "prompt": "Wie viele Tassen sind im Lehrerzimmer?",
           "answers": [
             "21 Tassen"
           ],
           "label": "5"
         },
         {
-          "prompt": "Item 6",
+          "prompt": "Wie viele Zeitungen sind im Lehrerzimmer?",
           "answers": [
             "4 Zeitungen"
           ],
           "label": "6"
         },
         {
-          "prompt": "Item 7",
+          "prompt": "Wie viele Bilder sind im Lehrerzimmer?",
           "answers": [
             "8 Bilder"
           ],
           "label": "7"
         },
         {
-          "prompt": "Item 8",
+          "prompt": "Wie viele Computer sind im Lehrerzimmer?",
           "answers": [
             "5 Computer"
           ],
           "label": "8"
         },
         {
-          "prompt": "Item 9",
+          "prompt": "Wie viele Lampen sind im Lehrerzimmer?",
           "answers": [
             "6 Lampen"
           ],
           "label": "9"
         },
         {
-          "prompt": "Item 10",
+          "prompt": "Wie viele Regenschirme sind im Lehrerzimmer?",
           "answers": [
             "7 Regenschirme"
           ],
           "label": "10"
         },
         {
-          "prompt": "Item 11",
+          "prompt": "Wie viele Bücher sind im Lehrerzimmer?",
           "answers": [
             "45 Bücher"
           ],
           "label": "11"
         },
         {
-          "prompt": "Item 12",
+          "prompt": "Wie viele Taschen sind im Lehrerzimmer?",
           "answers": [
             "14 Taschen"
           ],
           "label": "12"
         },
         {
-          "prompt": "Item 13",
+          "prompt": "Wie viele Handys sind im Lehrerzimmer?",
           "answers": [
             "9 Handys"
           ],
           "label": "13"
         },
         {
-          "prompt": "Item 14",
+          "prompt": "Wie viele Tische sind im Lehrerzimmer?",
           "answers": [
             "3 Tische"
           ],
           "label": "14"
         },
         {
-          "prompt": "Item 15",
+          "prompt": "Wie viele Laptops sind im Lehrerzimmer?",
           "answers": [
             "13 Laptops"
           ],
@@ -38075,77 +38332,77 @@ window.SPEKTRUM_BANKS={
     "k2-a20-p38-541": {
       "fields": [
         {
-          "prompt": "a1",
+          "prompt": "Sarah und Felix sind ___ von Peter und Lucie.",
           "answers": [
             "die Kinder"
           ],
           "label": "a1"
         },
         {
-          "prompt": "a2",
+          "prompt": "Susanne ist ___ von Sarah und Felix.",
           "answers": [
             "die Tante"
           ],
           "label": "a2"
         },
         {
-          "prompt": "a3",
+          "prompt": "Lucie ist ___ von Peter.",
           "answers": [
             "die Frau"
           ],
           "label": "a3"
         },
         {
-          "prompt": "a4",
+          "prompt": "Felix ist ___ von Peter und Lucie.",
           "answers": [
             "der Sohn"
           ],
           "label": "a4"
         },
         {
-          "prompt": "a5",
+          "prompt": "Susanne ist ___ von Peter.",
           "answers": [
             "die Schwester"
           ],
           "label": "a5"
         },
         {
-          "prompt": "a6",
+          "prompt": "Peter und Lucie sind ___ von Sarah und Felix.",
           "answers": [
             "die Eltern"
           ],
           "label": "a6"
         },
         {
-          "prompt": "a7",
+          "prompt": "Felix ist ___ von Sarah.",
           "answers": [
             "der Bruder"
           ],
           "label": "a7"
         },
         {
-          "prompt": "a8",
+          "prompt": "Ben ist ___ von Sarah und Felix.",
           "answers": [
             "der Onkel"
           ],
           "label": "a8"
         },
         {
-          "prompt": "a9",
+          "prompt": "Sarah ist ___ von Peter und Lucie.",
           "answers": [
             "die Tochter"
           ],
           "label": "a9"
         },
         {
-          "prompt": "a10",
+          "prompt": "Ben ist ___ von Peter.",
           "answers": [
             "der Bruder"
           ],
           "label": "a10"
         },
         {
-          "prompt": "a11",
+          "prompt": "Peter ist ___ von Lucie.",
           "answers": [
             "der Mann"
           ],
@@ -38188,42 +38445,42 @@ window.SPEKTRUM_BANKS={
     "k2-a21-p39-160": {
       "fields": [
         {
-          "prompt": "Susanne lebt jetzt mit Edwin …",
+          "prompt": "Familienstand: Susanne lebt jetzt mit Edwin ___.",
           "answers": [
             "zusammen in Berlin"
           ],
           "label": "1a"
         },
         {
-          "prompt": "Peter und Lucie sind …",
+          "prompt": "Familienstand: Peter und Lucie sind ___.",
           "answers": [
             "verheiratet"
           ],
           "label": "1b"
         },
         {
-          "prompt": "Ben ist …",
+          "prompt": "Familienstand: Ben ist ___.",
           "answers": [
             "geschieden"
           ],
           "label": "1c1"
         },
         {
-          "prompt": "Er lebt …",
+          "prompt": "Wo und mit wem lebt Ben? Er lebt ___.",
           "answers": [
             "allein in Köln"
           ],
           "label": "1c2"
         },
         {
-          "prompt": "Peter arbeitet als …",
+          "prompt": "Beruf: Peter arbeitet als ___.",
           "answers": [
             "Ingenieur bei Siemens"
           ],
           "label": "2a"
         },
         {
-          "prompt": "Lucie …",
+          "prompt": "Was macht Lucie beruflich? Lucie ___.",
           "answers": [
             "ist Französischlehrerin",
             "Französischlehrerin"
@@ -38231,7 +38488,7 @@ window.SPEKTRUM_BANKS={
           "label": "2b"
         },
         {
-          "prompt": "Susanne …",
+          "prompt": "Was macht Susanne beruflich? Susanne ___.",
           "answers": [
             "ist Journalistin",
             "Journalistin"
@@ -38239,7 +38496,7 @@ window.SPEKTRUM_BANKS={
           "label": "2c"
         },
         {
-          "prompt": "Ben …",
+          "prompt": "Was macht Ben beruflich? Ben ___.",
           "answers": [
             "arbeitet als Kommissar bei der Polizei",
             "Kommissar bei der Polizei"
@@ -38247,35 +38504,35 @@ window.SPEKTRUM_BANKS={
           "label": "2d"
         },
         {
-          "prompt": "Peter spricht …",
+          "prompt": "Welche Fremdsprachen spricht Peter? Peter spricht ___.",
           "answers": [
             "Englisch und Französisch"
           ],
           "label": "3a1"
         },
         {
-          "prompt": "Seine Muttersprache ist …",
+          "prompt": "Welche Muttersprache hat Peter? Seine Muttersprache ist ___.",
           "answers": [
             "Deutsch"
           ],
           "label": "3a2"
         },
         {
-          "prompt": "Lucie spricht …",
+          "prompt": "Welche Fremdsprachen spricht Lucie? Lucie spricht ___.",
           "answers": [
             "Deutsch und Italienisch"
           ],
           "label": "3b1"
         },
         {
-          "prompt": "Ihre Muttersprache ist …",
+          "prompt": "Welche Muttersprache hat Lucie? Ihre Muttersprache ist ___.",
           "answers": [
             "Französisch"
           ],
           "label": "3b2"
         },
         {
-          "prompt": "Felix spricht …",
+          "prompt": "Welche Sprache spricht Felix besonders gut? Felix spricht ___.",
           "answers": [
             "perfekt Französisch",
             "Französisch perfekt"
@@ -38283,35 +38540,35 @@ window.SPEKTRUM_BANKS={
           "label": "3c"
         },
         {
-          "prompt": "Peter …",
+          "prompt": "Was macht Peter gern? Peter ___.",
           "answers": [
             "kocht gern"
           ],
           "label": "4a"
         },
         {
-          "prompt": "Lucie …",
+          "prompt": "Was macht Lucie gern? Lucie ___.",
           "answers": [
             "liest gern Liebesromane"
           ],
           "label": "4b"
         },
         {
-          "prompt": "Sarah …",
+          "prompt": "Welche Hobbys hat Sarah? Sarah ___.",
           "answers": [
             "hört gern Musik und kocht gern"
           ],
           "label": "4c"
         },
         {
-          "prompt": "Felix …",
+          "prompt": "Was macht Felix gern? Felix ___.",
           "answers": [
             "spielt gern am Computer"
           ],
           "label": "4d"
         },
         {
-          "prompt": "Ben …",
+          "prompt": "Welches Hobby hat Ben? Ben ___.",
           "answers": [
             "spielt gern Gitarre"
           ],
@@ -38371,49 +38628,57 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "Ein Arzt untersucht Patienten"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Was macht ein Arzt? Bilden Sie einen Satz."
         },
         {
           "answers": [
             "Eine Informatikerin entwickelt Computerspiele"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Was macht eine Informatikerin? Bilden Sie einen Satz."
         },
         {
           "answers": [
             "Ein Kellner bedient Gäste"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Was macht ein Kellner? Bilden Sie einen Satz."
         },
         {
           "answers": [
             "Eine Assistentin schreibt viele E-Mails"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Was macht eine Assistentin? Bilden Sie einen Satz."
         },
         {
           "answers": [
             "Eine Studentin liest viele Bücher"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Was macht eine Studentin? Bilden Sie einen Satz."
         },
         {
           "answers": [
             "Ein Ingenieur konstruiert Maschinen"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Was macht ein Ingenieur? Bilden Sie einen Satz."
         },
         {
           "answers": [
             "Ein Architekt präsentiert Projekte"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Was macht ein Architekt? Bilden Sie einen Satz."
         },
         {
           "answers": [
             "Ein Lehrer unterrichtet Kinder"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "Was macht ein Lehrer? Bilden Sie einen Satz."
         }
       ]
     },
@@ -38423,102 +38688,113 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "dein Regenschirm"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "du: ___ Regenschirm"
         },
         {
           "answers": [
             "ihr Handy"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Maria: ___ Handy"
         },
         {
           "answers": [
             "deine Zeitung"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "du: ___ Zeitung"
         },
         {
           "answers": [
             "seine Uhr"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "er: ___ Uhr"
         },
         {
           "answers": [
             "sein Auto"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Paul: ___ Auto"
         },
         {
           "answers": [
             "sein Schreibtisch"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "der Chef: ___ Schreibtisch"
         },
         {
           "answers": [
             "Ihre Tasche"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Sie: ___ Tasche"
         },
         {
           "answers": [
             "ihre Tasse"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "sie: ___ Tasse"
         },
         {
           "answers": [
             "meine Brille"
           ],
-          "label": "9"
+          "label": "9",
+          "prompt": "ich: ___ Brille"
         },
         {
           "answers": [
             "Ihr Stuhl"
           ],
-          "label": "10"
+          "label": "10",
+          "prompt": "Sie: ___ Stuhl"
         },
         {
           "answers": [
             "mein Schlüssel"
           ],
-          "label": "11"
+          "label": "11",
+          "prompt": "ich: ___ Schlüssel"
         }
       ]
     },
     "k2-u5-p42-187": {
       "fields": [
         {
-          "prompt": "Sie · Name",
+          "prompt": "Sie: Wie ist ___ Name? (der Name)",
           "answers": [
             "Ihr"
           ],
           "label": "1"
         },
         {
-          "prompt": "er · Computer",
+          "prompt": "er: Ist das ___ Computer? (der Computer)",
           "answers": [
             "sein"
           ],
           "label": "2"
         },
         {
-          "prompt": "du · Hobby",
+          "prompt": "du: Was ist ___ Hobby? (das Hobby)",
           "answers": [
             "dein"
           ],
           "label": "3"
         },
         {
-          "prompt": "sie · Adresse",
+          "prompt": "sie: Wie ist ___ Adresse? (die Adresse)",
           "answers": [
             "ihre"
           ],
           "label": "4"
         },
         {
-          "prompt": "ich · Schwester",
+          "prompt": "ich: ___ Schwester ist Lehrerin. (die Schwester)",
           "answers": [
             "Meine",
             "meine"
@@ -38526,35 +38802,35 @@ window.SPEKTRUM_BANKS={
           "label": "5"
         },
         {
-          "prompt": "du · Muttersprache",
+          "prompt": "du: Was ist ___ Muttersprache? (die Muttersprache)",
           "answers": [
             "deine"
           ],
           "label": "6"
         },
         {
-          "prompt": "Sie · Schlüssel",
+          "prompt": "Sie: Ist das ___ Schlüssel? (der Schlüssel)",
           "answers": [
             "Ihr"
           ],
           "label": "7"
         },
         {
-          "prompt": "ich · Stift",
+          "prompt": "ich: Das ist ___ Stift. (der Stift)",
           "answers": [
             "mein"
           ],
           "label": "8"
         },
         {
-          "prompt": "er · Telefonnummer",
+          "prompt": "er: Wie ist ___ Telefonnummer? (die Telefonnummer)",
           "answers": [
             "seine"
           ],
           "label": "9"
         },
         {
-          "prompt": "Sie · Autokennzeichen",
+          "prompt": "Sie: Was ist ___ Autokennzeichen? (das Autokennzeichen)",
           "answers": [
             "Ihr"
           ],
@@ -38691,49 +38967,57 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "acht"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "sieben → ___ → neun"
         },
         {
           "answers": [
             "vierundneunzig"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "dreiundneunzig → ___ → fünfundneunzig"
         },
         {
           "answers": [
             "achtzehn"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "siebzehn → ___ → neunzehn"
         },
         {
           "answers": [
             "zwölf"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "elf → ___ → dreizehn"
         },
         {
           "answers": [
             "fünfzig"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "vierzig → ___ → sechzig"
         },
         {
           "answers": [
             "sechshundert"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "fünfhundert → ___ → siebenhundert"
         },
         {
           "answers": [
             "dreitausend"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "zweitausend → ___ → viertausend"
         },
         {
           "answers": [
             "zwanzigtausend"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "zehntausend → ___ → dreißigtausend"
         }
       ]
     },
@@ -38743,31 +39027,36 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "die Tochter"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Wie heißt die weibliche Person zu „der Sohn“?"
         },
         {
           "answers": [
             "die Schwester"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Wie heißt die weibliche Person zu „der Bruder“?"
         },
         {
           "answers": [
             "die Tante"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Wie heißt die weibliche Person zu „der Onkel“?"
         },
         {
           "answers": [
             "die Mutter"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Wie heißt die weibliche Person zu „der Vater“?"
         },
         {
           "answers": [
             "die Freundin"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Wie heißt die weibliche Person zu „der Freund“?"
         }
       ]
     },
@@ -38777,19 +39066,22 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "ledig"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Susanne lebt allein. Sie ist ___."
         },
         {
           "answers": [
             "geschieden"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Ben wohnt nicht mehr bei seiner Frau. Er ist ___."
         },
         {
           "answers": [
             "verheiratet"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Peter und Lucie sind ein Ehepaar. Sie sind ___."
         }
       ]
     },
@@ -38799,37 +39091,43 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "kommst du"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Woher ___, Orsola?"
         },
         {
           "answers": [
             "machst du"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Was ___ in Wien?"
         },
         {
           "answers": [
             "Ist"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "___ dein Studium auf Deutsch?"
         },
         {
           "answers": [
             "lernst du"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Wie lange ___ schon Deutsch?"
         },
         {
           "answers": [
             "Sprachen sprichst du"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Welche ___ noch?"
         },
         {
           "answers": [
             "Und du"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Ich spreche auch Französisch und Englisch. ___?"
         }
       ]
     },
@@ -38935,70 +39233,70 @@ window.SPEKTRUM_BANKS={
     "k3-a6-p52-510": {
       "fields": [
         {
-          "prompt": "6a · item 1",
+          "prompt": "Ich trinke ___ Limonade.",
           "answers": [
             "eine"
           ],
           "label": "a1"
         },
         {
-          "prompt": "6a · item 2",
+          "prompt": "Ich esse ___ Suppe.",
           "answers": [
             "eine"
           ],
           "label": "a2"
         },
         {
-          "prompt": "6a · item 3",
+          "prompt": "Ich möchte ___ Tee.",
           "answers": [
             "einen"
           ],
           "label": "a3"
         },
         {
-          "prompt": "6a · item 4",
+          "prompt": "Ich esse ___ Brötchen.",
           "answers": [
             "ein"
           ],
           "label": "a4"
         },
         {
-          "prompt": "6a · item 5",
+          "prompt": "Ich nehme ___ Schokoladenkuchen.",
           "answers": [
             "einen"
           ],
           "label": "a5"
         },
         {
-          "prompt": "6a · item 6",
+          "prompt": "Ich trinke ___ Orangensaft.",
           "answers": [
             "einen"
           ],
           "label": "a6"
         },
         {
-          "prompt": "6a · item 7",
+          "prompt": "Ich möchte ___ Mineralwasser.",
           "answers": [
             "ein"
           ],
           "label": "a7"
         },
         {
-          "prompt": "6a · item 8",
+          "prompt": "Ich nehme ___ Bier.",
           "answers": [
             "ein"
           ],
           "label": "a8"
         },
         {
-          "prompt": "6a · item 9",
+          "prompt": "Ich trinke ___ Cola.",
           "answers": [
             "eine"
           ],
           "label": "a9"
         },
         {
-          "prompt": "6a · item 10",
+          "prompt": "Ich esse ___ Currywurst.",
           "answers": [
             "eine"
           ],
@@ -39117,112 +39415,112 @@ window.SPEKTRUM_BANKS={
           "label": "b8b"
         },
         {
-          "prompt": "6c · Frage 1",
+          "prompt": "Fragen Sie nach der Meinung: die Brille.",
           "answers": [
             "Wie findest du die Brille"
           ],
           "label": "c1q"
         },
         {
-          "prompt": "6c · Antwort 1",
+          "prompt": "Antworten Sie mit Personalpronomen: Brille · schön.",
           "answers": [
             "Sie ist schön"
           ],
           "label": "c1a"
         },
         {
-          "prompt": "6c · Frage 2",
+          "prompt": "Fragen Sie nach der Meinung: der Kuchen.",
           "answers": [
             "Wie findest du den Kuchen"
           ],
           "label": "c2q"
         },
         {
-          "prompt": "6c · Antwort 2",
+          "prompt": "Antworten Sie mit Personalpronomen: Kuchen · lecker.",
           "answers": [
             "Er ist lecker"
           ],
           "label": "c2a"
         },
         {
-          "prompt": "6c · Frage 3",
+          "prompt": "Fragen Sie nach der Meinung: das Auto.",
           "answers": [
             "Wie findest du das Auto"
           ],
           "label": "c3q"
         },
         {
-          "prompt": "6c · Antwort 3",
+          "prompt": "Antworten Sie mit Personalpronomen: Auto · schön.",
           "answers": [
             "Es ist schön"
           ],
           "label": "c3a"
         },
         {
-          "prompt": "6c · Frage 4",
+          "prompt": "Fragen Sie nach der Meinung: das Buch.",
           "answers": [
             "Wie findest du das Buch"
           ],
           "label": "c4q"
         },
         {
-          "prompt": "6c · Antwort 4",
+          "prompt": "Antworten Sie mit Personalpronomen: Buch · gut.",
           "answers": [
             "Es ist gut"
           ],
           "label": "c4a"
         },
         {
-          "prompt": "6c · Frage 5",
+          "prompt": "Fragen Sie nach der Meinung: der Tisch.",
           "answers": [
             "Wie findest du den Tisch"
           ],
           "label": "c5q"
         },
         {
-          "prompt": "6c · Antwort 5",
+          "prompt": "Antworten Sie mit Personalpronomen: Tisch · schön.",
           "answers": [
             "Er ist schön"
           ],
           "label": "c5a"
         },
         {
-          "prompt": "6c · Frage 6",
+          "prompt": "Fragen Sie nach der Meinung: die Uhr.",
           "answers": [
             "Wie findest du die Uhr"
           ],
           "label": "c6q"
         },
         {
-          "prompt": "6c · Antwort 6",
+          "prompt": "Antworten Sie mit Personalpronomen: Uhr · schön.",
           "answers": [
             "Sie ist schön"
           ],
           "label": "c6a"
         },
         {
-          "prompt": "6c · Frage 7",
+          "prompt": "Fragen Sie nach der Meinung: das Brötchen.",
           "answers": [
             "Wie findest du das Brötchen"
           ],
           "label": "c7q"
         },
         {
-          "prompt": "6c · Antwort 7",
+          "prompt": "Antworten Sie mit Personalpronomen: Brötchen · lecker.",
           "answers": [
             "Es ist lecker"
           ],
           "label": "c7a"
         },
         {
-          "prompt": "6c · Frage 8",
+          "prompt": "Fragen Sie nach der Meinung: die Suppe.",
           "answers": [
             "Wie findest du die Suppe"
           ],
           "label": "c8q"
         },
         {
-          "prompt": "6c · Antwort 8",
+          "prompt": "Antworten Sie mit Personalpronomen: Suppe · lecker.",
           "answers": [
             "Sie ist lecker"
           ],
@@ -39285,49 +39583,57 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "Andreas"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "___ ist beruflich in Frankfurt."
         },
         {
           "answers": [
             "Petra"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "___ war noch nie in Basel."
         },
         {
           "answers": [
             "Andreas"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "___ besucht eine Konferenz in Frankfurt."
         },
         {
           "answers": [
             "Andreas"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "___ ist verheiratet und hat einen Sohn."
         },
         {
           "answers": [
             "Petra"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "___ ist Single."
         },
         {
           "answers": [
             "Petra"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "___ arbeitet bei der Deutschen Bank."
         },
         {
           "answers": [
             "Andreas"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "___ präsentiert morgen ein Projekt."
         },
         {
           "answers": [
             "Andreas"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "___ möchte gern ins Museum gehen."
         },
         {
           "label": "e · Andreas wohnt in",
@@ -39442,7 +39748,8 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "geht"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Und wie ___ es dir? - Danke, auch gut."
         },
         {
           "answers": [
@@ -39450,20 +39757,23 @@ window.SPEKTRUM_BANKS={
             "nehme",
             "trinke"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Ich ___ jetzt einen Kaffee."
         },
         {
           "answers": [
             "möchtest"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Was ___ du trinken?"
         },
         {
           "answers": [
             "nehme",
             "trinke"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Ich ___ vielleicht einen Tee oder einen Orangensaft."
         },
         {
           "answers": [
@@ -39471,40 +39781,46 @@ window.SPEKTRUM_BANKS={
             "nehme",
             "möchte"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Ich ___ einen Tee."
         },
         {
           "answers": [
             "Möchten",
             "Nehmen"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "___ Sie auch ein Stück Schokoladenkuchen?"
         },
         {
           "answers": [
             "Möchtest",
             "Nimmst"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "___ du wirklich keinen Schokoladenkuchen?"
         },
         {
           "answers": [
             "nehme",
             "möchte"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "Ach doch, ich ___ auch ein Stück."
         },
         {
           "answers": [
             "zahlen"
           ],
-          "label": "9"
+          "label": "9",
+          "prompt": "Wir möchten gern ___"
         },
         {
           "answers": [
             "macht"
           ],
-          "label": "10"
+          "label": "10",
+          "prompt": "Zwei Kaffee und zwei Schokoladenkuchen, das ___ 8,60 Euro."
         }
       ]
     },
@@ -39514,68 +39830,79 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "ein Wasser"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Ich möchte ___ (Nomen mit Artikel im Akkusativ: Wasser)."
         },
         {
           "answers": [
             "eine Cola"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Ich möchte ___ (Nomen mit Artikel im Akkusativ: Cola)."
         },
         {
           "answers": [
             "einen Tee"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Ich möchte ___ (Nomen mit Artikel im Akkusativ: Tee)."
         },
         {
           "answers": [
             "eine Suppe"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Ich möchte ___ (Nomen mit Artikel im Akkusativ: Suppe)."
         },
         {
           "answers": [
             "ein Brötchen"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Ich möchte ___ (Nomen mit Artikel im Akkusativ: Brötchen)."
         },
         {
           "answers": [
             "ein Stück Kuchen",
             "einen Kuchen"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Ich möchte ___ (Nomen mit Artikel im Akkusativ: Stück Kuchen)."
         },
         {
           "answers": [
             "einen Orangensaft"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Ich möchte ___ (Nomen mit Artikel im Akkusativ: Orangensaft)."
         },
         {
           "answers": [
             "einen Apfel"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "Ich möchte ___ (Nomen mit Artikel im Akkusativ: Apfel)."
         },
         {
           "answers": [
             "eine Currywurst"
           ],
-          "label": "9"
+          "label": "9",
+          "prompt": "Ich möchte ___ (Nomen mit Artikel im Akkusativ: Currywurst)."
         },
         {
           "answers": [
             "einen Salat"
           ],
-          "label": "10"
+          "label": "10",
+          "prompt": "Ich möchte ___ (Nomen mit Artikel im Akkusativ: Salat)."
         },
         {
           "answers": [
             "ein Schnitzel"
           ],
-          "label": "11"
+          "label": "11",
+          "prompt": "Ich möchte ___ (Nomen mit Artikel im Akkusativ: Schnitzel)."
         }
       ]
     },
@@ -39651,84 +39978,84 @@ window.SPEKTRUM_BANKS={
     "k3-u6-p64-521": {
       "fields": [
         {
-          "prompt": "Ü6 · Frage 1",
+          "prompt": "Fragen Sie nach früher: New York · Lieblingsstadt.",
           "answers": [
             "War New York nicht früher deine Lieblingsstadt"
           ],
           "label": "1q"
         },
         {
-          "prompt": "Ü6 · Antwort 1",
+          "prompt": "Bestätigen Sie mit dem passenden Pronomen: New York · Lieblingsstadt.",
           "answers": [
             "Ja, das ist sie immer noch"
           ],
           "label": "1a"
         },
         {
-          "prompt": "Ü6 · Frage 2",
+          "prompt": "Fragen Sie nach früher: Terminator 2 · Lieblingsfilm.",
           "answers": [
             "War Terminator 2 nicht früher dein Lieblingsfilm"
           ],
           "label": "2q"
         },
         {
-          "prompt": "Ü6 · Antwort 2",
+          "prompt": "Bestätigen Sie mit dem passenden Pronomen: Terminator 2 · Lieblingsfilm.",
           "answers": [
             "Ja, das ist er immer noch"
           ],
           "label": "2a"
         },
         {
-          "prompt": "Ü6 · Frage 3",
+          "prompt": "Fragen Sie nach früher: Martin Suter · Lieblingsautor.",
           "answers": [
             "War Martin Suter nicht früher dein Lieblingsautor"
           ],
           "label": "3q"
         },
         {
-          "prompt": "Ü6 · Antwort 3",
+          "prompt": "Bestätigen Sie mit dem passenden Pronomen: Martin Suter · Lieblingsautor.",
           "answers": [
             "Ja, das ist er immer noch"
           ],
           "label": "3a"
         },
         {
-          "prompt": "Ü6 · Frage 4",
+          "prompt": "Fragen Sie nach früher: Sting · Lieblingssänger.",
           "answers": [
             "War Sting nicht früher dein Lieblingssänger"
           ],
           "label": "4q"
         },
         {
-          "prompt": "Ü6 · Antwort 4",
+          "prompt": "Bestätigen Sie mit dem passenden Pronomen: Sting · Lieblingssänger.",
           "answers": [
             "Ja, das ist er immer noch"
           ],
           "label": "4a"
         },
         {
-          "prompt": "Ü6 · Frage 5",
+          "prompt": "Fragen Sie nach früher: Cola · Lieblingsgetränk.",
           "answers": [
             "War Cola nicht früher dein Lieblingsgetränk"
           ],
           "label": "5q"
         },
         {
-          "prompt": "Ü6 · Antwort 5",
+          "prompt": "Bestätigen Sie mit dem passenden Pronomen: Cola · Lieblingsgetränk.",
           "answers": [
             "Ja, das ist es immer noch"
           ],
           "label": "5a"
         },
         {
-          "prompt": "Ü6 · Frage 6",
+          "prompt": "Fragen Sie nach früher: das Deutsche Museum · Lieblingsmuseum.",
           "answers": [
             "War das Deutsche Museum nicht früher dein Lieblingsmuseum"
           ],
           "label": "6q"
         },
         {
-          "prompt": "Ü6 · Antwort 6",
+          "prompt": "Bestätigen Sie mit dem passenden Pronomen: das Deutsche Museum · Lieblingsmuseum.",
           "answers": [
             "Ja, das ist es immer noch"
           ],
@@ -39742,91 +40069,106 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "Konferenz"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Ich bin beruflich hier. Ich besuche eine ___."
         },
         {
           "answers": [
             "Frau"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Meine ___ arbeitet dort als Ärztin."
         },
         {
           "answers": [
             "Ärztin"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Meine Frau arbeitet dort als ___."
         },
         {
           "answers": [
             "Kinder"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Hast du ___?"
         },
         {
           "answers": [
             "Sohn"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Ja, ich habe einen ___. Er heißt Paul."
         },
         {
           "answers": [
             "Single"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Bist du verheiratet? – Nein, ich bin ___."
         },
         {
           "answers": [
             "Zentrum"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Ich wohne hier im ___."
         },
         {
           "answers": [
             "Konferenz"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "Wo ist deine ___? – Im Konferenzzentrum."
         },
         {
           "answers": [
             "Projekt"
           ],
-          "label": "9"
+          "label": "9",
+          "prompt": "Mein ___ präsentiere ich morgen."
         },
         {
           "answers": [
             "Schnitzel"
           ],
-          "label": "10"
+          "label": "10",
+          "prompt": "Möchtest du etwas essen? – Ja, ein ___."
         },
         {
           "answers": [
             "Malerei"
           ],
-          "label": "11"
+          "label": "11",
+          "prompt": "Dort hängen Bilder aus 700 Jahren ___."
         },
         {
           "answers": [
             "Lieblingsmaler"
           ],
-          "label": "12"
+          "label": "12",
+          "prompt": "Das war doch früher dein ___!"
         },
         {
           "answers": [
             "Lieblingsmaler"
           ],
-          "label": "13"
+          "label": "13",
+          "prompt": "Er ist auch heute noch mein ___."
         },
         {
           "answers": [
             "Schnitzel"
           ],
-          "label": "14"
+          "label": "14",
+          "prompt": "Dann essen wir jetzt ein ___ und danach gehen wir ins Museum."
         },
         {
           "answers": [
             "Idee"
           ],
-          "label": "15"
+          "label": "15",
+          "prompt": "Prima ___! Das machen wir!"
         }
       ]
     },
@@ -39896,69 +40238,80 @@ window.SPEKTRUM_BANKS={
           "label": "Ich brauche … 1",
           "answers": [
             "einen Schreibtisch"
-          ]
+          ],
+          "prompt": "Ich brauche ___ (mit Artikel im Akkusativ: Schreibtisch)."
         },
         {
           "label": "Ich brauche … 2",
           "answers": [
             "einen Laptop",
             "einen Computer"
-          ]
+          ],
+          "prompt": "Ich brauche ___ (mit Artikel im Akkusativ: Laptop)."
         },
         {
           "label": "Ich brauche … 3",
           "answers": [
             "eine Tasche"
-          ]
+          ],
+          "prompt": "Ich brauche ___ (mit Artikel im Akkusativ: Tasche)."
         },
         {
           "label": "Ich brauche … 4",
           "answers": [
             "ein Wörterbuch"
-          ]
+          ],
+          "prompt": "Ich brauche ___ (mit Artikel im Akkusativ: Wörterbuch)."
         },
         {
           "label": "Ich brauche … 5",
           "answers": [
             "einen Kalender"
-          ]
+          ],
+          "prompt": "Ich brauche ___ (mit Artikel im Akkusativ: Kalender)."
         },
         {
           "label": "Ich brauche … 6",
           "answers": [
             "eine Gitarre"
-          ]
+          ],
+          "prompt": "Ich brauche ___ (mit Artikel im Akkusativ: Gitarre)."
         },
         {
           "label": "Ich brauche … 7",
           "answers": [
             "eine Brille"
-          ]
+          ],
+          "prompt": "Ich brauche ___ (mit Artikel im Akkusativ: Brille)."
         },
         {
           "label": "Ich brauche … 8",
           "answers": [
             "eine Lampe"
-          ]
+          ],
+          "prompt": "Ich brauche ___ (mit Artikel im Akkusativ: Lampe)."
         },
         {
           "label": "Ich brauche … 9",
           "answers": [
             "ein Handy"
-          ]
+          ],
+          "prompt": "Ich brauche ___ (mit Artikel im Akkusativ: Handy)."
         },
         {
           "label": "Ich brauche … 10",
           "answers": [
             "einen Bildschirm"
-          ]
+          ],
+          "prompt": "Ich brauche ___ (mit Artikel im Akkusativ: Bildschirm)."
         },
         {
           "label": "Ich brauche … 11",
           "answers": [
             "eine Flasche Wasser",
             "eine Wasserflasche"
-          ]
+          ],
+          "prompt": "Ich brauche ___ (mit Artikel im Akkusativ: Flasche Wasser)."
         }
       ]
     },
@@ -40172,7 +40525,7 @@ window.SPEKTRUM_BANKS={
     "k2-u3-p41-458": {
       "fields": [
         {
-          "prompt": "Rätsel 1",
+          "prompt": "Worin ist das Getränk auf dem Bild? Schreiben Sie das Nomen in Großbuchstaben.",
           "answers": [
             "FLASCHE",
             "Flasche"
@@ -40180,7 +40533,7 @@ window.SPEKTRUM_BANKS={
           "label": "1"
         },
         {
-          "prompt": "Rätsel 2",
+          "prompt": "Was liest man, um die Nachrichten des Tages zu erfahren?",
           "answers": [
             "ZEITUNG",
             "Zeitung"
@@ -40188,7 +40541,7 @@ window.SPEKTRUM_BANKS={
           "label": "2"
         },
         {
-          "prompt": "Rätsel 3",
+          "prompt": "Welches Buch benutzt man im Unterricht?",
           "answers": [
             "LEHRBUCH",
             "Lehrbuch"
@@ -40196,7 +40549,7 @@ window.SPEKTRUM_BANKS={
           "label": "3"
         },
         {
-          "prompt": "Rätsel 4",
+          "prompt": "Mit welchem kleinen Gerät telefoniert man unterwegs?",
           "answers": [
             "HANDY",
             "Handy"
@@ -40204,7 +40557,7 @@ window.SPEKTRUM_BANKS={
           "label": "4"
         },
         {
-          "prompt": "Rätsel 5",
+          "prompt": "Worauf sitzt man am Tisch?",
           "answers": [
             "STUHL",
             "Stuhl"
@@ -40212,7 +40565,7 @@ window.SPEKTRUM_BANKS={
           "label": "5"
         },
         {
-          "prompt": "Rätsel 6",
+          "prompt": "An welchem Möbelstück kann man essen oder arbeiten?",
           "answers": [
             "TISCH",
             "Tisch"
@@ -40220,7 +40573,7 @@ window.SPEKTRUM_BANKS={
           "label": "6"
         },
         {
-          "prompt": "Rätsel 7",
+          "prompt": "Worin trägt man seine Sachen?",
           "answers": [
             "TASCHE",
             "Tasche"
@@ -40228,7 +40581,7 @@ window.SPEKTRUM_BANKS={
           "label": "7"
         },
         {
-          "prompt": "Rätsel 8",
+          "prompt": "Was nimmt man ein, wenn man krank ist?",
           "answers": [
             "MEDIKAMENT",
             "Medikament"
@@ -40236,7 +40589,7 @@ window.SPEKTRUM_BANKS={
           "label": "8"
         },
         {
-          "prompt": "Rätsel 9",
+          "prompt": "Was hängt als Motiv an der Wand?",
           "answers": [
             "BILD",
             "Bild"
@@ -40244,7 +40597,7 @@ window.SPEKTRUM_BANKS={
           "label": "9"
         },
         {
-          "prompt": "Lösungswort",
+          "prompt": "Wie lautet das Lösungswort des Rätsels?",
           "answers": [
             "GEGENSTAND",
             "Gegenstand"
@@ -40351,7 +40704,7 @@ window.SPEKTRUM_BANKS={
     "k2-u10-p43-664": {
       "fields": [
         {
-          "prompt": "Telefonnummer 1",
+          "prompt": "Wie lautet die erste Telefonnummer in der Aufnahme? Schreiben Sie die Ziffern.",
           "answers": [
             "089 3619590",
             "0893619590"
@@ -40359,7 +40712,7 @@ window.SPEKTRUM_BANKS={
           "label": "1"
         },
         {
-          "prompt": "Telefonnummer 2",
+          "prompt": "Wie lautet die zweite Telefonnummer in der Aufnahme? Schreiben Sie die Ziffern.",
           "answers": [
             "030 565420",
             "030565420"
@@ -40367,7 +40720,7 @@ window.SPEKTRUM_BANKS={
           "label": "2"
         },
         {
-          "prompt": "Telefonnummer 3",
+          "prompt": "Wie lautet die dritte Telefonnummer in der Aufnahme? Schreiben Sie die Ziffern.",
           "answers": [
             "0044 1227 761862",
             "00441227761862"
@@ -40375,7 +40728,7 @@ window.SPEKTRUM_BANKS={
           "label": "3"
         },
         {
-          "prompt": "Telefonnummer 4",
+          "prompt": "Wie lautet die vierte Telefonnummer in der Aufnahme? Schreiben Sie die Ziffern.",
           "answers": [
             "0117 384016",
             "0117384016"
@@ -40447,168 +40800,168 @@ window.SPEKTRUM_BANKS={
     "k3-a7-p53-524": {
       "fields": [
         {
-          "prompt": "Dialog 1 · Frage",
+          "prompt": "Fragen Sie mit „möchtest du“: Orangensaft.",
           "answers": [
             "Möchtest du einen Orangensaft trinken"
           ],
           "label": "1q"
         },
         {
-          "prompt": "Dialog 1 · Nein-Satz",
+          "prompt": "Lehnen Sie mit kein- ab: Orangensaft.",
           "answers": [
             "Nein, ich möchte keinen Orangensaft"
           ],
           "label": "1n"
         },
         {
-          "prompt": "Dialog 1 · lieber …",
+          "prompt": "Was möchten Sie lieber? Antworten Sie mit „lieber“: Mineralwasser.",
           "answers": [
             "Ich trinke lieber ein Mineralwasser"
           ],
           "label": "1p"
         },
         {
-          "prompt": "Dialog 2 · Frage",
+          "prompt": "Fragen Sie mit „möchtest du“: Cola.",
           "answers": [
             "Möchtest du eine Cola trinken"
           ],
           "label": "2q"
         },
         {
-          "prompt": "Dialog 2 · Nein-Satz",
+          "prompt": "Lehnen Sie mit kein- ab: Cola.",
           "answers": [
             "Nein, ich möchte keine Cola"
           ],
           "label": "2n"
         },
         {
-          "prompt": "Dialog 2 · lieber …",
+          "prompt": "Was möchten Sie lieber? Antworten Sie mit „lieber“: Apfelsaft.",
           "answers": [
             "Ich trinke lieber einen Apfelsaft"
           ],
           "label": "2p"
         },
         {
-          "prompt": "Dialog 3 · Frage",
+          "prompt": "Fragen Sie mit „möchtest du“: Eistee.",
           "answers": [
             "Möchtest du einen Eistee trinken"
           ],
           "label": "3q"
         },
         {
-          "prompt": "Dialog 3 · Nein-Satz",
+          "prompt": "Lehnen Sie mit kein- ab: Eistee.",
           "answers": [
             "Nein, ich möchte keinen Eistee"
           ],
           "label": "3n"
         },
         {
-          "prompt": "Dialog 3 · lieber …",
+          "prompt": "Was möchten Sie lieber? Antworten Sie mit „lieber“: Kaffee mit Milch.",
           "answers": [
             "Ich trinke lieber einen Kaffee mit Milch"
           ],
           "label": "3p"
         },
         {
-          "prompt": "Dialog 4 · Frage",
+          "prompt": "Fragen Sie mit „möchtest du“: Bier.",
           "answers": [
             "Möchtest du ein Bier trinken"
           ],
           "label": "4q"
         },
         {
-          "prompt": "Dialog 4 · Nein-Satz",
+          "prompt": "Lehnen Sie mit kein- ab: Bier.",
           "answers": [
             "Nein, ich möchte kein Bier"
           ],
           "label": "4n"
         },
         {
-          "prompt": "Dialog 4 · lieber …",
+          "prompt": "Was möchten Sie lieber? Antworten Sie mit „lieber“: Tee.",
           "answers": [
             "Ich trinke lieber einen Tee"
           ],
           "label": "4p"
         },
         {
-          "prompt": "Dialog 5 · Frage",
+          "prompt": "Fragen Sie mit „möchtest du“: Currywurst.",
           "answers": [
             "Möchtest du eine Currywurst essen"
           ],
           "label": "5q"
         },
         {
-          "prompt": "Dialog 5 · Nein-Satz",
+          "prompt": "Lehnen Sie mit kein- ab: Currywurst.",
           "answers": [
             "Nein, ich möchte keine Currywurst"
           ],
           "label": "5n"
         },
         {
-          "prompt": "Dialog 5 · lieber …",
+          "prompt": "Was möchten Sie lieber? Antworten Sie mit „lieber“: Suppe.",
           "answers": [
             "Ich esse lieber eine Suppe"
           ],
           "label": "5p"
         },
         {
-          "prompt": "Dialog 6 · Frage",
+          "prompt": "Fragen Sie mit „möchtest du“: Brötchen mit Käse.",
           "answers": [
             "Möchtest du ein Brötchen mit Käse essen"
           ],
           "label": "6q"
         },
         {
-          "prompt": "Dialog 6 · Nein-Satz",
+          "prompt": "Lehnen Sie mit kein- ab: Brötchen mit Käse.",
           "answers": [
             "Nein, ich möchte kein Brötchen mit Käse"
           ],
           "label": "6n"
         },
         {
-          "prompt": "Dialog 6 · lieber …",
+          "prompt": "Was möchten Sie lieber? Antworten Sie mit „lieber“: Apfel.",
           "answers": [
             "Ich esse lieber einen Apfel"
           ],
           "label": "6p"
         },
         {
-          "prompt": "Dialog 7 · Frage",
+          "prompt": "Fragen Sie mit „möchtest du“: Pizza.",
           "answers": [
             "Möchtest du eine Pizza essen"
           ],
           "label": "7q"
         },
         {
-          "prompt": "Dialog 7 · Nein-Satz",
+          "prompt": "Lehnen Sie mit kein- ab: Pizza.",
           "answers": [
             "Nein, ich möchte keine Pizza"
           ],
           "label": "7n"
         },
         {
-          "prompt": "Dialog 7 · lieber …",
+          "prompt": "Was möchten Sie lieber? Antworten Sie mit „lieber“: Stück Schokoladenkuchen.",
           "answers": [
             "Ich esse lieber ein Stück Schokoladenkuchen"
           ],
           "label": "7p"
         },
         {
-          "prompt": "Dialog 8 · Frage",
+          "prompt": "Fragen Sie mit „möchtest du“: Suppe.",
           "answers": [
             "Möchtest du eine Suppe essen"
           ],
           "label": "8q"
         },
         {
-          "prompt": "Dialog 8 · Nein-Satz",
+          "prompt": "Lehnen Sie mit kein- ab: Suppe.",
           "answers": [
             "Nein, ich möchte keine Suppe"
           ],
           "label": "8n"
         },
         {
-          "prompt": "Dialog 8 · lieber …",
+          "prompt": "Was möchten Sie lieber? Antworten Sie mit „lieber“: Schnitzel.",
           "answers": [
             "Ich esse lieber ein Schnitzel"
           ],
@@ -40660,98 +41013,98 @@ window.SPEKTRUM_BANKS={
     "k3-a14-p58-57": {
       "fields": [
         {
-          "prompt": "14b · item 1",
+          "prompt": "Was sucht Andreas? Er möchte Informationen über Frankfurt.",
           "answers": [
             "die Touristeninformation"
           ],
           "label": "b1"
         },
         {
-          "prompt": "14b · item 2",
+          "prompt": "Was sucht Andreas? Er möchte Medikamente kaufen.",
           "answers": [
             "eine Apotheke"
           ],
           "label": "b2"
         },
         {
-          "prompt": "14b · item 3",
+          "prompt": "Was sucht Andreas? Er möchte Schokoladenkuchen essen.",
           "answers": [
             "ein Café"
           ],
           "label": "b3"
         },
         {
-          "prompt": "14b · item 4",
+          "prompt": "Was sucht Andreas? Er möchte sein Auto parken.",
           "answers": [
             "einen Parkplatz"
           ],
           "label": "b4"
         },
         {
-          "prompt": "14b · item 5",
+          "prompt": "Was sucht Andreas? Er möchte zwei Flaschen Wasser kaufen.",
           "answers": [
             "einen Supermarkt"
           ],
           "label": "b5"
         },
         {
-          "prompt": "14b · item 6",
+          "prompt": "Was sucht Andreas? Er möchte Bilder von Claude Monet sehen.",
           "answers": [
             "ein Museum"
           ],
           "label": "b6"
         },
         {
-          "prompt": "14b · item 7",
+          "prompt": "Was sucht Andreas? Er möchte ein Schnitzel essen.",
           "answers": [
             "ein Restaurant"
           ],
           "label": "b7"
         },
         {
-          "prompt": "14b · item 8",
+          "prompt": "Was sucht Andreas? Er möchte eine Fahrkarte kaufen.",
           "answers": [
             "den Bahnhof"
           ],
           "label": "b8"
         },
         {
-          "prompt": "14b · item 9",
+          "prompt": "Was sucht Andreas? Er möchte in Frankfurt übernachten.",
           "answers": [
             "ein Hotel"
           ],
           "label": "b9"
         },
         {
-          "prompt": "14b · item 10",
+          "prompt": "Was sucht Andreas? Er möchte einen Film sehen.",
           "answers": [
             "ein Kino"
           ],
           "label": "b10"
         },
         {
-          "prompt": "14c · Satz 1a",
+          "prompt": "Bilden Sie einen Satz mit suchen: Otto · eine Bank.",
           "answers": [
             "Otto sucht eine Bank"
           ],
           "label": "c1a"
         },
         {
-          "prompt": "14c · Satz 1b",
+          "prompt": "Was ist das Ziel? Bilden Sie einen Satz mit möchten: er · Geld.",
           "answers": [
             "Er möchte Geld abheben"
           ],
           "label": "c1b"
         },
         {
-          "prompt": "14c · Satz 2a",
+          "prompt": "Bilden Sie einen Satz mit suchen: Emma und Hilde · ein Café.",
           "answers": [
             "Emma und Hilde suchen ein Café"
           ],
           "label": "c2a"
         },
         {
-          "prompt": "14c · Satz 2b",
+          "prompt": "Was ist das Ziel? Bilden Sie einen Satz mit möchten: sie · Schokoladenkuchen.",
           "answers": [
             "Sie möchten einen Schokoladenkuchen essen",
             "Sie möchten Schokoladenkuchen essen"
@@ -40759,112 +41112,112 @@ window.SPEKTRUM_BANKS={
           "label": "c2b"
         },
         {
-          "prompt": "14c · Satz 3a",
+          "prompt": "Bilden Sie einen Satz mit suchen: Dr. Sander · einen Parkplatz.",
           "answers": [
             "Dr. Sander sucht einen Parkplatz"
           ],
           "label": "c3a"
         },
         {
-          "prompt": "14c · Satz 3b",
+          "prompt": "Was ist das Ziel? Bilden Sie einen Satz mit möchten: er · sein Auto.",
           "answers": [
             "Er möchte sein Auto parken"
           ],
           "label": "c3b"
         },
         {
-          "prompt": "14c · Satz 4a",
+          "prompt": "Bilden Sie einen Satz mit suchen: ich · einen Supermarkt.",
           "answers": [
             "Ich suche einen Supermarkt"
           ],
           "label": "c4a"
         },
         {
-          "prompt": "14c · Satz 4b",
+          "prompt": "Was ist das Ziel? Bilden Sie einen Satz mit möchten: ich · zwei Flaschen Wasser.",
           "answers": [
             "Ich möchte zwei Flaschen Wasser kaufen"
           ],
           "label": "c4b"
         },
         {
-          "prompt": "14c · Satz 5a",
+          "prompt": "Bilden Sie einen Satz mit suchen: wir · den Bahnhof.",
           "answers": [
             "Wir suchen den Bahnhof"
           ],
           "label": "c5a"
         },
         {
-          "prompt": "14c · Satz 5b",
+          "prompt": "Was ist das Ziel? Bilden Sie einen Satz mit möchten: wir · zwei Fahrkarten.",
           "answers": [
             "Wir möchten zwei Fahrkarten kaufen"
           ],
           "label": "c5b"
         },
         {
-          "prompt": "14c · Satz 6a",
+          "prompt": "Bilden Sie einen Satz mit suchen: ich · ein Restaurant.",
           "answers": [
             "Ich suche ein Restaurant"
           ],
           "label": "c6a"
         },
         {
-          "prompt": "14c · Satz 6b",
+          "prompt": "Was ist das Ziel? Bilden Sie einen Satz mit möchten: ich · ein Schnitzel.",
           "answers": [
             "Ich möchte ein Schnitzel essen"
           ],
           "label": "c6b"
         },
         {
-          "prompt": "14c · Satz 7a",
+          "prompt": "Bilden Sie einen Satz mit suchen: Andreas · ein Hotel.",
           "answers": [
             "Andreas sucht ein Hotel"
           ],
           "label": "c7a"
         },
         {
-          "prompt": "14c · Satz 7b",
+          "prompt": "Was ist das Ziel? Bilden Sie einen Satz mit möchten: er · in Frankfurt.",
           "answers": [
             "Er möchte in Frankfurt übernachten"
           ],
           "label": "c7b"
         },
         {
-          "prompt": "14c · Satz 8a",
+          "prompt": "Bilden Sie einen Satz mit suchen: wir · ein Kino.",
           "answers": [
             "Wir suchen ein Kino"
           ],
           "label": "c8a"
         },
         {
-          "prompt": "14c · Satz 8b",
+          "prompt": "Was ist das Ziel? Bilden Sie einen Satz mit möchten: wir · einen Film.",
           "answers": [
             "Wir möchten einen Film sehen"
           ],
           "label": "c8b"
         },
         {
-          "prompt": "14c · Satz 9a",
+          "prompt": "Bilden Sie einen Satz mit suchen: ich · ein Museum.",
           "answers": [
             "Ich suche ein Museum"
           ],
           "label": "c9a"
         },
         {
-          "prompt": "14c · Satz 9b",
+          "prompt": "Was ist das Ziel? Bilden Sie einen Satz mit möchten: ich · Bilder von Vincent van Gogh.",
           "answers": [
             "Ich möchte Bilder von Vincent van Gogh sehen"
           ],
           "label": "c9b"
         },
         {
-          "prompt": "14c · Satz 10a",
+          "prompt": "Bilden Sie einen Satz mit suchen: Luise · die Touristeninformation.",
           "answers": [
             "Luise sucht die Touristeninformation"
           ],
           "label": "c10a"
         },
         {
-          "prompt": "14c · Satz 10b",
+          "prompt": "Was ist das Ziel? Bilden Sie einen Satz mit möchten: sie · ein Buch über Frankfurt.",
           "answers": [
             "Sie möchte ein Buch über Frankfurt lesen",
             "Sie möchte ein Buch über Frankfurt kaufen"
@@ -41144,77 +41497,77 @@ window.SPEKTRUM_BANKS={
     "k3-u2-p63-327": {
       "fields": [
         {
-          "prompt": "Dialog line 1",
+          "prompt": "Kellnerin: Fragen Sie nach dem Getränk.",
           "answers": [
             "Was möchten Sie trinken"
           ],
           "label": "1"
         },
         {
-          "prompt": "Dialog line 2",
+          "prompt": "Gast: Bestellen Sie einen Kaffee.",
           "answers": [
             "Ich möchte bitte einen Kaffee"
           ],
           "label": "2"
         },
         {
-          "prompt": "Dialog line 3",
+          "prompt": "Kellnerin: Fragen Sie nach Milch und Zucker.",
           "answers": [
             "Mit Milch und Zucker"
           ],
           "label": "3"
         },
         {
-          "prompt": "Dialog line 4",
+          "prompt": "Gast: Sagen Sie, wie Sie den Kaffee trinken.",
           "answers": [
             "Mit viel Milch und ohne Zucker"
           ],
           "label": "4"
         },
         {
-          "prompt": "Dialog line 5",
+          "prompt": "Kellnerin: Fragen Sie, ob noch etwas gewünscht wird.",
           "answers": [
             "Ist das alles"
           ],
           "label": "5"
         },
         {
-          "prompt": "Dialog line 6",
+          "prompt": "Gast: Bestellen Sie zusätzlich Wasser.",
           "answers": [
             "Nein, ich nehme noch ein Wasser"
           ],
           "label": "6"
         },
         {
-          "prompt": "Dialog line 7",
+          "prompt": "Kellnerin: Wiederholen Sie die Bestellung.",
           "answers": [
             "Also einen Kaffee mit Milch und ein Wasser"
           ],
           "label": "7"
         },
         {
-          "prompt": "Dialog line 8",
+          "prompt": "Gast: Fragen Sie nach dem Preis für Käsekuchen.",
           "answers": [
             "Ja, bitte. Wie viel kostet ein Stück Käsekuchen"
           ],
           "label": "8"
         },
         {
-          "prompt": "Dialog line 9",
+          "prompt": "Kellnerin: Nennen Sie den Preis für ein Stück Käsekuchen.",
           "answers": [
             "Ein Stück Käsekuchen kostet 2,80 Euro"
           ],
           "label": "9"
         },
         {
-          "prompt": "Dialog line 10",
+          "prompt": "Gast: Bestellen Sie auch den Kuchen.",
           "answers": [
             "Dann nehme ich auch noch ein Stück Käsekuchen"
           ],
           "label": "10"
         },
         {
-          "prompt": "Dialog line 11",
+          "prompt": "Kellnerin: Schließen Sie den Dialog ab.",
           "answers": [
             "Gerne. Vielen Dank"
           ],
@@ -41225,7 +41578,7 @@ window.SPEKTRUM_BANKS={
     "k3-u9-p66-192": {
       "fields": [
         {
-          "prompt": "Rätsel 1",
+          "prompt": "Haben Sie eine ___?",
           "answers": [
             "RESERVIERUNG",
             "Reservierung"
@@ -41233,7 +41586,7 @@ window.SPEKTRUM_BANKS={
           "label": "1"
         },
         {
-          "prompt": "Rätsel 2",
+          "prompt": "Wir ___ noch ein Zimmer für Sie.",
           "answers": [
             "HABEN",
             "haben"
@@ -41241,7 +41594,7 @@ window.SPEKTRUM_BANKS={
           "label": "2"
         },
         {
-          "prompt": "Rätsel 3",
+          "prompt": "Möchten Sie ein ___?",
           "answers": [
             "EIN",
             "ein"
@@ -41249,7 +41602,7 @@ window.SPEKTRUM_BANKS={
           "label": "3"
         },
         {
-          "prompt": "Rätsel 4",
+          "prompt": "Was ___ das Zimmer?",
           "answers": [
             "KOSTET",
             "kostet"
@@ -41257,7 +41610,7 @@ window.SPEKTRUM_BANKS={
           "label": "4"
         },
         {
-          "prompt": "Rätsel 5",
+          "prompt": "Mit ___?",
           "answers": [
             "FRÜHSTÜCK",
             "Frühstück"
@@ -41265,7 +41618,7 @@ window.SPEKTRUM_BANKS={
           "label": "5"
         },
         {
-          "prompt": "Rätsel 6",
+          "prompt": "___, das nehme ich.",
           "answers": [
             "GUT",
             "gut"
@@ -41273,7 +41626,7 @@ window.SPEKTRUM_BANKS={
           "label": "6"
         },
         {
-          "prompt": "Rätsel 7",
+          "prompt": "Zahlen Sie ___?",
           "answers": [
             "BAR",
             "bar"
@@ -41281,7 +41634,7 @@ window.SPEKTRUM_BANKS={
           "label": "7"
         },
         {
-          "prompt": "Rätsel 8",
+          "prompt": "Nein, mit ___.",
           "answers": [
             "KREDITKARTE",
             "Kreditkarte"
@@ -41289,7 +41642,7 @@ window.SPEKTRUM_BANKS={
           "label": "8"
         },
         {
-          "prompt": "Lösungswort",
+          "prompt": "Welches Lösungswort ergeben die markierten Buchstaben?",
           "answers": [
             "FRANKFURT",
             "Frankfurt"
@@ -41304,38 +41657,44 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "keine Zeit"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Maria hat leider ___ für einen Kaffee."
         },
         {
           "answers": [
             "Büro"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Brigitte ist am Mittwochvormittag im ___."
         },
         {
           "answers": [
             "14.00 bis 15.00",
             "14 bis 15 Uhr"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Von wann bis wann spielt Brigitte Tennis?"
         },
         {
           "answers": [
             "Donnerstag"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "An welchem Tag fährt sie nach Frankfurt?"
         },
         {
           "answers": [
             "Freitag"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "An welchem Tag trinken Maria und Brigitte zusammen Kaffee?"
         },
         {
           "answers": [
             "16.00"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Um wie viel Uhr treffen sie sich zum Kaffee?"
         }
       ]
     },
@@ -41345,103 +41704,120 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "arbeiten"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Ergänzen Sie den Infinitiv: als Statistikerin ___."
         },
         {
           "answers": [
             "aufstehen"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Ergänzen Sie den Infinitiv: morgens um 7 Uhr ___."
         },
         {
           "answers": [
             "frühstücken"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Ergänzen Sie den Infinitiv: um 7.30 Uhr ___."
         },
         {
           "answers": [
             "machen"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Ergänzen Sie den Infinitiv: Gymnastik ___."
         },
         {
           "answers": [
             "fahren"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Ergänzen Sie den Infinitiv: ins Büro ___."
         },
         {
           "answers": [
             "analysieren"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Ergänzen Sie den Infinitiv: Daten ___."
         },
         {
           "answers": [
             "schreiben"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Ergänzen Sie den Infinitiv: E-Mails und Berichte ___."
         },
         {
           "answers": [
             "haben"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "Ergänzen Sie den Infinitiv: eine Besprechung ___."
         },
         {
           "answers": [
             "anfangen"
           ],
-          "label": "9"
+          "label": "9",
+          "prompt": "Ergänzen Sie den Infinitiv: um 11 Uhr (Die Besprechung fängt an.) ___."
         },
         {
           "answers": [
             "dauern"
           ],
-          "label": "10"
+          "label": "10",
+          "prompt": "Ergänzen Sie den Infinitiv: eine Stunde (Die Besprechung dauert.) ___."
         },
         {
           "answers": [
             "anrufen"
           ],
-          "label": "11"
+          "label": "11",
+          "prompt": "Ergänzen Sie den Infinitiv: Kollegen (Martina ruft sie an.) ___."
         },
         {
           "answers": [
             "einkaufen"
           ],
-          "label": "12"
+          "label": "12",
+          "prompt": "Ergänzen Sie den Infinitiv: in der Stadt ___."
         },
         {
           "answers": [
             "kaufen"
           ],
-          "label": "13"
+          "label": "13",
+          "prompt": "Ergänzen Sie den Infinitiv: Schuhe ___."
         },
         {
           "answers": [
             "gehen"
           ],
-          "label": "14"
+          "label": "14",
+          "prompt": "Ergänzen Sie den Infinitiv: in ein Restaurant ___."
         },
         {
           "answers": [
             "sein"
           ],
-          "label": "15"
+          "label": "15",
+          "prompt": "Ergänzen Sie den Infinitiv: Student ___."
         },
         {
           "answers": [
             "besuchen"
           ],
-          "label": "16"
+          "label": "16",
+          "prompt": "Ergänzen Sie den Infinitiv: Seminare und Vorlesungen ___."
         },
         {
           "answers": [
             "ausgehen"
           ],
-          "label": "17"
+          "label": "17",
+          "prompt": "Ergänzen Sie den Infinitiv: mit Freunden ___."
         }
       ]
     },
@@ -41535,109 +41911,127 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "9.00"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Um wie viel Uhr beginnt die Besprechung mit dem Direktor?"
         },
         {
           "answers": [
             "11.00"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Wann ist die Telefonkonferenz?"
         },
         {
           "answers": [
             "Mittagspause"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Was macht Frau Lustig um 12.30 Uhr?"
         },
         {
           "answers": [
             "14.30"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Wann telefoniert Frau Lustig mit den Kollegen?"
         },
         {
           "answers": [
             "in London"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Wo sind die Kollegen, mit denen sie um 14.30 Uhr telefoniert?"
         },
         {
           "answers": [
             "Berlin"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "In welche Stadt fährt sie um 16.00 Uhr?"
         },
         {
           "answers": [
             "dringend"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Ist es ___?"
         },
         {
           "answers": [
             "eine Projektidee vorstellen"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "Ja, ich möchte ___. Ist es heute möglich?"
         },
         {
           "answers": [
             "Zeit"
           ],
-          "label": "9"
+          "label": "9",
+          "prompt": "Am Vormittag hat Frau Lustig leider keine ___."
         },
         {
           "answers": [
             "Die Besprechung dauert"
           ],
-          "label": "10"
+          "label": "10",
+          "prompt": "Um 9.00 Uhr hat sie eine Besprechung. ___ zwei Stunden."
         },
         {
           "answers": [
             "Mittagspause"
           ],
-          "label": "11"
+          "label": "11",
+          "prompt": "Um 12.30 Uhr macht sie ___."
         },
         {
           "answers": [
             "einen Bericht"
           ],
-          "label": "12"
+          "label": "12",
+          "prompt": "Um 13.30 Uhr schreibt Frau Lustig ___."
         },
         {
           "answers": [
             "nach Berlin"
           ],
-          "label": "13"
+          "label": "13",
+          "prompt": "Um 16.00 Uhr fährt sie ___."
         },
         {
           "answers": [
             "Und morgen"
           ],
-          "label": "14"
+          "label": "14",
+          "prompt": "___? Hat Frau Lustig vielleicht morgen Zeit?"
         },
         {
           "answers": [
             "gerne am Montag"
           ],
-          "label": "15"
+          "label": "15",
+          "prompt": "Sie können ___ wieder anrufen."
         },
         {
           "answers": [
             "Welche Telefonnummer hat"
           ],
-          "label": "16"
+          "label": "16",
+          "prompt": "___ Frau Esser?"
         },
         {
           "answers": [
             "Ich wiederhole"
           ],
-          "label": "17"
+          "label": "17",
+          "prompt": "___: 7 63 54 26."
         },
         {
           "answers": [
             "Viel Erfolg"
           ],
-          "label": "18"
+          "label": "18",
+          "prompt": "Ja. ___, Herr Gruber."
         }
       ]
     },
@@ -41648,28 +42042,32 @@ window.SPEKTRUM_BANKS={
             "um 12.10 Uhr",
             "12.10 Uhr"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Die Mittagspause beginnt um ___ Uhr."
         },
         {
           "answers": [
             "um 15.40 Uhr",
             "15.40 Uhr"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Die Präsentation beginnt um ___ Uhr."
         },
         {
           "answers": [
             "um 17.45 Uhr",
             "17.45 Uhr"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Das Tennisspiel beginnt um ___ Uhr."
         },
         {
           "answers": [
             "um 18.30 Uhr",
             "18.30 Uhr"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Der Unterricht beginnt um ___ Uhr."
         },
         {
           "answers": [
@@ -41678,7 +42076,8 @@ window.SPEKTRUM_BANKS={
             "um 20.05 Uhr",
             "20.05 Uhr"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Die Konferenz beginnt um ___ Uhr."
         },
         {
           "answers": [
@@ -41687,7 +42086,8 @@ window.SPEKTRUM_BANKS={
             "um 21.20 Uhr",
             "21.20 Uhr"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Die Prüfung beginnt um ___ Uhr."
         }
       ]
     },
@@ -41697,56 +42097,65 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "Donnerstag"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Mittwoch → ___ → Freitag"
         },
         {
           "answers": [
             "mittags"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "vormittags → ___ → nachmittags"
         },
         {
           "answers": [
             "der Abend"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "der Nachmittag → ___ → die Nacht"
         },
         {
           "answers": [
             "Montag"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Sonntag → ___ → Dienstag"
         },
         {
           "answers": [
             "nachts"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "abends → ___ → morgens"
         },
         {
           "answers": [
             "Samstag",
             "Sonnabend"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Freitag → ___ → Sonntag"
         },
         {
           "answers": [
             "Guten Tag"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Guten Morgen! → ___ → Guten Abend!"
         },
         {
           "answers": [
             "die Minute"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "die Sekunde → ___ → die Stunde"
         },
         {
           "answers": [
             "der Tag"
           ],
-          "label": "9"
+          "label": "9",
+          "prompt": "die Stunde → ___ → die Woche"
         }
       ]
     },
@@ -41756,61 +42165,71 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "von"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Sie arbeitet ___ Montag … Donnerstag. (Beginn)"
         },
         {
           "answers": [
             "bis"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Sie arbeitet von Montag ___ Donnerstag. (Ende)"
         },
         {
           "answers": [
             "Am"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "___ Freitag arbeitet sie nicht."
         },
         {
           "answers": [
             "Am"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "___ Vormittag schreibt Frau Müller E-Mails."
         },
         {
           "answers": [
             "um"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Die Besprechung fängt ___ 13.30 Uhr an."
         },
         {
           "answers": [
             "Von"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "___ 13.30 bis 14.30 Uhr spricht sie mit Kollegen."
         },
         {
           "answers": [
             "bis"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Von 13.30 ___ 14.30 Uhr spricht sie mit Kollegen."
         },
         {
           "answers": [
             "am"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "Die Präsentation ist ___ Freitag …"
         },
         {
           "answers": [
             "um"
           ],
-          "label": "9"
+          "label": "9",
+          "prompt": "Die Präsentation ist am Freitag ___ 15.00 Uhr."
         },
         {
           "answers": [
             "Um"
           ],
-          "label": "10"
+          "label": "10",
+          "prompt": "Wann ist die Präsentation zu Ende? ___ 16.30 Uhr."
         }
       ]
     },
@@ -41820,67 +42239,78 @@ window.SPEKTRUM_BANKS={
           "label": "Verb 1",
           "answers": [
             "schläft"
-          ]
+          ],
+          "prompt": "Er ___ etwa 24 Jahre und 4 Monate. (schlafen)"
         },
         {
           "label": "Verb 2",
           "answers": [
             "sieht fern"
-          ]
+          ],
+          "prompt": "Zwölf Jahre ___ er ___. (fernsehen)"
         },
         {
           "label": "Verb 3",
           "answers": [
             "spricht"
-          ]
+          ],
+          "prompt": "Zwölf Jahre ___ er mit anderen Menschen. (sprechen)"
         },
         {
           "label": "Verb 4",
           "answers": [
             "arbeitet"
-          ]
+          ],
+          "prompt": "Er ___ acht Jahre. (arbeiten)"
         },
         {
           "label": "Verb 5",
           "answers": [
             "isst"
-          ]
+          ],
+          "prompt": "Fünf Jahre ___ und trinkt er. (essen)"
         },
         {
           "label": "Verb 6",
           "answers": [
             "trinkt"
-          ]
+          ],
+          "prompt": "Fünf Jahre isst und ___ er. (trinken)"
         },
         {
           "label": "Verb 7",
           "answers": [
             "kocht"
-          ]
+          ],
+          "prompt": "Welche Form passt zum Subjekt er? (kochen)"
         },
         {
           "label": "Verb 8",
           "answers": [
             "sitzt"
-          ]
+          ],
+          "prompt": "Zwei Jahre und sechs Monate ___ er im Auto. (sitzen)"
         },
         {
           "label": "Verb 9",
           "answers": [
             "treibt"
-          ]
+          ],
+          "prompt": "Ein Jahr und sieben Monate ___ er Sport. (treiben)"
         },
         {
           "label": "Verb 10",
           "answers": [
             "geht"
-          ]
+          ],
+          "prompt": "Zwölf Monate ___ er ins Kino, Theater oder auf Konzerte. (gehen)"
         },
         {
           "label": "Verb 11",
           "answers": [
             "spielt"
-          ]
+          ],
+          "prompt": "Nur neun Monate ___ er mit seinen Kindern. (spielen)"
         }
       ]
     },
@@ -41890,55 +42320,64 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "d"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Welches Verb passt? Kollegen ___."
         },
         {
           "answers": [
             "f"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Welches Verb passt? mit dem Auto ins Büro ___."
         },
         {
           "answers": [
             "a"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Welches Verb passt? Schuhe ___."
         },
         {
           "answers": [
             "j"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Welches Verb passt? Daten ___."
         },
         {
           "answers": [
             "b"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Welches Verb passt? als Statistikerin ___."
         },
         {
           "answers": [
             "e"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Welches Verb passt? Vorlesungen und Seminare ___."
         },
         {
           "answers": [
             "i"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Welches Verb passt? ein Praktikum ___."
         },
         {
           "answers": [
             "g"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "Welches Verb passt? mit Freunden in ein Restaurant ___."
         },
         {
           "answers": [
             "h"
           ],
-          "label": "9"
+          "label": "9",
+          "prompt": "Welches Verb passt? um 8.00 Uhr ___."
         }
       ]
     },
@@ -41950,7 +42389,8 @@ window.SPEKTRUM_BANKS={
             "F",
             "falsch",
             "false"
-          ]
+          ],
+          "prompt": "Lisa trinkt Rotwein."
         },
         {
           "label": "a · R/F 2",
@@ -41958,7 +42398,8 @@ window.SPEKTRUM_BANKS={
             "F",
             "falsch",
             "false"
-          ]
+          ],
+          "prompt": "Max isst eine Vorspeise, ein Hauptgericht und ein Dessert."
         },
         {
           "label": "a · R/F 3",
@@ -41966,7 +42407,8 @@ window.SPEKTRUM_BANKS={
             "R",
             "richtig",
             "true"
-          ]
+          ],
+          "prompt": "Lisa isst nur ein Hauptgericht."
         },
         {
           "label": "a · R/F 4",
@@ -41974,7 +42416,8 @@ window.SPEKTRUM_BANKS={
             "R",
             "richtig",
             "true"
-          ]
+          ],
+          "prompt": "Max findet sein Hauptgericht nicht lecker."
         },
         {
           "label": "a · R/F 5",
@@ -41982,91 +42425,106 @@ window.SPEKTRUM_BANKS={
             "R",
             "richtig",
             "true"
-          ]
+          ],
+          "prompt": "Lisa schmecken die Nudeln gut."
         },
         {
           "label": "b · Verb 1",
           "answers": [
             "Möchten"
-          ]
+          ],
+          "prompt": "___ (möchte) Sie schon etwas trinken?"
         },
         {
           "label": "b · Verb 2",
           "answers": [
             "nehme"
-          ]
+          ],
+          "prompt": "Ich ___ (nehmen) ein Mineralwasser ohne Sprudel."
         },
         {
           "label": "b · Verb 3",
           "answers": [
             "kommen"
-          ]
+          ],
+          "prompt": "Die Getränke ___ (kommen) sofort."
         },
         {
           "label": "b · Verb 4",
           "answers": [
             "nimmst"
-          ]
+          ],
+          "prompt": "Was ___ (nehmen) du?"
         },
         {
           "label": "b · Verb 5",
           "answers": [
             "nehme"
-          ]
+          ],
+          "prompt": "Ich denke, ich ___ (nehmen) als Vorspeise die Tomatensuppe."
         },
         {
           "label": "b · Verb 6",
           "answers": [
             "esse"
-          ]
+          ],
+          "prompt": "Ich ___ (essen) Nudeln mit Hühnerfleisch."
         },
         {
           "label": "b · Verb 7",
           "answers": [
             "Möchtest"
-          ]
+          ],
+          "prompt": "___ (möchte) du keine Vorspeise?"
         },
         {
           "label": "b · Verb 8",
           "answers": [
             "nehme"
-          ]
+          ],
+          "prompt": "Nein, ich ___ (nehmen) nur die Nudeln."
         },
         {
           "label": "b · Verb 9",
           "answers": [
             "schmeckt"
-          ]
+          ],
+          "prompt": "Wie ___ (schmecken) dein Schnitzel?"
         },
         {
           "label": "b · Verb 10",
           "answers": [
             "ist"
-          ]
+          ],
+          "prompt": "Das Fleisch ___ (sein) zu zäh."
         },
         {
           "label": "b · Verb 11",
           "answers": [
             "schmeckt"
-          ]
+          ],
+          "prompt": "Der Kartoffelsalat ___ (schmecken) auch nicht."
         },
         {
           "label": "b · Verb 12",
           "answers": [
             "findest"
-          ]
+          ],
+          "prompt": "Wie ___ (finden) du die Nudeln?"
         },
         {
           "label": "b · Verb 13",
           "answers": [
             "sind"
-          ]
+          ],
+          "prompt": "Die Nudeln ___ (sein) lecker."
         },
         {
           "label": "b · Verb 14",
           "answers": [
             "hast"
-          ]
+          ],
+          "prompt": "Du ___ (haben) wieder Glück!"
         }
       ]
     },
@@ -42090,43 +42548,50 @@ window.SPEKTRUM_BANKS={
           "label": "b · Satz 1",
           "answers": [
             "Ich esse das Schnitzel nicht."
-          ]
+          ],
+          "prompt": "Verneinen Sie: Ich esse das Schnitzel."
         },
         {
           "label": "b · Satz 2",
           "answers": [
             "Ich möchte kein Eis."
-          ]
+          ],
+          "prompt": "Verneinen Sie: Ich möchte ein Eis."
         },
         {
           "label": "b · Satz 3",
           "answers": [
             "Den Salat finde ich nicht lecker."
-          ]
+          ],
+          "prompt": "Verneinen Sie: Den Salat finde ich lecker."
         },
         {
           "label": "b · Satz 4",
           "answers": [
             "Ich esse nicht gern Currywurst."
-          ]
+          ],
+          "prompt": "Verneinen Sie: Ich esse gern Currywurst."
         },
         {
           "label": "b · Satz 5",
           "answers": [
             "Ich koche heute nicht."
-          ]
+          ],
+          "prompt": "Verneinen Sie: Ich koche heute."
         },
         {
           "label": "b · Satz 6",
           "answers": [
             "Ich esse mittags nicht in der Kantine."
-          ]
+          ],
+          "prompt": "Verneinen Sie: Ich esse mittags in der Kantine."
         },
         {
           "label": "b · Satz 7",
           "answers": [
             "Maria trinkt abends keinen Kaffee."
-          ]
+          ],
+          "prompt": "Verneinen Sie: Maria trinkt abends Kaffee."
         }
       ]
     },
@@ -42136,25 +42601,29 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "Salami"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Welche ungarische Wurst nennt Sascha?"
         },
         {
           "answers": [
             "Käse"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Welches französische Milchprodukt nennt Sascha?"
         },
         {
           "answers": [
             "Wein"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Welches italienische Getränk liebt Kerstin?"
         },
         {
           "answers": [
             "Brot"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Welches deutsche Backprodukt erwähnt Sascha?"
         }
       ]
     },
@@ -42164,49 +42633,57 @@ window.SPEKTRUM_BANKS={
           "label": "a · Adjektiv 1",
           "answers": [
             "italienische"
-          ]
+          ],
+          "prompt": "Ich mag ___ Gerichte. (italienisch)"
         },
         {
           "label": "a · Adjektiv 2",
           "answers": [
             "italienischen"
-          ]
+          ],
+          "prompt": "Ich liebe ___ Wein. (italienisch)"
         },
         {
           "label": "a · Adjektiv 3",
           "answers": [
             "französischer"
-          ]
+          ],
+          "prompt": "Das hier ist ___ Käse. (französisch)"
         },
         {
           "label": "a · Adjektiv 4",
           "answers": [
             "ungarische"
-          ]
+          ],
+          "prompt": "Das ist ___ Salami. (ungarisch)"
         },
         {
           "label": "a · Adjektiv 5",
           "answers": [
             "deutsches"
-          ]
+          ],
+          "prompt": "Das ist ___ Brot. (deutsch)"
         },
         {
           "label": "a · Adjektiv 6",
           "answers": [
             "französischen"
-          ]
+          ],
+          "prompt": "Ich mag ___ Käse. (französisch)"
         },
         {
           "label": "a · Adjektiv 7",
           "answers": [
             "ungarische"
-          ]
+          ],
+          "prompt": "Ich mag ___ Salami. (ungarisch)"
         },
         {
           "label": "a · Adjektiv 8",
           "answers": [
             "deutsches"
-          ]
+          ],
+          "prompt": "Ich mag ___ Brot. (deutsch)"
         },
         {
           "label": "b · feminin Nominativ → Endung",
@@ -42405,55 +42882,64 @@ window.SPEKTRUM_BANKS={
           "label": "Bild 1",
           "answers": [
             "der Reis"
-          ]
+          ],
+          "prompt": "Wie heißen die kleinen weißen Körner auf dem Bild? Schreiben Sie das Wort mit Artikel."
         },
         {
           "label": "Bild 2",
           "answers": [
             "die Torte"
-          ]
+          ],
+          "prompt": "Welches süße Gebäck mit mehreren Schichten sehen Sie?"
         },
         {
           "label": "Bild 3",
           "answers": [
             "die Schokolade"
-          ]
+          ],
+          "prompt": "Welche Süßigkeit aus Kakao sehen Sie?"
         },
         {
           "label": "Bild 4",
           "answers": [
             "der Schinken"
-          ]
+          ],
+          "prompt": "Welche Fleischware sehen Sie auf dem Bild?"
         },
         {
           "label": "Bild 5",
           "answers": [
             "das Sauerkraut"
-          ]
+          ],
+          "prompt": "Wie heißt das Gemüse aus fein geschnittenem, fermentiertem Kohl?"
         },
         {
           "label": "Bild 6",
           "answers": [
             "der Quark"
-          ]
+          ],
+          "prompt": "Welches frische, weiße Milchprodukt zeigt das Bild?"
         },
         {
           "label": "Bild 7",
           "answers": [
             "die Tomate"
-          ]
+          ],
+          "prompt": "Welches rote Gemüse nimmt man oft für einen Salat?"
         },
         {
           "label": "Bild 8",
           "answers": [
             "das Brot"
-          ]
+          ],
+          "prompt": "Welches Lebensmittel vom Bäcker sehen Sie?"
         },
         {
           "label": "Bild 9",
           "answers": [
             "die Ananas"
-          ]
+          ],
+          "prompt": "Wie heißt die tropische Frucht mit dem Blattschopf?"
         }
       ]
     },
@@ -42463,43 +42949,50 @@ window.SPEKTRUM_BANKS={
           "label": "Singular 1",
           "answers": [
             "der Apfel"
-          ]
+          ],
+          "prompt": "Wie lautet der Singular mit Artikel? Äpfel."
         },
         {
           "label": "Singular 2",
           "answers": [
             "die Birne"
-          ]
+          ],
+          "prompt": "Wie lautet der Singular mit Artikel? Birnen."
         },
         {
           "label": "Singular 3",
           "answers": [
             "das Brötchen"
-          ]
+          ],
+          "prompt": "Wie lautet der Singular mit Artikel? Brötchen."
         },
         {
           "label": "Singular 4",
           "answers": [
             "die Kartoffel"
-          ]
+          ],
+          "prompt": "Wie lautet der Singular mit Artikel? Kartoffeln."
         },
         {
           "label": "Singular 5",
           "answers": [
             "die Zwiebel"
-          ]
+          ],
+          "prompt": "Wie lautet der Singular mit Artikel? Zwiebeln."
         },
         {
           "label": "Singular 6",
           "answers": [
             "die Erdbeere"
-          ]
+          ],
+          "prompt": "Wie lautet der Singular mit Artikel? Erdbeeren."
         },
         {
           "label": "Singular 7",
           "answers": [
             "das Öl"
-          ]
+          ],
+          "prompt": "Wie lautet der Singular mit Artikel? Öle."
         }
       ]
     },
@@ -42510,65 +43003,75 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "die Zwiebel",
             "Zwiebel"
-          ]
+          ],
+          "prompt": "Welches Wort passt nicht? Apfel · Banane · Birne · Zwiebel."
         },
         {
           "label": "1 · Oberbegriff",
           "answers": [
             "Obst"
-          ]
+          ],
+          "prompt": "Welcher Oberbegriff passt zu den drei zusammengehörenden Lebensmitteln? Apfel · Banane · Birne · Zwiebel."
         },
         {
           "label": "2 · passt nicht",
           "answers": [
             "der Schinken",
             "Schinken"
-          ]
+          ],
+          "prompt": "Welches Wort passt nicht? Quark · Schinken · Joghurt · Käse."
         },
         {
           "label": "2 · Oberbegriff",
           "answers": [
             "Milchprodukte"
-          ]
+          ],
+          "prompt": "Welcher Oberbegriff passt zu den drei zusammengehörenden Lebensmitteln? Quark · Schinken · Joghurt · Käse."
         },
         {
           "label": "3 · passt nicht",
           "answers": [
             "die Kartoffel",
             "Kartoffel"
-          ]
+          ],
+          "prompt": "Welches Wort passt nicht? Leberwurst · Kartoffel · Hühnerfleisch · Schnitzel."
         },
         {
           "label": "3 · Oberbegriff",
           "answers": [
             "Fleisch und Wurst"
-          ]
+          ],
+          "prompt": "Welcher Oberbegriff passt zu den drei zusammengehörenden Lebensmitteln? Leberwurst · Kartoffel · Hühnerfleisch · Schnitzel."
         },
         {
           "label": "4 · passt nicht",
           "answers": [
             "die Eier",
             "Eier"
-          ]
+          ],
+          "prompt": "Welches Wort passt nicht? Brot · Reis · Nudeln · Eier."
         },
         {
           "label": "4 · Oberbegriff",
           "answers": [
             "Getreideprodukte"
-          ]
+          ],
+          "prompt": "Welcher Oberbegriff passt zu den drei zusammengehörenden Lebensmitteln? Brot · Reis · Nudeln · Eier."
         },
         {
           "label": "5 · passt nicht",
           "answers": [
             "der Fisch",
             "Fisch"
-          ]
+          ],
+          "prompt": "Welches Wort passt nicht? Fisch · Tomate · Gurke · Sauerkraut."
         },
         {
           "label": "5 · Oberbegriff",
           "answers": [
             "Gemüse"
-          ]
+          ],
+          "prompt": "Welcher Oberbegriff passt zu den drei zusammengehörenden Lebensmitteln? Fisch · Tomate · Gurke · Sauerkraut."
         }
       ]
     },
@@ -42578,97 +43081,113 @@ window.SPEKTRUM_BANKS={
           "label": "Dialog 1 · Frage",
           "answers": [
             "Hast du eine Tasse?"
-          ]
+          ],
+          "prompt": "Fragen Sie mit haben: Tasse."
         },
         {
           "label": "Dialog 1 · Antwort",
           "answers": [
             "Nein, ich habe leider keine Tasse."
-          ]
+          ],
+          "prompt": "Verneinen Sie mit kein-: Tasse."
         },
         {
           "label": "Dialog 2 · Frage",
           "answers": [
             "Hast du einen Löffel?"
-          ]
+          ],
+          "prompt": "Fragen Sie mit haben: Löffel."
         },
         {
           "label": "Dialog 2 · Antwort",
           "answers": [
             "Nein, ich habe leider keinen Löffel."
-          ]
+          ],
+          "prompt": "Verneinen Sie mit kein-: Löffel."
         },
         {
           "label": "Dialog 3 · Frage",
           "answers": [
             "Hast du ein Messer?"
-          ]
+          ],
+          "prompt": "Fragen Sie mit haben: Messer."
         },
         {
           "label": "Dialog 3 · Antwort",
           "answers": [
             "Nein, ich habe leider kein Messer."
-          ]
+          ],
+          "prompt": "Verneinen Sie mit kein-: Messer."
         },
         {
           "label": "Dialog 4 · Frage",
           "answers": [
             "Hast du einen Topf?"
-          ]
+          ],
+          "prompt": "Fragen Sie mit haben: Topf."
         },
         {
           "label": "Dialog 4 · Antwort",
           "answers": [
             "Nein, ich habe leider keinen Topf."
-          ]
+          ],
+          "prompt": "Verneinen Sie mit kein-: Topf."
         },
         {
           "label": "Dialog 5 · Frage",
           "answers": [
             "Hast du ein Glas?"
-          ]
+          ],
+          "prompt": "Fragen Sie mit haben: Glas."
         },
         {
           "label": "Dialog 5 · Antwort",
           "answers": [
             "Nein, ich habe leider kein Glas."
-          ]
+          ],
+          "prompt": "Verneinen Sie mit kein-: Glas."
         },
         {
           "label": "Dialog 6 · Frage",
           "answers": [
             "Hast du eine Pfanne?"
-          ]
+          ],
+          "prompt": "Fragen Sie mit haben: Pfanne."
         },
         {
           "label": "Dialog 6 · Antwort",
           "answers": [
             "Nein, ich habe leider keine Pfanne."
-          ]
+          ],
+          "prompt": "Verneinen Sie mit kein-: Pfanne."
         },
         {
           "label": "Dialog 7 · Frage",
           "answers": [
             "Hast du eine Gabel?"
-          ]
+          ],
+          "prompt": "Fragen Sie mit haben: Gabel."
         },
         {
           "label": "Dialog 7 · Antwort",
           "answers": [
             "Nein, ich habe leider keine Gabel."
-          ]
+          ],
+          "prompt": "Verneinen Sie mit kein-: Gabel."
         },
         {
           "label": "Dialog 8 · Frage",
           "answers": [
             "Hast du ein Brötchen?"
-          ]
+          ],
+          "prompt": "Fragen Sie mit haben: Brötchen."
         },
         {
           "label": "Dialog 8 · Antwort",
           "answers": [
             "Nein, ich habe leider kein Brötchen."
-          ]
+          ],
+          "prompt": "Verneinen Sie mit kein-: Brötchen."
         }
       ]
     },
@@ -42678,79 +43197,92 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "Hauptgericht"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Als ___ nehme ich das Schnitzel mit Kartoffelsalat."
         },
         {
           "answers": [
             "Dessert"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Als ___ esse ich vielleicht ein Stück Apfelkuchen."
         },
         {
           "answers": [
             "Vorspeise"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Möchtest du keine ___, zum Beispiel eine Gemüsesuppe?"
         },
         {
           "answers": [
             "Vorspeise"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Dann esse ich auch keine ___."
         },
         {
           "answers": [
             "Dessert"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Möchtest du auch kein ___?"
         },
         {
           "answers": [
             "Vorspeise"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Lisa: Nein, keine ___ …"
         },
         {
           "answers": [
             "Dessert"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "… und kein ___."
         },
         {
           "answers": [
             "Getränke"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "Ihre ___: ein Mineralwasser und ein Glas Weißwein."
         },
         {
           "answers": [
             "Stück"
           ],
-          "label": "9"
+          "label": "9",
+          "prompt": "Später ein ___ Apfelkuchen."
         },
         {
           "answers": [
             "Appetit"
           ],
-          "label": "10"
+          "label": "10",
+          "prompt": "Kellner: Guten ___!"
         },
         {
           "answers": [
             "Appetit"
           ],
-          "label": "11"
+          "label": "11",
+          "prompt": "Lisa: Guten ___!"
         },
         {
           "answers": [
             "Fleisch"
           ],
-          "label": "12"
+          "label": "12",
+          "prompt": "Das ___ ist zu zäh."
         },
         {
           "answers": [
             "Glück"
           ],
-          "label": "13"
+          "label": "13",
+          "prompt": "Du hast wieder ___!"
         }
       ]
     },
@@ -42760,49 +43292,57 @@ window.SPEKTRUM_BANKS={
           "label": "Adjektiv 1",
           "answers": [
             "deutsche"
-          ]
+          ],
+          "prompt": "Er mag ___ Kartoffeln. (deutsch)"
         },
         {
           "label": "Adjektiv 2",
           "answers": [
             "italienische"
-          ]
+          ],
+          "prompt": "Er mag ___ Nudeln. (italienisch)"
         },
         {
           "label": "Adjektiv 3",
           "answers": [
             "spanischen"
-          ]
+          ],
+          "prompt": "Er mag ___ Schinken. (spanisch)"
         },
         {
           "label": "Adjektiv 4",
           "answers": [
             "polnische"
-          ]
+          ],
+          "prompt": "Er mag ___ Wurst. (polnisch)"
         },
         {
           "label": "Adjektiv 5",
           "answers": [
             "norwegischen"
-          ]
+          ],
+          "prompt": "Er mag ___ Fisch. (norwegisch)"
         },
         {
           "label": "Adjektiv 6",
           "answers": [
             "österreichische"
-          ]
+          ],
+          "prompt": "Er mag ___ Schokoladentorte. (österreichisch)"
         },
         {
           "label": "Adjektiv 7",
           "answers": [
             "indischen"
-          ]
+          ],
+          "prompt": "Er mag ___ Reis. (indisch)"
         },
         {
           "label": "Adjektiv 8",
           "answers": [
             "französischen"
-          ]
+          ],
+          "prompt": "Er mag ___ Käse. (französisch)"
         }
       ]
     },
@@ -42812,31 +43352,36 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "essen"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Am liebsten ___ sie dort Currywurst oder Pizza."
         },
         {
           "answers": [
             "trinken"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Die Deutschen ___ im Durchschnitt 110 Liter Bier im Jahr."
         },
         {
           "answers": [
             "kann"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "In Deutschland ___ man 500 verschiedene Sorten Mineralwasser kaufen."
         },
         {
           "answers": [
             "mögen"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Österreicher ___ Kaffee und Tee."
         },
         {
           "answers": [
             "isst"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Das berühmte Wiener Schnitzel mit Kartoffelsalat ___ man in Österreich gern."
         }
       ]
     },
@@ -42846,31 +43391,36 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "mit"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Die Schweizer essen zum Beispiel Rösti ___ Bratwurst."
         },
         {
           "answers": [
             "in"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Zum Frühstück trinkt man ___ der Schweiz Milchkaffee."
         },
         {
           "answers": [
             "im"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Die Schweizer trinken im Durchschnitt 57 Liter Bier und 37 Liter Wein ___ Jahr."
         },
         {
           "answers": [
             "in"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Abends isst man ___ Deutschland und Österreich traditionell Brot."
         },
         {
           "answers": [
             "mit"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Abends isst man Brot ___ Käse und Wurst."
         }
       ]
     },
@@ -42882,7 +43432,8 @@ window.SPEKTRUM_BANKS={
             "R",
             "richtig",
             "true"
-          ]
+          ],
+          "prompt": "Er hat gestern viel gearbeitet."
         },
         {
           "label": "a · R/F 2",
@@ -42890,7 +43441,8 @@ window.SPEKTRUM_BANKS={
             "F",
             "falsch",
             "false"
-          ]
+          ],
+          "prompt": "Paul hat 59 E-Mails gelesen und viel Kaffee getrunken."
         },
         {
           "label": "a · R/F 3",
@@ -42898,7 +43450,8 @@ window.SPEKTRUM_BANKS={
             "R",
             "richtig",
             "true"
-          ]
+          ],
+          "prompt": "Erika war gestern nicht im Büro."
         },
         {
           "label": "a · R/F 4",
@@ -42906,7 +43459,8 @@ window.SPEKTRUM_BANKS={
             "R",
             "richtig",
             "true"
-          ]
+          ],
+          "prompt": "Abends war Paul im Fitnessstudio und hat einen Krimi gelesen."
         },
         {
           "label": "a · R/F 5",
@@ -42914,7 +43468,8 @@ window.SPEKTRUM_BANKS={
             "F",
             "falsch",
             "false"
-          ]
+          ],
+          "prompt": "Paul hat abends eine Currywurst gegessen."
         },
         {
           "label": "a · R/F 6",
@@ -42922,61 +43477,71 @@ window.SPEKTRUM_BANKS={
             "F",
             "falsch",
             "false"
-          ]
+          ],
+          "prompt": "Erika mag keine Krimis."
         },
         {
           "label": "b · Infinitiv 1",
           "answers": [
             "arbeiten"
-          ]
+          ],
+          "prompt": "Wie lautet der Infinitiv des markierten Verbs? Hast du gestern viel gearbeitet?"
         },
         {
           "label": "b · Infinitiv 2",
           "answers": [
             "präsentieren"
-          ]
+          ],
+          "prompt": "Wie lautet der Infinitiv des markierten Verbs? Ich habe zwei Projekte präsentiert."
         },
         {
           "label": "b · Infinitiv 3",
           "answers": [
             "kochen"
-          ]
+          ],
+          "prompt": "Wie lautet der Infinitiv des markierten Verbs? Ich habe Kaffee gekocht."
         },
         {
           "label": "b · Infinitiv 4",
           "answers": [
             "sein"
-          ]
+          ],
+          "prompt": "Wie lautet der Infinitiv des markierten Verbs? Du warst gestern nicht im Büro."
         },
         {
           "label": "b · Infinitiv 5",
           "answers": [
             "haben"
-          ]
+          ],
+          "prompt": "Wie lautet der Infinitiv des markierten Verbs? Ich hatte gestern Urlaub."
         },
         {
           "label": "b · Infinitiv 6",
           "answers": [
             "essen"
-          ]
+          ],
+          "prompt": "Wie lautet der Infinitiv des markierten Verbs? Wann hast du abends gegessen?"
         },
         {
           "label": "b · Infinitiv 7",
           "answers": [
             "haben"
-          ]
+          ],
+          "prompt": "Wie lautet der Infinitiv des markierten Verbs? Ich hatte keinen Hunger."
         },
         {
           "label": "b · Infinitiv 8",
           "answers": [
             "lesen"
-          ]
+          ],
+          "prompt": "Wie lautet der Infinitiv des markierten Verbs? Ich habe einen Krimi gelesen."
         },
         {
           "label": "b · Infinitiv 9",
           "answers": [
             "sein"
-          ]
+          ],
+          "prompt": "Wie lautet der Infinitiv des markierten Verbs? Der Krimi war spannend."
         }
       ]
     },
@@ -42986,73 +43551,85 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "war"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Ich ___ in München."
         },
         {
           "answers": [
             "Waren"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "___ Sie schon in Salzburg?"
         },
         {
           "answers": [
             "war"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Frau Müller ___ schon in Salzburg."
         },
         {
           "answers": [
             "war"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Wie ___ dein Schnitzel?"
         },
         {
           "answers": [
             "war"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Das Schnitzel ___ lecker."
         },
         {
           "answers": [
             "Wart"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "___ ihr im Supermarkt?"
         },
         {
           "answers": [
             "waren"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Nein, wir ___ im Restaurant."
         },
         {
           "answers": [
             "Hattest"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "___ du gestern keine Zeit?"
         },
         {
           "answers": [
             "hatte"
           ],
-          "label": "9"
+          "label": "9",
+          "prompt": "Nein, ich ___ leider keine Zeit."
         },
         {
           "answers": [
             "hatte"
           ],
-          "label": "10"
+          "label": "10",
+          "prompt": "Paul ___ gestern eine Besprechung mit Frau Müller."
         },
         {
           "answers": [
             "Hattet"
           ],
-          "label": "11"
+          "label": "11",
+          "prompt": "___ ihr gestern eine Teambesprechung?"
         },
         {
           "answers": [
             "hatten"
           ],
-          "label": "12"
+          "label": "12",
+          "prompt": "Wir ___ gestern keine Mittagspause."
         }
       ]
     },
@@ -43098,49 +43675,57 @@ window.SPEKTRUM_BANKS={
           "label": "a · Ort 1",
           "answers": [
             "die Bibliothek"
-          ]
+          ],
+          "prompt": "Wo kann man Bücher und Zeitschriften ausleihen?"
         },
         {
           "label": "a · Ort 2",
           "answers": [
             "der Lesesaal"
-          ]
+          ],
+          "prompt": "Wo kann man Bücher in Ruhe lesen?"
         },
         {
           "label": "a · Ort 3",
           "answers": [
             "der Hörsaal"
-          ]
+          ],
+          "prompt": "Wo kann man Vorlesungen von Professoren hören?"
         },
         {
           "label": "a · Ort 4",
           "answers": [
             "der Seminarraum"
-          ]
+          ],
+          "prompt": "Wo kann man Seminare besuchen?"
         },
         {
           "label": "a · Ort 5",
           "answers": [
             "das Sekretariat"
-          ]
+          ],
+          "prompt": "Wo kann man Informationen bekommen?"
         },
         {
           "label": "a · Ort 6",
           "answers": [
             "die Cafeteria"
-          ]
+          ],
+          "prompt": "Wo kann man Kaffee trinken oder einen Snack essen?"
         },
         {
           "label": "a · Ort 7",
           "answers": [
             "das Sprachenzentrum"
-          ]
+          ],
+          "prompt": "Wo kann man Fremdsprachen lernen?"
         },
         {
           "label": "a · Ort 8",
           "answers": [
             "das Studentenwohnheim"
-          ]
+          ],
+          "prompt": "Wo können Studenten wohnen?"
         },
         {
           "label": "b · Dozentin/Dozent → Kategorie",
@@ -43246,7 +43831,8 @@ window.SPEKTRUM_BANKS={
             "R",
             "richtig",
             "true"
-          ]
+          ],
+          "prompt": "Für einen Sprachkurs melden Sie sich im Sprachenzentrum an."
         },
         {
           "label": "c · R/F 2",
@@ -43254,7 +43840,8 @@ window.SPEKTRUM_BANKS={
             "F",
             "falsch",
             "false"
-          ]
+          ],
+          "prompt": "Sie können im Lesesaal in Ruhe eine Tasse Kaffee trinken."
         },
         {
           "label": "c · R/F 3",
@@ -43262,7 +43849,8 @@ window.SPEKTRUM_BANKS={
             "R",
             "richtig",
             "true"
-          ]
+          ],
+          "prompt": "Das Studentensekretariat ist an Arbeitstagen vormittags geöffnet."
         }
       ]
     },
@@ -43272,37 +43860,43 @@ window.SPEKTRUM_BANKS={
           "label": "a · Infinitiv 1",
           "answers": [
             "haben"
-          ]
+          ],
+          "prompt": "Spaß beim Lernen ___"
         },
         {
           "label": "a · Infinitiv 2",
           "answers": [
             "sprechen"
-          ]
+          ],
+          "prompt": "mit Dozenten und Professoren persönlich ___"
         },
         {
           "label": "a · Infinitiv 3",
           "answers": [
             "lernen"
-          ]
+          ],
+          "prompt": "viel ___"
         },
         {
           "label": "a · Infinitiv 4",
           "answers": [
             "diskutieren"
-          ]
+          ],
+          "prompt": "mit anderen Studenten ___"
         },
         {
           "label": "a · Infinitiv 5",
           "answers": [
             "lesen"
-          ]
+          ],
+          "prompt": "gute Bücher ___"
         },
         {
           "label": "a · Infinitiv 6",
           "answers": [
             "gehen"
-          ]
+          ],
+          "prompt": "auf Partys ___"
         },
         {
           "label": "d · R/F 1",
@@ -43310,7 +43904,8 @@ window.SPEKTRUM_BANKS={
             "R",
             "richtig",
             "true"
-          ]
+          ],
+          "prompt": "Er mag sein Studium nicht."
         },
         {
           "label": "d · R/F 2",
@@ -43318,7 +43913,8 @@ window.SPEKTRUM_BANKS={
             "R",
             "richtig",
             "true"
-          ]
+          ],
+          "prompt": "Viele Studenten studieren Bioingenieurwesen."
         },
         {
           "label": "d · R/F 3",
@@ -43326,7 +43922,8 @@ window.SPEKTRUM_BANKS={
             "R",
             "richtig",
             "true"
-          ]
+          ],
+          "prompt": "Thomas lernt viel und feiert gern Partys."
         },
         {
           "label": "d · R/F 4",
@@ -43334,7 +43931,8 @@ window.SPEKTRUM_BANKS={
             "F",
             "falsch",
             "false"
-          ]
+          ],
+          "prompt": "Er möchte etwas anderes studieren."
         },
         {
           "label": "d · R/F 5",
@@ -43342,7 +43940,8 @@ window.SPEKTRUM_BANKS={
             "R",
             "richtig",
             "true"
-          ]
+          ],
+          "prompt": "Elvira findet den Kontakt zu den Dozenten und Professoren gut."
         },
         {
           "label": "d · R/F 6",
@@ -43350,7 +43949,8 @@ window.SPEKTRUM_BANKS={
             "F",
             "falsch",
             "false"
-          ]
+          ],
+          "prompt": "Sie möchte mehr praktische Aufgaben machen."
         }
       ]
     },
@@ -43360,133 +43960,155 @@ window.SPEKTRUM_BANKS={
           "label": "a · Buchstabe 1",
           "answers": [
             "f"
-          ]
+          ],
+          "prompt": "Welches Verb passt? mit anderen Studenten zusammen ___."
         },
         {
           "label": "a · Buchstabe 2",
           "answers": [
             "b"
-          ]
+          ],
+          "prompt": "Welches Verb passt? neue Freunde ___."
         },
         {
           "label": "a · Buchstabe 3",
           "answers": [
             "a"
-          ]
+          ],
+          "prompt": "Welches Verb passt? für eine Prüfung ___."
         },
         {
           "label": "a · Buchstabe 4",
           "answers": [
             "d"
-          ]
+          ],
+          "prompt": "Welches Verb passt? eine gute Note ___."
         },
         {
           "label": "a · Buchstabe 5",
           "answers": [
             "j"
-          ]
+          ],
+          "prompt": "Welches Verb passt? mit Professoren persönlich ___."
         },
         {
           "label": "a · Buchstabe 6",
           "answers": [
             "g"
-          ]
+          ],
+          "prompt": "Welches Verb passt? Vorlesungen ___."
         },
         {
           "label": "a · Buchstabe 7",
           "answers": [
             "e"
-          ]
+          ],
+          "prompt": "Welches Verb passt? Studiengebühren ___."
         },
         {
           "label": "a · Buchstabe 8",
           "answers": [
             "k"
-          ]
+          ],
+          "prompt": "Welches Verb passt? Texte ___."
         },
         {
           "label": "a · Buchstabe 9",
           "answers": [
             "l"
-          ]
+          ],
+          "prompt": "Welches Verb passt? Filme ___."
         },
         {
           "label": "a · Buchstabe 10",
           "answers": [
             "h"
-          ]
+          ],
+          "prompt": "Welches Verb passt? das Studium ___."
         },
         {
           "label": "a · Buchstabe 11",
           "answers": [
             "i"
-          ]
+          ],
+          "prompt": "Welches Verb passt? beim Fernsehen ___."
         },
         {
           "label": "b · Perfekt 1",
           "answers": [
             "Thomas hat mit anderen Studenten zusammen gewohnt."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: Thomas · mit anderen Studenten zusammenwohnen."
         },
         {
           "label": "b · Perfekt 2",
           "answers": [
             "Jürgen hat neue Freunde gefunden."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: Jürgen · neue Freunde finden."
         },
         {
           "label": "b · Perfekt 3",
           "answers": [
             "Thomas hat für eine Prüfung gelernt."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: Thomas · für eine Prüfung lernen."
         },
         {
           "label": "b · Perfekt 4",
           "answers": [
             "Er hat eine gute Note bekommen."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: er · eine gute Note bekommen."
         },
         {
           "label": "b · Perfekt 5",
           "answers": [
             "Elvira hat mit Professoren persönlich gesprochen."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: Elvira · mit Professoren persönlich sprechen."
         },
         {
           "label": "b · Perfekt 6",
           "answers": [
             "Alle Studenten haben Vorlesungen besucht."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: alle Studenten · Vorlesungen besuchen."
         },
         {
           "label": "b · Perfekt 7",
           "answers": [
             "Elvira hat Studiengebühren bezahlt."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: Elvira · Studiengebühren bezahlen."
         },
         {
           "label": "b · Perfekt 8",
           "answers": [
             "Sie hat Texte geschrieben."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: sie · Texte schreiben."
         },
         {
           "label": "b · Perfekt 9",
           "answers": [
             "Sie hat Filme gemacht."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: sie · Filme machen."
         },
         {
           "label": "b · Perfekt 10",
           "answers": [
             "Sie hat das Studium abgeschlossen."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: sie · das Studium abschließen."
         },
         {
           "label": "b · Perfekt 11",
           "answers": [
             "Sie hat beim Fernsehen gearbeitet."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: sie · beim Fernsehen arbeiten."
         }
       ]
     },
@@ -43496,49 +44118,57 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "ist"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Meine Schwester ___ am Freitagabend ins Kino gegangen."
         },
         {
           "answers": [
             "habe"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Ich ___ Max am Sonntag angerufen."
         },
         {
           "answers": [
             "haben"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Wir ___ unsere Oma besucht."
         },
         {
           "answers": [
             "Habt"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "___ ihr den Film über Leonardo da Vinci gesehen?"
         },
         {
           "answers": [
             "sind"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Meine Freunde ___ nach Berlin gefahren."
         },
         {
           "answers": [
             "Hast"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "___ du mit Carla über das Projekt gesprochen?"
         },
         {
           "answers": [
             "Haben"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "___ Sie auch in der Kantine gegessen?"
         },
         {
           "answers": [
             "Seid"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "___ ihr nach Wien geflogen?"
         }
       ]
     },
@@ -43548,49 +44178,57 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "Danach habe ich Gymnastik gemacht"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Gestern: Danach mache ich Gymnastik. → ___"
         },
         {
           "answers": [
             "Ich habe um halb acht gefrühstückt"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Gestern: Ich frühstücke um halb acht. → ___"
         },
         {
           "answers": [
             "Ich fahre um 7.45 Uhr mit dem Motorroller ins Büro"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Heute: Ich bin um 7.45 Uhr mit dem Motorroller ins Büro gefahren. → ___"
         },
         {
           "answers": [
             "Um halb neun hatte ich eine Besprechung"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Gestern: Um halb neun habe ich eine Besprechung. → ___"
         },
         {
           "answers": [
             "Danach arbeite ich im Büro"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Heute: Danach habe ich im Büro gearbeitet. → ___"
         },
         {
           "answers": [
             "Ich habe um 12 Uhr eine Pause gemacht"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Gestern: Ich mache um 12 Uhr eine Pause. → ___"
         },
         {
           "answers": [
             "Ich bin in die Kantine gegangen und habe etwas gegessen"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Gestern: Ich gehe in die Kantine und esse etwas. → ___"
         },
         {
           "answers": [
             "Am Nachmittag arbeite ich bis 17 Uhr"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "Heute: Am Nachmittag habe ich bis 17 Uhr gearbeitet. → ___"
         }
       ]
     },
@@ -43600,55 +44238,64 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "ferngesehen"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Ich habe gestern Abend ___. Hast du etwas Interessantes gesehen?"
         },
         {
           "answers": [
             "bezahlt"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Hast du das Essen schon ___?"
         },
         {
           "answers": [
             "unterrichtet"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Meine alte Lehrerin hat früher Englisch ___."
         },
         {
           "answers": [
             "untersucht"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Dr. Klein hat gestern viele Patienten ___."
         },
         {
           "answers": [
             "angefangen"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Ich war zehn Minuten zu spät. Der Film hat schon ___."
         },
         {
           "answers": [
             "aufgestanden"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Wann bist du heute ___?"
         },
         {
           "answers": [
             "angerufen"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Hast du Martina ___?"
         },
         {
           "answers": [
             "eingekauft"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "Hast du für das Wochenende ___?"
         },
         {
           "answers": [
             "übernachtet"
           ],
-          "label": "9"
+          "label": "9",
+          "prompt": "Wo hast du in Frankfurt ___? Im Hotel Europa."
         }
       ]
     },
@@ -43660,7 +44307,8 @@ window.SPEKTRUM_BANKS={
             "richtig",
             "true"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Mathias war am Wochenende in Hamburg."
         },
         {
           "answers": [
@@ -43668,7 +44316,8 @@ window.SPEKTRUM_BANKS={
             "falsch",
             "false"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Mathias ist mit seinem Auto gefahren."
         },
         {
           "answers": [
@@ -43676,7 +44325,8 @@ window.SPEKTRUM_BANKS={
             "falsch",
             "false"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Der Film am Abend war gut."
         },
         {
           "answers": [
@@ -43684,7 +44334,8 @@ window.SPEKTRUM_BANKS={
             "richtig",
             "true"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Das Essen im Restaurant war lecker."
         },
         {
           "answers": [
@@ -43692,7 +44343,8 @@ window.SPEKTRUM_BANKS={
             "falsch",
             "false"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Mathias und seine Freundin sind am Wochenende früh aufgestanden."
         },
         {
           "answers": [
@@ -43700,7 +44352,8 @@ window.SPEKTRUM_BANKS={
             "falsch",
             "false"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Sie haben viel gearbeitet."
         }
       ],
       "type": "choice",
@@ -43715,43 +44368,50 @@ window.SPEKTRUM_BANKS={
           "label": "Rätsel 1",
           "answers": [
             "SEKRETARIAT"
-          ]
+          ],
+          "prompt": "Im ___ bekommt man Informationen."
         },
         {
           "label": "Rätsel 2",
           "answers": [
             "STUDIENGEBÜHREN"
-          ]
+          ],
+          "prompt": "Wenige Studenten zahlen ___."
         },
         {
           "label": "Rätsel 3",
           "answers": [
             "STUDIENFACH"
-          ]
+          ],
+          "prompt": "Es gibt 600 Studenten für das ___ Bioingenieurwesen."
         },
         {
           "label": "Rätsel 4",
           "answers": [
             "HOCHSCHULEN"
-          ]
+          ],
+          "prompt": "In Deutschland gibt es Universitäten und ___."
         },
         {
           "label": "Rätsel 5",
           "answers": [
             "MENSA"
-          ]
+          ],
+          "prompt": "Viele Studenten essen in der ___."
         },
         {
           "label": "Rätsel 6",
           "answers": [
             "VORLESUNGEN"
-          ]
+          ],
+          "prompt": "Studenten besuchen ___ und Seminare."
         },
         {
           "label": "Lösungswort",
           "answers": [
             "Prüfung"
-          ]
+          ],
+          "prompt": "Wie lautet das Lösungswort des Universitätsrätsels?"
         }
       ]
     },
@@ -43761,26 +44421,30 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "Olaf fährt mit dem Auto nach Italien"
-          ]
+          ],
+          "prompt": "Wie und wohin fährt Olaf? (Italien)"
         },
         {
           "label": "2",
           "answers": [
             "Frieda und Markus fahren mit dem Bus nach München"
-          ]
+          ],
+          "prompt": "Wie und wohin fahren Frieda und Markus? (München)"
         },
         {
           "label": "3",
           "answers": [
             "Erika fährt mit dem Taxi zum Bahnhof"
-          ]
+          ],
+          "prompt": "Wie und wohin fährt Erika? (Bahnhof)"
         },
         {
           "label": "4",
           "answers": [
             "Jan fährt mit der Straßenbahn zur Arbeit",
             "Jan fährt mit der Tram zur Arbeit"
-          ]
+          ],
+          "prompt": "Wie und wohin fährt Jan? (Arbeit)"
         }
       ]
     },
@@ -43790,25 +44454,29 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "Stau"
-          ]
+          ],
+          "prompt": "Die Autofahrer stehen im Jahr durchschnittlich 39 Stunden im ___."
         },
         {
           "label": "2",
           "answers": [
             "Verkehrsmittel"
-          ]
+          ],
+          "prompt": "Wie heißt der Sammelbegriff für Bus, Bahn und Tram?"
         },
         {
           "label": "3",
           "answers": [
             "Platz"
-          ]
+          ],
+          "prompt": "An welcher Stelle steht das Flugzeug? Auf ___ eins."
         },
         {
           "label": "4",
           "answers": [
             "Intercity"
-          ]
+          ],
+          "prompt": "Wie heißt der Fernzug, mit dem viele Fahrgäste fahren?"
         }
       ]
     },
@@ -43818,49 +44486,57 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "Januar"
-          ]
+          ],
+          "prompt": "Wir fahren immer im Ja___ nach Bayern."
         },
         {
           "label": "2",
           "answers": [
             "Schnee"
-          ]
+          ],
+          "prompt": "Es liegt in diesem Monat viel Sch___."
         },
         {
           "label": "3",
           "answers": [
             "fahren"
-          ]
+          ],
+          "prompt": "Wir können Ski___."
         },
         {
           "label": "4",
           "answers": [
             "Verspätung"
-          ]
+          ],
+          "prompt": "Der Zug war nicht pünktlich, er hatte drei Stunden Ver___."
         },
         {
           "label": "5",
           "answers": [
             "Sitzplatz"
-          ]
+          ],
+          "prompt": "Paul hatte keinen Sitz___."
         },
         {
           "label": "6",
           "answers": [
             "Unser"
-          ]
+          ],
+          "prompt": "Un___ Hotel ist sehr schön."
         },
         {
           "label": "7",
           "answers": [
             "treiben"
-          ]
+          ],
+          "prompt": "So kann Paul auch im Hotel jeden Tag Sport tr___."
         },
         {
           "label": "8",
           "answers": [
             "Willst"
-          ]
+          ],
+          "prompt": "Wi___ du im nächsten Winter vielleicht mitkommen?"
         }
       ]
     },
@@ -43870,13 +44546,15 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "Der Direktor will am Mittwoch nach Madrid fahren"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: der Direktor · Mittwoch · Madrid · fahren · wollen"
         },
         {
           "label": "2",
           "answers": [
             "Willst du im Sommer auf die Kanarischen Inseln fliegen"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: du · Sommer · die Kanarischen Inseln · fliegen · wollen?"
         }
       ]
     },
@@ -43886,25 +44564,29 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "Frau Müller trägt eine blaue Jacke"
-          ]
+          ],
+          "prompt": "Was trägt Frau Müller? Nennen Sie Farbe und Kleidungsstück."
         },
         {
           "label": "2",
           "answers": [
             "Ludwig trägt einen schwarzen Hut"
-          ]
+          ],
+          "prompt": "Was trägt Ludwig auf dem Kopf? Nennen Sie auch die Farbe."
         },
         {
           "label": "3",
           "answers": [
             "Du trägst ein grünes T-Shirt"
-          ]
+          ],
+          "prompt": "Was trägst du auf dem Bild? Beschreiben Sie Farbe und Kleidungsstück."
         },
         {
           "label": "4",
           "answers": [
             "Der Chef trägt ein braunes Jackett"
-          ]
+          ],
+          "prompt": "Was trägt der Chef? Nennen Sie Farbe und Kleidungsstück."
         }
       ]
     },
@@ -43914,25 +44596,29 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "der Terminkalender"
-          ]
+          ],
+          "prompt": "Ergänzen Sie das zusammengesetzte Nomen mit Artikel: Termin___."
         },
         {
           "label": "2",
           "answers": [
             "die Sonnencreme"
-          ]
+          ],
+          "prompt": "Ergänzen Sie das zusammengesetzte Nomen mit Artikel: Sonnen___."
         },
         {
           "label": "3",
           "answers": [
             "der Führerschein"
-          ]
+          ],
+          "prompt": "Ergänzen Sie das zusammengesetzte Nomen mit Artikel: Führer___."
         },
         {
           "label": "4",
           "answers": [
             "die Regenjacke"
-          ]
+          ],
+          "prompt": "Ergänzen Sie das zusammengesetzte Nomen mit Artikel: Regen___."
         }
       ]
     },
@@ -43942,20 +44628,23 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "Ich nehme meine Kreditkarte mit, denn ich kaufe gern ein"
-          ]
+          ],
+          "prompt": "Was nehmen Sie mit und warum? Bilden Sie einen Satz mit denn: gern einkaufen."
         },
         {
           "label": "2",
           "answers": [
             "Ich nehme meine Sportschuhe mit, denn ich treibe viel Sport"
-          ]
+          ],
+          "prompt": "Was nehmen Sie mit und warum? Bilden Sie einen Satz mit denn: viel Sport treiben."
         },
         {
           "label": "3",
           "answers": [
             "Ich nehme Bücher mit, denn ich lese gern",
             "Ich nehme ein Buch mit, denn ich lese gern"
-          ]
+          ],
+          "prompt": "Was nehmen Sie mit und warum? Bilden Sie einen Satz mit denn: gern lesen."
         }
       ]
     },
@@ -43965,49 +44654,57 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "haben"
-          ]
+          ],
+          "prompt": "Welche Größe ___ Sie?"
         },
         {
           "label": "2",
           "answers": [
             "möchten"
-          ]
+          ],
+          "prompt": "Welche Farbe ___ Sie?"
         },
         {
           "label": "3",
           "answers": [
             "finde"
-          ]
+          ],
+          "prompt": "Grün ___ ich gut."
         },
         {
           "label": "4",
           "answers": [
             "ist"
-          ]
+          ],
+          "prompt": "Dieses Kleid ___ schön."
         },
         {
           "label": "5",
           "answers": [
             "anprobieren"
-          ]
+          ],
+          "prompt": "Kann ich das mal ___?"
         },
         {
           "label": "6",
           "answers": [
             "kostet"
-          ]
+          ],
+          "prompt": "Was ___ das Kleid?"
         },
         {
           "label": "7",
           "answers": [
             "ist"
-          ]
+          ],
+          "prompt": "Das ___ sehr teuer …"
         },
         {
           "label": "8",
           "answers": [
             "nehme"
-          ]
+          ],
+          "prompt": "… aber ich ___ es."
         }
       ]
     },
@@ -44017,37 +44714,43 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "übersetzen"
-          ]
+          ],
+          "prompt": "Was muss Sabine tun? einige Dokumente ins Deutsche ___"
         },
         {
           "label": "2",
           "answers": [
             "führen"
-          ]
+          ],
+          "prompt": "Was muss Sabine tun? drei Telefongespräche ___"
         },
         {
           "label": "3",
           "answers": [
             "vereinbaren"
-          ]
+          ],
+          "prompt": "Was muss Sabine tun? einen Termin ___"
         },
         {
           "label": "4",
           "answers": [
             "abholen"
-          ]
+          ],
+          "prompt": "Was muss Sabine tun? Gäste vom Flughafen ___"
         },
         {
           "label": "5",
           "answers": [
             "schreiben"
-          ]
+          ],
+          "prompt": "Was muss Sabine tun? bei der Besprechung Protokoll ___"
         },
         {
           "label": "6",
           "answers": [
             "sprechen"
-          ]
+          ],
+          "prompt": "Was muss Sabine tun? mit der Assistentin ___"
         }
       ]
     },
@@ -44057,25 +44760,29 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "Herr Müller ist zu spät gekommen, er hat im Stau gestanden"
-          ]
+          ],
+          "prompt": "Herr Müller · zu spät kommen (Perfekt) → er · im Stau stehen (Perfekt)"
         },
         {
           "label": "2",
           "answers": [
             "Klaus hat keine E-Mails geschrieben, er hatte keine Internetverbindung"
-          ]
+          ],
+          "prompt": "Klaus · keine E-Mails schreiben (Perfekt) → er · keine Internetverbindung haben (Präteritum)"
         },
         {
           "label": "3",
           "answers": [
             "Petra hat keinen Vortrag gehalten, der Beamer hat nicht funktioniert"
-          ]
+          ],
+          "prompt": "Petra · keinen Vortrag halten (Perfekt) → der Beamer · nicht funktionieren (Perfekt)"
         },
         {
           "label": "4",
           "answers": [
             "Die französischen Gäste sind am Mittwoch nicht pünktlich angekommen, das Flugzeug hatte Verspätung"
-          ]
+          ],
+          "prompt": "die französischen Gäste · am Mittwoch nicht pünktlich ankommen (Perfekt) → das Flugzeug · Verspätung haben (Präteritum)"
         }
       ]
     },
@@ -44085,37 +44792,43 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "funktioniert"
-          ]
+          ],
+          "prompt": "Unser Kopierer ___ nicht mehr."
         },
         {
           "label": "2",
           "answers": [
             "Reparatur"
-          ]
+          ],
+          "prompt": "Wir möchten einen Termin für die ___ vereinbaren."
         },
         {
           "label": "3",
           "answers": [
             "Sie"
-          ]
+          ],
+          "prompt": "Was für ein Gerät haben ___?"
         },
         {
           "label": "4",
           "answers": [
             "Woche"
-          ]
+          ],
+          "prompt": "Kann der Monteur noch diese ___ kommen?"
         },
         {
           "label": "5",
           "answers": [
             "Geht"
-          ]
+          ],
+          "prompt": "___ es auch am Donnerstag?"
         },
         {
           "label": "6",
           "answers": [
             "Dank"
-          ]
+          ],
+          "prompt": "Vielen ___!"
         }
       ]
     },
@@ -44125,52 +44838,60 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "das Auto"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Welches vierrädrige private Fahrzeug sehen Sie? Nennen Sie es mit Artikel."
         },
         {
           "answers": [
             "der Bus"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Welches große Straßenfahrzeug befördert viele Fahrgäste?"
         },
         {
           "answers": [
             "das Taxi"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Welches Fahrzeug bestellt man für eine Fahrt mit Fahrer?"
         },
         {
           "answers": [
             "die Straßenbahn",
             "die Tram"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Welches Verkehrsmittel fährt auf Schienen durch die Straßen der Stadt?"
         },
         {
           "answers": [
             "das Flugzeug"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Welches Verkehrsmittel fliegt?"
         },
         {
           "answers": [
             "der Zug",
             "die Bahn"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Welches Verkehrsmittel fährt auf der Eisenbahnstrecke?"
         },
         {
           "answers": [
             "das Motorrad"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Welches motorisierte Zweirad ist abgebildet?"
         },
         {
           "answers": [
             "die S-Bahn",
             "die U-Bahn"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "Welche Bahn verbindet auf dem Bild Stadt und Umland?"
         },
         {
           "answers": [
@@ -44178,7 +44899,8 @@ window.SPEKTRUM_BANKS={
             "das Boot",
             "die Fähre"
           ],
-          "label": "9"
+          "label": "9",
+          "prompt": "Welches Verkehrsmittel fährt auf dem Wasser?"
         }
       ]
     },
@@ -44188,63 +44910,73 @@ window.SPEKTRUM_BANKS={
           "label": "Dialog 1 · Frage",
           "answers": [
             "Ist das Ihr Boot?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach dem Besitzer: Sie · Boot."
         },
         {
           "label": "Dialog 1 · Antwort",
           "answers": [
             "Ja, das ist mein Boot.",
             "Ja, das ist unser Boot."
-          ]
+          ],
+          "prompt": "Wem gehört es? Antworten Sie mit Possessivartikel: Boot · ja."
         },
         {
           "label": "Dialog 2 · Frage",
           "answers": [
             "Ist das euer Motorrad?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach dem Besitzer: ihr · Motorrad."
         },
         {
           "label": "Dialog 2 · Antwort",
           "answers": [
             "Ja, das ist unser Motorrad."
-          ]
+          ],
+          "prompt": "Wem gehört es? Antworten Sie mit Possessivartikel: Motorrad · ja."
         },
         {
           "label": "Dialog 3 · Frage",
           "answers": [
             "Ist das Ihr Taxi?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach dem Besitzer: Sie · Taxi."
         },
         {
           "label": "Dialog 3 · Antwort",
           "answers": [
             "Ja, das ist mein Taxi.",
             "Ja, das ist unser Taxi."
-          ]
+          ],
+          "prompt": "Wem gehört es? Antworten Sie mit Possessivartikel: Taxi · ja."
         },
         {
           "label": "Dialog 4 · Frage",
           "answers": [
             "Ist das euer Auto?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach dem Besitzer: ihr · Auto."
         },
         {
           "label": "Dialog 4 · Antwort",
           "answers": [
             "Ja, das ist unser Auto."
-          ]
+          ],
+          "prompt": "Wem gehört es? Antworten Sie mit Possessivartikel: Auto · ja."
         },
         {
           "label": "Dialog 5 · Frage",
           "answers": [
             "Ist das dein Fahrrad?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach dem Besitzer: du · Fahrrad."
         },
         {
           "label": "Dialog 5 · Antwort",
           "answers": [
             "Ja, das ist mein Fahrrad."
-          ]
+          ],
+          "prompt": "Wem gehört es? Antworten Sie mit Possessivartikel: Fahrrad · ja."
         }
       ]
     },
@@ -44437,44 +45169,51 @@ window.SPEKTRUM_BANKS={
           "label": "c · Wort 1",
           "answers": [
             "Bahnhof"
-          ]
+          ],
+          "prompt": "Am ___ kommen Züge an oder fahren ab."
         },
         {
           "label": "c · Wort 2",
           "answers": [
             "Parkplatz"
-          ]
+          ],
+          "prompt": "Auf dem ___ kann man sein Auto parken."
         },
         {
           "label": "c · Wort 3",
           "answers": [
             "Flughafen"
-          ]
+          ],
+          "prompt": "Am ___ starten und landen Flugzeuge."
         },
         {
           "label": "c · Wort 4",
           "answers": [
             "Check-in-Schalter"
-          ]
+          ],
+          "prompt": "Am ___ kann man einchecken."
         },
         {
           "label": "c · Wort 5",
           "answers": [
             "Tankstelle"
-          ]
+          ],
+          "prompt": "An der ___ kann man Benzin kaufen."
         },
         {
           "label": "c · Wort 6",
           "answers": [
             "Flugsteig",
             "Gate"
-          ]
+          ],
+          "prompt": "Am ___ kann man in das Flugzeug einsteigen."
         },
         {
           "label": "c · Wort 7",
           "answers": [
             "Gleis"
-          ]
+          ],
+          "prompt": "Der Zug aus Frankfurt kommt am ___ 3 an."
         }
       ]
     },
@@ -44486,7 +45225,8 @@ window.SPEKTRUM_BANKS={
             "richtig",
             "true"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Er fährt mit dem Zug zur Arbeit."
         },
         {
           "answers": [
@@ -44494,7 +45234,8 @@ window.SPEKTRUM_BANKS={
             "falsch",
             "false"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Um 20.00 Uhr sind die Züge sehr voll."
         },
         {
           "answers": [
@@ -44502,7 +45243,8 @@ window.SPEKTRUM_BANKS={
             "falsch",
             "false"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Jutta fährt gern Taxi."
         },
         {
           "answers": [
@@ -44510,7 +45252,8 @@ window.SPEKTRUM_BANKS={
             "richtig",
             "true"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Die S-Bahn ist meistens pünktlich."
         },
         {
           "answers": [
@@ -44518,7 +45261,8 @@ window.SPEKTRUM_BANKS={
             "richtig",
             "true"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Linus findet die S-Bahn-Karte teuer."
         },
         {
           "answers": [
@@ -44526,7 +45270,8 @@ window.SPEKTRUM_BANKS={
             "richtig",
             "true"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Er fährt mit dem Fahrrad."
         },
         {
           "answers": [
@@ -44534,7 +45279,8 @@ window.SPEKTRUM_BANKS={
             "richtig",
             "true"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Anna fährt mit dem Auto."
         },
         {
           "answers": [
@@ -44542,7 +45288,8 @@ window.SPEKTRUM_BANKS={
             "falsch",
             "false"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "Sie telefoniert gern beim Autofahren."
         }
       ],
       "type": "choice",
@@ -44557,37 +45304,43 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "pünktlich"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Manche Züge haben Verspätung. Die S-Bahn ist meistens ___."
         },
         {
           "answers": [
             "leer"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Um acht sind die Züge voll, um zwanzig Uhr sind sie ___."
         },
         {
           "answers": [
             "sauber"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Manche Wagen sind schmutzig, andere sind ___."
         },
         {
           "answers": [
             "die Ankunft"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Ich brauche Informationen über die Abfahrt und ___ des ICE 753."
         },
         {
           "answers": [
             "Rückfahrt"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Wie viel kostet eine Hin- und ___ Leipzig–Hamburg?"
         },
         {
           "answers": [
             "teuer"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Fahrradfahren ist preiswert, Zugfahren ist ___."
         }
       ]
     },
@@ -44662,73 +45415,85 @@ window.SPEKTRUM_BANKS={
           "label": "b · Wort 1",
           "answers": [
             "Hauptbahnhof"
-          ]
+          ],
+          "prompt": "Ergänzen Sie die Vokale: Hauptb_hnh_f."
         },
         {
           "label": "b · Wort 2",
           "answers": [
             "Informationen"
-          ]
+          ],
+          "prompt": "Ergänzen Sie die Vokale: _nf_rm_t__n_n."
         },
         {
           "label": "b · Wort 3",
           "answers": [
             "Züge"
-          ]
+          ],
+          "prompt": "Ergänzen Sie die Vokale: Z_g_."
         },
         {
           "label": "b · Wort 4",
           "answers": [
             "Gleis"
-          ]
+          ],
+          "prompt": "Ergänzen Sie die Vokale: Gl__s."
         },
         {
           "label": "b · Wort 5",
           "answers": [
             "Weiterfahrt"
-          ]
+          ],
+          "prompt": "Ergänzen Sie die Vokale: W__t_rf_hrt."
         },
         {
           "label": "b · Wort 6",
           "answers": [
             "Abfahrtszeit"
-          ]
+          ],
+          "prompt": "Ergänzen Sie die Vokale: _bf_hrtsz__t."
         },
         {
           "label": "b · Wort 7",
           "answers": [
             "Verspätung"
-          ]
+          ],
+          "prompt": "Ergänzen Sie die Vokale: V_rsp_t_ng."
         },
         {
           "label": "b · Wort 8",
           "answers": [
             "Flugsteig"
-          ]
+          ],
+          "prompt": "Ergänzen Sie die Vokale: Fl_gst__g."
         },
         {
           "label": "b · Wort 9",
           "answers": [
             "Straßenbahn"
-          ]
+          ],
+          "prompt": "Ergänzen Sie die Vokale: Str_ß_nb_hn."
         },
         {
           "label": "b · Wort 10",
           "answers": [
             "Autofahrer"
-          ]
+          ],
+          "prompt": "Ergänzen Sie die Vokale: __t_f_hr_r."
         },
         {
           "label": "b · Wort 11",
           "answers": [
             "Richtung"
-          ]
+          ],
+          "prompt": "Ergänzen Sie die Vokale: R_cht_ng."
         },
         {
           "label": "b · Wort 12",
           "answers": [
             "Fahrbahn"
-          ]
+          ],
+          "prompt": "Ergänzen Sie die Vokale: F_hrb_hn."
         }
       ]
     },
@@ -44740,7 +45505,8 @@ window.SPEKTRUM_BANKS={
             "F",
             "falsch",
             "false"
-          ]
+          ],
+          "prompt": "Sie möchte in Österreich nur Ski fahren."
         },
         {
           "label": "a · R/F 2",
@@ -44748,7 +45514,8 @@ window.SPEKTRUM_BANKS={
             "R",
             "richtig",
             "true"
-          ]
+          ],
+          "prompt": "Der Urlaub dauert zehn Tage."
         },
         {
           "label": "a · R/F 3",
@@ -44756,7 +45523,8 @@ window.SPEKTRUM_BANKS={
             "F",
             "falsch",
             "false"
-          ]
+          ],
+          "prompt": "Julius mag Wintersport nicht besonders."
         },
         {
           "label": "a · R/F 4",
@@ -44764,7 +45532,8 @@ window.SPEKTRUM_BANKS={
             "R",
             "richtig",
             "true"
-          ]
+          ],
+          "prompt": "Er fährt im Sommer nach Griechenland."
         },
         {
           "label": "a · R/F 5",
@@ -44772,7 +45541,8 @@ window.SPEKTRUM_BANKS={
             "R",
             "richtig",
             "true"
-          ]
+          ],
+          "prompt": "Julius macht gern Urlaub in Griechenland."
         },
         {
           "label": "a · R/F 6",
@@ -44780,7 +45550,8 @@ window.SPEKTRUM_BANKS={
             "F",
             "falsch",
             "false"
-          ]
+          ],
+          "prompt": "Birgit will im Sommer auch nach Griechenland fahren."
         },
         {
           "label": "b · Richtung 1",
@@ -44788,31 +45559,36 @@ window.SPEKTRUM_BANKS={
             "nach Österreich, nach Achenkirch",
             "nach Österreich",
             "nach Achenkirch"
-          ]
+          ],
+          "prompt": "Birgit fährt zum Skifahren. In welches Land und welchen Ort fährt sie?"
         },
         {
           "label": "b · Richtung 2",
           "answers": [
             "nach Griechenland"
-          ]
+          ],
+          "prompt": "Julius fährt im Juli mit seiner Familie. In welches Land fahren sie?"
         },
         {
           "label": "b · Richtung 3",
           "answers": [
             "auf die Insel Kreta"
-          ]
+          ],
+          "prompt": "Auf welche Insel fährt Julius mit seiner Familie?"
         },
         {
           "label": "b · Richtung 4",
           "answers": [
             "in die Türkei"
-          ]
+          ],
+          "prompt": "Wohin fährt Birgit vielleicht im Sommer?"
         },
         {
           "label": "b · Richtung 5",
           "answers": [
             "nach Österreich"
-          ]
+          ],
+          "prompt": "Wohin fährt Birgit morgen zuerst?"
         }
       ]
     },
@@ -44822,73 +45598,85 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "nach Österreich"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Ergänzen Sie die Richtungsangabe: Wohin fahren sie? (Österreich)"
         },
         {
           "answers": [
             "nach Spanien"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Ergänzen Sie die Richtungsangabe: Wohin fahren sie? (Spanien)"
         },
         {
           "answers": [
             "nach Italien"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Ergänzen Sie die Richtungsangabe: Wohin fahren sie? (Italien)"
         },
         {
           "answers": [
             "in die Niederlande"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Ergänzen Sie die Richtungsangabe: Wohin fahren sie? (Niederlande)"
         },
         {
           "answers": [
             "in die Türkei"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Ergänzen Sie die Richtungsangabe: Wohin fahren sie? (Türkei)"
         },
         {
           "answers": [
             "auf die Kanarischen Inseln"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Ergänzen Sie die Richtungsangabe: Wohin fahren sie? (Kanarische Inseln)"
         },
         {
           "answers": [
             "nach Zypern"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Ergänzen Sie die Richtungsangabe: Wohin fahren sie? (Zypern)"
         },
         {
           "answers": [
             "nach England"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "Ergänzen Sie die Richtungsangabe: Wohin fahren sie? (England)"
         },
         {
           "answers": [
             "in die USA"
           ],
-          "label": "9"
+          "label": "9",
+          "prompt": "Ergänzen Sie die Richtungsangabe: Wohin fahren sie? (USA)"
         },
         {
           "answers": [
             "nach Kroatien"
           ],
-          "label": "10"
+          "label": "10",
+          "prompt": "Ergänzen Sie die Richtungsangabe: Wohin fahren sie? (Kroatien)"
         },
         {
           "answers": [
             "nach Deutschland"
           ],
-          "label": "11"
+          "label": "11",
+          "prompt": "Ergänzen Sie die Richtungsangabe: Wohin fahren sie? (Deutschland)"
         },
         {
           "answers": [
             "in die Schweiz"
           ],
-          "label": "12"
+          "label": "12",
+          "prompt": "Ergänzen Sie die Richtungsangabe: Wohin fahren sie? (Schweiz)"
         }
       ]
     },
@@ -44898,19 +45686,22 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "will"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Julius ___ im Juli nach Griechenland fahren. (wollen)"
         },
         {
           "answers": [
             "willst"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Wohin ___ du dieses Jahr fahren? (wollen)"
         },
         {
           "answers": [
             "Wollt"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "___ ihr wieder nach Österreich fahren? (wollen)"
         }
       ]
     },
@@ -44920,115 +45711,134 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "Februar"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Welcher ist der erste Monat im Jahr mit dem Buchstaben e?"
         },
         {
           "answers": [
             "September"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Welcher ist der zweite Monat im Jahr mit dem Buchstaben e?"
         },
         {
           "answers": [
             "Oktober"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Welcher ist der dritte Monat im Jahr mit dem Buchstaben e?"
         },
         {
           "answers": [
             "November"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Welcher ist der vierte Monat im Jahr mit dem Buchstaben e?"
         },
         {
           "answers": [
             "Dezember"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Welcher ist der fünfte Monat im Jahr mit dem Buchstaben e?"
         },
         {
           "answers": [
             "April"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Welcher ist der erste Monat im Jahr mit dem Buchstaben l?"
         },
         {
           "answers": [
             "Juli"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Welcher ist der zweite Monat im Jahr mit dem Buchstaben l?"
         },
         {
           "answers": [
             "März"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "Welcher ist der erste Monat im Jahr mit dem Buchstaben m?"
         },
         {
           "answers": [
             "Mai"
           ],
-          "label": "9"
+          "label": "9",
+          "prompt": "Welcher ist der zweite Monat im Jahr mit dem Buchstaben m?"
         },
         {
           "answers": [
             "September"
           ],
-          "label": "10"
+          "label": "10",
+          "prompt": "Welcher ist der dritte Monat im Jahr mit dem Buchstaben m?"
         },
         {
           "answers": [
             "November"
           ],
-          "label": "11"
+          "label": "11",
+          "prompt": "Welcher ist der vierte Monat im Jahr mit dem Buchstaben m?"
         },
         {
           "answers": [
             "Dezember"
           ],
-          "label": "12"
+          "label": "12",
+          "prompt": "Welcher ist der fünfte Monat im Jahr mit dem Buchstaben m?"
         },
         {
           "answers": [
             "Frühling"
           ],
-          "label": "13"
+          "label": "13",
+          "prompt": "Welche Jahreszeit kommt nach dem Winter?"
         },
         {
           "answers": [
             "Herbst"
           ],
-          "label": "14"
+          "label": "14",
+          "prompt": "Welche Jahreszeit kommt nach dem Sommer?"
         },
         {
           "answers": [
             "Wärme"
           ],
-          "label": "15"
+          "label": "15",
+          "prompt": "Es ist warm. Wie lautet das Nomen mit die?"
         },
         {
           "answers": [
             "Hitze"
           ],
-          "label": "16"
+          "label": "16",
+          "prompt": "Es ist heiß. Wie lautet das Nomen mit die?"
         },
         {
           "answers": [
             "Wind"
           ],
-          "label": "17"
+          "label": "17",
+          "prompt": "Es ist windig. Wie lautet das Nomen mit der?"
         },
         {
           "answers": [
             "Regen"
           ],
-          "label": "18"
+          "label": "18",
+          "prompt": "Es regnet. Wie lautet das Nomen mit der?"
         },
         {
           "answers": [
             "Schnee"
           ],
-          "label": "19"
+          "label": "19",
+          "prompt": "Es schneit. Wie lautet das Nomen mit der?"
         }
       ]
     },
@@ -45038,49 +45848,57 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "nach"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Wann fährst du ___ Krakau?"
         },
         {
           "answers": [
             "nach"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Im November fahre ich ___ Paris."
         },
         {
           "answers": [
             "in die"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Im Mai fliegen wir ___ USA."
         },
         {
           "answers": [
             "in die"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Im Winter fährt Carla ___ Schweiz."
         },
         {
           "answers": [
             "nach"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Fahrt ihr im Sommer wieder ___ Österreich?"
         },
         {
           "answers": [
             "nach"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Im Juli fliegt mein Bruder ___ Australien."
         },
         {
           "answers": [
             "in die"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Im Frühling fahre ich mit dem Zug ___ Niederlande."
         },
         {
           "answers": [
             "auf die"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "Bist du im Februar wieder ___ Kanarischen Inseln geflogen?"
         }
       ]
     },
@@ -45090,73 +45908,85 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "waren"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Wir ___ auf Malta! (sein)"
         },
         {
           "answers": [
             "Seid geflogen"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "___ ihr mit dem Flugzeug ___? (fliegen)"
         },
         {
           "answers": [
             "war"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Der Flug ___ nicht so teuer. (sein)"
         },
         {
           "answers": [
             "sind gefahren"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Auf der Insel ___ wir dann mit einem Auto ___. (fahren)"
         },
         {
           "answers": [
             "habt gemacht"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Was ___ ihr dort so ___? (machen)"
         },
         {
           "answers": [
             "sind aufgestanden"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Wir ___ um 9.00 Uhr ___. (aufstehen)"
         },
         {
           "answers": [
             "haben gefrühstückt"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Dann ___ wir im Hotel ___. (frühstücken)"
         },
         {
           "answers": [
             "sind spazieren gegangen"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "Am Vormittag ___ wir ___. (spazieren gehen)"
         },
         {
           "answers": [
             "haben gegessen"
           ],
-          "label": "9"
+          "label": "9",
+          "prompt": "Wir ___ mittags meistens Fisch ___. (essen)"
         },
         {
           "answers": [
             "hat geschmeckt"
           ],
-          "label": "10"
+          "label": "10",
+          "prompt": "Das Essen ___ überall sehr gut ___. (schmecken)"
         },
         {
           "answers": [
             "habe geübt"
           ],
-          "label": "11"
+          "label": "11",
+          "prompt": "Ich ___ ein bisschen Englisch ___. (üben)"
         },
         {
           "answers": [
             "Hast gemacht"
           ],
-          "label": "12"
+          "label": "12",
+          "prompt": "___ du auch Fotos ___? (machen)"
         }
       ]
     },
@@ -45168,7 +45998,8 @@ window.SPEKTRUM_BANKS={
             "richtig",
             "true"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Richie M. Maier hat das richtige Outfit gewählt."
         },
         {
           "answers": [
@@ -45176,7 +46007,8 @@ window.SPEKTRUM_BANKS={
             "falsch",
             "false"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Caroline Sommer hatte Probleme beim Gehen."
         },
         {
           "answers": [
@@ -45184,7 +46016,8 @@ window.SPEKTRUM_BANKS={
             "richtig",
             "true"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Sänger Bruno hat verschiedene Farben kombiniert."
         },
         {
           "answers": [
@@ -45192,7 +46025,8 @@ window.SPEKTRUM_BANKS={
             "richtig",
             "true"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Claudia Schiller hat ein sehr schönes Kleid getragen."
         }
       ],
       "type": "choice",
@@ -45295,55 +46129,64 @@ window.SPEKTRUM_BANKS={
           "label": "c · Kleidung 1",
           "answers": [
             "eine neue Bluse"
-          ]
+          ],
+          "prompt": "Ergänzen Sie im Akkusativ: ein · neu · Bluse."
         },
         {
           "label": "c · Kleidung 2",
           "answers": [
             "rote Schuhe"
-          ]
+          ],
+          "prompt": "Ergänzen Sie im Akkusativ: rot · Schuhe."
         },
         {
           "label": "c · Kleidung 3",
           "answers": [
             "kein weißes T-Shirt"
-          ]
+          ],
+          "prompt": "Ergänzen Sie im Akkusativ: kein · weiß · T-Shirt."
         },
         {
           "label": "c · Kleidung 4",
           "answers": [
             "deine schwarze Hose"
-          ]
+          ],
+          "prompt": "Ergänzen Sie im Akkusativ: dein · schwarz · Hose."
         },
         {
           "label": "c · Kleidung 5",
           "answers": [
             "einen schwarzen Schal"
-          ]
+          ],
+          "prompt": "Ergänzen Sie im Akkusativ: ein · schwarz · Schal."
         },
         {
           "label": "c · Kleidung 6",
           "answers": [
             "einen neuen Anzug"
-          ]
+          ],
+          "prompt": "Ergänzen Sie im Akkusativ: ein · neu · Anzug."
         },
         {
           "label": "c · Kleidung 7",
           "answers": [
             "einen grünen Hut"
-          ]
+          ],
+          "prompt": "Ergänzen Sie im Akkusativ: ein · grün · Hut."
         },
         {
           "label": "c · Kleidung 8",
           "answers": [
             "meinen roten Mantel"
-          ]
+          ],
+          "prompt": "Ergänzen Sie im Akkusativ: mein · rot · Mantel."
         },
         {
           "label": "c · Kleidung 9",
           "answers": [
             "ein blaues Kleid"
-          ]
+          ],
+          "prompt": "Ergänzen Sie im Akkusativ: ein · blau · Kleid."
         }
       ]
     },
@@ -45355,7 +46198,7 @@ window.SPEKTRUM_BANKS={
             "neue Schuhe, ein neues Hemd, einen neuen Anzug",
             "neue Schuhe ein neues Hemd einen neuen Anzug"
           ],
-          "prompt": "What does Martina want to buy?"
+          "prompt": "Was möchte Martina in der Stadt kaufen?"
         },
         {
           "label": "2",
@@ -45363,7 +46206,7 @@ window.SPEKTRUM_BANKS={
             "Er braucht kein neues Hemd und keinen neuen Anzug",
             "Er hat schon alles"
           ],
-          "prompt": "Why does Klaus not want to buy clothes?"
+          "prompt": "Was sagt Klaus zu den Einkaufsplänen?"
         },
         {
           "label": "3",
@@ -45371,7 +46214,7 @@ window.SPEKTRUM_BANKS={
             "Sie möchte auf eine Party gehen",
             "Sie möchte auf eine Party bei Familie Klein gehen"
           ],
-          "prompt": "What does Martina want to do in the evening?"
+          "prompt": "Was möchte Martina morgen Abend machen?"
         },
         {
           "label": "4",
@@ -45379,104 +46222,119 @@ window.SPEKTRUM_BANKS={
             "Er möchte ein Fußballspiel sehen",
             "Er möchte ein Fußballspiel im Fernsehen sehen"
           ],
-          "prompt": "What does Klaus want to do?"
+          "prompt": "Was möchte Klaus morgen Abend machen?"
         },
         {
           "label": "5",
           "answers": [
             "Sie gehen auf die Party und bleiben drei Stunden"
           ],
-          "prompt": "What do they finally decide?"
+          "prompt": "Was ist der Kompromiss?"
         },
         {
           "answers": [
             "hast"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Klaus: Du ___ schon neue Schuhe, viele neue Schuhe."
         },
         {
           "answers": [
             "tragen"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Und da musst du ein schickes Hemd und einen schicken Anzug ___."
         },
         {
           "answers": [
             "ziehe an"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Und ich ___ mein neues Kleid und die grünen Schuhe ___."
         },
         {
           "answers": [
             "komme mit"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Da ___ ich nicht ___."
         },
         {
           "answers": [
             "mag"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Ich ___ die Leute nicht."
         },
         {
           "answers": [
             "spielt"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Morgen ___ der FC Bayern gegen Manchester United."
         },
         {
           "answers": [
             "müssen"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Wir ___ aber auf diese Party gehen."
         },
         {
           "answers": [
             "ist"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "Frau Klein ___ meine neue Chefin."
         },
         {
           "answers": [
             "ist"
           ],
-          "label": "9"
+          "label": "9",
+          "prompt": "Das ___ sehr wichtig."
         },
         {
           "answers": [
             "sagen"
           ],
-          "label": "10"
+          "label": "10",
+          "prompt": "Wir gehen auf die Party, ___ freundlich Guten Tag …"
         },
         {
           "answers": [
             "bleiben"
           ],
-          "label": "11"
+          "label": "11",
+          "prompt": "… ___ eine Stunde und gehen wieder nach Hause."
         },
         {
           "answers": [
             "sehen"
           ],
-          "label": "12"
+          "label": "12",
+          "prompt": "Dann können wir das Fußballspiel noch ___."
         },
         {
           "answers": [
             "sprichst"
           ],
-          "label": "13"
+          "label": "13",
+          "prompt": "Du ___ mit Herrn Klein …"
         },
         {
           "answers": [
             "spreche"
           ],
-          "label": "14"
+          "label": "14",
+          "prompt": "… ich ___ mit Frau Klein …"
         },
         {
           "answers": [
             "bleiben"
           ],
-          "label": "15"
+          "label": "15",
+          "prompt": "… wir ___ drei Stunden und dann gehen wir nach Hause."
         }
       ]
     },
@@ -45486,79 +46344,92 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "in Schwarz"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Wir haben den Anzug auch ___."
         },
         {
           "answers": [
             "50"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Mein Mann hat Größe ___."
         },
         {
           "answers": [
             "399 Euro"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Was kostet der Designeranzug?"
         },
         {
           "answers": [
             "normale Preise"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Das sind ganz ___, Liebling."
         },
         {
           "answers": [
             "150"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Klaus sucht einen günstigeren Anzug. Welchen Preis nennt er zuerst?"
         },
         {
           "answers": [
             "200"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Welchen zweiten Preis nennt Klaus?"
         },
         {
           "answers": [
             "199"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Der schwarze Anzug kostet nur ___ Euro."
         },
         {
           "answers": [
             "gute Qualität"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "Er hat eine ___."
         },
         {
           "answers": [
             "199"
           ],
-          "label": "9"
+          "label": "9",
+          "prompt": "Ich probiere nur den Anzug für ___ Euro an."
         },
         {
           "answers": [
             "zwei Wochen"
           ],
-          "label": "10"
+          "label": "10",
+          "prompt": "Sie können den Anzug in den nächsten ___ umtauschen."
         },
         {
           "answers": [
             "Bar"
           ],
-          "label": "11"
+          "label": "11",
+          "prompt": "Wie möchte Klaus zahlen?"
         },
         {
           "answers": [
             "teuer"
           ],
-          "label": "12"
+          "label": "12",
+          "prompt": "Er war auch nicht so ___."
         },
         {
           "answers": [
             "meine Schuhe"
           ],
-          "label": "13"
+          "label": "13",
+          "prompt": "Jetzt habe ich mehr Geld für ___."
         }
       ]
     },
@@ -45616,49 +46487,57 @@ window.SPEKTRUM_BANKS={
           "label": "c · 1",
           "answers": [
             "Welchen"
-          ]
+          ],
+          "prompt": "___ Pullover möchten Sie? Den blauen oder den grünen?"
         },
         {
           "label": "c · 2",
           "answers": [
             "diese"
-          ]
+          ],
+          "prompt": "Willst du wirklich ___ Jacke kaufen?"
         },
         {
           "label": "c · 3",
           "answers": [
             "dieser"
-          ]
+          ],
+          "prompt": "Was kostet ___ Koffer?"
         },
         {
           "label": "c · 4",
           "answers": [
             "diese"
-          ]
+          ],
+          "prompt": "Ich mag ___ Farbe nicht."
         },
         {
           "label": "c · 5",
           "answers": [
             "diesen"
-          ]
+          ],
+          "prompt": "Wie findest du ___ Hut?"
         },
         {
           "label": "c · 6",
           "answers": [
             "dieses"
-          ]
+          ],
+          "prompt": "Kann ich ___ T-Shirt mal sehen?"
         },
         {
           "label": "c · 7",
           "answers": [
             "diese"
-          ]
+          ],
+          "prompt": "Ich hätte gern ___ Handschuhe."
         },
         {
           "label": "c · 8",
           "answers": [
             "Welche"
-          ]
+          ],
+          "prompt": "___ Handschuhe meinen Sie? – Die roten."
         }
       ]
     },
@@ -45668,91 +46547,106 @@ window.SPEKTRUM_BANKS={
           "label": "a · Adjektiv 1",
           "answers": [
             "kleiner"
-          ]
+          ],
+          "prompt": "Ich brauche die Schuhe eine Nummer ___. (klein)"
         },
         {
           "label": "a · Adjektiv 2",
           "answers": [
             "blaue"
-          ]
+          ],
+          "prompt": "Das ___ oder das rote Kleid? (blau)"
         },
         {
           "label": "a · Adjektiv 3",
           "answers": [
             "rote"
-          ]
+          ],
+          "prompt": "Das blaue oder das ___ Kleid? (rot)"
         },
         {
           "label": "a · Adjektiv 4",
           "answers": [
             "blaue"
-          ]
+          ],
+          "prompt": "Das ___ finde ich schöner. (blau)"
         },
         {
           "label": "a · Adjektiv 5",
           "answers": [
             "schöner"
-          ]
+          ],
+          "prompt": "Das blaue finde ich ___. (schön)"
         },
         {
           "label": "a · Adjektiv 6",
           "answers": [
             "lieber"
-          ]
+          ],
+          "prompt": "Zu Hause trägt er ___ Jeans. (gern)"
         },
         {
           "label": "b · Komparativ 1",
           "answers": [
             "kleiner"
-          ]
+          ],
+          "prompt": "Wie lautet der Komparativ von klein?"
         },
         {
           "label": "b · Komparativ 2",
           "answers": [
             "schöner"
-          ]
+          ],
+          "prompt": "Wie lautet der Komparativ von schön?"
         },
         {
           "label": "b · Komparativ 3",
           "answers": [
             "größer"
-          ]
+          ],
+          "prompt": "Wie lautet der Komparativ von groß?"
         },
         {
           "label": "c · 1",
           "answers": [
             "besser"
-          ]
+          ],
+          "prompt": "Aber ist die Qualität wirklich ___? (gut)"
         },
         {
           "label": "c · 2",
           "answers": [
             "größer"
-          ]
+          ],
+          "prompt": "Haben Sie das T-Shirt auch eine Nummer ___? (groß)"
         },
         {
           "label": "c · 3",
           "answers": [
             "mehr"
-          ]
+          ],
+          "prompt": "Möchten Sie noch etwas ___? (viel)"
         },
         {
           "label": "c · 4",
           "answers": [
             "preiswerter"
-          ]
+          ],
+          "prompt": "Das grüne Kleid ist ___, es kostet nur 99 Euro. (preiswert)"
         },
         {
           "label": "c · 5",
           "answers": [
             "kleiner"
-          ]
+          ],
+          "prompt": "Gibt es den Mantel auch ___? (klein)"
         },
         {
           "label": "c · 6",
           "answers": [
             "lieber"
-          ]
+          ],
+          "prompt": "Was trägst du ___? Jeans oder eine Anzughose? (gern)"
         }
       ]
     },
@@ -45762,103 +46656,120 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "Kleidung und Sportartikel"
-          ]
+          ],
+          "prompt": "Welche Warengruppe steht in der Grafik auf Platz 1 (66 %)?"
         },
         {
           "label": "2",
           "answers": [
             "Möbel, Geschirr, Spielzeug"
-          ]
+          ],
+          "prompt": "Welche Warengruppe steht in der Grafik auf Platz 2 (51 %)?"
         },
         {
           "label": "3",
           "answers": [
             "Bücher, Zeitungen, Zeitschriften"
-          ]
+          ],
+          "prompt": "Welche Warengruppe steht in der Grafik auf Platz 3 (50 %)?"
         },
         {
           "label": "4",
           "answers": [
             "Reisen, Flug- bzw. Bahntickets"
-          ]
+          ],
+          "prompt": "Welche Warengruppe steht in der Grafik auf Platz 4 (46 %)?"
         },
         {
           "label": "5",
           "answers": [
             "Eintrittskarten"
-          ]
+          ],
+          "prompt": "Welche Warengruppe steht in der Grafik auf Platz 5 (43 %)?"
         },
         {
           "label": "6",
           "answers": [
             "Filme/Musik"
-          ]
+          ],
+          "prompt": "Welche Warengruppe steht in der Grafik auf Platz 6 (38 %)?"
         },
         {
           "label": "7",
           "answers": [
             "Elektronik"
-          ]
+          ],
+          "prompt": "Welche Warengruppe steht in der Grafik auf Platz 7 (31 %)?"
         },
         {
           "label": "8",
           "answers": [
             "Medikamente"
-          ]
+          ],
+          "prompt": "Welche Warengruppe steht in der Grafik auf Platz 8 (28 %)?"
         },
         {
           "label": "9",
           "answers": [
             "Lebensmittel"
-          ]
+          ],
+          "prompt": "Welche Warengruppe steht in der Grafik auf Platz 9 (15 %)?"
         },
         {
           "label": "10",
           "answers": [
             "Studie"
-          ]
+          ],
+          "prompt": "Das zeigt eine ___ vom Statistischen Bundesamt."
         },
         {
           "label": "11",
           "answers": [
             "Kleidung"
-          ]
+          ],
+          "prompt": "Am beliebtesten sind ___ und Sportartikel."
         },
         {
           "label": "12",
           "answers": [
             "Platz"
-          ]
+          ],
+          "prompt": "Auf ___ zwei kommen Gebrauchsgüter."
         },
         {
           "label": "13",
           "answers": [
             "Bücher"
-          ]
+          ],
+          "prompt": "___ (inkl. E-Books), Zeitungen und Zeitschriften belegen Rang drei."
         },
         {
           "label": "14",
           "answers": [
             "Platz"
-          ]
+          ],
+          "prompt": "Bücher, Zeitungen und Zeitschriften belegen ___ drei."
         },
         {
           "label": "15",
           "answers": [
             "Kauf"
-          ]
+          ],
+          "prompt": "Beim ___ von Medikamenten …"
         },
         {
           "label": "16",
           "answers": [
             "Apotheke"
-          ]
+          ],
+          "prompt": "… gehen die Deutschen lieber in die ___."
         },
         {
           "label": "17",
           "answers": [
             "Bereich"
-          ]
+          ],
+          "prompt": "Nur 15 Prozent haben Produkte aus diesem ___ im Netz gekauft."
         }
       ]
     },
@@ -45868,61 +46779,71 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "GRÖSSE"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Haben Sie den Anzug auch in ___ 50?"
         },
         {
           "answers": [
             "ANPROBIEREN"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Kann ich die Hose mal ___?"
         },
         {
           "answers": [
             "NUMMER"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Ich brauche die Schuhe eine ___ kleiner."
         },
         {
           "answers": [
             "KOSTET"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Was ___ das T-Shirt?"
         },
         {
           "answers": [
             "GRAMM"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Ich hätte gern 300 ___ Käse."
         },
         {
           "answers": [
             "STRAUSS"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Ich möchte bitte diesen ___ Blumen."
         },
         {
           "answers": [
             "FARBE"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Gibt es den gelben Pullover auch in einer anderen ___?"
         },
         {
           "answers": [
             "TÜTE"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "Jan isst jeden Abend eine ___ Chips."
         },
         {
           "answers": [
             "SCHÖN"
           ],
-          "label": "9"
+          "label": "9",
+          "prompt": "Das Kleid ist wirklich ___."
         },
         {
           "label": "Lösungswort",
           "answers": [
             "einkaufen"
-          ]
+          ],
+          "prompt": "Wie lautet das Lösungswort des Einkaufsrätsels?"
         }
       ]
     },
@@ -45932,145 +46853,169 @@ window.SPEKTRUM_BANKS={
           "label": "1 · Gegenteil",
           "answers": [
             "weiß"
-          ]
+          ],
+          "prompt": "Wie heißt das Gegenteil von „schwarz“?"
         },
         {
           "label": "1 · Adjektiv 1",
           "answers": [
             "schwarzen"
-          ]
+          ],
+          "prompt": "Er trägt einen ___ Anzug. (schwarz)"
         },
         {
           "label": "1 · Adjektiv 2",
           "answers": [
             "weißen"
-          ]
+          ],
+          "prompt": "Er trägt einen ___ Anzug. (Gegenteil von „schwarz“)"
         },
         {
           "label": "2 · Gegenteil",
           "answers": [
             "unfreundlich"
-          ]
+          ],
+          "prompt": "Wie heißt das Gegenteil von „freundlich“?"
         },
         {
           "label": "2 · Adjektiv 1",
           "answers": [
             "freundlichen"
-          ]
+          ],
+          "prompt": "Wir haben einen ___ Chef. (freundlich)"
         },
         {
           "label": "2 · Adjektiv 2",
           "answers": [
             "unfreundlichen"
-          ]
+          ],
+          "prompt": "Wir haben einen ___ Chef. (Gegenteil von „freundlich“)"
         },
         {
           "label": "3 · Gegenteil",
           "answers": [
             "klein"
-          ]
+          ],
+          "prompt": "Wie heißt das Gegenteil von „groß“?"
         },
         {
           "label": "3 · Adjektiv 1",
           "answers": [
             "großes"
-          ]
+          ],
+          "prompt": "Das war ein ___ Flugzeug. (groß)"
         },
         {
           "label": "3 · Adjektiv 2",
           "answers": [
             "kleines"
-          ]
+          ],
+          "prompt": "Das war ein ___ Flugzeug. (Gegenteil von „groß“)"
         },
         {
           "label": "4 · Gegenteil",
           "answers": [
             "hässlich"
-          ]
+          ],
+          "prompt": "Wie heißt das Gegenteil von „schön“?"
         },
         {
           "label": "4 · Adjektiv 1",
           "answers": [
             "schönen"
-          ]
+          ],
+          "prompt": "Der Trainer trägt immer einen ___ Hut. (schön)"
         },
         {
           "label": "4 · Adjektiv 2",
           "answers": [
             "hässlichen"
-          ]
+          ],
+          "prompt": "Der Trainer trägt immer einen ___ Hut. (Gegenteil von „schön“)"
         },
         {
           "label": "5 · Gegenteil",
           "answers": [
             "preiswert"
-          ]
+          ],
+          "prompt": "Wie heißt das Gegenteil von „teuer“?"
         },
         {
           "label": "5 · Adjektiv 1",
           "answers": [
             "teure"
-          ]
+          ],
+          "prompt": "Ich habe eine sehr ___ Tasche gekauft. (teuer)"
         },
         {
           "label": "5 · Adjektiv 2",
           "answers": [
             "preiswerte"
-          ]
+          ],
+          "prompt": "Ich habe eine sehr ___ Tasche gekauft. (Gegenteil von „teuer“)"
         },
         {
           "label": "6 · Gegenteil",
           "answers": [
             "schlecht"
-          ]
+          ],
+          "prompt": "Wie heißt das Gegenteil von „gut“?"
         },
         {
           "label": "6 · Adjektiv 1",
           "answers": [
             "gute"
-          ]
+          ],
+          "prompt": "Gustav hatte im ersten Studienjahr ___ Noten. (gut)"
         },
         {
           "label": "6 · Adjektiv 2",
           "answers": [
             "schlechte"
-          ]
+          ],
+          "prompt": "Gustav hatte im ersten Studienjahr ___ Noten. (Gegenteil von „gut“)"
         },
         {
           "label": "7 · Gegenteil",
           "answers": [
             "kalt"
-          ]
+          ],
+          "prompt": "Wie heißt das Gegenteil von „warm“?"
         },
         {
           "label": "7 · Adjektiv 1",
           "answers": [
             "warmen"
-          ]
+          ],
+          "prompt": "Ich trinke gerne einen ___ Tee. (warm)"
         },
         {
           "label": "7 · Adjektiv 2",
           "answers": [
             "kalten"
-          ]
+          ],
+          "prompt": "Ich trinke gerne einen ___ Tee. (Gegenteil von „warm“)"
         },
         {
           "label": "8 · Gegenteil",
           "answers": [
             "langsam"
-          ]
+          ],
+          "prompt": "Wie heißt das Gegenteil von „schnell“?"
         },
         {
           "label": "8 · Adjektiv 1",
           "answers": [
             "schneller"
-          ]
+          ],
+          "prompt": "Das ist ein ___ Zug. (schnell)"
         },
         {
           "label": "8 · Adjektiv 2",
           "answers": [
             "langsamer"
-          ]
+          ],
+          "prompt": "Das ist ein ___ Zug. (Gegenteil von „schnell“)"
         }
       ]
     },
@@ -46080,49 +47025,57 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "lieber"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Julia trägt gern T-Shirts. Otto trägt ___ Pullover."
         },
         {
           "answers": [
             "älter"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Julia ist 28 Jahre alt. Otto ist ___."
         },
         {
           "answers": [
             "größer"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Julias Auto ist groß. Ottos Auto ist ___."
         },
         {
           "answers": [
             "teurer"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Julias Handy ist teuer. Ottos Handy ist ___."
         },
         {
           "answers": [
             "schöner"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Julias Wohnung ist schön. Ottos Wohnung ist ___."
         },
         {
           "answers": [
             "beliebter"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Julia ist bei den Kollegen beliebt. Otto ist ___."
         },
         {
           "answers": [
             "mehr"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Julia arbeitet viel. Otto arbeitet noch ___."
         },
         {
           "answers": [
             "glücklicher"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "Julia ist ___ als Otto. Otto ist glücklich."
         }
       ]
     },
@@ -46167,103 +47120,120 @@ window.SPEKTRUM_BANKS={
           "label": "b · Verb 1",
           "answers": [
             "hat"
-          ]
+          ],
+          "prompt": "Johanna liest E-Books. Sie ___ einen E-Reader."
         },
         {
           "label": "b · Verb 2",
           "answers": [
             "ist"
-          ]
+          ],
+          "prompt": "Sie ___ damit sehr zufrieden."
         },
         {
           "label": "b · Verb 3",
           "answers": [
             "kann"
-          ]
+          ],
+          "prompt": "Sie ___ die E-Books einfach und schnell herunterladen."
         },
         {
           "label": "b · Verb 4",
           "answers": [
             "reist"
-          ]
+          ],
+          "prompt": "Sie ___ viel."
         },
         {
           "label": "b · Verb 5",
           "answers": [
             "will"
-          ]
+          ],
+          "prompt": "Sie ___ nicht so viel Gepäck mitnehmen."
         },
         {
           "label": "b · Verb 6",
           "answers": [
             "bucht"
-          ]
+          ],
+          "prompt": "Albert ___ seine Reisen im Internet."
         },
         {
           "label": "b · Verb 7",
           "answers": [
             "kann"
-          ]
+          ],
+          "prompt": "So ___ er sofort die Preise sehen."
         },
         {
           "label": "b · Verb 8",
           "answers": [
             "ist geflogen"
-          ]
+          ],
+          "prompt": "Einmal ___ er für 50 Euro nach Paris ___."
         },
         {
           "label": "b · Verb 9",
           "answers": [
             "hatte"
-          ]
+          ],
+          "prompt": "Er ___ wirklich Glück."
         },
         {
           "label": "b · Verb 10",
           "answers": [
             "kauft"
-          ]
+          ],
+          "prompt": "Auch Zugtickets, Kino- und Theaterkarten ___ er gern online."
         },
         {
           "label": "b · Verb 11",
           "answers": [
             "kauft"
-          ]
+          ],
+          "prompt": "Magdalena ___ oft Kleider und Schuhe."
         },
         {
           "label": "b · Verb 12",
           "answers": [
             "geht"
-          ]
+          ],
+          "prompt": "Sie ___ nicht so gern in Geschäfte."
         },
         {
           "label": "b · Verb 13",
           "answers": [
             "hat"
-          ]
+          ],
+          "prompt": "Sie ___ zu wenig Zeit."
         },
         {
           "label": "b · Verb 14",
           "answers": [
             "kann"
-          ]
+          ],
+          "prompt": "Im Internet ___ sie alles finden."
         },
         {
           "label": "b · Verb 15",
           "answers": [
             "hat gekauft"
-          ]
+          ],
+          "prompt": "Einmal ___ sie Schuhe ___."
         },
         {
           "label": "b · Verb 16",
           "answers": [
             "waren"
-          ]
+          ],
+          "prompt": "Die Schuhe ___ zu klein."
         },
         {
           "label": "b · Verb 17",
           "answers": [
             "hat umgetauscht"
-          ]
+          ],
+          "prompt": "Magdalena ___ sie ___."
         }
       ]
     },
@@ -46273,115 +47243,134 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "A"
-          ]
+          ],
+          "prompt": "Welcher Drucker war kaputt? A: der von Sabine · B: der von Petra · C: der von Otto."
         },
         {
           "label": "2",
           "answers": [
             "C"
-          ]
+          ],
+          "prompt": "Was hat Sabine gemacht? A: mit Frau Hauptmann einen Termin vereinbart · B: mit ihr gesprochen · C: sie angerufen."
         },
         {
           "label": "3",
           "answers": [
             "C"
-          ]
+          ],
+          "prompt": "Wie hat Sabine die Gäste vom Flughafen abgeholt? A: pünktlich · B: um 13 Uhr am Flughafen · C: mit Verspätung."
         },
         {
           "label": "4",
           "answers": [
             "B"
-          ]
+          ],
+          "prompt": "Was hat Otto gemacht? A: den Drucker repariert · B: das Problem mit dem Beamer gelöst · C: einen anderen Beamer genommen."
         },
         {
           "label": "5",
           "answers": [
             "B"
-          ]
+          ],
+          "prompt": "Wie ist die Besprechung verlaufen? A: nicht gut · B: gut · C: sie hat pünktlich angefangen."
         },
         {
           "label": "6",
           "answers": [
             "übersetzt"
-          ]
+          ],
+          "prompt": "Zuerst habe ich die Dokumente ___."
         },
         {
           "label": "7",
           "answers": [
             "ausgedruckt"
-          ]
+          ],
+          "prompt": "Dann habe ich alle Dokumente für die Besprechung ___."
         },
         {
           "label": "8",
           "answers": [
             "funktioniert"
-          ]
+          ],
+          "prompt": "Nach 20 Seiten hat mein Drucker nicht mehr ___."
         },
         {
           "label": "9",
           "answers": [
             "benutzt"
-          ]
+          ],
+          "prompt": "Warum hast du nicht meinen Drucker ___?"
         },
         {
           "label": "10",
           "answers": [
             "angerufen"
-          ]
+          ],
+          "prompt": "Danach habe ich Frau Hauptmann ___."
         },
         {
           "label": "11",
           "answers": [
             "gefahren"
-          ]
+          ],
+          "prompt": "Um 13.00 Uhr bin ich zum Flughafen ___."
         },
         {
           "label": "12",
           "answers": [
             "gefahren"
-          ]
+          ],
+          "prompt": "Bist du mit dem Auto ___?"
         },
         {
           "label": "13",
           "answers": [
             "angekommen"
-          ]
+          ],
+          "prompt": "Ich bin nicht pünktlich auf dem Flughafen ___."
         },
         {
           "label": "14",
           "answers": [
             "gestanden"
-          ]
+          ],
+          "prompt": "Ich habe eine Stunde im Stau ___."
         },
         {
           "label": "15",
           "answers": [
             "funktioniert"
-          ]
+          ],
+          "prompt": "Hat dieses Mal die Technik im Besprechungsraum ___?"
         },
         {
           "label": "16",
           "answers": [
             "kontrolliert"
-          ]
+          ],
+          "prompt": "Otto hat die Technik vor der Besprechung ___."
         },
         {
           "label": "17",
           "answers": [
             "gelöst"
-          ]
+          ],
+          "prompt": "Er hat das Problem mit dem Beamer irgendwie ___."
         },
         {
           "label": "18",
           "answers": [
             "angefangen"
-          ]
+          ],
+          "prompt": "Die Besprechung hat mit einer Stunde Verspätung ___."
         },
         {
           "label": "19",
           "answers": [
             "gelaufen"
-          ]
+          ],
+          "prompt": "Wie ist die Besprechung ___?"
         }
       ]
     },
@@ -46393,7 +47382,8 @@ window.SPEKTRUM_BANKS={
             "R",
             "richtig",
             "true"
-          ]
+          ],
+          "prompt": "Die Firma Bauer hat zwei Kopierer gekauft."
         },
         {
           "label": "2",
@@ -46401,7 +47391,8 @@ window.SPEKTRUM_BANKS={
             "F",
             "falsch",
             "false"
-          ]
+          ],
+          "prompt": "Ein Kopierer funktioniert gut, ein Kopierer funktioniert nicht."
         },
         {
           "label": "3",
@@ -46409,7 +47400,8 @@ window.SPEKTRUM_BANKS={
             "R",
             "richtig",
             "true"
-          ]
+          ],
+          "prompt": "Sabine will eine schnelle Reparatur."
         },
         {
           "label": "4",
@@ -46417,7 +47409,8 @@ window.SPEKTRUM_BANKS={
             "R",
             "richtig",
             "true"
-          ]
+          ],
+          "prompt": "Der Kundenservice war vor sechs Monaten in der Firma."
         },
         {
           "label": "5",
@@ -46425,7 +47418,8 @@ window.SPEKTRUM_BANKS={
             "R",
             "richtig",
             "true"
-          ]
+          ],
+          "prompt": "Die Firma muss viele Dokumente kopieren, denn am Donnerstag kommen Gäste."
         },
         {
           "label": "6",
@@ -46433,7 +47427,8 @@ window.SPEKTRUM_BANKS={
             "F",
             "falsch",
             "false"
-          ]
+          ],
+          "prompt": "Der Monteur kommt auf jeden Fall am Mittwochabend."
         },
         {
           "label": "7",
@@ -46441,7 +47436,8 @@ window.SPEKTRUM_BANKS={
             "R",
             "richtig",
             "true"
-          ]
+          ],
+          "prompt": "Der Kundenservice ruft Sabine noch einmal an."
         },
         {
           "label": "8",
@@ -46449,67 +47445,78 @@ window.SPEKTRUM_BANKS={
             "F",
             "falsch",
             "false"
-          ]
+          ],
+          "prompt": "Stimmt die im achten Satz abgedruckte Telefonnummer von Sabine?"
         },
         {
           "label": "9",
           "answers": [
             "Termin"
-          ]
+          ],
+          "prompt": "Ich möchte gern einen ___ für die Reparatur vereinbaren."
         },
         {
           "label": "10",
           "answers": [
             "Reparatur"
-          ]
+          ],
+          "prompt": "Ich möchte einen Termin für die ___ vereinbaren."
         },
         {
           "label": "11",
           "answers": [
             "Jahr"
-          ]
+          ],
+          "prompt": "Vor einem halben ___ war der Kundenservice hier."
         },
         {
           "label": "12",
           "answers": [
             "Reparatur"
-          ]
+          ],
+          "prompt": "Wir möchten jetzt gerne eine schnelle ___."
         },
         {
           "label": "13",
           "answers": [
             "Woche"
-          ]
+          ],
+          "prompt": "In dieser ___ geht es gar nicht mehr."
         },
         {
           "label": "14",
           "answers": [
             "Dokumente"
-          ]
+          ],
+          "prompt": "Wir müssen viele ___ kopieren."
         },
         {
           "label": "15",
           "answers": [
             "Gäste"
-          ]
+          ],
+          "prompt": "Am Donnerstag kommen ___ aus Italien."
         },
         {
           "label": "16",
           "answers": [
             "Telefonnummer"
-          ]
+          ],
+          "prompt": "Wie ist Ihre ___?"
         },
         {
           "label": "17",
           "answers": [
             "Nummer"
-          ]
+          ],
+          "prompt": "Meine ___ ist 0 89/37 65 2817."
         },
         {
           "label": "18",
           "answers": [
             "Fall"
-          ]
+          ],
+          "prompt": "Bitte informieren Sie mich auf jeden ___."
         }
       ]
     },
@@ -46519,49 +47526,57 @@ window.SPEKTRUM_BANKS={
           "label": "a · Pronomen 1",
           "answers": [
             "ich"
-          ]
+          ],
+          "prompt": "Was kann ___ für Sie tun?"
         },
         {
           "label": "a · Pronomen 2",
           "answers": [
             "Sie"
-          ]
+          ],
+          "prompt": "Was kann ich für ___ tun?"
         },
         {
           "label": "a · Pronomen 3",
           "answers": [
             "Wir"
-          ]
+          ],
+          "prompt": "___ müssen viele Dokumente kopieren."
         },
         {
           "label": "a · Pronomen 4",
           "answers": [
             "uns"
-          ]
+          ],
+          "prompt": "Das ist für ___ sehr wichtig."
         },
         {
           "label": "a · Pronomen 5",
           "answers": [
             "Sie"
-          ]
+          ],
+          "prompt": "Bitte informieren ___ mich auf jeden Fall."
         },
         {
           "label": "a · Pronomen 6",
           "answers": [
             "mich"
-          ]
+          ],
+          "prompt": "Bitte informieren Sie ___ auf jeden Fall."
         },
         {
           "label": "a · Pronomen 7",
           "answers": [
             "Ich"
-          ]
+          ],
+          "prompt": "___ rufe Sie morgen an."
         },
         {
           "label": "a · Pronomen 8",
           "answers": [
             "Sie"
-          ]
+          ],
+          "prompt": "Ich rufe ___ morgen an."
         },
         {
           "label": "c · ich → Akkusativ",
@@ -46621,49 +47636,57 @@ window.SPEKTRUM_BANKS={
           "label": "d · Pronomen 1",
           "answers": [
             "Sie"
-          ]
+          ],
+          "prompt": "Ich verbinde ___. (Sie)"
         },
         {
           "label": "d · Pronomen 2",
           "answers": [
             "dich"
-          ]
+          ],
+          "prompt": "Kann ich etwas für ___ tun? (du)"
         },
         {
           "label": "d · Pronomen 3",
           "answers": [
             "ihn"
-          ]
+          ],
+          "prompt": "Ich hole ___ vom Bahnhof ab. (er)"
         },
         {
           "label": "d · Pronomen 4",
           "answers": [
             "mich"
-          ]
+          ],
+          "prompt": "Bitte informieren Sie ___ über die Preise. (ich)"
         },
         {
           "label": "d · Pronomen 5",
           "answers": [
             "sie"
-          ]
+          ],
+          "prompt": "Wann besuchst du ___? (sie)"
         },
         {
           "label": "d · Pronomen 6",
           "answers": [
             "uns"
-          ]
+          ],
+          "prompt": "Das Gespräch war für ___ sehr wichtig. (wir)"
         },
         {
           "label": "d · Pronomen 7",
           "answers": [
             "euch"
-          ]
+          ],
+          "prompt": "Für ___ auch? (ihr)"
         },
         {
           "label": "d · Pronomen 8",
           "answers": [
             "mich"
-          ]
+          ],
+          "prompt": "Wann rufen Sie ___ an? (ich)"
         }
       ]
     },
@@ -46785,31 +47808,36 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "C"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Wie lange bleiben Birgits Eltern bei Birgit?"
         },
         {
           "answers": [
             "A"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Wann ist Frau Keller im Büro?"
         },
         {
           "answers": [
             "C"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Wann kommt Tim ins Büro von Kathrin?"
         },
         {
           "answers": [
             "C"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Wann kann Anneke ihren Terminkalender abholen?"
         },
         {
           "answers": [
             "B"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Was funktioniert nicht?"
         }
       ],
       "type": "choice",
@@ -46825,49 +47853,57 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "Straße"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Wie heißt diese Angabe auf Marias Visitenkarte? Hauptstraße."
         },
         {
           "answers": [
             "Hausnummer"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Wie heißt diese Angabe auf Marias Visitenkarte? 23 in „Hauptstraße 23“."
         },
         {
           "answers": [
             "Postleitzahl"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Wie heißt diese Angabe auf Marias Visitenkarte? 50671."
         },
         {
           "answers": [
             "Ort"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Wie heißt diese Angabe auf Marias Visitenkarte? Köln."
         },
         {
           "answers": [
             "Telefonnummer"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Wie heißt diese Angabe auf Marias Visitenkarte? die Nummer nach „Tel.“."
         },
         {
           "answers": [
             "E-Mail-Adresse"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Wie heißt die Angabe mit dem @-Zeichen auf Marias Visitenkarte?"
         },
         {
           "answers": [
             "Funktion"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Wie heißt diese Angabe auf Marias Visitenkarte? Marketingmanagerin."
         },
         {
           "answers": [
             "Name"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "Wie heißt diese Angabe auf Marias Visitenkarte? Maria Sauer."
         }
       ]
     },
@@ -46877,80 +47913,93 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "am"
-          ]
+          ],
+          "prompt": "___ Montag / ___ 8. Januar"
         },
         {
           "label": "2",
           "answers": [
             "am"
-          ]
+          ],
+          "prompt": "___ Nachmittag"
         },
         {
           "label": "3",
           "answers": [
             "am"
-          ]
+          ],
+          "prompt": "___ Wochenende"
         },
         {
           "label": "4",
           "answers": [
             "im"
-          ]
+          ],
+          "prompt": "___ Januar"
         },
         {
           "label": "5",
           "answers": [
             "im"
-          ]
+          ],
+          "prompt": "___ Winter"
         },
         {
           "label": "6",
           "answers": [
             "im"
-          ]
+          ],
+          "prompt": "___ Moment / ___ Augenblick"
         },
         {
           "label": "7",
           "answers": [
             "zwischen"
-          ]
+          ],
+          "prompt": "___ 9.00 Uhr und 10.00 Uhr"
         },
         {
           "label": "8",
           "answers": [
             "seit"
-          ]
+          ],
+          "prompt": "Seit wann arbeiten Sie schon? ___ drei Stunden."
         },
         {
           "label": "9",
           "answers": [
             "Der Monteur kommt am Dienstag um 11.00 Uhr"
-          ]
+          ],
+          "prompt": "Wann kommt der Monteur? (Dienstag, 11 Uhr)"
         },
         {
           "label": "10",
           "answers": [
             "Ich habe von 2009 bis 2013 studiert"
-          ]
+          ],
+          "prompt": "Wie lange hast du studiert? (2009–2013)"
         },
         {
           "label": "11",
           "answers": [
             "Die Gäste kommen zwischen 11.00 Uhr und 12.00 Uhr"
-          ]
+          ],
+          "prompt": "Wann kommen die Gäste? (11–12 Uhr)"
         },
         {
           "label": "12",
           "answers": [
             "Ich habe im August Urlaub"
-          ]
+          ],
+          "prompt": "Wann hast du Urlaub? (August)"
         },
         {
           "label": "13",
           "answers": [
             "Der Chef will den Bericht vor der Besprechung haben",
             "Der Chef will den Bericht nach der Besprechung haben"
-          ]
+          ],
+          "prompt": "Wann will der Chef den Bericht haben? (vor · die Besprechung)"
         }
       ]
     },
@@ -46960,49 +48009,57 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "bedient"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Ein Kellner ___ Gäste."
         },
         {
           "answers": [
             "unterrichtet"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Eine Lehrerin ___ Kinder."
         },
         {
           "answers": [
             "untersucht"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Eine Ärztin ___ Patienten."
         },
         {
           "answers": [
             "entwickelt"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Ein Informatiker ___ Software-Programme."
         },
         {
           "answers": [
             "präsentiert"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Eine Architektin ___ viele Projekte."
         },
         {
           "answers": [
             "besucht"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Ein Student ___ Vorlesungen."
         },
         {
           "answers": [
             "führt"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Eine Assistentin ___ viele Telefongespräche."
         },
         {
           "answers": [
             "analysiert"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "Ein Statistiker ___ Daten."
         }
       ]
     },
@@ -47012,49 +48069,57 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "mich"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Die Präsentation interessiert ___ sehr."
         },
         {
           "answers": [
             "mich"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Wann kommt ihr ___ besuchen?"
         },
         {
           "answers": [
             "Ich"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "___ fahre morgen nach Berlin."
         },
         {
           "answers": [
             "mich"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Der Chef mag ___ nicht."
         },
         {
           "answers": [
             "ich"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Geschäftliche Berichte lese ___ nicht so gern."
         },
         {
           "answers": [
             "mich"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Können Sie ___ morgen anrufen?"
         },
         {
           "answers": [
             "mich"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Siehst du ___?"
         },
         {
           "answers": [
             "mich"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "Brauchen Sie ___ noch?"
         }
       ]
     },
@@ -47064,43 +48129,50 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "habe"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Ich ___ ein Problem: Die Wasserleitung in meiner Küche ist kaputt."
         },
         {
           "answers": [
             "vereinbaren"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Ich möchte gern einen Termin für eine schnelle Reparatur ___."
         },
         {
           "answers": [
             "kommen"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Der Klempner kann morgen um 15.00 Uhr ___."
         },
         {
           "answers": [
             "Geht"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "___ es vielleicht auch um 9.00 Uhr?"
         },
         {
           "answers": [
             "ist"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Am Donnerstag um 9.00 Uhr ___ es auch möglich."
         },
         {
           "answers": [
             "brauche"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Ich ___ bitte noch Ihren Namen und Ihre genaue Adresse."
         },
         {
           "answers": [
             "erwarte"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Ich ___ den Klempner dann morgen um 9.00 Uhr."
         }
       ]
     },
@@ -47110,55 +48182,64 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "habe"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Ich ___ einen neuen Job in Köln."
         },
         {
           "answers": [
             "arbeite"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Ich ___ jetzt als …"
         },
         {
           "answers": [
             "muss"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Im Moment ___ ich sehr viel arbeiten."
         },
         {
           "answers": [
             "bin"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Ich ___ von 8.30 bis 19.00 Uhr im Büro."
         },
         {
           "answers": [
             "organisiere"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Ich ___ eine Marketingkampagne."
         },
         {
           "answers": [
             "führen"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Ich muss Telefongespräche ___."
         },
         {
           "answers": [
             "beantworten"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Ich muss ca. 50 E-Mails am Tag ___."
         },
         {
           "answers": [
             "präsentieren"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "Morgen muss ich meine Ideen ___."
         },
         {
           "answers": [
             "diskutieren"
           ],
-          "label": "9"
+          "label": "9",
+          "prompt": "Danach muss ich mit den Kollegen ___."
         }
       ]
     },
@@ -47168,49 +48249,57 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "Lieber"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "___ Herr Kummer,"
         },
         {
           "answers": [
             "um"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Sie haben am 25. Juni ___ 10.00 Uhr einen Termin."
         },
         {
           "answers": [
             "verschieben"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Leider müssen wir den Termin ___."
         },
         {
           "answers": [
             "zurück"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Sie kommt erst am 26. Juni ___."
         },
         {
           "answers": [
             "vereinbaren"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Können wir einen neuen Termin ___?"
         },
         {
           "answers": [
             "Haben"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "___ Sie am 27. oder am 28. Juni Zeit?"
         },
         {
           "answers": [
             "Telefonnummer"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Meine ___ ist 0 89/6 48 65 38."
         },
         {
           "answers": [
             "Grüßen"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "Mit besten ___"
         }
       ]
     },
@@ -47220,49 +48309,49 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "Ernst und Gabriele wollen im August auf die Insel Hiddensee fahren"
           ],
-          "prompt": "1"
+          "prompt": "Bilden Sie einen Satz: Ernst und Gabriele · August · die Insel Hiddensee · fahren · wollen"
         },
         {
           "answers": [
             "Meine Eltern wollen im Herbst in die Schweiz fahren"
           ],
-          "prompt": "2"
+          "prompt": "Bilden Sie einen Satz: meine Eltern · Herbst · die Schweiz · fahren · wollen"
         },
         {
           "answers": [
             "Ich will im Juni nach Brasilien fliegen"
           ],
-          "prompt": "3"
+          "prompt": "Bilden Sie einen Satz: ich · Juni · Brasilien · fliegen · wollen"
         },
         {
           "answers": [
             "Der Chef will am Freitag nach Paris fahren"
           ],
-          "prompt": "4"
+          "prompt": "Bilden Sie einen Satz: der Chef · Freitag · Paris · fahren · wollen"
         },
         {
           "answers": [
             "Paul will im Januar auf die Kanarischen Inseln fliegen"
           ],
-          "prompt": "5"
+          "prompt": "Bilden Sie einen Satz: Paul · Januar · die Kanarischen Inseln · fliegen · wollen"
         },
         {
           "answers": [
             "Wir wollen im Mai in die Türkei fliegen"
           ],
-          "prompt": "6"
+          "prompt": "Bilden Sie einen Satz: wir · Mai · die Türkei · fliegen · wollen"
         },
         {
           "answers": [
             "Die Kollegen wollen am Samstag nach Berlin fahren"
           ],
-          "prompt": "7"
+          "prompt": "Bilden Sie einen Satz: die Kollegen · Samstag · Berlin · fahren · wollen"
         },
         {
           "answers": [
             "Frau Meier will im März nach Japan fliegen"
           ],
-          "prompt": "8"
+          "prompt": "Bilden Sie einen Satz: Frau Meier · März · Japan · fliegen · wollen"
         }
       ]
     },
@@ -47314,7 +48403,7 @@ window.SPEKTRUM_BANKS={
             "richtig",
             "true"
           ],
-          "prompt": "1"
+          "prompt": "Peter und Petra machen in der Schweiz Urlaub."
         },
         {
           "answers": [
@@ -47322,7 +48411,7 @@ window.SPEKTRUM_BANKS={
             "richtig",
             "true"
           ],
-          "prompt": "2"
+          "prompt": "Sie wollen mit dem Zug von St. Moritz nach Zermatt fahren."
         },
         {
           "answers": [
@@ -47330,7 +48419,7 @@ window.SPEKTRUM_BANKS={
             "falsch",
             "false"
           ],
-          "prompt": "3"
+          "prompt": "Zermatt ist ein hoher Berg."
         },
         {
           "answers": [
@@ -47338,7 +48427,7 @@ window.SPEKTRUM_BANKS={
             "falsch",
             "false"
           ],
-          "prompt": "4"
+          "prompt": "In Zermatt kann man Toblerone-Schokolade kaufen."
         },
         {
           "answers": [
@@ -47346,7 +48435,7 @@ window.SPEKTRUM_BANKS={
             "richtig",
             "true"
           ],
-          "prompt": "5"
+          "prompt": "Zermatt ist autofrei."
         }
       ],
       "type": "choice",
@@ -47361,121 +48450,141 @@ window.SPEKTRUM_BANKS={
           "label": "a1 · E-Mail/Dokument 1",
           "answers": [
             "übersetzen"
-          ]
+          ],
+          "prompt": "Welches Verb aus der Liste passt: ein Dokument in eine andere Sprache übertragen?"
         },
         {
           "label": "a1 · E-Mail/Dokument 2",
           "answers": [
             "ausdrucken"
-          ]
+          ],
+          "prompt": "Welches Verb aus der Liste passt: eine E-Mail auf Papier bringen?"
         },
         {
           "label": "a1 · E-Mail/Dokument 3",
           "answers": [
             "schreiben"
-          ]
+          ],
+          "prompt": "Welches Verb aus der Liste passt: eine neue E-Mail verfassen?"
         },
         {
           "label": "a1 · E-Mail/Dokument 4",
           "answers": [
             "lesen"
-          ]
+          ],
+          "prompt": "Welches Verb aus der Liste passt: den Inhalt einer E-Mail erfassen?"
         },
         {
           "label": "a1 · E-Mail/Dokument 5",
           "answers": [
             "beantworten"
-          ]
+          ],
+          "prompt": "Welches Verb aus der Liste passt: auf eine E-Mail reagieren?"
         },
         {
           "label": "a2 · Termin 1",
           "answers": [
             "absagen"
-          ]
+          ],
+          "prompt": "Welches Verb aus der Liste passt: einen Termin streichen?"
         },
         {
           "label": "a2 · Termin 2",
           "answers": [
             "vereinbaren"
-          ]
+          ],
+          "prompt": "Welches Verb aus der Liste passt: einen Termin ausmachen?"
         },
         {
           "label": "a2 · Termin 3",
           "answers": [
             "verschieben"
-          ]
+          ],
+          "prompt": "Welches Verb aus der Liste passt: einen Termin auf einen anderen Tag legen?"
         },
         {
           "label": "a3 · Kunde 1",
           "answers": [
             "anrufen"
-          ]
+          ],
+          "prompt": "Welches Verb aus der Liste passt: eine Kundin telefonisch erreichen?"
         },
         {
           "label": "a3 · Kunde 2",
           "answers": [
             "informieren"
-          ]
+          ],
+          "prompt": "Welches Verb aus der Liste passt: einen Kunden über etwas in Kenntnis setzen?"
         },
         {
           "label": "b1 · Partizip 1",
           "answers": [
             "übersetzt"
-          ]
+          ],
+          "prompt": "Wie lautet das Partizip II von übersetzen?"
         },
         {
           "label": "b1 · Partizip 2",
           "answers": [
             "ausgedruckt"
-          ]
+          ],
+          "prompt": "Wie lautet das Partizip II von ausdrucken?"
         },
         {
           "label": "b1 · Partizip 3",
           "answers": [
             "geschrieben"
-          ]
+          ],
+          "prompt": "Wie lautet das Partizip II von schreiben?"
         },
         {
           "label": "b1 · Partizip 4",
           "answers": [
             "gelesen"
-          ]
+          ],
+          "prompt": "Wie lautet das Partizip II von lesen?"
         },
         {
           "label": "b1 · Partizip 5",
           "answers": [
             "beantwortet"
-          ]
+          ],
+          "prompt": "Wie lautet das Partizip II von beantworten?"
         },
         {
           "label": "b2 · Partizip 1",
           "answers": [
             "abgesagt"
-          ]
+          ],
+          "prompt": "Wie lautet das Partizip II von absagen?"
         },
         {
           "label": "b2 · Partizip 2",
           "answers": [
             "vereinbart"
-          ]
+          ],
+          "prompt": "Wie lautet das Partizip II von vereinbaren?"
         },
         {
           "label": "b2 · Partizip 3",
           "answers": [
             "verschoben"
-          ]
+          ],
+          "prompt": "Wie lautet das Partizip II von verschieben?"
         },
         {
           "label": "b3 · Partizip 1",
           "answers": [
             "angerufen"
-          ]
+          ],
+          "prompt": "Wie lautet das Partizip II von anrufen?"
         },
         {
           "label": "b3 · Partizip 2",
           "answers": [
             "informiert"
-          ]
+          ],
+          "prompt": "Wie lautet das Partizip II von informieren?"
         }
       ]
     },
@@ -47485,49 +48594,57 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "f"
-          ]
+          ],
+          "prompt": "Welches Verb passt? Fahrradfahren gefährlich ___."
         },
         {
           "label": "2",
           "answers": [
             "e"
-          ]
+          ],
+          "prompt": "Welches Verb passt? den Zug ___."
         },
         {
           "label": "3",
           "answers": [
             "i"
-          ]
+          ],
+          "prompt": "Welches Verb passt? mit dem Bus ___."
         },
         {
           "label": "4",
           "answers": [
             "b"
-          ]
+          ],
+          "prompt": "Welches Verb passt? mit dem Flugzeug ___."
         },
         {
           "label": "5",
           "answers": [
             "a"
-          ]
+          ],
+          "prompt": "Welches Verb passt? auf Platz eins ___."
         },
         {
           "label": "6",
           "answers": [
             "c"
-          ]
+          ],
+          "prompt": "Welches Verb passt? öffentliche Verkehrsmittel ___."
         },
         {
           "label": "7",
           "answers": [
             "g"
-          ]
+          ],
+          "prompt": "Welches Verb passt? das beliebteste Verkehrsmittel ___."
         },
         {
           "label": "8",
           "answers": [
             "h"
-          ]
+          ],
+          "prompt": "Welches Verb passt? täglich im Stau ___."
         }
       ]
     },
@@ -47613,61 +48730,71 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "Ich fliege mit dem Flugzeug"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: ich · mit, das Flugzeug · fliegen"
         },
         {
           "label": "2",
           "answers": [
             "Stehen Sie mit Ihrem Taxi oft im Stau"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: Sie · mit, Ihr Taxi · oft · im Stau · stehen?"
         },
         {
           "label": "3",
           "answers": [
             "Die Menschen in Köln stehen mit ihren Autos 63 Stunden im Jahr im Stau"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: die Menschen in Köln · mit ihren Autos · im Stau stehen."
         },
         {
           "label": "4",
           "answers": [
             "Paul nimmt oft die Straßenbahn"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: Paul · oft · die Straßenbahn · nehmen"
         },
         {
           "label": "5",
           "answers": [
             "Rund fünf Millionen Menschen fahren täglich mit dem Zug"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: rund fünf Millionen Menschen · täglich · mit der Bahn fahren."
         },
         {
           "label": "6",
           "answers": [
             "Susi fährt gern mit ihrem Motorrad"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: Susi · gern · mit, ihr Motorrad · fahren"
         },
         {
           "label": "7",
           "answers": [
             "Nach Schweden kann man auch mit der Fähre fahren"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: nach Schweden · auch mit dem Schiff · fahren können."
         },
         {
           "label": "8",
           "answers": [
             "Fahrt ihr mit euren Fahrrädern"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: ihr · mit, eure Fahrräder · fahren?"
         },
         {
           "label": "9",
           "answers": [
             "Ja, wir nehmen unsere Fahrräder"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: ja, · wir · unsere Fahrräder · nehmen"
         },
         {
           "label": "10",
           "answers": [
             "Am Wochenende fahren wir mit einem Boot"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: am Wochenende · wir · mit, ein Boot · fahren"
         }
       ]
     },
@@ -47677,46 +48804,53 @@ window.SPEKTRUM_BANKS={
           "label": "Satz 1",
           "answers": [
             "Olaf fährt immer mit dem Auto."
-          ]
+          ],
+          "prompt": "Wie fährt Olaf immer? Beschreiben Sie das Bild mit mit und Dativ."
         },
         {
           "label": "Satz 2",
           "answers": [
             "Du fährst manchmal mit der Straßenbahn.",
             "Du fährst manchmal mit der Tram."
-          ]
+          ],
+          "prompt": "Wie fährst du manchmal? Verwenden Sie das abgebildete öffentliche Verkehrsmittel."
         },
         {
           "label": "Satz 3",
           "answers": [
             "Mira fährt selten mit dem Taxi."
-          ]
+          ],
+          "prompt": "Wie fährt Mira selten?"
         },
         {
           "label": "Satz 4",
           "answers": [
             "Wir fliegen oft mit dem Flugzeug."
-          ]
+          ],
+          "prompt": "Wie reisen wir oft? Achten Sie auf das Verb zum Bild."
         },
         {
           "label": "Satz 5",
           "answers": [
             "Ich fahre manchmal mit dem Zug.",
             "Ich fahre manchmal mit der Bahn."
-          ]
+          ],
+          "prompt": "Wie fahre ich manchmal?"
         },
         {
           "label": "Satz 6",
           "answers": [
             "Ihr fahrt oft mit dem Motorrad."
-          ]
+          ],
+          "prompt": "Wie fahrt ihr oft?"
         },
         {
           "label": "Satz 7",
           "answers": [
             "Laura fährt immer mit der S-Bahn.",
             "Laura fährt immer mit der U-Bahn."
-          ]
+          ],
+          "prompt": "Wie fährt Laura immer?"
         }
       ]
     },
@@ -47726,49 +48860,57 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "58 Prozent der Deutschen fahren mit dem Auto zur Arbeit"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: 58 Prozent der Deutschen · mit, das Auto · zur Arbeit · fahren"
         },
         {
           "label": "2",
           "answers": [
             "16 Prozent der Deutschen nutzen öffentliche Verkehrsmittel"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: 16 Prozent der Deutschen · öffentliche Verkehrsmittel · nutzen"
         },
         {
           "label": "3",
           "answers": [
             "In Großstädten nehmen viele Leute die Straßenbahn"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: in Großstädten · viele Leute · die Straßenbahn · nehmen"
         },
         {
           "label": "4",
           "answers": [
             "4,7 Millionen Menschen fahren täglich mit dem Zug"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: 4,7 Millionen Menschen · täglich · mit, der Zug · fahren"
         },
         {
           "label": "5",
           "answers": [
             "Das Flugzeug liegt bei Urlaubsreisen auf Platz eins"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: das Flugzeug · bei Urlaubsreisen · auf Platz eins · liegen"
         },
         {
           "label": "6",
           "answers": [
             "72 Prozent der Deutschen haben ein Fahrrad"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: 72 Prozent der Deutschen · ein Fahrrad · haben"
         },
         {
           "label": "7",
           "answers": [
             "Viele Menschen finden das Fahrradfahren in Städten gefährlich"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: viele Menschen · das Fahrradfahren · in Städten · gefährlich · finden"
         },
         {
           "label": "8",
           "answers": [
             "Auch der Bus ist beliebt"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: auch · der Bus · beliebt · sein"
         }
       ]
     },
@@ -47778,37 +48920,43 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "Um 20.00 Uhr sind die Züge leer"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: um 20.00 Uhr · die Züge · leer · sein"
         },
         {
           "label": "2",
           "answers": [
             "Studenten nutzen die öffentlichen Verkehrsmittel kostenlos"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: Studenten · die öffentlichen Verkehrsmittel · kostenlos · nutzen"
         },
         {
           "label": "3",
           "answers": [
             "Die S-Bahn fährt überall in Berlin"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: die S-Bahn · überall in Berlin · fahren"
         },
         {
           "label": "4",
           "answers": [
             "Manche Wagen in der S-Bahn sind nicht sauber"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: manche Wagen · in der S-Bahn · nicht sauber · sein"
         },
         {
           "label": "5",
           "answers": [
             "Für die Hin- und Rückfahrt zahle ich 4,50 Euro"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: für die Hin- und Rückfahrt · ich · 4,50 Euro · zahlen"
         },
         {
           "label": "6",
           "answers": [
             "Fahrradfahren ist gut für die Fitness"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: Fahrradfahren · gut · für die Fitness · sein"
         }
       ]
     },
@@ -47819,47 +48967,54 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "Ich fahre mit dem Auto. Und du",
             "Ich fahre mit dem Auto und du"
-          ]
+          ],
+          "prompt": "Bilden Sie den Dialog: ich · mit dem Auto fahren → und du?."
         },
         {
           "label": "2",
           "answers": [
             "Ich fahre mit dem Zug"
-          ]
+          ],
+          "prompt": "Bilden Sie den Dialog: ich · mit dem Zug fahren."
         },
         {
           "label": "3",
           "answers": [
             "Zugfahren ist teuer"
-          ]
+          ],
+          "prompt": "Bilden Sie den Dialog: Zugfahren · teuer sein."
         },
         {
           "label": "4",
           "answers": [
             "Autofahren ist auch teuer. Wie lange stehst du jeden Tag im Stau",
             "Autofahren ist auch teuer Wie lange stehst du jeden Tag im Stau"
-          ]
+          ],
+          "prompt": "Bilden Sie den Dialog: Autofahren · auch teuer sein → wie lange · du · im Stau stehen?."
         },
         {
           "label": "5",
           "answers": [
             "Ich stehe montags und freitags ca. 30 Minuten im Stau. Mittwochs fahre ich nur 20 Minuten ins Büro. Wie lange fährst du zur Arbeit",
             "Ich stehe montags und freitags circa 30 Minuten im Stau. Mittwochs fahre ich nur 20 Minuten ins Büro. Wie lange fährst du zur Arbeit"
-          ]
+          ],
+          "prompt": "Bilden Sie den Dialog: ich · montags und freitags · ca. 30 Minuten im Stau → mittwochs · nur 20 Minuten ins Büro → wie lange · du · zur Arbeit fahren?."
         },
         {
           "label": "6",
           "answers": [
             "50 Minuten. Aber ich kann im Zug arbeiten. Warum fährst du nicht mit dem Zug",
             "50 Minuten Aber ich kann im Zug arbeiten Warum fährst du nicht mit dem Zug"
-          ]
+          ],
+          "prompt": "Bilden Sie den Dialog: 50 Minuten → im Zug arbeiten können → warum · du · nicht mit dem Zug fahren?."
         },
         {
           "label": "7",
           "answers": [
             "Die Züge haben oft Verspätung. Ich sitze lieber im Auto und höre Radio",
             "Die Züge haben oft Verspätung Ich sitze lieber im Auto und höre Radio"
-          ]
+          ],
+          "prompt": "Bilden Sie den Dialog: die Züge · oft Verspätung haben → lieber im Auto sitzen und Radio hören."
         }
       ]
     },
@@ -47869,61 +49024,71 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "Warum willst du im November nach Deutschland reisen"
-          ]
+          ],
+          "prompt": "Formulieren Sie die Frage: warum · du · im November · nach Deutschland fahren · wollen?"
         },
         {
           "label": "2",
           "answers": [
             "Wann wollen Sie Urlaub machen"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: wann · Sie · Urlaub · machen · wollen?"
         },
         {
           "label": "3",
           "answers": [
             "Marta und Ivan wollen in Österreich Ski fahren"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: Marta und Ivan · in Österreich · Ski fahren · wollen"
         },
         {
           "label": "4",
           "answers": [
             "Ich will am Wochenende zu Hause bleiben"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: wollen · ich · am Wochenende · zu Hause · bleiben"
         },
         {
           "label": "5",
           "answers": [
             "Meine Cousine will in England studieren"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: meine Cousine · wollen · in England · studieren"
         },
         {
           "label": "6",
           "answers": [
             "Was will Paul am Wochenende machen"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: was · Paul · am Wochenende · machen · wollen?"
         },
         {
           "label": "7",
           "answers": [
             "Ich will später als Lehrerin arbeiten"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: ich · wollen · später · als Lehrerin · arbeiten"
         },
         {
           "label": "8",
           "answers": [
             "Erich und Erika wollen ein Haus kaufen"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: Erich und Erika · ein Haus · kaufen · wollen"
         },
         {
           "label": "9",
           "answers": [
             "Hilde will keinen Kaffee mehr trinken"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: Hilde · wollen · keinen Kaffee mehr · trinken"
         },
         {
           "label": "10",
           "answers": [
             "Otto will Karriere machen"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: Otto · Karriere · machen · wollen"
         }
       ]
     },
@@ -47933,97 +49098,113 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "fliegen"
-          ]
+          ],
+          "prompt": "Wir ___ im Juli auf die Insel Teneriffa. (fliegen)"
         },
         {
           "label": "2",
           "answers": [
             "will"
-          ]
+          ],
+          "prompt": "Ich ___ dort einen Golfkurs machen. (wollen)"
         },
         {
           "label": "3",
           "answers": [
             "will"
-          ]
+          ],
+          "prompt": "Mein Mann ___ Spanisch lernen. (wollen)"
         },
         {
           "label": "4",
           "answers": [
             "ist"
-          ]
+          ],
+          "prompt": "Das Wetter ___ dort sehr schön. (sein)"
         },
         {
           "label": "5",
           "answers": [
             "scheint"
-          ]
+          ],
+          "prompt": "Die Sonne ___ fast immer. (scheinen)"
         },
         {
           "label": "6",
           "answers": [
             "klingt"
-          ]
+          ],
+          "prompt": "Das ___ sehr gut. (klingen)"
         },
         {
           "label": "7",
           "answers": [
             "Hast"
-          ]
+          ],
+          "prompt": "___ du schon Pläne für den Sommer, Anja? (haben)"
         },
         {
           "label": "8",
           "answers": [
             "bleibe"
-          ]
+          ],
+          "prompt": "Ja, ich ___ zu Hause. (bleiben)"
         },
         {
           "label": "9",
           "answers": [
             "schreibe"
-          ]
+          ],
+          "prompt": "Ich ___ meine Masterarbeit. (schreiben)"
         },
         {
           "label": "10",
           "answers": [
             "will"
-          ]
+          ],
+          "prompt": "Ich ___ mit dem Fahrrad nach Hamburg fahren. (wollen)"
         },
         {
           "label": "11",
           "answers": [
             "wohnt"
-          ]
+          ],
+          "prompt": "Dort ___ mein Bruder. (wohnen)"
         },
         {
           "label": "12",
           "answers": [
             "ist"
-          ]
+          ],
+          "prompt": "Wie ___ das Wetter im Sommer in Hamburg? (sein)"
         },
         {
           "label": "13",
           "answers": [
             "ist"
-          ]
+          ],
+          "prompt": "Es ___ oft windig. (sein)"
         },
         {
           "label": "14",
           "answers": [
             "regnet"
-          ]
+          ],
+          "prompt": "An einigen Tagen ___ es. (regnen)"
         },
         {
           "label": "15",
           "answers": [
             "liegen"
-          ]
+          ],
+          "prompt": "Die Temperaturen ___ so bei 20 Grad. (liegen)"
         },
         {
           "label": "16",
           "answers": [
             "mag"
-          ]
+          ],
+          "prompt": "Aber ich ___ Hamburg. (mögen)"
         }
       ]
     },
@@ -48033,85 +49214,99 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "SEPTEMBER"
-          ]
+          ],
+          "prompt": "Nach dem August kommt der ___."
         },
         {
           "label": "2",
           "answers": [
             "URLAUB"
-          ]
+          ],
+          "prompt": "Wann fährst du in den ___?"
         },
         {
           "label": "3",
           "answers": [
             "KALT"
-          ]
+          ],
+          "prompt": "Es ist nicht warm, es ist ___."
         },
         {
           "label": "4",
           "answers": [
             "ARBEIT"
-          ]
+          ],
+          "prompt": "Viele Menschen fahren mit dem Auto zur ___."
         },
         {
           "label": "5",
           "answers": [
             "NEHMEN"
-          ]
+          ],
+          "prompt": "5 Millionen Deutsche ___ … Welches Verb gehört ins Rätsel?"
         },
         {
           "label": "6",
           "answers": [
             "FAHRRAD"
-          ]
+          ],
+          "prompt": "72 % der Deutschen haben ein ___."
         },
         {
           "label": "7",
           "answers": [
             "SONNE"
-          ]
+          ],
+          "prompt": "Im Sommer scheint oft die ___."
         },
         {
           "label": "8",
           "answers": [
             "MIT"
-          ]
+          ],
+          "prompt": "Fährst du oft ___?"
         },
         {
           "label": "9",
           "answers": [
             "IN"
-          ]
+          ],
+          "prompt": "Das Auto ist ___."
         },
         {
           "label": "10",
           "answers": [
             "WINTER"
-          ]
+          ],
+          "prompt": "Nach dem Herbst kommt der ___."
         },
         {
           "label": "11",
           "answers": [
             "TEMPERATUREN"
-          ]
+          ],
+          "prompt": "Die ___ liegen bei 0 Grad."
         },
         {
           "label": "12",
           "answers": [
             "REGNET"
-          ]
+          ],
+          "prompt": "Im April ___ es oft."
         },
         {
           "label": "13",
           "answers": [
             "BLEIBE"
-          ]
+          ],
+          "prompt": "Ich ___ zu Hause."
         },
         {
           "label": "Lösungswort",
           "answers": [
             "Verkehrsmittel"
-          ]
+          ],
+          "prompt": "Wie lautet das Lösungswort zum Thema Verkehr und Wetter?"
         }
       ]
     },
@@ -48121,67 +49316,78 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "die Kreditkarte"
-          ]
+          ],
+          "prompt": "Schreiben Sie das zusammengesetzte Nomen mit Artikel: Kredit–."
         },
         {
           "label": "2",
           "answers": [
             "der Reisepass"
-          ]
+          ],
+          "prompt": "Schreiben Sie das zusammengesetzte Nomen mit Artikel: Reise–."
         },
         {
           "label": "3",
           "answers": [
             "die Sportschuhe"
-          ]
+          ],
+          "prompt": "Schreiben Sie das zusammengesetzte Nomen mit Artikel: Sport–."
         },
         {
           "label": "4",
           "answers": [
             "der Fotoapparat"
-          ]
+          ],
+          "prompt": "Schreiben Sie das zusammengesetzte Nomen mit Artikel: Foto–."
         },
         {
           "label": "5",
           "answers": [
             "der Kriminalroman"
-          ]
+          ],
+          "prompt": "Schreiben Sie das zusammengesetzte Nomen mit Artikel: Kriminal–."
         },
         {
           "label": "6",
           "answers": [
             "die Sonnenbrille"
-          ]
+          ],
+          "prompt": "Schreiben Sie das zusammengesetzte Nomen mit Artikel: Sonnen–."
         },
         {
           "label": "7",
           "answers": [
             "der Rucksack"
-          ]
+          ],
+          "prompt": "Schreiben Sie das zusammengesetzte Nomen mit Artikel: Ruck–."
         },
         {
           "label": "8",
           "answers": [
             "der Terminkalender"
-          ]
+          ],
+          "prompt": "Schreiben Sie das zusammengesetzte Nomen mit Artikel: Termin–."
         },
         {
           "label": "9",
           "answers": [
             "die Badehose"
-          ]
+          ],
+          "prompt": "Schreiben Sie das zusammengesetzte Nomen mit Artikel: Bade–."
         },
         {
           "label": "10",
           "answers": [
             "der Führerschein"
-          ]
+          ],
+          "prompt": "Schreiben Sie das zusammengesetzte Nomen mit Artikel: Führer–."
         },
         {
           "label": "11",
           "answers": [
             "das Kopfkissen"
-          ]
+          ],
+          "prompt": "Schreiben Sie das zusammengesetzte Nomen mit Artikel: Kopf–."
         }
       ]
     },
@@ -48191,37 +49397,43 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "Wann musst du nach München fahren"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: wann · du · nach München · fahren · müssen?"
         },
         {
           "label": "2",
           "answers": [
             "Paul muss noch einen Bericht lesen"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: Paul · noch · einen Bericht · lesen · müssen"
         },
         {
           "label": "3",
           "answers": [
             "Ich muss mit dem Chef sprechen"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: ich · mit dem Chef · sprechen · müssen"
         },
         {
           "label": "4",
           "answers": [
             "Frau Klein muss noch frisches Gemüse kaufen"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: Frau Klein · noch · frisches Gemüse · kaufen · müssen"
         },
         {
           "label": "5",
           "answers": [
             "Musst du noch einmal ins Büro fahren"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: noch · einmal · ins Büro · fahren · du · müssen?"
         },
         {
           "label": "6",
           "answers": [
             "Sie müssen die Fahrkarte am Automaten kaufen"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: Sie · die Fahrkarte · am Automaten · kaufen · müssen"
         }
       ]
     },
@@ -48231,68 +49443,79 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "Ich nehme meinen Fotoapparat mit, denn ich möchte die Berge fotografieren"
-          ]
+          ],
+          "prompt": "Was nehmen Sie mit und warum? Bilden Sie einen Satz mit denn: Winterurlaub · mein Fotoapparat."
         },
         {
           "label": "2",
           "answers": [
             "Ich nehme einen Skianzug mit, denn ich will Ski fahren"
-          ]
+          ],
+          "prompt": "Was nehmen Sie mit und warum? Bilden Sie einen Satz mit denn: Winterurlaub · ein Skianzug."
         },
         {
           "label": "3",
           "answers": [
             "Ich nehme etwas Geld mit, denn ich möchte Schokolade kaufen"
-          ]
+          ],
+          "prompt": "Was nehmen Sie mit und warum? Bilden Sie einen Satz mit denn: Winterurlaub · etwas Geld."
         },
         {
           "label": "4",
           "answers": [
             "Ich nehme einen Bikini mit, denn ich möchte im See schwimmen",
             "Ich nehme eine Badehose mit, denn ich möchte im See schwimmen"
-          ]
+          ],
+          "prompt": "Was nehmen Sie mit und warum? Bilden Sie einen Satz mit denn: Bodensee · ein Bikini oder eine Badehose."
         },
         {
           "label": "5",
           "answers": [
             "Ich nehme ein Buch mit, denn ich lese abends gern"
-          ]
+          ],
+          "prompt": "Was nehmen Sie mit und warum? Bilden Sie einen Satz mit denn: Bodensee · ein Buch."
         },
         {
           "label": "6",
           "answers": [
             "Ich nehme gute Schuhe mit, denn ich möchte am See spazieren gehen"
-          ]
+          ],
+          "prompt": "Was nehmen Sie mit und warum? Bilden Sie einen Satz mit denn: Bodensee · gute Schuhe."
         },
         {
           "label": "7",
           "answers": [
             "Ich nehme Sonnencreme mit, denn ich liege gern in der Sonne"
-          ]
+          ],
+          "prompt": "Was nehmen Sie mit und warum? Bilden Sie einen Satz mit denn: Bodensee · Sonnencreme."
         },
         {
           "label": "8",
           "answers": [
             "Ich nehme einen Reiseführer mit, denn ich finde Informationen über Wien interessant"
-          ]
+          ],
+          "prompt": "Was nehmen Sie mit und warum? Bilden Sie einen Satz mit denn: Wien · ein Reiseführer."
         },
         {
           "label": "9",
           "answers": [
             "Ich nehme mein schönes Kleid mit, denn ich möchte abends ausgehen"
-          ]
+          ],
+          "prompt": "Was nehmen Sie mit und warum? Bilden Sie einen Satz mit denn: Wien · mein schönes Kleid."
         },
         {
           "label": "10",
           "answers": [
             "Ich nehme meine Kreditkarte mit, denn ich kaufe gern ein"
-          ]
+          ],
+          "prompt": "Was nehmen Sie mit und warum? Bilden Sie einen Satz mit denn: Wien · meine Kreditkarte."
         },
         {
           "label": "11",
           "answers": [
             "Ich nehme ein Wörterbuch mit, denn ich möchte beim Einkaufen Deutsch sprechen"
-          ]
+          ],
+          "prompt": "Was nehmen Sie mit und warum? Bilden Sie einen Satz mit denn: Wien · ein Wörterbuch."
         }
       ]
     },
@@ -48302,43 +49525,50 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "Welche Größe haben Sie"
-          ]
+          ],
+          "prompt": "Die Käuferin möchte diese Bluse. Wie fragt die Verkäuferin nach der Größe?"
         },
         {
           "label": "2",
           "answers": [
             "Und welche Farbe möchten Sie? Wir haben die Bluse in Blau, Schwarz, Rot und Weiß"
-          ]
+          ],
+          "prompt": "Die Käuferin hat Größe 38. Wie bietet die Verkäuferin die Farben an?"
         },
         {
           "label": "3",
           "answers": [
             "Ja, gerne"
-          ]
+          ],
+          "prompt": "„Kann ich die Bluse mal anprobieren?“ Wie antwortet die Verkäuferin?"
         },
         {
           "label": "4",
           "answers": [
             "Ja, wir haben die blaue Bluse auch in Größe 36"
-          ]
+          ],
+          "prompt": "Die Bluse ist zu groß. Was sagt die Verkäuferin zur kleineren Größe?"
         },
         {
           "label": "5",
           "answers": [
             "Passt die Größe besser"
-          ]
+          ],
+          "prompt": "Die Käuferin probiert die kleinere Bluse an. Was fragt die Verkäuferin?"
         },
         {
           "label": "6",
           "answers": [
             "Wie möchten Sie zahlen"
-          ]
+          ],
+          "prompt": "Die Käuferin nimmt die Bluse. Was fragt die Verkäuferin zur Bezahlung?"
         },
         {
           "label": "7",
           "answers": [
             "Herzlichen Dank und auf Wiedersehen"
-          ]
+          ],
+          "prompt": "Die Käuferin zahlt mit Kreditkarte. Wie beendet die Verkäuferin das Gespräch?"
         }
       ]
     },
@@ -48348,43 +49578,50 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "Ich hätte gern den grauen Schal"
-          ]
+          ],
+          "prompt": "Was hätten Sie gern? Beschreiben Sie das Kleidungsstück mit Farbe: der Schal · grau."
         },
         {
           "label": "2",
           "answers": [
             "Ich hätte gern die rote Mütze und den roten Schal"
-          ]
+          ],
+          "prompt": "Was hätten Sie gern? Beschreiben Sie das Kleidungsstück mit Farbe: die Mütze und der Schal · rot."
         },
         {
           "label": "3",
           "answers": [
             "Ich hätte gern die grünen Schuhe"
-          ]
+          ],
+          "prompt": "Was hätten Sie gern? Beschreiben Sie das Kleidungsstück mit Farbe: die Schuhe · grün."
         },
         {
           "label": "4",
           "answers": [
             "Ich hätte gern das gelbe Kleid"
-          ]
+          ],
+          "prompt": "Was hätten Sie gern? Beschreiben Sie das Kleidungsstück mit Farbe: das Kleid · gelb."
         },
         {
           "label": "5",
           "answers": [
             "Ich hätte gern das bunte Hemd"
-          ]
+          ],
+          "prompt": "Was hätten Sie gern? Beschreiben Sie das Kleidungsstück mit Farbe: das Hemd · bunt."
         },
         {
           "label": "6",
           "answers": [
             "Ich hätte gern den blauen Pullover"
-          ]
+          ],
+          "prompt": "Was hätten Sie gern? Beschreiben Sie das Kleidungsstück mit Farbe: der Pullover · blau."
         },
         {
           "label": "7",
           "answers": [
             "Ich hätte gern den braunen Hut"
-          ]
+          ],
+          "prompt": "Was hätten Sie gern? Beschreiben Sie das Kleidungsstück mit Farbe: der Hut · braun."
         }
       ]
     },
@@ -48394,37 +49631,43 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "Wollt ihr ein Eis essen"
-          ]
+          ],
+          "prompt": "Formulieren Sie die Frage: wollen • ihr • ein Eis • essen?"
         },
         {
           "label": "2",
           "answers": [
             "Müsst ihr schon gehen"
-          ]
+          ],
+          "prompt": "Formulieren Sie die Frage: müssen • ihr • schon • gehen?"
         },
         {
           "label": "3",
           "answers": [
             "Willst du heute einkaufen gehen"
-          ]
+          ],
+          "prompt": "Formulieren Sie die Frage: wollen • du • heute • einkaufen gehen?"
         },
         {
           "label": "4",
           "answers": [
             "Kann dein Sohn schon sprechen"
-          ]
+          ],
+          "prompt": "Formulieren Sie die Frage: können • dein Sohn • schon • sprechen?"
         },
         {
           "label": "5",
           "answers": [
             "Möchten Sie die roten Äpfel oder die grünen"
-          ]
+          ],
+          "prompt": "Formulieren Sie die Frage: möchte • Sie • die roten Äpfel oder die grünen?"
         },
         {
           "label": "6",
           "answers": [
             "Magst du die Farbe Gelb"
-          ]
+          ],
+          "prompt": "Formulieren Sie die Frage: mögen • du • die Farbe Gelb?"
         }
       ]
     },
@@ -48434,97 +49677,113 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "e"
-          ]
+          ],
+          "prompt": "Welches Verb gehört zu „einen Termin“? Geben Sie den Buchstaben aus der Liste an."
         },
         {
           "label": "2",
           "answers": [
             "a"
-          ]
+          ],
+          "prompt": "Welches Verb gehört zu „ein Dokument“? Geben Sie den Buchstaben aus der Liste an."
         },
         {
           "label": "3",
           "answers": [
             "d"
-          ]
+          ],
+          "prompt": "Welches Verb gehört zu „eine E-Mail“? Geben Sie den Buchstaben aus der Liste an."
         },
         {
           "label": "4",
           "answers": [
             "h"
-          ]
+          ],
+          "prompt": "Welches Verb gehört zu „die Technik“? Geben Sie den Buchstaben aus der Liste an."
         },
         {
           "label": "5",
           "answers": [
             "c"
-          ]
+          ],
+          "prompt": "Welches Verb gehört zu „mit Mitarbeitern“? Geben Sie den Buchstaben aus der Liste an."
         },
         {
           "label": "6",
           "answers": [
             "g"
-          ]
+          ],
+          "prompt": "Welches Verb gehört zu „ein Protokoll“? Geben Sie den Buchstaben aus der Liste an."
         },
         {
           "label": "7",
           "answers": [
             "f"
-          ]
+          ],
+          "prompt": "Welches Verb gehört zu „Gäste“? Geben Sie den Buchstaben aus der Liste an."
         },
         {
           "label": "8",
           "answers": [
             "Otto hat Dokumente gescannt und ausgedruckt"
-          ]
+          ],
+          "prompt": "Formulieren Sie im Perfekt: Otto scannt Dokumente und druckt sie aus."
         },
         {
           "label": "9",
           "answers": [
             "Er hat viele E-Mails gelesen und beantwortet"
-          ]
+          ],
+          "prompt": "Formulieren Sie im Perfekt: Er liest und beantwortet viele E-Mails."
         },
         {
           "label": "10",
           "answers": [
             "Er hat E-Mails weitergeleitet"
-          ]
+          ],
+          "prompt": "Formulieren Sie im Perfekt: Er leitet E-Mails weiter."
         },
         {
           "label": "11",
           "answers": [
             "Sabine hat Telefongespräche geführt"
-          ]
+          ],
+          "prompt": "Formulieren Sie im Perfekt: Sabine führt Telefongespräche."
         },
         {
           "label": "12",
           "answers": [
             "Otto hat einen Termin mit einer Kundin vereinbart"
-          ]
+          ],
+          "prompt": "Formulieren Sie im Perfekt: Otto vereinbart einen Termin mit einer Kundin."
         },
         {
           "label": "13",
           "answers": [
             "Sabine und Otto haben mit Mitarbeitern gesprochen"
-          ]
+          ],
+          "prompt": "Formulieren Sie im Perfekt: Sabine und Otto sprechen mit Mitarbeitern."
         },
         {
           "label": "14",
           "answers": [
             "Otto hat die Technik im Besprechungsraum kontrolliert"
-          ]
+          ],
+          "prompt": "Formulieren Sie im Perfekt: Otto kontrolliert die Technik im Besprechungsraum."
         },
         {
           "label": "15",
           "answers": [
             "Otto hat die Gäste vom Flughafen abgeholt"
-          ]
+          ],
+          "prompt": "Formulieren Sie im Perfekt: Otto holt die Gäste vom Flughafen ab."
         },
         {
           "label": "16",
           "answers": [
             "Sabine hat bei der Besprechung Protokoll geschrieben"
-          ]
+          ],
+          "prompt": "Formulieren Sie im Perfekt: Sabine schreibt bei der Besprechung Protokoll."
         },
         {
           "label": "d · gescannt → Gruppe",
@@ -48618,31 +49877,36 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "Wir haben keinen Kaffee getrunken. Die Kaffeemaschine war kaputt"
-          ]
+          ],
+          "prompt": "wir · keinen Kaffee trinken (Perfekt) → die Kaffeemaschine · kaputt sein (Präteritum)"
         },
         {
           "label": "2",
           "answers": [
             "Wir haben keine E-Mails beantwortet. Wir hatten keine Internetverbindung"
-          ]
+          ],
+          "prompt": "wir · keine E-Mails beantworten (Perfekt) → wir · keine Internetverbindung haben (Präteritum)"
         },
         {
           "label": "3",
           "answers": [
             "Martin hat das Projekt nicht präsentiert. Die Technik hat nicht funktioniert"
-          ]
+          ],
+          "prompt": "Martin · das Projekt nicht präsentieren (Perfekt) → die Technik · nicht funktionieren (Perfekt)"
         },
         {
           "label": "4",
           "answers": [
             "Frau Müller hat keinen Termin mit Frau Kaufmann vereinbart. Frau Kaufmann war nicht im Büro"
-          ]
+          ],
+          "prompt": "Frau Müller · keinen Termin mit Frau Kaufmann vereinbaren (Perfekt) → Frau Kaufmann · nicht im Büro sein (Präteritum)"
         },
         {
           "label": "5",
           "answers": [
             "Otto hat die Dokumente nicht kopiert. Er hatte kein Kopierpapier"
-          ]
+          ],
+          "prompt": "Otto · die Dokumente nicht kopieren (Perfekt) → er · kein Kopierpapier haben (Präteritum)"
         }
       ]
     },
@@ -48653,49 +49917,56 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "Der nationale Feiertag in der Schweiz ist der erste August",
             "Der nationale Feiertag in der Schweiz ist der erste Achte"
-          ]
+          ],
+          "prompt": "Wann ist der nationale Feiertag in der Schweiz? (1.8.)"
         },
         {
           "label": "2",
           "answers": [
             "Der nationale Feiertag in Frankreich ist der vierzehnte Juli",
             "Der nationale Feiertag in Frankreich ist der vierzehnte Siebte"
-          ]
+          ],
+          "prompt": "Wann ist der nationale Feiertag in Frankreich? (14.7.)"
         },
         {
           "label": "3",
           "answers": [
             "Der nationale Feiertag in Deutschland ist der dritte Oktober",
             "Der nationale Feiertag in Deutschland ist der dritte Zehnte"
-          ]
+          ],
+          "prompt": "Wann ist der nationale Feiertag in Deutschland? (3.10.)"
         },
         {
           "label": "4",
           "answers": [
             "Am einundzwanzigsten September um vierzehn Uhr dreißig",
             "Am 21. September um 14.30 Uhr"
-          ]
+          ],
+          "prompt": "Wann können Sie den Kopierer reparieren? (21.9., 14.30 Uhr)"
         },
         {
           "label": "5",
           "answers": [
             "Am ersten Februar um neun Uhr fünfundvierzig",
             "Am 1. Februar um 9.45 Uhr"
-          ]
+          ],
+          "prompt": "Wann haben Sie Zeit? (1.2., 9.45 Uhr)"
         },
         {
           "label": "6",
           "answers": [
             "Am zweiten März zwischen sechzehn und achtzehn Uhr",
             "Am 2. März zwischen 16.00 und 18.00 Uhr"
-          ]
+          ],
+          "prompt": "Wann haben Sie Zeit? (2.3., 16.00–18.00 Uhr)"
         },
         {
           "label": "7",
           "answers": [
             "Am vierzehnten November zwischen neun und zwölf Uhr",
             "Am 14. November zwischen 9.00 und 12.00 Uhr"
-          ]
+          ],
+          "prompt": "Wann haben Sie Zeit? (14.11., 9.00–12.00 Uhr)"
         }
       ]
     },
@@ -48705,13 +49976,15 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "Man muss um 12.00 Uhr da sein"
-          ]
+          ],
+          "prompt": "Sie haben um 12.00 Uhr einen Termin. Wann müssen Sie da sein?"
         },
         {
           "label": "2",
           "answers": [
             "Man muss anrufen und die Personen informieren"
-          ]
+          ],
+          "prompt": "Sie stehen im Stau und können nicht pünktlich sein. Was müssen Sie tun?"
         }
       ]
     },
@@ -48721,49 +49994,57 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "Hast du die Dokumente schon ausgedruckt? Nein, ich drucke die Dokumente morgen aus"
-          ]
+          ],
+          "prompt": "Formulieren Sie die Frage im Perfekt: die Dokumente · schon · ausdrucken"
         },
         {
           "label": "2",
           "answers": [
             "Hast du die E-Mail schon beantwortet? Nein, ich beantworte die E-Mail am Donnerstag"
-          ]
+          ],
+          "prompt": "Formulieren Sie die Frage im Perfekt: die E-Mail · schon · beantworten"
         },
         {
           "label": "3",
           "answers": [
             "Hast du das Telefongespräch mit der Kundin schon geführt? Nein, das Telefongespräch mit der Kundin führe ich morgen"
-          ]
+          ],
+          "prompt": "Formulieren Sie die Frage im Perfekt: das Telefongespräch mit der Kundin · schon · führen"
         },
         {
           "label": "4",
           "answers": [
             "Hast du mit Frau Krüger einen Termin schon vereinbart? Nein, ich vereinbare den Termin mit Frau Krüger nach der Besprechung"
-          ]
+          ],
+          "prompt": "Formulieren Sie die Frage im Perfekt: den Termin mit Frau Krüger · schon · vereinbaren"
         },
         {
           "label": "5",
           "answers": [
             "Hast du schon mit den Mitarbeitern gesprochen? Nein, ich spreche mit den Mitarbeitern erst um 15.00 Uhr"
-          ]
+          ],
+          "prompt": "Formulieren Sie die Frage im Perfekt: mit den Mitarbeitern · schon · sprechen"
         },
         {
           "label": "6",
           "answers": [
             "Hast du die Technik im Besprechungsraum schon kontrolliert? Nein, ich kontrolliere die Technik im Besprechungsraum morgen"
-          ]
+          ],
+          "prompt": "Formulieren Sie die Frage im Perfekt: die Technik im Besprechungsraum · schon · kontrollieren"
         },
         {
           "label": "7",
           "answers": [
             "Hast du die Gäste schon abgeholt? Nein, ich hole die Gäste erst um 17.00 Uhr ab"
-          ]
+          ],
+          "prompt": "Formulieren Sie die Frage im Perfekt: die Gäste · schon · abholen"
         },
         {
           "label": "8",
           "answers": [
             "Hast du das Protokoll schon geschrieben? Nein, ich schreibe das Protokoll morgen"
-          ]
+          ],
+          "prompt": "Formulieren Sie die Frage im Perfekt: das Protokoll · schon · schreiben"
         }
       ]
     },
@@ -48773,49 +50054,57 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "Herr Wagner geht am Montag um 13.00 Uhr mit Frau Kahl essen"
-          ]
+          ],
+          "prompt": "Montag, 13 Uhr · mit Frau Kahl essen gehen"
         },
         {
           "label": "2",
           "answers": [
             "Herr Wagner spricht am Dienstagvormittag mit dem Marketingmanager"
-          ]
+          ],
+          "prompt": "Dienstagvormittag · mit dem Marketingmanager sprechen"
         },
         {
           "label": "3",
           "answers": [
             "Herr Wagner muss am Dienstag um 18.30 Uhr den Geschäftsbericht abgeben"
-          ]
+          ],
+          "prompt": "Dienstag, 18.30 Uhr · den Geschäftsbericht abgeben müssen"
         },
         {
           "label": "4",
           "answers": [
             "Die französischen Gäste kommen am Mittwoch um 9.45 Uhr an"
-          ]
+          ],
+          "prompt": "Mittwoch, 9.45 Uhr · die französischen Gäste · ankommen"
         },
         {
           "label": "5",
           "answers": [
             "Herr Wagner muss am Mittwoch von 11.00 bis 15.00 Uhr Verhandlungen mit den französischen Geschäftspartnern führen"
-          ]
+          ],
+          "prompt": "Mittwoch, 11–15 Uhr · Verhandlungen mit den französischen Geschäftspartnern führen müssen"
         },
         {
           "label": "6",
           "answers": [
             "Herr Wagner präsentiert am Donnerstag von 13.00 bis 17.00 Uhr das Projekt Qualitätsmanagement"
-          ]
+          ],
+          "prompt": "Donnerstag, 13–17 Uhr · das Projekt Qualitätsmanagement präsentieren"
         },
         {
           "label": "7",
           "answers": [
             "Herr Wagner besucht am Freitag von 10.00 bis 14.00 Uhr die Firmenfiliale in Karlsruhe"
-          ]
+          ],
+          "prompt": "Freitag, 10–14 Uhr · die Firmenfiliale in Karlsruhe besuchen"
         },
         {
           "label": "8",
           "answers": [
             "Herr Wagner analysiert am Freitag um 15.00 Uhr die Verkaufszahlen"
-          ]
+          ],
+          "prompt": "Freitag, 15 Uhr · die Verkaufszahlen analysieren"
         }
       ]
     },
@@ -48825,37 +50114,43 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "Verstehst du ihn"
-          ]
+          ],
+          "prompt": "Verstehen · er: Fragen Sie mit du."
         },
         {
           "label": "2",
           "answers": [
             "Hörst du mich"
-          ]
+          ],
+          "prompt": "Hören · ich: Fragen Sie mit du."
         },
         {
           "label": "3",
           "answers": [
             "Besuchst du uns am Donnerstag"
-          ]
+          ],
+          "prompt": "Besuchen · wir · am Donnerstag: Fragen Sie mit du."
         },
         {
           "label": "4",
           "answers": [
             "Liebst du mich"
-          ]
+          ],
+          "prompt": "Lieben · ich: Fragen Sie mit du."
         },
         {
           "label": "5",
           "answers": [
             "Rufst du sie morgen an"
-          ]
+          ],
+          "prompt": "Anrufen · sie · morgen: Fragen Sie mit du."
         },
         {
           "label": "6",
           "answers": [
             "Holst du ihn vom Flughafen ab"
-          ]
+          ],
+          "prompt": "Abholen · er · vom Flughafen: Fragen Sie mit du."
         }
       ]
     },
@@ -48865,43 +50160,50 @@ window.SPEKTRUM_BANKS={
           "label": "1",
           "answers": [
             "DOKUMENTE"
-          ]
+          ],
+          "prompt": "Sabine muss ___ kopieren."
         },
         {
           "label": "2",
           "answers": [
             "PROBLEM"
-          ]
+          ],
+          "prompt": "Aber sie hat ein ___. Der Kopierer ist kaputt."
         },
         {
           "label": "3",
           "answers": [
             "REPARATUR"
-          ]
+          ],
+          "prompt": "Sie braucht eine schnelle ___."
         },
         {
           "label": "4",
           "answers": [
             "MONTEUR"
-          ]
+          ],
+          "prompt": "Sie ruft den ___ an."
         },
         {
           "label": "5",
           "answers": [
             "MITTWOCH"
-          ]
+          ],
+          "prompt": "Er kann am ___ um 13.00 Uhr kommen."
         },
         {
           "label": "6",
           "answers": [
             "BESPRECHUNG"
-          ]
+          ],
+          "prompt": "Die ___ beginnt um 15.00 Uhr."
         },
         {
           "label": "Lösungswort",
           "answers": [
             "Termin"
-          ]
+          ],
+          "prompt": "Wie lautet das Lösungswort des Bürorätsels?"
         }
       ]
     },
@@ -48911,240 +50213,279 @@ window.SPEKTRUM_BANKS={
           "label": "a · Person 1",
           "answers": [
             "E"
-          ]
+          ],
+          "prompt": "Wer nennt diese Aktivität im Hörtext: mit Freunden kochen? (A, J oder E)"
         },
         {
           "label": "a · Person 2",
           "answers": [
             "A"
-          ]
+          ],
+          "prompt": "Wer nennt diese Aktivität im Hörtext: ins Fitnessstudio gehen? (A, J oder E)"
         },
         {
           "label": "a · Person 3",
           "answers": [
             "A"
-          ]
+          ],
+          "prompt": "Wer nennt diese Aktivität im Hörtext: Ski fahren? (A, J oder E)"
         },
         {
           "label": "a · Person 4",
           "answers": [
             "J"
-          ]
+          ],
+          "prompt": "Wer nennt diese Aktivität im Hörtext: ins Theater gehen? (A, J oder E)"
         },
         {
           "label": "a · Person 5",
           "answers": [
             "A"
-          ]
+          ],
+          "prompt": "Wer nennt diese Aktivität im Hörtext: Jazzmusik hören? (A, J oder E)"
         },
         {
           "label": "a · Person 6",
           "answers": [
             "E"
-          ]
+          ],
+          "prompt": "Wer nennt diese Aktivität im Hörtext: auf dem Markt einkaufen? (A, J oder E)"
         },
         {
           "label": "a · Person 7",
           "answers": [
             "J"
-          ]
+          ],
+          "prompt": "Wer nennt diese Aktivität im Hörtext: lange schlafen? (A, J oder E)"
         },
         {
           "label": "a · Person 8",
           "unordered": [
             "E",
             "J"
-          ]
+          ],
+          "prompt": "Wer nennt diese Aktivität im Hörtext: spazieren gehen? (A, J oder E)"
         },
         {
           "label": "a · Person 9",
           "answers": [
             "E"
-          ]
+          ],
+          "prompt": "Wer nennt diese Aktivität im Hörtext: viel fernsehen? (A, J oder E)"
         },
         {
           "label": "a · Person 10",
           "answers": [
             "A"
-          ]
+          ],
+          "prompt": "Wer nennt diese Aktivität im Hörtext: Fußball spielen? (A, J oder E)"
         },
         {
           "label": "a · Person 11",
           "answers": [
             "J"
-          ]
+          ],
+          "prompt": "Wer nennt diese Aktivität im Hörtext: Tests korrigieren? (A, J oder E)"
         },
         {
           "label": "b · Anton 1",
           "answers": [
             "in der Schweiz",
             "in Basel"
-          ]
+          ],
+          "prompt": "Wo wohnt Anton?"
         },
         {
           "label": "b · Anton 2",
           "answers": [
             "Chemie"
-          ]
+          ],
+          "prompt": "Was studiert Anton?"
         },
         {
           "label": "b · Anton 3",
           "answers": [
             "in der Chemieindustrie",
             "in Basel"
-          ]
+          ],
+          "prompt": "Wo will Anton später einmal arbeiten?"
         },
         {
           "label": "b · Anton 4",
           "answers": [
             "ein Jazzfestival",
             "Jazzfestival"
-          ]
+          ],
+          "prompt": "Was organisiert der Jazzclub?"
         },
         {
           "label": "b · Anton 5",
           "answers": [
             "Ski fahren"
-          ]
+          ],
+          "prompt": "Was macht Anton im Winter?"
         },
         {
           "label": "b · Anton 6",
           "answers": [
             "im Rhein schwimmen"
-          ]
+          ],
+          "prompt": "Was macht Anton im Sommer?"
         },
         {
           "label": "c · Julia 1",
           "answers": [
             "Wien"
-          ]
+          ],
+          "prompt": "Ich wohne in Österreich, in ___."
         },
         {
           "label": "c · Julia 2",
           "answers": [
             "Deutschlehrerin"
-          ]
+          ],
+          "prompt": "Ich arbeite als ___ an einem Gymnasium."
         },
         {
           "label": "c · Julia 3",
           "answers": [
             "Romane"
-          ]
+          ],
+          "prompt": "Am liebsten lese ich ___."
         },
         {
           "label": "c · Julia 4",
           "answers": [
             "alleine"
-          ]
+          ],
+          "prompt": "Leider muss ich immer ___ ins Theater gehen."
         },
         {
           "label": "c · Julia 5",
           "answers": [
             "langweilig"
-          ]
+          ],
+          "prompt": "Mein Mann Andreas findet Theaterstücke ___."
         },
         {
           "label": "c · Julia 6",
           "answers": [
             "Computerspiele"
-          ]
+          ],
+          "prompt": "Er bleibt dann zu Hause und spielt ___."
         },
         {
           "label": "c · Julia 7",
           "answers": [
             "3D-Brille",
             "3D Brille"
-          ]
+          ],
+          "prompt": "Er hat sich für seine Spiele extra eine ___ gekauft."
         },
         {
           "label": "c · Julia 8",
           "answers": [
             "Hausaufgaben und Tests"
-          ]
+          ],
+          "prompt": "Sonntags muss ich meistens arbeiten: Ich muss ___ korrigieren."
         },
         {
           "label": "d · Eva 1",
           "answers": [
             "arbeite"
-          ]
+          ],
+          "prompt": "Ich wohne in München und ___ als Ingenieurin für einen großen Konzern."
         },
         {
           "label": "d · Eva 2",
           "answers": [
             "mache"
-          ]
+          ],
+          "prompt": "Von Montag bis Freitag ___ ich in meiner Freizeit nicht viel."
         },
         {
           "label": "d · Eva 3",
           "answers": [
             "esse"
-          ]
+          ],
+          "prompt": "Nach der Arbeit ___ ich etwas …"
         },
         {
           "label": "d · Eva 4",
           "answers": [
             "sehe fern"
-          ]
+          ],
+          "prompt": "… und ___ ___."
         },
         {
           "label": "d · Eva 5",
           "answers": [
             "sehe"
-          ]
+          ],
+          "prompt": "Am liebsten ___ ich Dokumentarfilme und Krimis."
         },
         {
           "label": "d · Eva 6",
           "answers": [
             "gehe"
-          ]
+          ],
+          "prompt": "Danach ___ ich ins Bett."
         },
         {
           "label": "d · Eva 7",
           "answers": [
             "koche"
-          ]
+          ],
+          "prompt": "Am Wochenende ___ ich gerne, am liebsten zusammen mit Freunden."
         },
         {
           "label": "d · Eva 8",
           "answers": [
             "gehe"
-          ]
+          ],
+          "prompt": "Ich ___ samstags auf den Markt …"
         },
         {
           "label": "d · Eva 9",
           "answers": [
             "kaufe"
-          ]
+          ],
+          "prompt": "… und ___ frische Lebensmittel."
         },
         {
           "label": "d · Eva 10",
           "answers": [
             "kommen"
-          ]
+          ],
+          "prompt": "Nachmittags ___ meine Freunde."
         },
         {
           "label": "d · Eva 11",
           "answers": [
             "mag"
-          ]
+          ],
+          "prompt": "Ich ___ besonders italienische Gerichte."
         },
         {
           "label": "d · Eva 12",
           "answers": [
             "mache"
-          ]
+          ],
+          "prompt": "Die Spaghetti ___ ich natürlich selbst."
         },
         {
           "label": "d · Eva 13",
           "answers": [
             "fahre"
-          ]
+          ],
+          "prompt": "Sonntags ___ ich manchmal mit meinem Freund an den Tegernsee."
         },
         {
           "label": "d · Eva 14",
           "answers": [
             "gehen spazieren"
-          ]
+          ],
+          "prompt": "Wir ___ dort ___."
         }
       ]
     },
@@ -49154,56 +50495,65 @@ window.SPEKTRUM_BANKS={
           "label": "a · 1",
           "answers": [
             "Praktikum"
-          ]
+          ],
+          "prompt": "Sie hat in Amsterdam ein ___ gemacht."
         },
         {
           "label": "a · 2",
           "answers": [
             "interessant"
-          ]
+          ],
+          "prompt": "Monika findet die Architektur in Amsterdam ___."
         },
         {
           "label": "a · 3",
           "answers": [
             "nicht"
-          ]
+          ],
+          "prompt": "Matthias war noch ___ in den Niederlanden."
         },
         {
           "label": "a · 4",
           "answers": [
             "Marketingabteilung"
-          ]
+          ],
+          "prompt": "Er arbeitet bei der Firma Hausmann in der ___."
         },
         {
           "label": "a · 5",
           "answers": [
             "Baufirma"
-          ]
+          ],
+          "prompt": "Sein Bruder arbeitet für eine große ___."
         },
         {
           "label": "a · 6",
           "answers": [
             "Architektin"
-          ]
+          ],
+          "prompt": "Monika hat noch keine Arbeit als ___ gefunden."
         },
         {
           "label": "a · 7",
           "answers": [
             "Probleme"
-          ]
+          ],
+          "prompt": "Er hat ___ mit seinem Arm."
         },
         {
           "label": "a · 8",
           "answers": [
             "Fußball"
-          ]
+          ],
+          "prompt": "Er spielt jetzt ___."
         },
         {
           "label": "a · 9",
           "answers": [
             "Tango tanzen",
             "tanzen"
-          ]
+          ],
+          "prompt": "Monika geht jetzt mit ihrem Freund ___."
         }
       ]
     },
@@ -49213,49 +50563,57 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "Krankenversicherung"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Ergänzen Sie das Kompositum: Kranken–."
         },
         {
           "answers": [
             "Geburtsdatum"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Ergänzen Sie das Kompositum: Geburts–."
         },
         {
           "answers": [
             "Kopfschmerzen"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Ergänzen Sie das Kompositum: Kopf–."
         },
         {
           "answers": [
             "Schmerztablette"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Ergänzen Sie das Kompositum: Schmerz–."
         },
         {
           "answers": [
             "Zahnarzt"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Ergänzen Sie das Kompositum: Zahn–."
         },
         {
           "answers": [
             "Versichertenkarte"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Ergänzen Sie das Kompositum: Versicherten–."
         },
         {
           "answers": [
             "Fitnessstudio"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Ergänzen Sie das Kompositum: Fitness–."
         },
         {
           "answers": [
             "Gesundheitsprobleme"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "Ergänzen Sie das Kompositum: Gesundheits–."
         }
       ]
     },
@@ -49265,55 +50623,64 @@ window.SPEKTRUM_BANKS={
           "label": "b · 1",
           "answers": [
             "soll"
-          ]
+          ],
+          "prompt": "Ralf ___ zwei Tage zu Hause bleiben."
         },
         {
           "label": "b · 2",
           "answers": [
             "soll"
-          ]
+          ],
+          "prompt": "Was ___ ich machen?"
         },
         {
           "label": "b · 3",
           "answers": [
             "Sollst"
-          ]
+          ],
+          "prompt": "___ du nicht auch ein bisschen spazieren gehen?"
         },
         {
           "label": "c · Satz 1",
           "answers": [
             "Tante Erna soll öfter für Susanne kochen."
-          ]
+          ],
+          "prompt": "Mit sollen: Tante Erna · öfter für Susanne kochen."
         },
         {
           "label": "c · Satz 2",
           "answers": [
             "Ich soll nicht so lange arbeiten."
-          ]
+          ],
+          "prompt": "Mit sollen: ich · nicht so lange arbeiten."
         },
         {
           "label": "c · Satz 3",
           "answers": [
             "Du sollst mehr Zeit für die Familie haben."
-          ]
+          ],
+          "prompt": "Mit sollen: du · mehr Zeit für die Familie haben."
         },
         {
           "label": "c · Satz 4",
           "answers": [
             "Wir sollen nicht mehr so oft ausgehen."
-          ]
+          ],
+          "prompt": "Mit sollen: wir · nicht mehr so oft ausgehen."
         },
         {
           "label": "c · Satz 5",
           "answers": [
             "Erik und Erika sollen mehr Sport treiben."
-          ]
+          ],
+          "prompt": "Mit sollen: Erik und Erika · mehr Sport treiben."
         },
         {
           "label": "c · Satz 6",
           "answers": [
             "Paul soll nicht so oft Computerspiele spielen."
-          ]
+          ],
+          "prompt": "Mit sollen: Paul · nicht so oft Computerspiele spielen."
         }
       ]
     },
@@ -49323,43 +50690,50 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "aber"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Früher hat das Fitnessstudio 20 Euro im Monat gekostet, ___ heute muss ich 40 Euro zahlen."
         },
         {
           "answers": [
             "oder"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Ich fahre vielleicht zu meinen Eltern ___ ich gehe mit Freunden zum Fußball."
         },
         {
           "answers": [
             "denn"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Juan läuft jeden Morgen durch den Park, ___ er möchte sportlich aktiv sein."
         },
         {
           "answers": [
             "aber"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Ich möchte auch gern etwas für meine Fitness tun, ___ ich habe dafür keine Zeit."
         },
         {
           "answers": [
             "aber"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Susanne fährt jedes Jahr im Winter in die Berge, ___ sie kann überhaupt nicht Ski fahren."
         },
         {
           "answers": [
             "oder"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Wollen wir in den neuen James-Bond-Film gehen ___ wollen wir lieber zu Hause fernsehen?"
         },
         {
           "answers": [
             "und"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Wir gehen zuerst ins Kino ___ danach gehen wir etwas essen."
         }
       ]
     },
@@ -49369,55 +50743,64 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "gemacht"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Sie hat in Amsterdam ein Praktikum ___."
         },
         {
           "answers": [
             "gibt"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Es ___ in Amsterdam viel Kunst und eine sehr interessante Architektur."
         },
         {
           "answers": [
             "sucht"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Monika ___ im Moment eine Stelle als Architektin."
         },
         {
           "answers": [
             "spielt"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Sie ___ in ihrer Freizeit Tennis."
         },
         {
           "answers": [
             "geht"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Sie ___ mit ihrem Freund Tango tanzen."
         },
         {
           "answers": [
             "arbeitet"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Matthias ___ bei der Firma Hausmann in der Marketingabteilung."
         },
         {
           "answers": [
             "hatte"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Beim Tennisspielen ___ er Probleme mit seinem Arm."
         },
         {
           "answers": [
             "spielt"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "Jetzt ___ er Fußball."
         },
         {
           "answers": [
             "ist"
           ],
-          "label": "9"
+          "label": "9",
+          "prompt": "Das ___ auch gesund."
         }
       ]
     },
@@ -49427,61 +50810,71 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "Termin"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Ralf hat angerufen und einen ___ vereinbart."
         },
         {
           "answers": [
             "Fieber"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Er hatte Husten, Schnupfen und ___."
         },
         {
           "answers": [
             "Geburtsdatum"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Die Assistentin hat Ralf nach seinem ___ gefragt."
         },
         {
           "answers": [
             "Krankenversicherung"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Sie hat auch nach seiner ___ gefragt. Er ist bei der AOK versichert."
         },
         {
           "answers": [
             "Krankheit"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Glücklicherweise hatte Ralf keine schwere ___."
         },
         {
           "answers": [
             "Erkältung"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Er hatte nur eine ganz normale ___."
         },
         {
           "answers": [
             "Rezept"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Dr. Körner hat Ralf ein ___ gegeben."
         },
         {
           "answers": [
             "Medikamente"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "Die ___ hat Ralf dann aus der Apotheke geholt."
         },
         {
           "answers": [
             "Apotheke"
           ],
-          "label": "9"
+          "label": "9",
+          "prompt": "Die Medikamente hat Ralf dann aus der ___ geholt."
         },
         {
           "answers": [
             "Sport"
           ],
-          "label": "10"
+          "label": "10",
+          "prompt": "Er ist einige Tage zu Hause geblieben und hat keinen ___ gemacht."
         }
       ]
     },
@@ -49493,21 +50886,24 @@ window.SPEKTRUM_BANKS={
             "Rund 13 % der Deutschen besitzen eine Eigentumswohnung.",
             "Rund 13 % der Deutschen haben eine Eigentumswohnung.",
             "Rund 13 Prozent der Deutschen besitzen eine Eigentumswohnung."
-          ]
+          ],
+          "prompt": "Was sagt die Zahl 13 % über das Wohnen aus?"
         },
         {
           "label": "a · Satz 2",
           "answers": [
             "In der Schweiz liegt der Anteil an Wohneigentum bei 35 %.",
             "In der Schweiz liegt der Anteil an Wohneigentum bei 35 Prozent."
-          ]
+          ],
+          "prompt": "Was bedeuten 35 % für die Schweiz?"
         },
         {
           "label": "a · Satz 3",
           "answers": [
             "In Österreich wohnen 57,4 % in einer eigenen Wohnung oder einem eigenen Haus.",
             "In Österreich wohnen 57,4 Prozent in einer eigenen Wohnung oder einem eigenen Haus."
-          ]
+          ],
+          "prompt": "Was bedeuten 57,4 % für Österreich?"
         },
         {
           "label": "a · Satz 4",
@@ -49515,98 +50911,113 @@ window.SPEKTRUM_BANKS={
             "Etwa 57 % wohnen in Deutschland zur Miete.",
             "Etwa 57 % der Deutschen wohnen zur Miete.",
             "Etwa 57 Prozent der Deutschen wohnen zur Miete."
-          ]
+          ],
+          "prompt": "Wofür stehen etwa 57 % in Deutschland?"
         },
         {
           "label": "a · Satz 5",
           "answers": [
             "In Großstädten leben 75 % der Einwohner in Mietwohnungen.",
             "In Großstädten leben 75 Prozent der Einwohner in Mietwohnungen."
-          ]
+          ],
+          "prompt": "Was bedeuten 75 % in deutschen Großstädten?"
         },
         {
           "label": "a · Satz 6",
           "answers": [
             "Eine durchschnittliche Wohnung in Deutschland ist 90 Quadratmeter groß.",
             "Eine durchschnittliche Wohnung in Deutschland ist 90 qm groß."
-          ]
+          ],
+          "prompt": "Was ist im Durchschnitt 90 Quadratmeter groß?"
         },
         {
           "label": "a · Satz 7",
           "answers": [
             "In München zahlen die Mieter durchschnittlich 15,44 Euro pro Quadratmeter Miete.",
             "In München zahlen die Mieter durchschnittlich 15,44 Euro pro Quadratmeter."
-          ]
+          ],
+          "prompt": "Wofür zahlt man 15,44 Euro?"
         },
         {
           "label": "a · Satz 8",
           "answers": [
             "738 bis 1 476 Euro kostet eine kleine Wohnung in Zürich.",
             "738 bis 1476 Euro kostet eine kleine Wohnung in Zürich."
-          ]
+          ],
+          "prompt": "Wofür zahlt man 738 bis 1 476 Euro?"
         },
         {
           "label": "a · Satz 9",
           "answers": [
             "5 % der Deutschen leben in Wohngemeinschaften.",
             "5 Prozent der Deutschen leben in Wohngemeinschaften."
-          ]
+          ],
+          "prompt": "Was sagen 5 % über Wohngemeinschaften aus?"
         },
         {
           "label": "a · Satz 10",
           "answers": [
             "40,3 % der Haushalte in Deutschland sind Single-Haushalte.",
             "40,3 Prozent der Haushalte in Deutschland sind Single-Haushalte."
-          ]
+          ],
+          "prompt": "Was bedeuten 40,3 % für deutsche Haushalte?"
         },
         {
           "label": "b · Wort 1",
           "answers": [
             "Eigentümer"
-          ]
+          ],
+          "prompt": "In Österreich gibt es viele ___ von Wohnungen oder Häusern."
         },
         {
           "label": "b · Wort 2",
           "answers": [
             "Mieter"
-          ]
+          ],
+          "prompt": "75 % der Bewohner deutscher Großstädte sind ___."
         },
         {
           "label": "b · Wort 3",
           "answers": [
             "Miete"
-          ]
+          ],
+          "prompt": "Die höchste ___ bezahlt man in München."
         },
         {
           "label": "b · Wort 4",
           "answers": [
             "Quadratmeter"
-          ]
+          ],
+          "prompt": "Eine Wohnung ist durchschnittlich 90 ___ groß."
         },
         {
           "label": "b · Wort 5",
           "answers": [
             "Zimmer"
-          ]
+          ],
+          "prompt": "Für ein ___ mit Küchen- und Badbenutzung zahlt man in Zürich 320 bis 920 Euro."
         },
         {
           "label": "b · Wort 6",
           "answers": [
             "Wohngemeinschaft"
-          ]
+          ],
+          "prompt": "Viele Studenten wohnen zusammen in einer ___."
         },
         {
           "label": "b · Wort 7",
           "answers": [
             "Single-Haushalte"
-          ]
+          ],
+          "prompt": "Wie nennt man Haushalte, in denen Menschen allein leben?"
         },
         {
           "label": "c · Antwort 1",
           "answers": [
             "Der Anteil an Wohneigentum ist in Spanien am höchsten.",
             "Spanien"
-          ]
+          ],
+          "prompt": "In welchem Land ist der Anteil an Wohneigentum am höchsten?"
         },
         {
           "label": "c · Antwort 2",
@@ -49614,7 +51025,8 @@ window.SPEKTRUM_BANKS={
             "Prozentual wohnen die meisten Mieter in der Schweiz.",
             "in der Schweiz",
             "Schweiz"
-          ]
+          ],
+          "prompt": "In welchem Land wohnen prozentual die meisten Mieter?"
         },
         {
           "label": "c · Antwort 3",
@@ -49622,14 +51034,16 @@ window.SPEKTRUM_BANKS={
             "Die höchsten Mieten zahlt man in München.",
             "in München",
             "München"
-          ]
+          ],
+          "prompt": "In welcher deutschen Stadt zahlt man die höchsten Mieten?"
         },
         {
           "label": "c · Antwort 4",
           "answers": [
             "Die teuerste Stadt in Österreich ist Innsbruck.",
             "Innsbruck"
-          ]
+          ],
+          "prompt": "Was ist die teuerste Stadt in Österreich?"
         },
         {
           "label": "c · Antwort 5",
@@ -49637,7 +51051,8 @@ window.SPEKTRUM_BANKS={
             "Die meisten Haushalte in Deutschland bestehen aus zwei bis drei Personen.",
             "zwei bis drei Personen",
             "2 bis 3 Personen"
-          ]
+          ],
+          "prompt": "Aus wie vielen Personen bestehen in Deutschland die meisten Haushalte?"
         }
       ]
     },
@@ -49647,145 +51062,169 @@ window.SPEKTRUM_BANKS={
           "label": "a · 1",
           "answers": [
             "meisten"
-          ]
+          ],
+          "prompt": "Die ___ Mieter gibt es in der Schweiz. (viel)"
         },
         {
           "label": "a · 2",
           "answers": [
             "mehr"
-          ]
+          ],
+          "prompt": "In der Schweiz gibt es prozentual ___ Mieter als in Österreich. (viel)"
         },
         {
           "label": "a · 3",
           "answers": [
             "teuerste"
-          ]
+          ],
+          "prompt": "Die ___ Stadt in Deutschland ist München. (teuer)"
         },
         {
           "label": "a · 4",
           "answers": [
             "teurer"
-          ]
+          ],
+          "prompt": "München ist ___ als Frankfurt. (teuer)"
         },
         {
           "label": "a · 5",
           "answers": [
             "preiswertesten"
-          ]
+          ],
+          "prompt": "Im Osten von Deutschland sind Wohnungen am ___. (preiswert)"
         },
         {
           "label": "a · 6",
           "answers": [
             "preiswerter"
-          ]
+          ],
+          "prompt": "Die Wohnungen sind ___ als im Westen. (preiswert)"
         },
         {
           "label": "b · Tabellenlücke 1",
           "answers": [
             "preiswerteste"
-          ]
+          ],
+          "prompt": "Superlativ von preiswert: die ___ Stadt."
         },
         {
           "label": "b · Tabellenlücke 2",
           "answers": [
             "teuerste"
-          ]
+          ],
+          "prompt": "Superlativ von teuer: die ___ Stadt."
         },
         {
           "label": "b · Tabellenlücke 3",
           "answers": [
             "höchsten"
-          ]
+          ],
+          "prompt": "Superlativ von hoch: am ___."
         },
         {
           "label": "b · Tabellenlücke 4",
           "answers": [
             "meisten"
-          ]
+          ],
+          "prompt": "Superlativ von viel: die ___ Mieter."
         },
         {
           "label": "c · 1",
           "answers": [
             "kälteste"
-          ]
+          ],
+          "prompt": "Die ___ Stadt der Welt ist Jakutsk. (kalt)"
         },
         {
           "label": "c · 2",
           "answers": [
             "kälter"
-          ]
+          ],
+          "prompt": "In Jakutsk ist es ___ als in Ottawa. (kalt)"
         },
         {
           "label": "c · 3",
           "answers": [
             "teuerste"
-          ]
+          ],
+          "prompt": "Die ___ Stadt der Welt ist Singapur. (teuer)"
         },
         {
           "label": "c · 4",
           "answers": [
             "teurer"
-          ]
+          ],
+          "prompt": "In Singapur ist es ein bisschen ___ als in Hongkong. (teuer)"
         },
         {
           "label": "c · 5",
           "answers": [
             "größte"
-          ]
+          ],
+          "prompt": "Die ___ Stadt der Welt ist Tokio. (groß)"
         },
         {
           "label": "c · 6",
           "answers": [
             "größer"
-          ]
+          ],
+          "prompt": "Tokio ist ___ als Jakarta. (groß)"
         },
         {
           "label": "c · 7",
           "answers": [
             "lautesten"
-          ]
+          ],
+          "prompt": "Die ___ Städte der Welt gibt es in Indien. (laut)"
         },
         {
           "label": "c · 8",
           "answers": [
             "lauter"
-          ]
+          ],
+          "prompt": "In Delhi ist es noch etwas ___ als in Mumbai. (laut)"
         },
         {
           "label": "c · 9",
           "answers": [
             "gefährlichste"
-          ]
+          ],
+          "prompt": "Die ___ Stadt der Welt ist Caracas. (gefährlich)"
         },
         {
           "label": "c · 10",
           "answers": [
             "gefährlicher"
-          ]
+          ],
+          "prompt": "Hier ist es viel ___ als in New York. (gefährlich)"
         },
         {
           "label": "c · 11",
           "answers": [
             "meisten"
-          ]
+          ],
+          "prompt": "Die ___ Millionäre Deutschlands wohnen in Düsseldorf. (viel)"
         },
         {
           "label": "c · 12",
           "answers": [
             "mehr"
-          ]
+          ],
+          "prompt": "In Düsseldorf wohnen ___ Millionäre als in München. (viel)"
         },
         {
           "label": "c · 13",
           "answers": [
             "schönste"
-          ]
+          ],
+          "prompt": "Welche ist die ___ Stadt der Welt? (schön)"
         },
         {
           "label": "c · 14",
           "answers": [
             "schöner"
-          ]
+          ],
+          "prompt": "Viele Menschen finden Rom ___ als Berlin. (schön)"
         }
       ]
     },
@@ -49795,49 +51234,57 @@ window.SPEKTRUM_BANKS={
           "label": "a · Zimmer 1",
           "answers": [
             "im Wohnzimmer"
-          ]
+          ],
+          "prompt": "In welchem Zimmer steht in Evas Wohnung der Esstisch?"
         },
         {
           "label": "a · Zimmer 2",
           "answers": [
             "im Flur"
-          ]
+          ],
+          "prompt": "In welchem Zimmer steht in Evas Wohnung der Schuhschrank?"
         },
         {
           "label": "a · Zimmer 3",
           "answers": [
             "im Schlafzimmer"
-          ]
+          ],
+          "prompt": "In welchem Zimmer steht in Evas Wohnung der Kleiderschrank?"
         },
         {
           "label": "a · Zimmer 4",
           "answers": [
             "im Flur"
-          ]
+          ],
+          "prompt": "In welchem Zimmer steht in Evas Wohnung die Garderobe?"
         },
         {
           "label": "a · Zimmer 5",
           "answers": [
             "im Schlafzimmer"
-          ]
+          ],
+          "prompt": "In welchem Zimmer steht in Evas Wohnung das Bett?"
         },
         {
           "label": "a · Zimmer 6",
           "answers": [
             "im Arbeitszimmer"
-          ]
+          ],
+          "prompt": "In welchem Zimmer steht in Evas Wohnung der Sessel?"
         },
         {
           "label": "a · Zimmer 7",
           "answers": [
             "in der Küche"
-          ]
+          ],
+          "prompt": "In welchem Zimmer steht in Evas Wohnung der Kühlschrank?"
         },
         {
           "label": "a · Zimmer 8",
           "answers": [
             "im Arbeitszimmer"
-          ]
+          ],
+          "prompt": "In welchem Zimmer steht in Evas Wohnung der Schreibtisch?"
         },
         {
           "label": "b · R/F 1",
@@ -49845,7 +51292,8 @@ window.SPEKTRUM_BANKS={
             "R",
             "richtig",
             "true"
-          ]
+          ],
+          "prompt": "Die neue Wohnung von Eva hat ein großes Wohnzimmer."
         },
         {
           "label": "b · R/F 2",
@@ -49853,7 +51301,8 @@ window.SPEKTRUM_BANKS={
             "R",
             "richtig",
             "true"
-          ]
+          ],
+          "prompt": "Die Wohnung von Adam ist kleiner als die Wohnung von Eva."
         },
         {
           "label": "b · R/F 3",
@@ -49861,7 +51310,8 @@ window.SPEKTRUM_BANKS={
             "R",
             "richtig",
             "true"
-          ]
+          ],
+          "prompt": "Alle Möbel im Wohnzimmer sind neu."
         },
         {
           "label": "b · R/F 4",
@@ -49869,7 +51319,8 @@ window.SPEKTRUM_BANKS={
             "F",
             "falsch",
             "false"
-          ]
+          ],
+          "prompt": "Eva hat eine kleine Küche."
         },
         {
           "label": "b · R/F 5",
@@ -49877,7 +51328,8 @@ window.SPEKTRUM_BANKS={
             "R",
             "richtig",
             "true"
-          ]
+          ],
+          "prompt": "Sie hat die Küchenmöbel und die elektrischen Geräte neu gekauft."
         },
         {
           "label": "b · R/F 6",
@@ -49885,7 +51337,8 @@ window.SPEKTRUM_BANKS={
             "F",
             "falsch",
             "false"
-          ]
+          ],
+          "prompt": "Eva kocht jeden Tag."
         },
         {
           "label": "b · R/F 7",
@@ -49893,7 +51346,8 @@ window.SPEKTRUM_BANKS={
             "F",
             "falsch",
             "false"
-          ]
+          ],
+          "prompt": "Vom Schlafzimmer kann Eva auf den Park sehen."
         },
         {
           "label": "b · R/F 8",
@@ -49901,7 +51355,8 @@ window.SPEKTRUM_BANKS={
             "R",
             "richtig",
             "true"
-          ]
+          ],
+          "prompt": "Adam findet die Wohnung toll."
         },
         {
           "label": "b · R/F 9",
@@ -49909,7 +51364,8 @@ window.SPEKTRUM_BANKS={
             "F",
             "falsch",
             "false"
-          ]
+          ],
+          "prompt": "Eva zahlt 980 Euro Miete im Monat."
         },
         {
           "label": "b · R/F 10",
@@ -49917,91 +51373,106 @@ window.SPEKTRUM_BANKS={
             "F",
             "falsch",
             "false"
-          ]
+          ],
+          "prompt": "Die Wohnung ist sehr teuer."
         },
         {
           "label": "c · Wort 1",
           "answers": [
             "Blumen"
-          ]
+          ],
+          "prompt": "Die ___ sind für dich."
         },
         {
           "label": "c · Wort 2",
           "answers": [
             "Flur"
-          ]
+          ],
+          "prompt": "Im Moment stehen wir im ___."
         },
         {
           "label": "c · Wort 3",
           "answers": [
             "Quadratmeter"
-          ]
+          ],
+          "prompt": "Das Wohnzimmer hat 40 ___."
         },
         {
           "label": "c · Wort 4",
           "answers": [
             "Esstisch"
-          ]
+          ],
+          "prompt": "Hier habe ich einen ___ mit sechs Stühlen."
         },
         {
           "label": "c · Wort 5",
           "answers": [
             "Bücher"
-          ]
+          ],
+          "prompt": "Ich brauche noch ein Regal für meine ___."
         },
         {
           "label": "c · Wort 6",
           "answers": [
             "Küche"
-          ]
+          ],
+          "prompt": "Du hast eine offene ___."
         },
         {
           "label": "c · Wort 7",
           "answers": [
             "Wochenende"
-          ]
+          ],
+          "prompt": "Ich koche ja nur am ___."
         },
         {
           "label": "c · Wort 8",
           "answers": [
             "Küchenmöbel"
-          ]
+          ],
+          "prompt": "Waren die ___ schon in der Wohnung?"
         },
         {
           "label": "c · Wort 9",
           "answers": [
             "Fenster"
-          ]
+          ],
+          "prompt": "Dort am ___ steht mein alter Schreibtisch."
         },
         {
           "label": "c · Wort 10",
           "answers": [
             "Park"
-          ]
+          ],
+          "prompt": "Ich kann direkt auf den ___ sehen."
         },
         {
           "label": "c · Wort 11",
           "answers": [
             "Monat"
-          ]
+          ],
+          "prompt": "Was kostet die Wohnung im ___?"
         },
         {
           "label": "c · Wort 12",
           "answers": [
             "Miete"
-          ]
+          ],
+          "prompt": "Ich zahle 890 Euro ___."
         },
         {
           "label": "c · Wort 13",
           "answers": [
             "Heizung"
-          ]
+          ],
+          "prompt": "Ohne Wasser, ___ und Strom."
         },
         {
           "label": "c · Wort 14",
           "answers": [
             "Job"
-          ]
+          ],
+          "prompt": "Du hast doch einen guten ___."
         }
       ]
     },
@@ -50011,7 +51482,8 @@ window.SPEKTRUM_BANKS={
           "label": "a · 1",
           "answers": [
             "h"
-          ]
+          ],
+          "prompt": "Welche Tätigkeit darf Erika laut den Regeln machen? Geben Sie den Buchstaben an."
         },
         {
           "label": "a · 2",
@@ -50019,7 +51491,8 @@ window.SPEKTRUM_BANKS={
             "a",
             "f",
             "g"
-          ]
+          ],
+          "prompt": "Welche Tätigkeiten muss Erika erledigen? Geben Sie die Buchstaben an."
         },
         {
           "label": "a · 3",
@@ -50027,73 +51500,85 @@ window.SPEKTRUM_BANKS={
             "c",
             "d",
             "e"
-          ]
+          ],
+          "prompt": "Welche Tätigkeiten sind Erika verboten? Geben Sie die Buchstaben an."
         },
         {
           "label": "a · 4",
           "answers": [
             "b"
-          ]
+          ],
+          "prompt": "Was kann Erika mit ihrem Zimmer machen? Geben Sie den Buchstaben an."
         },
         {
           "label": "b · 1",
           "answers": [
             "musst"
-          ]
+          ],
+          "prompt": "Aufräumen und sauber machen ___ du selber."
         },
         {
           "label": "b · 2",
           "answers": [
             "kannst"
-          ]
+          ],
+          "prompt": "Du ___ dein Zimmer abschließen."
         },
         {
           "label": "b · 3",
           "answers": [
             "darfst"
-          ]
+          ],
+          "prompt": "Du ___ auch in deinem Zimmer nicht rauchen."
         },
         {
           "label": "b · 4",
           "answers": [
             "darfst"
-          ]
+          ],
+          "prompt": "Außerdem ___ du keine Haustiere mitbringen."
         },
         {
           "label": "b · 5",
           "answers": [
             "dürfen"
-          ]
+          ],
+          "prompt": "Nach 22.00 Uhr ___ wir keine laute Musik mehr hören."
         },
         {
           "label": "b · 6",
           "answers": [
             "musst"
-          ]
+          ],
+          "prompt": "Du ___ einmal im Monat das Bad sauber machen."
         },
         {
           "label": "b · 7",
           "answers": [
             "musst"
-          ]
+          ],
+          "prompt": "Dein Geschirr ___ du selber spülen."
         },
         {
           "label": "b · 8",
           "answers": [
             "darfst"
-          ]
+          ],
+          "prompt": "Die Waschmaschine ___ du zweimal in der Woche benutzen."
         },
         {
           "label": "b · 9",
           "answers": [
             "Möchtest"
-          ]
+          ],
+          "prompt": "___ du das Zimmer?"
         },
         {
           "label": "b · 10",
           "answers": [
             "kannst"
-          ]
+          ],
+          "prompt": "Du ___ auch gleich ein bisschen sauber machen."
         }
       ]
     },
@@ -50103,122 +51588,142 @@ window.SPEKTRUM_BANKS={
           "label": "a · Modalverb 1",
           "answers": [
             "können"
-          ]
+          ],
+          "prompt": "Morgen ___ wir nicht ins Kino gehen. (Möglichkeit)"
         },
         {
           "label": "a · Modalverb 2",
           "answers": [
             "kann"
-          ]
+          ],
+          "prompt": "Ich ___ überhaupt nicht kochen. (Fähigkeit)"
         },
         {
           "label": "a · Modalverb 3",
           "answers": [
             "müssen"
-          ]
+          ],
+          "prompt": "Wie lautet der Infinitiv zu „Elvira muss noch eine E-Mail schreiben“?"
         },
         {
           "label": "a · Modalverb 4",
           "answers": [
             "dürfen"
-          ]
+          ],
+          "prompt": "Hier ___ Kinder schwimmen. (Erlaubnis)"
         },
         {
           "label": "a · Modalverb 5",
           "answers": [
             "darf"
-          ]
+          ],
+          "prompt": "In öffentlichen Gebäuden ___ man nicht rauchen."
         },
         {
           "label": "a · Modalverb 6",
           "answers": [
             "mag"
-          ]
+          ],
+          "prompt": "Diese Musik ___ Otto sehr."
         },
         {
           "label": "a · Modalverb 7",
           "answers": [
             "mag"
-          ]
+          ],
+          "prompt": "Ich ___ keinen Fisch. (Abneigung)"
         },
         {
           "label": "a · Modalverb 8",
           "answers": [
             "wollen"
-          ]
+          ],
+          "prompt": "Wie lautet der Infinitiv zu „Wie lange willst du bleiben“?"
         },
         {
           "label": "a · Modalverb 9",
           "answers": [
             "sollen"
-          ]
+          ],
+          "prompt": "Wie lautet der Infinitiv zu „Soll ich Kaffee kochen“?"
         },
         {
           "label": "b · Verbot 1",
           "answers": [
             "Hier darf man nicht essen und trinken."
-          ]
+          ],
+          "prompt": "Beschreiben Sie das Verbot: essen und trinken."
         },
         {
           "label": "b · Verbot 2",
           "answers": [
             "Hier darf man nicht telefonieren.",
             "Hier darf man das Smartphone nicht benutzen."
-          ]
+          ],
+          "prompt": "Beschreiben Sie das Verbot: telefonieren."
         },
         {
           "label": "b · Verbot 3",
           "answers": [
             "Hier darf man nicht fotografieren."
-          ]
+          ],
+          "prompt": "Beschreiben Sie das Verbot: fotografieren."
         },
         {
           "label": "b · Verbot 4",
           "answers": [
             "Das Wasser darf man nicht trinken."
-          ]
+          ],
+          "prompt": "Beschreiben Sie das Verbot: Wasser trinken."
         },
         {
           "label": "b · Verbot 5",
           "answers": [
             "Hier darf man nicht Fußball spielen."
-          ]
+          ],
+          "prompt": "Beschreiben Sie das Verbot: Fußball spielen."
         },
         {
           "label": "b · Verbot 6",
           "answers": [
             "Hier darf man nicht rauchen."
-          ]
+          ],
+          "prompt": "Beschreiben Sie das Verbot: rauchen."
         },
         {
           "label": "b · Verbot 7",
           "answers": [
             "Hier darf man nicht Fahrrad fahren."
-          ]
+          ],
+          "prompt": "Beschreiben Sie das Verbot: Fahrrad fahren."
         },
         {
           "label": "c · Satz 1",
           "answers": [
             "Darf ich hier telefonieren?"
-          ]
+          ],
+          "prompt": "Bilden Sie die Frage: ich · hier · telefonieren · dürfen?"
         },
         {
           "label": "c · Satz 2",
           "answers": [
             "Alex nimmt Medikamente. Er darf keinen Alkohol trinken."
-          ]
+          ],
+          "prompt": "Bilden Sie Sätze: Alex · Medikamente nehmen → er · keinen Alkohol trinken dürfen."
         },
         {
           "label": "c · Satz 3",
           "answers": [
             "Darf ich Ihren Kopierer benutzen?"
-          ]
+          ],
+          "prompt": "Bilden Sie die Frage: ich · Ihren Kopierer benutzen · dürfen?"
         },
         {
           "label": "c · Satz 4",
           "answers": [
             "Nach 22.00 Uhr dürfen Sie keine laute Musik hören."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: nach 22.00 Uhr · Sie · keine laute Musik hören dürfen."
         }
       ]
     },
@@ -50228,55 +51733,64 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "mir"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "ich → mich (Akkusativ) → ___ (Dativ)"
         },
         {
           "answers": [
             "dir"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "du → dich (Akkusativ) → ___ (Dativ)"
         },
         {
           "answers": [
             "dir"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "(du) Wie gefällt ___ der Anzug?"
         },
         {
           "answers": [
             "ihm"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "(er) Der Anzug passt ___ gut."
         },
         {
           "answers": [
             "mir"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "(ich) Es tut ___ leid."
         },
         {
           "answers": [
             "dir"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "(du) Wie geht es ___?"
         },
         {
           "answers": [
             "mir"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "(ich) Danke, ___ geht es gut."
         },
         {
           "answers": [
             "euch"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "(ihr) Gehört ___ das schöne Auto?"
         },
         {
           "answers": [
             "uns"
           ],
-          "label": "9"
+          "label": "9",
+          "prompt": "(wir) Ja, das Auto gehört ___."
         }
       ]
     },
@@ -50286,57 +51800,66 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "besitzen"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Rund 30 % der Deutschen ___ ein Einfamilienhaus."
         },
         {
           "answers": [
             "wohnen"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Die meisten Deutschen, etwa 57 %, ___ zur Miete."
         },
         {
           "answers": [
             "leben"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "In den Großstädten ___ 75 % der Einwohner in Mietwohnungen."
         },
         {
           "answers": [
             "ist"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Die durchschnittliche Wohnung ___ 90 Quadratmeter groß."
         },
         {
           "answers": [
             "sind"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "München, Stuttgart und Frankfurt ___ die teuersten Städte in Deutschland."
         },
         {
           "answers": [
             "zahlen"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "In München ___ die Mieter durchschnittlich 15,44 Euro pro Quadratmeter."
         },
         {
           "answers": [
             "leben",
             "wohnen"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Etwa 5 % der Deutschen ___ in Wohngemeinschaften."
         },
         {
           "answers": [
             "wohnen",
             "leben"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "40,3 % der Deutschen ___ allein."
         },
         {
           "answers": [
             "bestehen"
           ],
-          "label": "9"
+          "label": "9",
+          "prompt": "Die meisten Haushalte in Deutschland ___ aus zwei oder drei Personen."
         }
       ]
     },
@@ -50346,103 +51869,120 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "gesucht"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Ich habe lange ___."
         },
         {
           "answers": [
             "gefunden"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Jetzt habe ich eine schöne Wohnung ___."
         },
         {
           "answers": [
             "liegt"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Sie ___ in der Innenstadt, direkt neben der Universität."
         },
         {
           "answers": [
             "habe"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Ich ___ zwei Zimmer, eine kleine Küche und ein Bad mit Dusche."
         },
         {
           "answers": [
             "ist"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Die Wohnung ___ modern und hell."
         },
         {
           "answers": [
             "hat"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Sie ___ große Fenster."
         },
         {
           "answers": [
             "mag"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Das ___ ich."
         },
         {
           "answers": [
             "gibt"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "In der Gegend ___ es viele Geschäfte und Restaurants."
         },
         {
           "answers": [
             "hat"
           ],
-          "label": "9"
+          "label": "9",
+          "prompt": "Die Wohnung ___ aber auch einen Nachteil."
         },
         {
           "answers": [
             "liegt"
           ],
-          "label": "10"
+          "label": "10",
+          "prompt": "Sie ___ an einer Kreuzung."
         },
         {
           "answers": [
             "ist"
           ],
-          "label": "11"
+          "label": "11",
+          "prompt": "Das heißt, sie ___ sehr laut."
         },
         {
           "answers": [
             "kann"
           ],
-          "label": "12"
+          "label": "12",
+          "prompt": "Aber ich ___ gut schlafen."
         },
         {
           "answers": [
             "stört"
           ],
-          "label": "13"
+          "label": "13",
+          "prompt": "Der Lärm ___ mich nicht."
         },
         {
           "answers": [
             "zahle"
           ],
-          "label": "14"
+          "label": "14",
+          "prompt": "Ich ___ 550 Euro Miete im Monat."
         },
         {
           "answers": [
             "ist"
           ],
-          "label": "15"
+          "label": "15",
+          "prompt": "Das ___ ein normaler Preis für eine Wohnung im Stadtzentrum."
         },
         {
           "answers": [
             "besuchst"
           ],
-          "label": "16"
+          "label": "16",
+          "prompt": "Ich hoffe, du ___ mich bald."
         },
         {
           "answers": [
             "gehen"
           ],
-          "label": "17"
+          "label": "17",
+          "prompt": "Dann können wir zusammen in ein gutes Restaurant oder ins Kino ___."
         }
       ]
     },
@@ -50452,37 +51992,43 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "preiswerter"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Luise bezahlt nicht so viel Miete. Ihre Wohnung ist ___."
         },
         {
           "answers": [
             "älter"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Das Hochhaus ist neu. Das Haus von Luise ist ___."
         },
         {
           "answers": [
             "kleiner"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Kerstins Wohnzimmer ist groß. Das Wohnzimmer von Luise ist viel ___."
         },
         {
           "answers": [
             "heller"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Das Wohnzimmer von Luise liegt Richtung Süden. Es ist viel ___."
         },
         {
           "answers": [
             "schlechter"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "In der Innenstadt sind die Einkaufsmöglichkeiten gut. Am Stadtrand sind sie viel ___."
         },
         {
           "answers": [
             "unordentlicher"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Kerstins Wohnung ist immer ordentlich. Luises Wohnung ist etwas ___."
         }
       ]
     },
@@ -50492,43 +52038,50 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "meisten"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Hier wohnen die ___ hundertjährigen Menschen. (viel)"
         },
         {
           "answers": [
             "höchste"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Der ___ Berg der Welt ist der Mount Everest. (hoch)"
         },
         {
           "answers": [
             "längste"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Der ___ Fluss der Welt ist der Nil. (lang)"
         },
         {
           "answers": [
             "größte"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Die ___ Insel ist Grönland. (groß)"
         },
         {
           "answers": [
             "tiefste"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Der ___ See ist der Baikalsee. (tief)"
         },
         {
           "answers": [
             "älteste"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Er ist auch der ___ Süßwassersee der Erde. (alt)"
         },
         {
           "answers": [
             "häufigste"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Das ___ Wort in der deutschen Sprache ist das Wort „der“. (häufig)"
         }
       ]
     },
@@ -50538,37 +52091,43 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "dürfen"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Hier ___ Sie nicht telefonieren. Dort ist ein Verbotsschild."
         },
         {
           "answers": [
             "darfst"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "In unserer Wohngemeinschaft ___ du nicht rauchen."
         },
         {
           "answers": [
             "dürfen"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Wir ___ hier nicht parken. Es ist verboten."
         },
         {
           "answers": [
             "Dürft"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "___ ihr im Klassenzimmer essen?"
         },
         {
           "answers": [
             "darf"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Mein Sohn ist sieben Jahre alt. Er ___ noch nicht alleine zur Schule gehen."
         },
         {
           "answers": [
             "darf"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Der Hund ___ nicht ins Geschäft, er muss vor der Tür bleiben."
         }
       ]
     },
@@ -50578,90 +52137,104 @@ window.SPEKTRUM_BANKS={
           "label": "Modalverb 1",
           "answers": [
             "muss"
-          ]
+          ],
+          "prompt": "Mein Chef sagt, ich soll einen Sprachkurs machen. Ich ___ mein Englisch verbessern."
         },
         {
           "label": "Modalverb 2",
           "answers": [
             "kann"
-          ]
+          ],
+          "prompt": "Vielleicht ___ ich dir helfen."
         },
         {
           "label": "Modalverb 3",
           "answers": [
             "willst",
             "möchtest"
-          ]
+          ],
+          "prompt": "Wann ___ du anfangen?"
         },
         {
           "label": "Modalverb 4",
           "answers": [
             "kann"
-          ]
+          ],
+          "prompt": "Ich ___ aber nur am Abend einen Kurs besuchen."
         },
         {
           "label": "Modalverb 5",
           "answers": [
             "möchte",
             "will"
-          ]
+          ],
+          "prompt": "Ich ___ gerne einen Kurs besuchen."
         },
         {
           "label": "Modalverb 6",
           "answers": [
             "musst"
-          ]
+          ],
+          "prompt": "Dann ___ du zuerst einen Test machen."
         },
         {
           "label": "Modalverb 7",
           "answers": [
             "Kann"
-          ]
+          ],
+          "prompt": "___ ich den Test jetzt machen?"
         },
         {
           "label": "Modalverb 8",
           "answers": [
             "kannst"
-          ]
+          ],
+          "prompt": "Du ___ gerne morgen zwischen 10.00 und 12.00 Uhr kommen."
         },
         {
           "label": "Modalverb 9",
           "answers": [
             "Möchtest",
             "Willst"
-          ]
+          ],
+          "prompt": "Wir gehen heute Abend in eine Bar. ___ du mitkommen?"
         },
         {
           "label": "Modalverb 10",
           "answers": [
             "möchte",
             "will"
-          ]
+          ],
+          "prompt": "Ich ___ schon …"
         },
         {
           "label": "Modalverb 11",
           "answers": [
             "kann"
-          ]
+          ],
+          "prompt": "… aber ich ___ leider nicht."
         },
         {
           "label": "Modalverb 12",
           "answers": [
             "muss"
-          ]
+          ],
+          "prompt": "Ich ___ heute Abend bis 20.00 Uhr arbeiten."
         },
         {
           "label": "Modalverb 13",
           "answers": [
             "kannst"
-          ]
+          ],
+          "prompt": "Du ___ auch nach 20.00 Uhr kommen."
         },
         {
           "label": "Modalverb 14",
           "answers": [
             "möchte",
             "will"
-          ]
+          ],
+          "prompt": "Ich ___ nach der Arbeit schnell nach Hause fahren."
         },
         {
           "label": "Modalverb 15",
@@ -50669,13 +52242,15 @@ window.SPEKTRUM_BANKS={
             "will",
             "muss",
             "möchte"
-          ]
+          ],
+          "prompt": "Morgen ___ ich fit sein."
         },
         {
           "label": "Modalverb 16",
           "answers": [
             "muss"
-          ]
+          ],
+          "prompt": "Ich ___ ein Projekt präsentieren."
         }
       ]
     },
@@ -50685,49 +52260,57 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "mir"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Kannst du ___ helfen? (ich)"
         },
         {
           "answers": [
             "mir"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Es tut ___ leid, aber ich habe keine Zeit. (ich)"
         },
         {
           "answers": [
             "Ihnen"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Wie geht es ___? (Sie)"
         },
         {
           "answers": [
             "Sie"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Wann kann ich ___ anrufen? (Sie)"
         },
         {
           "answers": [
             "Ihnen"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Gehört das Fahrrad ___? (Sie)"
         },
         {
           "answers": [
             "mich"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Können Sie ___ über die Ergebnisse informieren? (ich)"
         },
         {
           "answers": [
             "mich"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Können Sie ___ bitte mit Frau Krause verbinden? (ich)"
         },
         {
           "answers": [
             "mir"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "Die Schuhe passen ___ nicht. (ich)"
         }
       ]
     },
@@ -50739,7 +52322,8 @@ window.SPEKTRUM_BANKS={
             "richtig",
             "true"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Der Fernsehturm war ein Projekt der DDR-Regierung."
         },
         {
           "answers": [
@@ -50747,7 +52331,8 @@ window.SPEKTRUM_BANKS={
             "falsch",
             "false"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Er ist 203 Meter hoch."
         },
         {
           "answers": [
@@ -50755,7 +52340,8 @@ window.SPEKTRUM_BANKS={
             "richtig",
             "true"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Im Fernsehturm gibt es eine Aussichtsplattform und ein Restaurant."
         },
         {
           "answers": [
@@ -50763,7 +52349,8 @@ window.SPEKTRUM_BANKS={
             "falsch",
             "false"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Bei einem Besuch der Aussichtsplattform muss man immer warten."
         },
         {
           "answers": [
@@ -50771,7 +52358,8 @@ window.SPEKTRUM_BANKS={
             "richtig",
             "true"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Die East-Side-Gallery ist ein Teil der Berliner Mauer."
         },
         {
           "answers": [
@@ -50779,7 +52367,8 @@ window.SPEKTRUM_BANKS={
             "falsch",
             "false"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Berühmte Künstler aus Deutschland haben die Mauer bemalt."
         },
         {
           "answers": [
@@ -50787,7 +52376,8 @@ window.SPEKTRUM_BANKS={
             "richtig",
             "true"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Die Kunstwerke kann man kostenlos sehen."
         },
         {
           "answers": [
@@ -50795,7 +52385,8 @@ window.SPEKTRUM_BANKS={
             "richtig",
             "true"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "Das Deutsche Technikmuseum zeigt technische Entwicklungen aus vielen Bereichen."
         },
         {
           "answers": [
@@ -50803,7 +52394,8 @@ window.SPEKTRUM_BANKS={
             "falsch",
             "false"
           ],
-          "label": "9"
+          "label": "9",
+          "prompt": "Kinder dürfen alle Objekte anfassen."
         },
         {
           "answers": [
@@ -50811,7 +52403,8 @@ window.SPEKTRUM_BANKS={
             "richtig",
             "true"
           ],
-          "label": "10"
+          "label": "10",
+          "prompt": "Das Museum ist montags geschlossen."
         },
         {
           "answers": [
@@ -50819,7 +52412,8 @@ window.SPEKTRUM_BANKS={
             "falsch",
             "false"
           ],
-          "label": "11"
+          "label": "11",
+          "prompt": "Vormittags müssen Kinder und Jugendliche keinen Eintritt bezahlen."
         },
         {
           "answers": [
@@ -50827,7 +52421,8 @@ window.SPEKTRUM_BANKS={
             "richtig",
             "true"
           ],
-          "label": "12"
+          "label": "12",
+          "prompt": "Eine Führung muss man telefonisch bestellen."
         }
       ],
       "type": "choice",
@@ -50844,7 +52439,8 @@ window.SPEKTRUM_BANKS={
             "R",
             "richtig",
             "true"
-          ]
+          ],
+          "prompt": "Klaus hat Geburtstag."
         },
         {
           "label": "a · R/F 2",
@@ -50852,7 +52448,8 @@ window.SPEKTRUM_BANKS={
             "F",
             "falsch",
             "false"
-          ]
+          ],
+          "prompt": "Marc möchte ins Technikmuseum gehen."
         },
         {
           "label": "a · R/F 3",
@@ -50860,7 +52457,8 @@ window.SPEKTRUM_BANKS={
             "R",
             "richtig",
             "true"
-          ]
+          ],
+          "prompt": "Die Buslinie 100 fährt an vielen Sehenswürdigkeiten vorbei."
         },
         {
           "label": "a · R/F 4",
@@ -50868,7 +52466,8 @@ window.SPEKTRUM_BANKS={
             "R",
             "richtig",
             "true"
-          ]
+          ],
+          "prompt": "So eine Busfahrt ist sehr preiswert."
         },
         {
           "label": "a · R/F 5",
@@ -50876,7 +52475,8 @@ window.SPEKTRUM_BANKS={
             "F",
             "falsch",
             "false"
-          ]
+          ],
+          "prompt": "Alexandra will mit Marc zusammen mit dem Bus fahren."
         },
         {
           "label": "a · R/F 6",
@@ -50884,14 +52484,16 @@ window.SPEKTRUM_BANKS={
             "R",
             "richtig",
             "true"
-          ]
+          ],
+          "prompt": "Marc bleibt bis Montag in Berlin."
         },
         {
           "label": "b · Gebäude 1",
           "answers": [
             "Schloss Bellevue",
             "das Schloss Bellevue"
-          ]
+          ],
+          "prompt": "Bei welchem Gebäude arbeitet das deutsche Staatsoberhaupt?"
         },
         {
           "label": "b · Gebäude 2",
@@ -50900,85 +52502,99 @@ window.SPEKTRUM_BANKS={
             "das Reichstagsgebäude",
             "Reichstag",
             "der Reichstag"
-          ]
+          ],
+          "prompt": "In welchem Gebäude sitzt der Bundestag?"
         },
         {
           "label": "c · Verb 1",
           "answers": [
             "war"
-          ]
+          ],
+          "prompt": "Wann ___ ich das letzte Mal in Paris?"
         },
         {
           "label": "c · Verb 2",
           "answers": [
             "habe"
-          ]
+          ],
+          "prompt": "Ich ___ etwas für dich: einen Bordeaux."
         },
         {
           "label": "c · Verb 3",
           "answers": [
             "wirst"
-          ]
+          ],
+          "prompt": "Du ___ doch heute 35, oder?"
         },
         {
           "label": "c · Verb 4",
           "answers": [
             "bist"
-          ]
+          ],
+          "prompt": "Wie lange ___ du schon in Berlin?"
         },
         {
           "label": "c · Verb 5",
           "answers": [
             "war"
-          ]
+          ],
+          "prompt": "Ich ___ heute den ganzen Tag im Technikmuseum."
         },
         {
           "label": "c · Verb 6",
           "answers": [
             "weiß"
-          ]
+          ],
+          "prompt": "Ich ___, du bist ein Technik-Freak."
         },
         {
           "label": "c · Verb 7",
           "answers": [
             "bist"
-          ]
+          ],
+          "prompt": "Du ___ ein Technik-Freak."
         },
         {
           "label": "c · Verb 8",
           "answers": [
             "bin"
-          ]
+          ],
+          "prompt": "Ich ___ Ingenieur."
         },
         {
           "label": "c · Verb 9",
           "answers": [
             "bietet"
-          ]
+          ],
+          "prompt": "Aber Berlin ___ noch viel mehr."
         },
         {
           "label": "c · Verb 10",
           "answers": [
             "nimmst"
-          ]
+          ],
+          "prompt": "Am besten ist es, du ___ die Buslinie 100."
         },
         {
           "label": "c · Verb 11",
           "answers": [
             "kostet"
-          ]
+          ],
+          "prompt": "Die ganze Fahrt ___ nur 2,70 Euro."
         },
         {
           "label": "c · Verb 12",
           "answers": [
             "kann"
-          ]
+          ],
+          "prompt": "Man ___ viele Sehenswürdigkeiten sehen."
         },
         {
           "label": "c · Verb 13",
           "answers": [
             "mache"
-          ]
+          ],
+          "prompt": "Das klingt gut. Das ___ ich."
         }
       ]
     },
@@ -50988,73 +52604,85 @@ window.SPEKTRUM_BANKS={
           "label": "b · 1",
           "answers": [
             "wirst"
-          ]
+          ],
+          "prompt": "Wann ___ du Vater?"
         },
         {
           "label": "b · 2",
           "answers": [
             "werde"
-          ]
+          ],
+          "prompt": "Räum bitte die Küche auf! Ich ___ sonst noch verrückt!"
         },
         {
           "label": "b · 3",
           "answers": [
             "werden"
-          ]
+          ],
+          "prompt": "Jolly und Aris sind Zwillinge. Sie ___ am Montag zehn Jahre alt."
         },
         {
           "label": "b · 4",
           "answers": [
             "wird"
-          ]
+          ],
+          "prompt": "Mathias studiert Germanistik. Er ___ Deutschlehrer."
         },
         {
           "label": "b · 5",
           "answers": [
             "werde"
-          ]
+          ],
+          "prompt": "Ich arbeite so fleißig, aber ich ___ nie Direktor."
         },
         {
           "label": "b · 6",
           "answers": [
             "wird"
-          ]
+          ],
+          "prompt": "Die Sonne geht auf. Es ___ hell."
         },
         {
           "label": "b · 7",
           "answers": [
             "wird"
-          ]
+          ],
+          "prompt": "Das Wetter ___ schlechter."
         },
         {
           "label": "b · 8",
           "answers": [
             "werde"
-          ]
+          ],
+          "prompt": "Ich fühle mich nicht gut. Ich glaube, ich ___ krank."
         },
         {
           "label": "c · Perfekt 1",
           "answers": [
             "Du bist doch 35 geworden, oder?"
-          ]
+          ],
+          "prompt": "Formulieren Sie im Perfekt: Du wirst doch 35, oder?"
         },
         {
           "label": "c · Perfekt 2",
           "answers": [
             "Ich bin Arzt geworden."
-          ]
+          ],
+          "prompt": "Formulieren Sie im Perfekt: Ich werde Arzt."
         },
         {
           "label": "c · Perfekt 3",
           "answers": [
             "Andreas ist Direktor geworden."
-          ]
+          ],
+          "prompt": "Formulieren Sie im Perfekt: Andreas wird Direktor."
         },
         {
           "label": "c · Perfekt 4",
           "answers": [
             "Es ist dunkel geworden."
-          ]
+          ],
+          "prompt": "Formulieren Sie im Perfekt: Es wird dunkel."
         }
       ]
     },
@@ -51111,103 +52739,120 @@ window.SPEKTRUM_BANKS={
           "label": "b · Modalverb 1",
           "answers": [
             "konnte"
-          ]
+          ],
+          "prompt": "Wie lautet die Form im Präteritum? ich · können"
         },
         {
           "label": "b · Modalverb 2",
           "answers": [
             "konnten"
-          ]
+          ],
+          "prompt": "Wie lautet die Form im Präteritum? sie (Plural) · können"
         },
         {
           "label": "b · Modalverb 3",
           "answers": [
             "musste"
-          ]
+          ],
+          "prompt": "Wie lautet die Form im Präteritum? er · müssen"
         },
         {
           "label": "b · Modalverb 4",
           "answers": [
             "musstet"
-          ]
+          ],
+          "prompt": "Wie lautet die Form im Präteritum? ihr · müssen"
         },
         {
           "label": "b · Modalverb 5",
           "answers": [
             "durftest"
-          ]
+          ],
+          "prompt": "Wie lautet die Form im Präteritum? du · dürfen"
         },
         {
           "label": "b · Modalverb 6",
           "answers": [
             "durften"
-          ]
+          ],
+          "prompt": "Wie lautet die Form im Präteritum? wir · dürfen"
         },
         {
           "label": "b · Modalverb 7",
           "answers": [
             "sollte"
-          ]
+          ],
+          "prompt": "Wie lautet die Form im Präteritum? ich · sollen"
         },
         {
           "label": "b · Modalverb 8",
           "answers": [
             "sollten"
-          ]
+          ],
+          "prompt": "Wie lautet die Form im Präteritum? wir · sollen"
         },
         {
           "label": "b · Modalverb 9",
           "answers": [
             "sollten"
-          ]
+          ],
+          "prompt": "Wie lautet die Form im Präteritum? Sie (formell) · sollen"
         },
         {
           "label": "b · Modalverb 10",
           "answers": [
             "wollte"
-          ]
+          ],
+          "prompt": "Wie lautet die Form im Präteritum? er · wollen"
         },
         {
           "label": "b · Modalverb 11",
           "answers": [
             "wolltet"
-          ]
+          ],
+          "prompt": "Wie lautet die Form im Präteritum? ihr · wollen"
         },
         {
           "label": "b · Modalverb 12",
           "answers": [
             "wollten"
-          ]
+          ],
+          "prompt": "Wie lautet die Form im Präteritum? sie (Plural) · wollen"
         },
         {
           "label": "c · Satz 1",
           "answers": [
             "Er durfte nicht ins Fitnessstudio gehen."
-          ]
+          ],
+          "prompt": "Setzen Sie den Satz ins Präteritum: Er darf nicht ins Fitnessstudio gehen."
         },
         {
           "label": "c · Satz 2",
           "answers": [
             "Er sollte im Bett bleiben."
-          ]
+          ],
+          "prompt": "Setzen Sie den Satz ins Präteritum: Er soll im Bett bleiben."
         },
         {
           "label": "c · Satz 3",
           "answers": [
             "Otto hatte ein Problem."
-          ]
+          ],
+          "prompt": "Setzen Sie den Satz ins Präteritum: Otto hat ein Problem."
         },
         {
           "label": "c · Satz 4",
           "answers": [
             "Sein Drucker war kaputt."
-          ]
+          ],
+          "prompt": "Setzen Sie den Satz ins Präteritum: Sein Drucker ist kaputt."
         },
         {
           "label": "c · Satz 5",
           "answers": [
             "Er musste einen neuen Drucker kaufen."
-          ]
+          ],
+          "prompt": "Setzen Sie den Satz ins Präteritum: Er muss einen neuen Drucker kaufen."
         }
       ]
     },
@@ -51219,13 +52864,15 @@ window.SPEKTRUM_BANKS={
             "1,8 km",
             "1,8 Kilometer",
             "1.8 km"
-          ]
+          ],
+          "prompt": "Wie lang ist die Strecke beim Basler Rheinschwimmen?"
         },
         {
           "label": "a · Basel: seit",
           "answers": [
             "1980"
-          ]
+          ],
+          "prompt": "Seit welchem Jahr gibt es das Rheinschwimmen?"
         },
         {
           "label": "a · Basel: Wochentag",
@@ -51233,7 +52880,8 @@ window.SPEKTRUM_BANKS={
             "Dienstag",
             "am Dienstag",
             "am ersten Dienstag"
-          ]
+          ],
+          "prompt": "An welchem Wochentag findet es statt?"
         },
         {
           "label": "a · Basel: Start",
@@ -51241,7 +52889,8 @@ window.SPEKTRUM_BANKS={
             "18 Uhr",
             "18.00 Uhr",
             "18:00"
-          ]
+          ],
+          "prompt": "Um wie viel Uhr starten die Teilnehmer?"
         },
         {
           "label": "a · Basel: Teilnehmer 2003",
@@ -51250,13 +52899,15 @@ window.SPEKTRUM_BANKS={
             "5 000",
             "5000 Teilnehmer",
             "5 000 Teilnehmer"
-          ]
+          ],
+          "prompt": "Wie viele Menschen nahmen im heißen Sommer 2003 teil?"
         },
         {
           "label": "a · Salzburg: seit",
           "answers": [
             "1920"
-          ]
+          ],
+          "prompt": "Seit welchem Jahr finden die Salzburger Festspiele statt?"
         },
         {
           "label": "a · Salzburg: Gäste",
@@ -51265,20 +52916,23 @@ window.SPEKTRUM_BANKS={
             "250 000 Gäste",
             "250000",
             "250 000"
-          ]
+          ],
+          "prompt": "Wie viele Gäste besuchen die Festspiele pro Jahr?"
         },
         {
           "label": "a · Salzburg: Veranstaltungen",
           "answers": [
             "200 Veranstaltungen",
             "200"
-          ]
+          ],
+          "prompt": "Wie viele Veranstaltungen gibt es in den sechs Festspielwochen?"
         },
         {
           "label": "a · Berlin: seit",
           "answers": [
             "1926"
-          ]
+          ],
+          "prompt": "Seit wann gibt es die Grüne Woche in Berlin?"
         },
         {
           "label": "a · Berlin: Besucher",
@@ -51287,7 +52941,8 @@ window.SPEKTRUM_BANKS={
             "400 000 Besucher",
             "400000",
             "400 000"
-          ]
+          ],
+          "prompt": "Wie viele Besucher kommen jährlich auf das Messegelände?"
         },
         {
           "label": "a · Berlin: Hersteller",
@@ -51296,43 +52951,50 @@ window.SPEKTRUM_BANKS={
             "1 200",
             "1200 Lebensmittelhersteller",
             "1 200 Lebensmittelhersteller"
-          ]
+          ],
+          "prompt": "Wie viele Lebensmittelhersteller laden zum Probieren ein?"
         },
         {
           "label": "d · Verb 1",
           "answers": [
             "findet statt"
-          ]
+          ],
+          "prompt": "Das Schwimmen ___ seit vielen Jahren ___."
         },
         {
           "label": "d · Verb 2",
           "answers": [
             "nehmen teil"
-          ]
+          ],
+          "prompt": "Es ___ mehrere Hundert bis mehrere Tausend Menschen ___."
         },
         {
           "label": "d · Verb 3",
           "answers": [
             "besuchen"
-          ]
+          ],
+          "prompt": "Zahlreiche Gäste ___ jedes Jahr die Salzburger Festspiele."
         },
         {
           "label": "d · Verb 4",
           "answers": [
             "gibt"
-          ]
+          ],
+          "prompt": "In Deutschland ___ es viele große Messen."
         },
         {
           "label": "d · Verb 5",
           "answers": [
             "finden"
-          ]
+          ],
+          "prompt": "Auf der Grünen Woche ___ Besucher ein fantastisches Angebot."
         },
         {
           "label": "d · Verb 6",
           "answers": [
             "werden"
-          ]
+          ],
+          "prompt": "Seit einigen Jahren ___ Bioprodukte immer wichtiger."
         }
       ]
     },
@@ -51344,7 +53006,8 @@ window.SPEKTRUM_BANKS={
             "richtig",
             "true"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Berlin hat mehr Besucher als im letzten Jahr."
         },
         {
           "answers": [
@@ -51352,7 +53015,8 @@ window.SPEKTRUM_BANKS={
             "falsch",
             "false"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Die Touristen besuchen in Berlin am liebsten Partys."
         },
         {
           "answers": [
@@ -51360,7 +53024,8 @@ window.SPEKTRUM_BANKS={
             "falsch",
             "false"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Die Touristen sind im Durchschnitt 34 Jahre alt."
         },
         {
           "answers": [
@@ -51368,7 +53033,8 @@ window.SPEKTRUM_BANKS={
             "richtig",
             "true"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Die Piloten der Lufthansa streiken schon zum zweiten Mal in diesem Jahr."
         },
         {
           "answers": [
@@ -51376,7 +53042,8 @@ window.SPEKTRUM_BANKS={
             "falsch",
             "false"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Man kann morgen nicht in die USA fliegen."
         },
         {
           "answers": [
@@ -51384,7 +53051,8 @@ window.SPEKTRUM_BANKS={
             "richtig",
             "true"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Der Bundespräsident empfängt den Ministerpräsidenten aus China."
         },
         {
           "answers": [
@@ -51392,7 +53060,8 @@ window.SPEKTRUM_BANKS={
             "richtig",
             "true"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Die deutschen Politiker sprechen mit den chinesischen Gästen über wirtschaftliche Themen."
         }
       ],
       "type": "choice",
@@ -51407,55 +53076,64 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "liegt"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Im internationalen Vergleich ___ Berlin bei den Besucherzahlen auf dem dritten Platz in Europa."
         },
         {
           "answers": [
             "zeigen"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Das ___ die Tourismuszahlen der Stadt Berlin."
         },
         {
           "answers": [
             "interessieren"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Die Themen Zeitgeschichte und Kultur ___ die Touristen besonders."
         },
         {
           "answers": [
             "streiken"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Ab heute ___ wieder die Piloten der Lufthansa."
         },
         {
           "answers": [
             "will"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Die Lufthansa ___ den Konzern umbauen."
         },
         {
           "answers": [
             "bekommen"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Neue Piloten sollen weniger Gehalt ___."
         },
         {
           "answers": [
             "besucht"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Heute ___ der chinesische Ministerpräsident Deutschland."
         },
         {
           "answers": [
             "steht"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "Als Erstes ___ ein Besuch beim Bundespräsidenten im Schloss Bellevue auf dem Plan."
         },
         {
           "answers": [
             "finden statt"
           ],
-          "label": "9"
+          "label": "9",
+          "prompt": "Danach ___ Gespräche im Bundeskanzleramt ___."
         }
       ]
     },
@@ -51465,85 +53143,99 @@ window.SPEKTRUM_BANKS={
           "label": "a · Wort 1",
           "answers": [
             "Leben"
-          ]
+          ],
+          "prompt": "Das Zentrum beschäftigt sich mit Paul Klee, seinem ___ und seinen Bildern."
         },
         {
           "label": "a · Wort 2",
           "answers": [
             "Sammlung"
-          ]
+          ],
+          "prompt": "Die ___ umfasst rund 4 000 Gemälde, Aquarelle und Zeichnungen."
         },
         {
           "label": "a · Wort 3",
           "answers": [
             "Angebote"
-          ]
+          ],
+          "prompt": "Es gibt besondere kulturelle ___, zum Beispiel ein Kindermuseum."
         },
         {
           "label": "a · Wort 4",
           "answers": [
             "Eintritt"
-          ]
+          ],
+          "prompt": "Welche Preisangabe steht über der Liste? ___: CHF 20."
         },
         {
           "label": "a · Wort 5",
           "answers": [
             "Kinder"
-          ]
+          ],
+          "prompt": "___ / Jugendliche von 6 bis 16 Jahren: CHF 7."
         },
         {
           "label": "b · Präposition 1",
           "answers": [
             "für"
-          ]
+          ],
+          "prompt": "Zwei Eintrittskarten ___ Erwachsene, bitte."
         },
         {
           "label": "b · Präposition 2",
           "answers": [
             "von"
-          ]
+          ],
+          "prompt": "Dann bekomme ich 40 Franken ___ Ihnen."
         },
         {
           "label": "b · Präposition 3",
           "answers": [
             "mit"
-          ]
+          ],
+          "prompt": "Kann ich auch ___ Karte bezahlen?"
         },
         {
           "label": "b · Präposition 4",
           "answers": [
             "Bis"
-          ]
+          ],
+          "prompt": "Wie lange haben Sie heute geöffnet? ___ 17 Uhr."
         },
         {
           "label": "b · Präposition 5",
           "answers": [
             "Von"
-          ]
+          ],
+          "prompt": "___ Dienstag bis Sonntag haben wir geöffnet."
         },
         {
           "label": "b · Präposition 6",
           "answers": [
             "bis"
-          ]
+          ],
+          "prompt": "Von Dienstag ___ Sonntag haben wir geöffnet."
         },
         {
           "label": "b · Präposition 7",
           "answers": [
             "bis"
-          ]
+          ],
+          "prompt": "Wir haben jeden Tag ___ 17 Uhr geöffnet."
         },
         {
           "label": "b · Präposition 8",
           "answers": [
             "Am"
-          ]
+          ],
+          "prompt": "___ Montag haben wir geschlossen."
         },
         {
           "label": "b · Präposition 9",
           "answers": [
             "für"
-          ]
+          ],
+          "prompt": "Danke ___ die Auskunft."
         }
       ]
     },
@@ -51553,61 +53245,71 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "älteste"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Der Tiergarten Schönbrunn ist der ___ Zoo der Welt."
         },
         {
           "answers": [
             "1752"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "In welchem Jahr hat Kaiser Franz I. den Tiergarten gegründet?"
         },
         {
           "answers": [
             "Bester Zoo Europas"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Welchen europäischen Titel hat der Tiergarten mehrmals erhalten?"
         },
         {
           "answers": [
             "2 Millionen"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Wie viele Besucher kommen jährlich ungefähr?"
         },
         {
           "answers": [
             "365"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "An wie vielen Tagen im Jahr ist der Tiergarten geöffnet?"
         },
         {
           "answers": [
             "18.30 Uhr"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Was ist laut Hörtext die späteste Schließzeit?"
         },
         {
           "answers": [
             "halbe"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Eine ___ Stunde vor Ende der Besuchszeit kann man keine Tickets mehr kaufen."
         },
         {
           "answers": [
             "16,50 Euro"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "Wie viel kostet der Eintritt für Erwachsene laut Hörtext?"
         },
         {
           "answers": [
             "8 Euro"
           ],
-          "label": "9"
+          "label": "9",
+          "prompt": "Wie viel kostet der Eintritt für Kinder und Jugendliche?"
         },
         {
           "answers": [
             "frei"
           ],
-          "label": "10"
+          "label": "10",
+          "prompt": "Für Kinder bis 6 Jahre ist der Zoobesuch ___."
         }
       ]
     },
@@ -51617,55 +53319,64 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "Einladung"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Vielen Dank für die ___."
         },
         {
           "answers": [
             "Wunsch"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Hast du einen besonderen ___?"
         },
         {
           "answers": [
             "Kuchen"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Soll ich etwas mitbringen (___, Getränke)?"
         },
         {
           "answers": [
             "Party"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Ich freue mich auf die ___."
         },
         {
           "answers": [
             "Grüße"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Viele ___"
         },
         {
           "answers": [
             "kommen"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Leider kann ich nicht zu deiner Geburtstagsparty ___."
         },
         {
           "answers": [
             "fahren"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Ich muss am Wochenende nach Dortmund ___."
         },
         {
           "answers": [
             "bin"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "Ich ___ erst am Montag zurück."
         },
         {
           "answers": [
             "rufe an"
           ],
-          "label": "9"
+          "label": "9",
+          "prompt": "Ich ___ dich Montagabend ___."
         }
       ]
     },
@@ -51718,85 +53429,99 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "mussten"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Wir ___ unseren Hund in die Tierklinik bringen. (müssen)"
         },
         {
           "answers": [
             "mussten"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Wir ___ meine Tante besuchen. (müssen)"
         },
         {
           "answers": [
             "konnte"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Sie ___ nicht alleine aufräumen und kochen. (können)"
         },
         {
           "answers": [
             "mussten"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Wir ___ ihr helfen. (müssen)"
         },
         {
           "answers": [
             "wollte"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Ich ___ die Übungen machen. (wollen)"
         },
         {
           "answers": [
             "konnte"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Aber ich ___ mein Buch nicht finden. (können)"
         },
         {
           "answers": [
             "konnte"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Ohne Buch ___ ich natürlich nichts machen. (können)"
         },
         {
           "answers": [
             "musste"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "Ich ___ meinem Vater helfen. (müssen)"
         },
         {
           "answers": [
             "mussten"
           ],
-          "label": "9"
+          "label": "9",
+          "prompt": "Wir ___ das Auto reparieren. (müssen)"
         },
         {
           "answers": [
             "wollte"
           ],
-          "label": "10"
+          "label": "10",
+          "prompt": "Ich ___ die Übungen machen, aber es war schon 23.00 Uhr. (wollen)"
         },
         {
           "answers": [
             "musste"
           ],
-          "label": "11"
+          "label": "11",
+          "prompt": "Meine Mutter ist ins Zimmer gekommen und ich ___ das Licht ausmachen. (müssen)"
         },
         {
           "answers": [
             "konnte"
           ],
-          "label": "12"
+          "label": "12",
+          "prompt": "Ich ___ nicht mehr lesen oder schreiben. (können)"
         },
         {
           "answers": [
             "wollte"
           ],
-          "label": "13"
+          "label": "13",
+          "prompt": "Mein kleiner Bruder ___ seine Hausaufgaben nicht alleine machen. (wollen)"
         },
         {
           "answers": [
             "musste"
           ],
-          "label": "14"
+          "label": "14",
+          "prompt": "Ich ___ ihm helfen. (müssen)"
         }
       ]
     },
@@ -51806,73 +53531,85 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "bedienen"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Emma und Julia arbeiten als Kellnerinnen. Sie ___ Gäste."
         },
         {
           "answers": [
             "bin"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Ich ___ Ingenieur."
         },
         {
           "answers": [
             "habe"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Ich ___ jeden Tag Besprechungen."
         },
         {
           "answers": [
             "studiert"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Alex ___ an der Universität Dortmund."
         },
         {
           "answers": [
             "liest"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Er ___ viele Bücher."
         },
         {
           "answers": [
             "ist"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Dr. Klein ___ Arzt."
         },
         {
           "answers": [
             "untersucht"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Er ___ Patienten."
         },
         {
           "answers": [
             "seid"
           ],
-          "label": "8"
+          "label": "8",
+          "prompt": "Ihr ___ Manager."
         },
         {
           "answers": [
             "Präsentiert"
           ],
-          "label": "9"
+          "label": "9",
+          "prompt": "___ ihr viele Projekte?"
         },
         {
           "answers": [
             "ist"
           ],
-          "label": "10"
+          "label": "10",
+          "prompt": "Herr Ebert ___ unser Chef."
         },
         {
           "answers": [
             "spricht"
           ],
-          "label": "11"
+          "label": "11",
+          "prompt": "Er ___ heute erst mit den Mitarbeitern."
         },
         {
           "answers": [
             "fährt"
           ],
-          "label": "12"
+          "label": "12",
+          "prompt": "Danach ___ er nach Köln."
         }
       ]
     },
@@ -51882,31 +53619,36 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "muss"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Außerdem ___ sie die Gäste vom Flughafen abholen."
         },
         {
           "answers": [
             "soll"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Der Chef hat gesagt, sie ___ die Produktbeschreibung übersetzen."
         },
         {
           "answers": [
             "kann"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Frau Müller ___ die Dokumente aber nicht übersetzen …"
         },
         {
           "answers": [
             "kann"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "… denn sie ___ kein Französisch."
         },
         {
           "answers": [
             "will"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Frau Müller ___ heute pünktlich nach Hause gehen, sie hat Karten für die Oper."
         }
       ]
     },
@@ -51916,25 +53658,29 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "Esst mehr Obst"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Geben Sie den Tipp mit ihr: mehr Obst essen."
         },
         {
           "answers": [
             "Treib regelmäßig Sport"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Geben Sie den Tipp mit du: regelmäßig Sport treiben."
         },
         {
           "answers": [
             "Arbeite nicht so viel"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Geben Sie den Tipp mit du: nicht so viel arbeiten."
         },
         {
           "answers": [
             "Geht nicht jeden Abend aus"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Geben Sie den Tipp mit ihr: nicht jeden Abend ausgehen."
         }
       ]
     },
@@ -51944,31 +53690,36 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "Mir"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "___ geht es gut."
         },
         {
           "answers": [
             "dich"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Ich habe ___ lange nicht gesehen."
         },
         {
           "answers": [
             "ich"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Seit ein paar Wochen habe ___ eine neue Wohnung."
         },
         {
           "answers": [
             "dich"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Ich möchte ___ einladen."
         },
         {
           "answers": [
             "du"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Kannst ___ kommen?"
         }
       ]
     },
@@ -51978,32 +53729,37 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "Wann"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "___ beginnt das Fußballspiel?"
         },
         {
           "answers": [
             "Wie lange"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "___ möchten Sie bleiben? (Dauer)"
         },
         {
           "answers": [
             "Wohin"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "___ ist Sebastian gefahren?"
         },
         {
           "answers": [
             "Was",
             "Wie viel"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "___ kostet der Pullover?"
         },
         {
           "answers": [
             "Wie"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "___ geht es dir?"
         }
       ]
     },
@@ -52013,43 +53769,50 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "mit"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Ich trinke meinen Kaffee nur ___ Milch."
         },
         {
           "answers": [
             "auf"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Der Brief liegt ___ dem Tisch."
         },
         {
           "answers": [
             "um"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Der Unterricht beginnt ___ 15.00 Uhr."
         },
         {
           "answers": [
             "seit"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Ich lerne ___ zwei Jahren Deutsch."
         },
         {
           "answers": [
             "zu"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "Ich fahre ___ Claudia."
         },
         {
           "answers": [
             "von"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "Die Vorwahl ___ Deutschland ist 0049."
         },
         {
           "answers": [
             "Ohne"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "___ Sonnenbrille fahre ich nie in den Urlaub."
         }
       ]
     },
@@ -52059,43 +53822,50 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "Am schönsten"
           ],
-          "label": "1"
+          "label": "1",
+          "prompt": "Urlaub in den Bergen finde ich schöner. ___ finde ich Urlaub am Meer."
         },
         {
           "answers": [
             "besser"
           ],
-          "label": "2"
+          "label": "2",
+          "prompt": "Der Wein schmeckt gut. Dieser Wein schmeckt ___."
         },
         {
           "answers": [
             "am besten"
           ],
-          "label": "3"
+          "label": "3",
+          "prompt": "Mir persönlich schmeckt dieser Wein hier ___. (gut, Superlativ)"
         },
         {
           "answers": [
             "mehr"
           ],
-          "label": "4"
+          "label": "4",
+          "prompt": "Klaus hat auf der Party viel gegessen. Otto hat noch ___ gegessen."
         },
         {
           "answers": [
             "Am meisten"
           ],
-          "label": "5"
+          "label": "5",
+          "prompt": "___ hat Peter gegessen. (viel, Superlativ)"
         },
         {
           "answers": [
             "höher"
           ],
-          "label": "6"
+          "label": "6",
+          "prompt": "In Berlin sind die Wohnungsmieten hoch, in Frankfurt sind sie aber noch ___."
         },
         {
           "answers": [
             "höchsten"
           ],
-          "label": "7"
+          "label": "7",
+          "prompt": "Die ___ Mieten zahlt man in München."
         }
       ]
     },
@@ -52105,49 +53875,57 @@ window.SPEKTRUM_BANKS={
           "label": "b · 1",
           "answers": [
             "lernt"
-          ]
+          ],
+          "prompt": "Um 9.30 Uhr ___ Peter für eine Prüfung."
         },
         {
           "label": "b · 2",
           "answers": [
             "macht"
-          ]
+          ],
+          "prompt": "Um 10.00 Uhr ___ Vera Gymnastik."
         },
         {
           "label": "b · 3",
           "answers": [
             "fährt"
-          ]
+          ],
+          "prompt": "Um 10.15 Uhr ___ Konrad nach Köln."
         },
         {
           "label": "b · 4",
           "answers": [
             "geht"
-          ]
+          ],
+          "prompt": "Um 10.30 Uhr ___ Max zum Arzt."
         },
         {
           "label": "b · 5",
           "answers": [
             "schreibt"
-          ]
+          ],
+          "prompt": "Um 10.45 Uhr ___ Olaf eine E-Mail."
         },
         {
           "label": "b · 6",
           "answers": [
             "telefoniert"
-          ]
+          ],
+          "prompt": "Um 11.00 Uhr ___ Otto mit Frau Köhler."
         },
         {
           "label": "b · 7",
           "answers": [
             "hat"
-          ]
+          ],
+          "prompt": "Um 11.30 Uhr ___ der Chef eine Besprechung."
         },
         {
           "label": "b · 8",
           "answers": [
             "macht"
-          ]
+          ],
+          "prompt": "Um 12.00 Uhr ___ Roger Pause."
         }
       ]
     },
@@ -52160,7 +53938,8 @@ window.SPEKTRUM_BANKS={
             "10.10 Uhr",
             "10:10",
             "10.10"
-          ]
+          ],
+          "prompt": "Wie sagt man diese Uhrzeit im Alltag? 10.10 Uhr."
         },
         {
           "label": "b · Uhr 2",
@@ -52169,7 +53948,8 @@ window.SPEKTRUM_BANKS={
             "11.55 Uhr",
             "11:55",
             "11.55"
-          ]
+          ],
+          "prompt": "Wie sagt man diese Uhrzeit im Alltag? 11.55 Uhr."
         },
         {
           "label": "b · Uhr 3",
@@ -52179,7 +53959,8 @@ window.SPEKTRUM_BANKS={
             "14.00 Uhr",
             "14:00",
             "14.00"
-          ]
+          ],
+          "prompt": "Wie sagt man diese Uhrzeit im Alltag? 2.00 Uhr."
         },
         {
           "label": "b · Uhr 4",
@@ -52188,7 +53969,8 @@ window.SPEKTRUM_BANKS={
             "15.30 Uhr",
             "15:30",
             "15.30"
-          ]
+          ],
+          "prompt": "Wie sagt man diese Uhrzeit im Alltag? 3.30 Uhr."
         },
         {
           "label": "b · Uhr 5",
@@ -52197,7 +53979,8 @@ window.SPEKTRUM_BANKS={
             "17.45 Uhr",
             "17:45",
             "17.45"
-          ]
+          ],
+          "prompt": "Wie sagt man diese Uhrzeit im Alltag? 5.45 Uhr."
         },
         {
           "label": "b · Uhr 6",
@@ -52206,7 +53989,8 @@ window.SPEKTRUM_BANKS={
             "18.20 Uhr",
             "18:20",
             "18.20"
-          ]
+          ],
+          "prompt": "Wie sagt man diese Uhrzeit im Alltag? 6.20 Uhr."
         },
         {
           "label": "c · Uhr 1",
@@ -52215,28 +53999,32 @@ window.SPEKTRUM_BANKS={
             "8:00",
             "08:00",
             "8 Uhr"
-          ]
+          ],
+          "prompt": "Ich gehe um ___ zum Arzt."
         },
         {
           "label": "c · Uhr 2",
           "answers": [
             "11.30 Uhr",
             "11:30"
-          ]
+          ],
+          "prompt": "Die Besprechung beginnt um ___."
         },
         {
           "label": "c · Uhr 3",
           "answers": [
             "12.45 Uhr",
             "12:45"
-          ]
+          ],
+          "prompt": "Frau Müller macht um ___ Pause."
         },
         {
           "label": "c · Uhr 4",
           "answers": [
             "15.30 Uhr",
             "15:30"
-          ]
+          ],
+          "prompt": "Susi fährt um ___ nach Berlin."
         },
         {
           "label": "c · Uhr 5",
@@ -52244,14 +54032,16 @@ window.SPEKTRUM_BANKS={
             "10.00 Uhr",
             "10:00",
             "10 Uhr"
-          ]
+          ],
+          "prompt": "Heute geht es nicht. Vielleicht morgen um ___?"
         },
         {
           "label": "c · Uhr 6",
           "answers": [
             "17.15 Uhr",
             "17:15"
-          ]
+          ],
+          "prompt": "Das Fußballspiel beginnt um ___."
         }
       ]
     },
@@ -52261,66 +54051,76 @@ window.SPEKTRUM_BANKS={
           "label": "Aufgabe 1 · Frage",
           "answers": [
             "Wann gehst du ins Museum?"
-          ]
+          ],
+          "prompt": "Stellen Sie eine Wann-Frage: ins Museum gehen."
         },
         {
           "label": "Aufgabe 1 · Antwort",
           "answers": [
             "Ich gehe um 11.30 Uhr ins Museum.",
             "Ich gehe um 11:30 Uhr ins Museum."
-          ]
+          ],
+          "prompt": "Antworten Sie mit der Uhrzeit: Museum · 11.30 Uhr."
         },
         {
           "label": "Aufgabe 2 · Frage",
           "answers": [
             "Wann trinkst du Kaffee?"
-          ]
+          ],
+          "prompt": "Stellen Sie eine Wann-Frage: Kaffee trinken."
         },
         {
           "label": "Aufgabe 2 · Antwort",
           "answers": [
             "Ich trinke um 14.15 Uhr Kaffee.",
             "Ich trinke um 14:15 Uhr Kaffee."
-          ]
+          ],
+          "prompt": "Antworten Sie mit der Uhrzeit: Kaffee · 14.15 Uhr."
         },
         {
           "label": "Aufgabe 3 · Frage",
           "answers": [
             "Wann beginnt der Unterricht?"
-          ]
+          ],
+          "prompt": "Stellen Sie eine Wann-Frage: der Unterricht · beginnen."
         },
         {
           "label": "Aufgabe 3 · Antwort",
           "answers": [
             "Der Unterricht beginnt um 17.00 Uhr.",
             "Der Unterricht beginnt um 17 Uhr."
-          ]
+          ],
+          "prompt": "Antworten Sie mit der Uhrzeit: Unterricht · 17.00 Uhr."
         },
         {
           "label": "Aufgabe 4 · Frage",
           "answers": [
             "Wann ist die Pause?"
-          ]
+          ],
+          "prompt": "Stellen Sie eine Wann-Frage: die Pause · sein."
         },
         {
           "label": "Aufgabe 4 · Antwort",
           "answers": [
             "Die Pause ist um 18.30 Uhr.",
             "Die Pause ist um 18:30 Uhr."
-          ]
+          ],
+          "prompt": "Antworten Sie mit der Uhrzeit: Pause · 18.30 Uhr."
         },
         {
           "label": "Aufgabe 5 · Frage",
           "answers": [
             "Wann spielst du Fußball?"
-          ]
+          ],
+          "prompt": "Stellen Sie eine Wann-Frage: Fußball spielen."
         },
         {
           "label": "Aufgabe 5 · Antwort",
           "answers": [
             "Ich spiele um 20.00 Uhr Fußball.",
             "Ich spiele um 20 Uhr Fußball."
-          ]
+          ],
+          "prompt": "Antworten Sie mit der Uhrzeit: Fußball · 20.00 Uhr."
         }
       ]
     },
@@ -52335,7 +54135,8 @@ window.SPEKTRUM_BANKS={
             "Es geht von 19.30 bis 22.00 Uhr.",
             "zweieinhalb Stunden",
             "2,5 Stunden"
-          ]
+          ],
+          "prompt": "Wie lange dauert das Konzert?"
         },
         {
           "label": "b · 2",
@@ -52343,7 +54144,8 @@ window.SPEKTRUM_BANKS={
             "Der Chef fährt um 16.30 Uhr nach Berlin.",
             "16.30 Uhr",
             "16:30"
-          ]
+          ],
+          "prompt": "Wann fährt der Chef nach Berlin?"
         },
         {
           "label": "b · 3",
@@ -52351,7 +54153,8 @@ window.SPEKTRUM_BANKS={
             "Die Fahrt dauert drei Stunden.",
             "drei Stunden",
             "3 Stunden"
-          ]
+          ],
+          "prompt": "Wie lange dauert die Fahrt?"
         },
         {
           "label": "b · 4",
@@ -52359,7 +54162,8 @@ window.SPEKTRUM_BANKS={
             "Die Videokonferenz beginnt um 10.00 Uhr.",
             "10.00 Uhr",
             "10 Uhr"
-          ]
+          ],
+          "prompt": "Wann beginnt die Videokonferenz?"
         },
         {
           "label": "b · 5",
@@ -52367,7 +54171,8 @@ window.SPEKTRUM_BANKS={
             "Der Unterricht beginnt um 18.30 Uhr.",
             "18.30 Uhr",
             "18:30"
-          ]
+          ],
+          "prompt": "Wann beginnt der Unterricht?"
         },
         {
           "label": "b · 6",
@@ -52377,7 +54182,8 @@ window.SPEKTRUM_BANKS={
             "Der Unterricht dauert 2 1/2 Stunden.",
             "zweieinhalb Stunden",
             "2,5 Stunden"
-          ]
+          ],
+          "prompt": "Wie lange dauert der Unterricht?"
         },
         {
           "label": "b · 7",
@@ -52385,13 +54191,15 @@ window.SPEKTRUM_BANKS={
             "Das Fußballspiel ist um 16.30 Uhr zu Ende.",
             "16.30 Uhr",
             "16:30"
-          ]
+          ],
+          "prompt": "Wann ist das Fußballspiel zu Ende?"
         },
         {
           "label": "c · 1 · Frage",
           "answers": [
             "Wie lange dauert die Pause?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach der Zeit: Dauer der Pause."
         },
         {
           "label": "c · 1 · Antwort",
@@ -52399,13 +54207,15 @@ window.SPEKTRUM_BANKS={
             "Die Pause dauert eine Stunde.",
             "eine Stunde",
             "1 Stunde"
-          ]
+          ],
+          "prompt": "Antworten Sie mit der Zeitangabe: Pause · eine Stunde."
         },
         {
           "label": "c · 2 · Frage",
           "answers": [
             "Wie lange dauert die Besprechung?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach der Zeit: Dauer der Besprechung."
         },
         {
           "label": "c · 2 · Antwort",
@@ -52413,13 +54223,15 @@ window.SPEKTRUM_BANKS={
             "Die Besprechung dauert drei Stunden.",
             "drei Stunden",
             "3 Stunden"
-          ]
+          ],
+          "prompt": "Antworten Sie mit der Zeitangabe: Besprechung · drei Stunden."
         },
         {
           "label": "c · 3 · Frage",
           "answers": [
             "Wie lange lernst du heute für die Prüfung?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach der Zeit: Lernen für die Prüfung."
         },
         {
           "label": "c · 3 · Antwort",
@@ -52427,26 +54239,30 @@ window.SPEKTRUM_BANKS={
             "Ich lerne heute vier Stunden.",
             "vier Stunden",
             "4 Stunden"
-          ]
+          ],
+          "prompt": "Antworten Sie mit der Zeitangabe: für die Prüfung lernen · vier Stunden."
         },
         {
           "label": "c · 4 · Frage",
           "answers": [
             "Wie lange fährt Frau Müller nach Hause?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach der Zeit: Frau Müllers Heimfahrt."
         },
         {
           "label": "c · 4 · Antwort",
           "answers": [
             "Frau Müller fährt 15 Minuten.",
             "15 Minuten"
-          ]
+          ],
+          "prompt": "Antworten Sie mit der Zeitangabe: nach Hause fahren · 15 Minuten."
         },
         {
           "label": "c · 5 · Frage",
           "answers": [
             "Bis wann geht deine Präsentation?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach der Zeit: Ende deiner Präsentation."
         },
         {
           "label": "c · 5 · Antwort",
@@ -52454,7 +54270,8 @@ window.SPEKTRUM_BANKS={
             "Meine Präsentation geht bis 15.50 Uhr.",
             "bis 15.50 Uhr",
             "15.50 Uhr"
-          ]
+          ],
+          "prompt": "Antworten Sie mit der Zeitangabe: Präsentation · bis 15.50 Uhr."
         }
       ]
     },
@@ -52464,43 +54281,50 @@ window.SPEKTRUM_BANKS={
           "label": "b · 1",
           "answers": [
             "Wir können am Freitag zusammen Hausaufgaben machen."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: wir · am Freitag · zusammen Hausaufgaben machen · können"
         },
         {
           "label": "b · 2",
           "answers": [
             "Du kannst die E-Mail morgen schreiben."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: du · die E-Mail schreiben · morgen · können"
         },
         {
           "label": "b · 3",
           "answers": [
             "Klaus kann sein Projekt schon am Mittwoch präsentieren."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: Klaus · sein Projekt präsentieren · schon am Mittwoch · können"
         },
         {
           "label": "b · 4",
           "answers": [
             "Wir können am Samstag zusammen kochen."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: wir · am Samstag · zusammen kochen · können"
         },
         {
           "label": "b · 5",
           "answers": [
             "Wann können wir zusammen nach Wien fahren?"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: wann · wir · zusammen · nach Wien fahren · können?"
         },
         {
           "label": "b · 6",
           "answers": [
             "Vielleicht können wir am Sonntag zusammen ein Bier trinken."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: vielleicht · wir · am Sonntag · zusammen · ein Bier trinken · können"
         },
         {
           "label": "b · 7",
           "answers": [
             "Kannst du am Freitag?"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: du · am Freitag · können?"
         }
       ]
     },
@@ -52511,7 +54335,8 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "Die Menschen in Österreich sehen montags bis freitags 2 Stunden fern.",
             "Die Österreicher sehen montags bis freitags zwei Stunden fern."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: fernsehen · montags bis freitags · 2 Stunden."
         },
         {
           "label": "Satz 2",
@@ -52519,21 +54344,24 @@ window.SPEKTRUM_BANKS={
             "Am Wochenende sehen sie zweieinhalb Stunden fern.",
             "Am Wochenende sehen sie 2,5 Stunden fern.",
             "Am Wochenende sehen sie 2 1/2 Stunden fern."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: fernsehen · am Wochenende · 2½ Stunden."
         },
         {
           "label": "Satz 3",
           "answers": [
             "Montags bis freitags treiben sie 27 Minuten Sport.",
             "Die Österreicher treiben montags bis freitags 27 Minuten Sport."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: Sport treiben · montags bis freitags · 27 Minuten."
         },
         {
           "label": "Satz 4",
           "answers": [
             "Am Wochenende treiben sie 45 Minuten Sport.",
             "Die Österreicher treiben am Wochenende 45 Minuten Sport."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: Sport treiben · am Wochenende · 45 Minuten."
         },
         {
           "label": "Satz 5",
@@ -52542,14 +54370,16 @@ window.SPEKTRUM_BANKS={
             "Am Wochenende feiern sie etwa 2 Stunden Partys.",
             "Am Wochenende sprechen sie etwa zwei Stunden mit Freunden.",
             "Am Wochenende feiern sie etwa zwei Stunden Partys."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: mit Freunden sprechen · am Wochenende · etwa 2 Stunden."
         },
         {
           "label": "Satz 6",
           "answers": [
             "Täglich lesen sie 24 Minuten Bücher, Zeitungen oder Zeitschriften.",
             "Die Österreicher lesen täglich 24 Minuten."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: Bücher, Zeitungen oder Zeitschriften lesen · täglich · 24 Minuten."
         },
         {
           "label": "Satz 7",
@@ -52557,7 +54387,8 @@ window.SPEKTRUM_BANKS={
             "Junge Leute in Österreich spielen täglich anderthalb Stunden Computerspiele.",
             "Junge Leute in Österreich spielen täglich 1,5 Stunden Computerspiele.",
             "Junge Leute spielen täglich 1 1/2 Stunden Computerspiele."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: junge Leute · Computerspiele spielen · täglich · 1½ Stunden."
         },
         {
           "label": "Satz 8",
@@ -52565,7 +54396,8 @@ window.SPEKTRUM_BANKS={
             "Die Österreicher hören morgens anderthalb Stunden Radio.",
             "Die Österreicher hören morgens 1,5 Stunden Radio.",
             "Die Österreicher hören morgens 1 1/2 Stunden Radio."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: Radio hören · morgens · 1½ Stunden."
         }
       ]
     },
@@ -52575,57 +54407,66 @@ window.SPEKTRUM_BANKS={
           "label": "a · Frage 1",
           "answers": [
             "Wann frühstückst du?"
-          ]
+          ],
+          "prompt": "Formulieren Sie die Interviewfrage: wann · frühstücken."
         },
         {
           "label": "a · Frage 2",
           "answers": [
             "Wie lange hörst du morgens Radio?"
-          ]
+          ],
+          "prompt": "Formulieren Sie die Interviewfrage: wie lange · morgens Radio hören."
         },
         {
           "label": "a · Frage 3",
           "answers": [
             "Wann fährst du ins Büro?",
             "Wann fährst du zur Universität?"
-          ]
+          ],
+          "prompt": "Formulieren Sie die Interviewfrage: wann · ins Büro / zur Universität fahren."
         },
         {
           "label": "a · Frage 4",
           "answers": [
             "Wann fängt die Arbeit an?",
             "Wann fängt der Unterricht an?"
-          ]
+          ],
+          "prompt": "Formulieren Sie die Interviewfrage: wann · die Arbeit / der Unterricht anfangen."
         },
         {
           "label": "a · Frage 5",
           "answers": [
             "Wie lange machst du Mittagspause?"
-          ]
+          ],
+          "prompt": "Formulieren Sie die Interviewfrage: wie lange · Mittagspause machen."
         },
         {
           "label": "a · Frage 6",
           "answers": [
             "Wann kaufst du ein?"
-          ]
+          ],
+          "prompt": "Formulieren Sie die Interviewfrage: wann · einkaufen."
         },
         {
           "label": "a · Frage 7",
           "answers": [
             "Wie lange siehst du fern?"
-          ]
+          ],
+          "prompt": "Formulieren Sie die Interviewfrage: wie lange · fernsehen."
         },
         {
           "label": "a · Frage 8",
           "answers": [
             "Wie lange treibst du Sport?"
-          ]
+          ],
+          "prompt": "Formulieren Sie die Interviewfrage: wie lange · Sport treiben."
         },
         {
           "label": "a · Frage 9",
           "answers": [
             "Wann gehst du abends ins Bett?"
-          ]
+          ],
+          "prompt": "Formulieren Sie die Interviewfrage: wann · abends ins Bett gehen."
         }
       ]
     },
@@ -52635,25 +54476,29 @@ window.SPEKTRUM_BANKS={
           "label": "Anzeige 1",
           "answers": [
             "A"
-          ]
+          ],
+          "prompt": "Welche Anzeige passt? Sie möchten abends Salsa tanzen."
         },
         {
           "label": "Anzeige 2",
           "answers": [
             "B"
-          ]
+          ],
+          "prompt": "Welche Anzeige bietet am Wochenende einen Kochkurs an?"
         },
         {
           "label": "Anzeige 3",
           "answers": [
             "A"
-          ]
+          ],
+          "prompt": "Wo können Sie am Wochenende Italienisch für die Arbeit lernen?"
         },
         {
           "label": "Anzeige 4",
           "answers": [
             "B"
-          ]
+          ],
+          "prompt": "Wo können Sie am Montagvormittag mit anderen Sport treiben?"
         }
       ]
     },
@@ -52665,21 +54510,24 @@ window.SPEKTRUM_BANKS={
             "9.30 Uhr",
             "9:30",
             "09:30"
-          ]
+          ],
+          "prompt": "Schreiben Sie die Uhrzeit in Ziffern: halb zehn."
         },
         {
           "label": "Uhrzeit 2",
           "answers": [
             "14.23 Uhr",
             "14:23"
-          ]
+          ],
+          "prompt": "Schreiben Sie die Uhrzeit in Ziffern: vierzehn Uhr dreiundzwanzig."
         },
         {
           "label": "Uhrzeit 3",
           "answers": [
             "11.45 Uhr",
             "11:45"
-          ]
+          ],
+          "prompt": "Schreiben Sie die Uhrzeit in Ziffern: Viertel vor zwölf."
         },
         {
           "label": "Uhrzeit 4",
@@ -52687,21 +54535,24 @@ window.SPEKTRUM_BANKS={
             "9.10 Uhr",
             "9:10",
             "09:10"
-          ]
+          ],
+          "prompt": "Schreiben Sie die Uhrzeit in Ziffern: zehn nach neun."
         },
         {
           "label": "Uhrzeit 5",
           "answers": [
             "17.19 Uhr",
             "17:19"
-          ]
+          ],
+          "prompt": "Schreiben Sie die Uhrzeit in Ziffern: siebzehn Uhr neunzehn."
         },
         {
           "label": "Uhrzeit 6",
           "answers": [
             "11.15 Uhr",
             "11:15"
-          ]
+          ],
+          "prompt": "Schreiben Sie die Uhrzeit in Ziffern: Viertel nach elf."
         }
       ]
     },
@@ -52711,43 +54562,50 @@ window.SPEKTRUM_BANKS={
           "label": "Satz 1",
           "answers": [
             "Ich kann gut kochen."
-          ]
+          ],
+          "prompt": "Was kann ich auf dem Bild mit dem Essen gut machen?"
         },
         {
           "label": "Satz 2",
           "answers": [
             "Herr König kann gut fotografieren."
-          ]
+          ],
+          "prompt": "Was kann Herr König mit der Kamera gut machen?"
         },
         {
           "label": "Satz 3",
           "answers": [
             "Sie kann gut Tennis spielen."
-          ]
+          ],
+          "prompt": "Welchen Sport kann sie mit dem Schläger gut spielen?"
         },
         {
           "label": "Satz 4",
           "answers": [
             "Ihr könnt gut Fahrrad fahren."
-          ]
+          ],
+          "prompt": "Was könnt ihr auf zwei Rädern gut machen?"
         },
         {
           "label": "Satz 5",
           "answers": [
             "Ihr könnt gut schwimmen."
-          ]
+          ],
+          "prompt": "Was könnt ihr im Wasser gut machen?"
         },
         {
           "label": "Satz 6",
           "answers": [
             "Herr Kunze und Herr Bauer können gut Schach spielen."
-          ]
+          ],
+          "prompt": "Welches Brettspiel können Herr Kunze und Herr Bauer gut spielen?"
         },
         {
           "label": "Satz 7",
           "answers": [
             "Sie können gut Handball spielen."
-          ]
+          ],
+          "prompt": "Welchen Mannschaftssport können sie auf dem Bild gut spielen?"
         }
       ]
     },
@@ -52758,37 +54616,43 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "Ich kann am Sonntag Tennis spielen.",
             "Ich kann am Samstag Tennis spielen."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: ich · am Sonntag · Tennis spielen · können"
         },
         {
           "label": "Satz 2",
           "answers": [
             "Kannst du gut Gitarre spielen?"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: du · gut · Gitarre spielen · können?"
         },
         {
           "label": "Satz 3",
           "answers": [
             "Ich kann Petra morgen besuchen."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: ich · Petra · morgen · besuchen · können"
         },
         {
           "label": "Satz 4",
           "answers": [
             "Wann können wir zusammen kochen?"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: wann · wir · zusammen kochen · können?"
         },
         {
           "label": "Satz 5",
           "answers": [
             "Du kannst jetzt Pause machen."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: du · jetzt · Pause machen · können"
         },
         {
           "label": "Satz 6",
           "answers": [
             "Ihr könnt heute zwei Stunden fernsehen."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: ihr · heute · zwei Stunden · fernsehen · können"
         }
       ]
     },
@@ -52798,57 +54662,66 @@ window.SPEKTRUM_BANKS={
           "label": "Satz 1",
           "answers": [
             "Sie besucht jeden Tag Vorlesungen und Seminare."
-          ]
+          ],
+          "prompt": "Gisela ist Studentin. Was macht sie oder er beruflich?"
         },
         {
           "label": "Satz 2",
           "answers": [
             "Er bedient Gäste."
-          ]
+          ],
+          "prompt": "Karl arbeitet als Kellner. Was macht sie oder er beruflich?"
         },
         {
           "label": "Satz 3",
           "answers": [
             "Sie entwickelt Computerprogramme."
-          ]
+          ],
+          "prompt": "Paula ist Informatikerin. Was macht sie oder er beruflich?"
         },
         {
           "label": "Satz 4",
           "answers": [
             "Er untersucht Patienten."
-          ]
+          ],
+          "prompt": "Dr. Klein ist Hausarzt. Was macht sie oder er beruflich?"
         },
         {
           "label": "Satz 5",
           "answers": [
             "Sie unterrichtet Kinder."
-          ]
+          ],
+          "prompt": "Frau Keller ist Lehrerin. Was macht sie oder er beruflich?"
         },
         {
           "label": "Satz 6",
           "answers": [
             "Er steht um 6.00 Uhr auf.",
             "Er steht um 6 Uhr auf."
-          ]
+          ],
+          "prompt": "Andreas ist Manager. Was macht sie oder er beruflich?"
         },
         {
           "label": "Satz 7",
           "answers": [
             "Sie kauft Produkte für ihre Firma ein."
-          ]
+          ],
+          "prompt": "Frau Limbach ist Logistikmanagerin. Was macht sie oder er beruflich?"
         },
         {
           "label": "Satz 8",
           "answers": [
             "Sie beginnt um 8.00 Uhr mit der Arbeit.",
             "Sie beginnt um 8 Uhr mit der Arbeit."
-          ]
+          ],
+          "prompt": "Lydia ist Sekretärin. Was macht sie oder er beruflich?"
         },
         {
           "label": "Satz 9",
           "answers": [
             "Sie malt viele Bilder."
-          ]
+          ],
+          "prompt": "Frida ist Künstlerin. Was macht sie oder er beruflich?"
         }
       ]
     },
@@ -52858,67 +54731,78 @@ window.SPEKTRUM_BANKS={
           "label": "Rätsel 1",
           "answers": [
             "FRAU"
-          ]
+          ],
+          "prompt": "Ich möchte bitte ___ Ehrmann sprechen."
         },
         {
           "label": "Rätsel 2",
           "answers": [
             "DRINGEND"
-          ]
+          ],
+          "prompt": "Ist es ___?"
         },
         {
           "label": "Rätsel 3",
           "answers": [
             "PROJEKT"
-          ]
+          ],
+          "prompt": "Ja, ich möchte ein ___ präsentieren."
         },
         {
           "label": "Rätsel 4",
           "answers": [
             "BESPRECHUNG"
-          ]
+          ],
+          "prompt": "Frau Ehrmann hat gerade eine ___."
         },
         {
           "label": "Rätsel 5",
           "answers": [
             "AM"
-          ]
+          ],
+          "prompt": "Hat Frau Ehrmann ___ Nachmittag Zeit?"
         },
         {
           "label": "Rätsel 6",
           "answers": [
             "BERICHT"
-          ]
+          ],
+          "prompt": "Dann schreibt Frau Ehrmann einen ___."
         },
         {
           "label": "Rätsel 7",
           "answers": [
             "LEIDER"
-          ]
+          ],
+          "prompt": "Sie können heute ___ nicht mit Frau Ehrmann sprechen."
         },
         {
           "label": "Rätsel 8",
           "answers": [
             "DONNERSTAG"
-          ]
+          ],
+          "prompt": "Vielleicht ist es am ___ möglich."
         },
         {
           "label": "Rätsel 9",
           "answers": [
             "RUFE"
-          ]
+          ],
+          "prompt": "Dann ___ ich morgen wieder an."
         },
         {
           "label": "Rätsel 10",
           "answers": [
             "KONFERENZ"
-          ]
+          ],
+          "prompt": "Am Vormittag besucht Frau Ehrmann eine ___."
         },
         {
           "label": "Lösungswort",
           "answers": [
             "Tagesablauf"
-          ]
+          ],
+          "prompt": "Wie lautet das Lösungswort des Telefonrätsels?"
         }
       ]
     },
@@ -52928,55 +54812,64 @@ window.SPEKTRUM_BANKS={
           "label": "Reporter · Frage 1",
           "answers": [
             "Um wie viel Uhr stehen Sie auf?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach der Uhrzeit: „Ich stehe meistens um 7.00 Uhr auf.“"
         },
         {
           "label": "Reporter · Frage 2",
           "answers": [
             "Was frühstücken Sie?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach dem Frühstück: „Ich frühstücke nicht.“"
         },
         {
           "label": "Reporter · Frage 3",
           "answers": [
             "Machen Sie Gymnastik?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach Gymnastik: „Nein, ich mache keine Gymnastik.“"
         },
         {
           "label": "Reporter · Frage 4",
           "answers": [
             "Wann fahren Sie ins Büro?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach der Uhrzeit: „Ich fahre um 8.00 Uhr ins Büro.“"
         },
         {
           "label": "Reporter · Frage 5",
           "answers": [
             "Fahren Sie mit dem Auto?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach dem Verkehrsmittel: „Ja, ich fahre mit dem Auto.“"
         },
         {
           "label": "Reporter · Frage 6",
           "answers": [
             "Was machen Sie im Büro?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach den Tätigkeiten im Büro: „Ich recherchiere im Internet, schreibe Artikel …“"
         },
         {
           "label": "Reporter · Frage 7",
           "answers": [
             "Wann haben Sie Mittagspause?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach der Mittagspause: „Von 12.00 bis 12.30 Uhr.“"
         },
         {
           "label": "Reporter · Frage 8",
           "answers": [
             "Was machen Sie am Abend?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach dem Abend: „Ich gehe ins Fitnessstudio oder mit Freunden in ein Restaurant.“"
         },
         {
           "label": "Reporter · Frage 9",
           "answers": [
             "Wann gehen Sie ins Bett?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach dem Schlafengehen: „Um halb zwölf oder um Mitternacht.“"
         }
       ]
     },
@@ -53249,121 +55142,141 @@ window.SPEKTRUM_BANKS={
           "label": "a · du 1 · Frage",
           "answers": [
             "Trinkst du gern Orangensaft?"
-          ]
+          ],
+          "prompt": "Fragen Sie mit du: gern Orangensaft trinken."
         },
         {
           "label": "a · du 1 · Antwort",
           "answers": [
             "Ja, ich trinke gern Orangensaft."
-          ]
+          ],
+          "prompt": "Antworten Sie mit Ja in der Ich-Form: gern Orangensaft trinken."
         },
         {
           "label": "a · du 2 · Frage",
           "answers": [
             "Trinkst du gern Milch?"
-          ]
+          ],
+          "prompt": "Fragen Sie mit du: gern Milch trinken."
         },
         {
           "label": "a · du 2 · Antwort",
           "answers": [
             "Ja, ich trinke gern Milch."
-          ]
+          ],
+          "prompt": "Antworten Sie mit Ja in der Ich-Form: gern Milch trinken."
         },
         {
           "label": "a · du 3 · Frage",
           "answers": [
             "Isst du gern Obst?"
-          ]
+          ],
+          "prompt": "Fragen Sie mit du: gern Obst essen."
         },
         {
           "label": "a · du 3 · Antwort",
           "answers": [
             "Ja, ich esse gern Obst."
-          ]
+          ],
+          "prompt": "Antworten Sie mit Ja in der Ich-Form: gern Obst essen."
         },
         {
           "label": "a · du 4 · Frage",
           "answers": [
             "Magst du Schokolade?"
-          ]
+          ],
+          "prompt": "Fragen Sie mit du: Schokolade mögen."
         },
         {
           "label": "a · du 4 · Antwort",
           "answers": [
             "Ja, ich mag Schokolade."
-          ]
+          ],
+          "prompt": "Antworten Sie mit Ja in der Ich-Form: Schokolade mögen."
         },
         {
           "label": "a · du 5 · Frage",
           "answers": [
             "Isst du viel Fleisch?"
-          ]
+          ],
+          "prompt": "Fragen Sie mit du: viel Fleisch essen."
         },
         {
           "label": "a · du 5 · Antwort",
           "answers": [
             "Ja, ich esse viel Fleisch."
-          ]
+          ],
+          "prompt": "Antworten Sie mit Ja in der Ich-Form: viel Fleisch essen."
         },
         {
           "label": "a · du 6 · Frage",
           "answers": [
             "Isst du gern Kuchen?"
-          ]
+          ],
+          "prompt": "Fragen Sie mit du: gern Kuchen essen."
         },
         {
           "label": "a · du 6 · Antwort",
           "answers": [
             "Ja, ich esse gern Kuchen."
-          ]
+          ],
+          "prompt": "Antworten Sie mit Ja in der Ich-Form: gern Kuchen essen."
         },
         {
           "label": "b · Sie 1 · Frage",
           "answers": [
             "Mögen Sie Joghurt?"
-          ]
+          ],
+          "prompt": "Fragen Sie mit Sie: Joghurt mögen."
         },
         {
           "label": "b · Sie 1 · Antwort",
           "answers": [
             "Ja, ich mag Joghurt."
-          ]
+          ],
+          "prompt": "Antworten Sie mit Ja in der Ich-Form: Joghurt mögen."
         },
         {
           "label": "b · Sie 2 · Frage",
           "answers": [
             "Trinken Sie gern Tee?"
-          ]
+          ],
+          "prompt": "Fragen Sie mit Sie: gern Tee trinken."
         },
         {
           "label": "b · Sie 2 · Antwort",
           "answers": [
             "Ja, ich trinke gern Tee."
-          ]
+          ],
+          "prompt": "Antworten Sie mit Ja in der Ich-Form: gern Tee trinken."
         },
         {
           "label": "b · Sie 3 · Frage",
           "answers": [
             "Mögen Sie Salat?"
-          ]
+          ],
+          "prompt": "Fragen Sie mit Sie: Salat mögen."
         },
         {
           "label": "b · Sie 3 · Antwort",
           "answers": [
             "Ja, ich mag Salat."
-          ]
+          ],
+          "prompt": "Antworten Sie mit Ja in der Ich-Form: Salat mögen."
         },
         {
           "label": "b · Sie 4 · Frage",
           "answers": [
             "Essen Sie gern Nudeln?"
-          ]
+          ],
+          "prompt": "Fragen Sie mit Sie: gern Nudeln essen."
         },
         {
           "label": "b · Sie 4 · Antwort",
           "answers": [
             "Ja, ich esse gern Nudeln."
-          ]
+          ],
+          "prompt": "Antworten Sie mit Ja in der Ich-Form: gern Nudeln essen."
         }
       ]
     },
@@ -53373,7 +55286,8 @@ window.SPEKTRUM_BANKS={
           "label": "Aufgabe 1 · Frage",
           "answers": [
             "Wie schmeckt dein Kaffee?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach dem Geschmack: dein Kaffee."
         },
         {
           "label": "Aufgabe 1 · Antwort",
@@ -53381,25 +55295,29 @@ window.SPEKTRUM_BANKS={
             "Er schmeckt nicht gut. Er ist kalt.",
             "Er schmeckt nicht. Er ist kalt.",
             "Er ist kalt."
-          ]
+          ],
+          "prompt": "Wie schmeckt es? Antworten Sie mit dem passenden Pronomen: Kaffee · kalt."
         },
         {
           "label": "Aufgabe 2 · Frage",
           "answers": [
             "Wie schmecken die Nudeln?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach dem Geschmack: die Nudeln."
         },
         {
           "label": "Aufgabe 2 · Antwort",
           "answers": [
             "Sie schmecken sehr gut."
-          ]
+          ],
+          "prompt": "Wie schmeckt es? Antworten Sie mit dem passenden Pronomen: Nudeln · sehr gut."
         },
         {
           "label": "Aufgabe 3 · Frage",
           "answers": [
             "Wie schmeckt der Schokoladenkuchen?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach dem Geschmack: der Schokoladenkuchen."
         },
         {
           "label": "Aufgabe 3 · Antwort",
@@ -53407,13 +55325,15 @@ window.SPEKTRUM_BANKS={
             "Er schmeckt nicht gut. Er ist zu süß.",
             "Er schmeckt nicht. Er ist zu süß.",
             "Er ist zu süß."
-          ]
+          ],
+          "prompt": "Wie schmeckt es? Antworten Sie mit dem passenden Pronomen: Schokoladenkuchen · zu süß."
         },
         {
           "label": "Aufgabe 4 · Frage",
           "answers": [
             "Wie schmeckt der Obstsalat?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach dem Geschmack: der Obstsalat."
         },
         {
           "label": "Aufgabe 4 · Antwort",
@@ -53421,13 +55341,15 @@ window.SPEKTRUM_BANKS={
             "Er schmeckt nicht gut. Er ist zu sauer.",
             "Er schmeckt nicht. Er ist zu sauer.",
             "Er ist zu sauer."
-          ]
+          ],
+          "prompt": "Wie schmeckt es? Antworten Sie mit dem passenden Pronomen: Obstsalat · zu sauer."
         },
         {
           "label": "Aufgabe 5 · Frage",
           "answers": [
             "Wie schmeckt die Currywurst?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach dem Geschmack: die Currywurst."
         },
         {
           "label": "Aufgabe 5 · Antwort",
@@ -53435,31 +55357,36 @@ window.SPEKTRUM_BANKS={
             "Sie schmeckt nicht gut. Sie ist zu scharf.",
             "Sie schmeckt nicht. Sie ist zu scharf.",
             "Sie ist zu scharf."
-          ]
+          ],
+          "prompt": "Wie schmeckt es? Antworten Sie mit dem passenden Pronomen: Currywurst · zu scharf."
         },
         {
           "label": "Aufgabe 6 · Frage",
           "answers": [
             "Wie schmeckt das Steak?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach dem Geschmack: das Steak."
         },
         {
           "label": "Aufgabe 6 · Antwort",
           "answers": [
             "Es schmeckt ausgezeichnet."
-          ]
+          ],
+          "prompt": "Wie schmeckt es? Antworten Sie mit dem passenden Pronomen: Steak · ausgezeichnet."
         },
         {
           "label": "Aufgabe 7 · Frage",
           "answers": [
             "Wie schmeckt das Eis?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach dem Geschmack: das Eis."
         },
         {
           "label": "Aufgabe 7 · Antwort",
           "answers": [
             "Es schmeckt sehr gut."
-          ]
+          ],
+          "prompt": "Wie schmeckt es? Antworten Sie mit dem passenden Pronomen: Eis · sehr gut."
         }
       ]
     },
@@ -53469,110 +55396,128 @@ window.SPEKTRUM_BANKS={
           "label": "b · Satz 1",
           "answers": [
             "Ich brauche eine Gabel."
-          ]
+          ],
+          "prompt": "Sagen Sie mit „brauchen“, was fehlt: Gabel."
         },
         {
           "label": "b · Satz 2",
           "answers": [
             "Tut mir leid, ich habe keine Gabel."
-          ]
+          ],
+          "prompt": "Verneinen Sie mit „haben“: Gabel."
         },
         {
           "label": "b · Satz 3",
           "answers": [
             "Ohne Gabel kann ich nicht essen."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz mit „ohne“: Gabel · essen."
         },
         {
           "label": "b · Satz 4",
           "answers": [
             "Ich brauche einen Topf."
-          ]
+          ],
+          "prompt": "Sagen Sie mit „brauchen“, was fehlt: Topf."
         },
         {
           "label": "b · Satz 5",
           "answers": [
             "Tut mir leid, ich habe keinen Topf."
-          ]
+          ],
+          "prompt": "Verneinen Sie mit „haben“: Topf."
         },
         {
           "label": "b · Satz 6",
           "answers": [
             "Ohne Topf kann ich nicht kochen."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz mit „ohne“: Topf · kochen."
         },
         {
           "label": "b · Satz 7",
           "answers": [
             "Ich brauche ein Glas."
-          ]
+          ],
+          "prompt": "Sagen Sie mit „brauchen“, was fehlt: Glas."
         },
         {
           "label": "b · Satz 8",
           "answers": [
             "Tut mir leid, ich habe kein Glas."
-          ]
+          ],
+          "prompt": "Verneinen Sie mit „haben“: Glas."
         },
         {
           "label": "b · Satz 9",
           "answers": [
             "Ohne Glas kann ich nicht trinken."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz mit „ohne“: Glas · trinken."
         },
         {
           "label": "b · Satz 10",
           "answers": [
             "Ich brauche einen Löffel."
-          ]
+          ],
+          "prompt": "Sagen Sie mit „brauchen“, was fehlt: Löffel."
         },
         {
           "label": "b · Satz 11",
           "answers": [
             "Tut mir leid, ich habe keinen Löffel."
-          ]
+          ],
+          "prompt": "Verneinen Sie mit „haben“: Löffel."
         },
         {
           "label": "b · Satz 12",
           "answers": [
             "Ohne Löffel kann ich nicht essen."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz mit „ohne“: Löffel · essen."
         },
         {
           "label": "b · Satz 13",
           "answers": [
             "Ich brauche Salz.",
             "Ich brauche das Salz."
-          ]
+          ],
+          "prompt": "Sagen Sie mit „brauchen“, was fehlt: Salz."
         },
         {
           "label": "b · Satz 14",
           "answers": [
             "Tut mir leid, ich habe kein Salz."
-          ]
+          ],
+          "prompt": "Verneinen Sie mit „haben“: Salz."
         },
         {
           "label": "b · Satz 15",
           "answers": [
             "Ohne Salz kann ich nicht kochen."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz mit „ohne“: Salz · kochen."
         },
         {
           "label": "b · Satz 16",
           "answers": [
             "Ich brauche eine Tasse."
-          ]
+          ],
+          "prompt": "Sagen Sie mit „brauchen“, was fehlt: Tasse."
         },
         {
           "label": "b · Satz 17",
           "answers": [
             "Tut mir leid, ich habe keine Tasse."
-          ]
+          ],
+          "prompt": "Verneinen Sie mit „haben“: Tasse."
         },
         {
           "label": "b · Satz 18",
           "answers": [
             "Ohne Tasse kann ich nicht trinken."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz mit „ohne“: Tasse · trinken."
         }
       ]
     },
@@ -53582,73 +55527,85 @@ window.SPEKTRUM_BANKS={
           "label": "a · Adjektiv 1",
           "answers": [
             "deutsche"
-          ]
+          ],
+          "prompt": "Welche Gerichte aus Deutschland bieten die Restaurants an? ___ Gerichte."
         },
         {
           "label": "a · Adjektiv 2",
           "answers": [
             "internationale"
-          ]
+          ],
+          "prompt": "Man kann aber auch ___ Gerichte aus anderen Ländern essen."
         },
         {
           "label": "a · Adjektiv 3",
           "answers": [
             "italienische"
-          ]
+          ],
+          "prompt": "In Berlin findet man 190 ___ Restaurants. (Italien)"
         },
         {
           "label": "a · Adjektiv 4",
           "answers": [
             "französische"
-          ]
+          ],
+          "prompt": "64 ___ Restaurants. (Frankreich)"
         },
         {
           "label": "a · Adjektiv 5",
           "answers": [
             "indische"
-          ]
+          ],
+          "prompt": "36 ___ Restaurants. (Indien)"
         },
         {
           "label": "a · Adjektiv 6",
           "answers": [
             "spanische"
-          ]
+          ],
+          "prompt": "30 ___ Restaurants. (Spanien)"
         },
         {
           "label": "a · Adjektiv 7",
           "answers": [
             "chinesische"
-          ]
+          ],
+          "prompt": "29 ___ Restaurants. (China)"
         },
         {
           "label": "a · Adjektiv 8",
           "answers": [
             "griechische"
-          ]
+          ],
+          "prompt": "26 ___ Restaurants. (Griechenland)"
         },
         {
           "label": "a · Adjektiv 9",
           "answers": [
             "thailändische"
-          ]
+          ],
+          "prompt": "23 ___ Restaurants. (Thailand)"
         },
         {
           "label": "a · Adjektiv 10",
           "answers": [
             "mexikanische"
-          ]
+          ],
+          "prompt": "10 ___ Restaurants. (Mexiko)"
         },
         {
           "label": "a · Adjektiv 11",
           "answers": [
             "russische"
-          ]
+          ],
+          "prompt": "8 ___ Restaurants. (Russland)"
         },
         {
           "label": "a · Adjektiv 12",
           "answers": [
             "interessante"
-          ]
+          ],
+          "prompt": "Auch für Feinschmecker gibt es in Deutschland ___ Angebote."
         }
       ]
     },
@@ -53658,37 +55615,43 @@ window.SPEKTRUM_BANKS={
           "label": "Rätsel 1",
           "answers": [
             "KAFFEE"
-          ]
+          ],
+          "prompt": "Getränk mit Koffein. Wie heißt das Wort im Rätsel?"
         },
         {
           "label": "Rätsel 2",
           "answers": [
             "SCHOKOLADE"
-          ]
+          ],
+          "prompt": "Welche Süßigkeit passt in die zweite Zeile?"
         },
         {
           "label": "Rätsel 3",
           "answers": [
             "NUDELN"
-          ]
+          ],
+          "prompt": "Wie heißen die Teigwaren im Rätsel?"
         },
         {
           "label": "Rätsel 4",
           "answers": [
             "BIRNE"
-          ]
+          ],
+          "prompt": "Welches Obst beginnt mit B und passt ins Rätsel?"
         },
         {
           "label": "Rätsel 5",
           "answers": [
             "LIMONADE"
-          ]
+          ],
+          "prompt": "Welches süße Getränk passt in die fünfte Zeile?"
         },
         {
           "label": "Lösungswort",
           "answers": [
             "gesund"
-          ]
+          ],
+          "prompt": "Wie lautet das Lösungswort des Rätsels zu Essen und Trinken?"
         }
       ]
     },
@@ -53698,49 +55661,57 @@ window.SPEKTRUM_BANKS={
           "label": "Satz 1",
           "answers": [
             "Ich mag keine Äpfel."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: ich · mögen · keine Äpfel"
         },
         {
           "label": "Satz 2",
           "answers": [
             "Esst ihr viel Obst?"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: ihr · viel · Obst · essen?"
         },
         {
           "label": "Satz 3",
           "answers": [
             "Wir essen lieber Gemüse."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: lieber · Gemüse · wir · essen"
         },
         {
           "label": "Satz 4",
           "answers": [
             "Isst du gern Fisch?"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: gern · Fisch · essen · du?"
         },
         {
           "label": "Satz 5",
           "answers": [
             "Ich esse sehr gern Fisch."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: Fisch · sehr gern · ich · essen"
         },
         {
           "label": "Satz 6",
           "answers": [
             "Mögen Sie Bratwurst mit Sauerkraut?"
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: Bratwurst mit Sauerkraut · Sie · mögen?"
         },
         {
           "label": "Satz 7",
           "answers": [
             "Mein Mann mag Bratwurst mit Sauerkraut."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: mein Mann · Bratwurst mit Sauerkraut · mögen"
         },
         {
           "label": "Satz 8",
           "answers": [
             "Frau Müller isst mittags gern Currywurst."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: Frau Müller · mittags · gern · Currywurst · essen"
         }
       ]
     },
@@ -53750,37 +55721,43 @@ window.SPEKTRUM_BANKS={
           "label": "Satz 1",
           "answers": [
             "Ich esse nicht gern Fisch."
-          ]
+          ],
+          "prompt": "Verneinen Sie: Ich esse gern Fisch."
         },
         {
           "label": "Satz 2",
           "answers": [
             "Martin kann nicht gut kochen."
-          ]
+          ],
+          "prompt": "Verneinen Sie: Martin kann gut kochen."
         },
         {
           "label": "Satz 3",
           "answers": [
             "Der Chef isst mittags nicht in der Kantine."
-          ]
+          ],
+          "prompt": "Verneinen Sie: Der Chef isst mittags in der Kantine."
         },
         {
           "label": "Satz 4",
           "answers": [
             "Zu viel Süßes ist nicht gesund."
-          ]
+          ],
+          "prompt": "Verneinen Sie: Zu viel Süßes ist gesund."
         },
         {
           "label": "Satz 5",
           "answers": [
             "Ich mag dieses Gericht nicht."
-          ]
+          ],
+          "prompt": "Verneinen Sie: Ich mag dieses Gericht."
         },
         {
           "label": "Satz 6",
           "answers": [
             "Mama kocht heute Abend nicht."
-          ]
+          ],
+          "prompt": "Verneinen Sie: Mama kocht heute Abend."
         }
       ]
     },
@@ -53790,43 +55767,50 @@ window.SPEKTRUM_BANKS={
           "label": "Dialog 1",
           "answers": [
             "Können wir bitte die Speisekarte haben?"
-          ]
+          ],
+          "prompt": "Lisa möchte die Karte sehen. Wie eröffnet sie das Gespräch?"
         },
         {
           "label": "Dialog 2",
           "answers": [
             "Natürlich, bitte sehr. Möchten Sie schon etwas trinken?"
-          ]
+          ],
+          "prompt": "Der Kellner reicht die Karte und fragt nach Getränken. Was sagt er?"
         },
         {
           "label": "Dialog 3",
           "answers": [
             "Ja, ich nehme ein Mineralwasser ohne Sprudel."
-          ]
+          ],
+          "prompt": "Max bestellt Wasser. Wie lautet seine Bestellung?"
         },
         {
           "label": "Dialog 4",
           "answers": [
             "Und ich hätte gern ein Glas Weißwein."
-          ]
+          ],
+          "prompt": "Lisa bestellt Wein. Was sagt sie?"
         },
         {
           "label": "Dialog 5",
           "answers": [
             "Ein Glas Riesling?"
-          ]
+          ],
+          "prompt": "Der Kellner fragt nach der Weinsorte. Wie lautet seine Rückfrage?"
         },
         {
           "label": "Dialog 6",
           "answers": [
             "Ja, bitte."
-          ]
+          ],
+          "prompt": "Wie bestätigt Lisa die Wahl des Weins?"
         },
         {
           "label": "Dialog 7",
           "answers": [
             "Die Getränke kommen sofort."
-          ]
+          ],
+          "prompt": "Wie kündigt der Kellner die Getränke an?"
         }
       ]
     },
@@ -53836,25 +55820,29 @@ window.SPEKTRUM_BANKS={
           "label": "Satz 1",
           "answers": [
             "Der Erfinder war der Konditor Paul Fürst."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: der Erfinder · der Konditor Paul Fürst · sein (Vergangenheit)"
         },
         {
           "label": "Satz 2",
           "answers": [
             "Die Kugel hat den Namen von Wolfgang Amadeus Mozart."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: die Kugel · den Namen von Wolfgang Amadeus Mozart · haben"
         },
         {
           "label": "Satz 3",
           "answers": [
             "Die Konditorei Fürst produziert die originalen Mozartkugeln mit der Hand."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: die Konditorei Fürst · die originalen Mozartkugeln · mit der Hand · produzieren"
         },
         {
           "label": "Satz 4",
           "answers": [
             "Man kann originale Mozartkugeln nur in wenigen Geschäften in Salzburg kaufen."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: man · originale Mozartkugeln · nur · in wenigen Geschäften · in Salzburg · kaufen können"
         }
       ]
     },
@@ -54000,43 +55988,50 @@ window.SPEKTRUM_BANKS={
           "label": "f · Infinitiv 1",
           "answers": [
             "gehen"
-          ]
+          ],
+          "prompt": "Wie lautet der Infinitiv? gegangen."
         },
         {
           "label": "f · Infinitiv 2",
           "answers": [
             "fliegen"
-          ]
+          ],
+          "prompt": "Wie lautet der Infinitiv? geflogen."
         },
         {
           "label": "f · Infinitiv 3",
           "answers": [
             "lesen"
-          ]
+          ],
+          "prompt": "Wie lautet der Infinitiv? gelesen."
         },
         {
           "label": "f · Infinitiv 4",
           "answers": [
             "sprechen"
-          ]
+          ],
+          "prompt": "Wie lautet der Infinitiv? gesprochen."
         },
         {
           "label": "f · Infinitiv 5",
           "answers": [
             "schreiben"
-          ]
+          ],
+          "prompt": "Wie lautet der Infinitiv? geschrieben."
         },
         {
           "label": "f · Infinitiv 6",
           "answers": [
             "lernen"
-          ]
+          ],
+          "prompt": "Wie lautet der Infinitiv? gelernt."
         },
         {
           "label": "f · Infinitiv 7",
           "answers": [
             "machen"
-          ]
+          ],
+          "prompt": "Wie lautet der Infinitiv? gemacht."
         }
       ]
     },
@@ -54046,104 +56041,121 @@ window.SPEKTRUM_BANKS={
           "label": "a · 1 · Frage",
           "answers": [
             "Hast du gestern um 9.00 Uhr gefrühstückt?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach gestern im Perfekt: um 9.00 Uhr frühstücken."
         },
         {
           "label": "a · 1 · Antwort",
           "answers": [
             "Ja, ich habe gestern um 9.00 Uhr gefrühstückt."
-          ]
+          ],
+          "prompt": "Antworten Sie mit Ja im Perfekt: um 9.00 Uhr frühstücken."
         },
         {
           "label": "a · 2 · Frage",
           "answers": [
             "Hast du gestern mit Sabine gesprochen?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach gestern im Perfekt: mit Sabine sprechen."
         },
         {
           "label": "a · 2 · Antwort",
           "answers": [
             "Ja, ich habe gestern mit Sabine gesprochen."
-          ]
+          ],
+          "prompt": "Antworten Sie mit Ja im Perfekt: mit Sabine sprechen."
         },
         {
           "label": "a · 3 · Frage",
           "answers": [
             "Hast du gestern die E-Mail vom Chef gelesen?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach gestern im Perfekt: die E-Mail vom Chef lesen."
         },
         {
           "label": "a · 3 · Antwort",
           "answers": [
             "Ja, ich habe gestern die E-Mail vom Chef gelesen."
-          ]
+          ],
+          "prompt": "Antworten Sie mit Ja im Perfekt: die E-Mail vom Chef lesen."
         },
         {
           "label": "a · 4 · Frage",
           "answers": [
             "Bist du gestern nach Berlin gefahren?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach gestern im Perfekt: nach Berlin fahren."
         },
         {
           "label": "a · 4 · Antwort",
           "answers": [
             "Ja, ich bin gestern nach Berlin gefahren."
-          ]
+          ],
+          "prompt": "Antworten Sie mit Ja im Perfekt: nach Berlin fahren."
         },
         {
           "label": "a · 5 · Frage",
           "answers": [
             "Hast du gestern um 12.00 Uhr eine Pause gemacht?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach gestern im Perfekt: um 12.00 Uhr Pause machen."
         },
         {
           "label": "a · 5 · Antwort",
           "answers": [
             "Ja, ich habe gestern um 12.00 Uhr eine Pause gemacht."
-          ]
+          ],
+          "prompt": "Antworten Sie mit Ja im Perfekt: um 12.00 Uhr Pause machen."
         },
         {
           "label": "a · 6 · Frage",
           "answers": [
             "Bist du gestern zur Apotheke gegangen?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach gestern im Perfekt: zur Apotheke gehen."
         },
         {
           "label": "a · 6 · Antwort",
           "answers": [
             "Ja, ich bin gestern zur Apotheke gegangen."
-          ]
+          ],
+          "prompt": "Antworten Sie mit Ja im Perfekt: zur Apotheke gehen."
         },
         {
           "label": "a · 7 · Frage",
           "answers": [
             "Hast du gestern einen Bericht geschrieben?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach gestern im Perfekt: einen Bericht schreiben."
         },
         {
           "label": "a · 7 · Antwort",
           "answers": [
             "Ja, ich habe gestern einen Bericht geschrieben."
-          ]
+          ],
+          "prompt": "Antworten Sie mit Ja im Perfekt: einen Bericht schreiben."
         },
         {
           "label": "b · 1 · Frage",
           "answers": [
             "Wie lange hast du Pause gemacht?"
-          ]
+          ],
+          "prompt": "Formulieren Sie eine Wie-lange-Frage im Perfekt: Pause machen · 15 Minuten."
         },
         {
           "label": "b · 1 · Antwort",
           "answers": [
             "Ich habe 15 Minuten Pause gemacht.",
             "15 Minuten"
-          ]
+          ],
+          "prompt": "Antworten Sie im Perfekt mit der Zeitangabe: Pause machen · 15 Minuten."
         },
         {
           "label": "b · 2 · Frage",
           "answers": [
             "Wie lange hast du Musik gehört?"
-          ]
+          ],
+          "prompt": "Formulieren Sie eine Wie-lange-Frage im Perfekt: Musik hören · 1 Stunde."
         },
         {
           "label": "b · 2 · Antwort",
@@ -54151,13 +56163,15 @@ window.SPEKTRUM_BANKS={
             "Ich habe eine Stunde Musik gehört.",
             "eine Stunde",
             "1 Stunde"
-          ]
+          ],
+          "prompt": "Antworten Sie im Perfekt mit der Zeitangabe: Musik hören · 1 Stunde."
         },
         {
           "label": "b · 3 · Frage",
           "answers": [
             "Wie lange hast du E-Mails gelesen und geschrieben?"
-          ]
+          ],
+          "prompt": "Formulieren Sie eine Wie-lange-Frage im Perfekt: E-Mails lesen und schreiben · 5 Stunden."
         },
         {
           "label": "b · 3 · Antwort",
@@ -54165,13 +56179,15 @@ window.SPEKTRUM_BANKS={
             "Ich habe fünf Stunden E-Mails gelesen und geschrieben.",
             "fünf Stunden",
             "5 Stunden"
-          ]
+          ],
+          "prompt": "Antworten Sie im Perfekt mit der Zeitangabe: E-Mails lesen und schreiben · 5 Stunden."
         },
         {
           "label": "b · 4 · Frage",
           "answers": [
             "Wie lange hast du Fußball gespielt?"
-          ]
+          ],
+          "prompt": "Formulieren Sie eine Wie-lange-Frage im Perfekt: Fußball spielen · 1½ Stunden."
         },
         {
           "label": "b · 4 · Antwort",
@@ -54179,13 +56195,15 @@ window.SPEKTRUM_BANKS={
             "Ich habe anderthalb Stunden Fußball gespielt.",
             "anderthalb Stunden",
             "1,5 Stunden"
-          ]
+          ],
+          "prompt": "Antworten Sie im Perfekt mit der Zeitangabe: Fußball spielen · 1½ Stunden."
         },
         {
           "label": "b · 5 · Frage",
           "answers": [
             "Wie lange hast du gearbeitet?"
-          ]
+          ],
+          "prompt": "Formulieren Sie eine Wie-lange-Frage im Perfekt: arbeiten · 8 Stunden."
         },
         {
           "label": "b · 5 · Antwort",
@@ -54193,13 +56211,15 @@ window.SPEKTRUM_BANKS={
             "Ich habe acht Stunden gearbeitet.",
             "acht Stunden",
             "8 Stunden"
-          ]
+          ],
+          "prompt": "Antworten Sie im Perfekt mit der Zeitangabe: arbeiten · 8 Stunden."
         },
         {
           "label": "b · 6 · Frage",
           "answers": [
             "Wie lange hast du geschlafen?"
-          ]
+          ],
+          "prompt": "Formulieren Sie eine Wie-lange-Frage im Perfekt: schlafen · nur 5 Stunden."
         },
         {
           "label": "b · 6 · Antwort",
@@ -54207,7 +56227,8 @@ window.SPEKTRUM_BANKS={
             "Ich habe nur fünf Stunden geschlafen.",
             "fünf Stunden",
             "5 Stunden"
-          ]
+          ],
+          "prompt": "Antworten Sie im Perfekt mit der Zeitangabe: schlafen · nur 5 Stunden."
         }
       ]
     },
@@ -54217,97 +56238,113 @@ window.SPEKTRUM_BANKS={
           "label": "Dialog 1 · Frage",
           "answers": [
             "Warum hast du dein Schnitzel nicht gegessen?"
-          ]
+          ],
+          "prompt": "Stellen Sie eine Warum-Frage im Perfekt: dein Schnitzel nicht essen."
         },
         {
           "label": "Dialog 1 · Antwort",
           "answers": [
             "Ich hatte keinen Hunger."
-          ]
+          ],
+          "prompt": "Antworten Sie im Präteritum. Thema: Schnitzel · Grund: kein Hunger."
         },
         {
           "label": "Dialog 2 · Frage",
           "answers": [
             "Warum hast du die E-Mails nicht geschrieben?"
-          ]
+          ],
+          "prompt": "Stellen Sie eine Warum-Frage im Perfekt: die E-Mails nicht schreiben."
         },
         {
           "label": "Dialog 2 · Antwort",
           "answers": [
             "Ich hatte keine Zeit."
-          ]
+          ],
+          "prompt": "Antworten Sie im Präteritum. Thema: E-Mails · Grund: keine Zeit."
         },
         {
           "label": "Dialog 3 · Frage",
           "answers": [
             "Warum hast du den Bericht nicht gelesen?"
-          ]
+          ],
+          "prompt": "Stellen Sie eine Warum-Frage im Perfekt: den Bericht nicht lesen."
         },
         {
           "label": "Dialog 3 · Antwort",
           "answers": [
             "Ich hatte keine Zeit."
-          ]
+          ],
+          "prompt": "Antworten Sie im Präteritum. Thema: Bericht · Grund: keine Zeit."
         },
         {
           "label": "Dialog 4 · Frage",
           "answers": [
             "Warum bist du nicht nach Köln gefahren?"
-          ]
+          ],
+          "prompt": "Stellen Sie eine Warum-Frage im Perfekt: nicht nach Köln fahren."
         },
         {
           "label": "Dialog 4 · Antwort",
           "answers": [
             "Ich hatte keine Lust."
-          ]
+          ],
+          "prompt": "Antworten Sie im Präteritum. Thema: Fahrt nach Köln · Grund: keine Lust."
         },
         {
           "label": "Dialog 5 · Frage",
           "answers": [
             "Warum hast du keine Gymnastik gemacht?"
-          ]
+          ],
+          "prompt": "Stellen Sie eine Warum-Frage im Perfekt: keine Gymnastik machen."
         },
         {
           "label": "Dialog 5 · Antwort",
           "answers": [
             "Ich hatte keine Lust."
-          ]
+          ],
+          "prompt": "Antworten Sie im Präteritum. Thema: Gymnastik · Grund: keine Lust."
         },
         {
           "label": "Dialog 6 · Frage",
           "answers": [
             "Warum hast du nicht gefrühstückt?"
-          ]
+          ],
+          "prompt": "Stellen Sie eine Warum-Frage im Perfekt: nicht frühstücken."
         },
         {
           "label": "Dialog 6 · Antwort",
           "answers": [
             "Ich hatte keinen Hunger."
-          ]
+          ],
+          "prompt": "Antworten Sie im Präteritum. Thema: Frühstück · Grund: kein Hunger."
         },
         {
           "label": "Dialog 7 · Frage",
           "answers": [
             "Warum bist du nicht zum Arzt gegangen?"
-          ]
+          ],
+          "prompt": "Stellen Sie eine Warum-Frage im Perfekt: nicht zum Arzt gehen."
         },
         {
           "label": "Dialog 7 · Antwort",
           "answers": [
             "Ich hatte keine Zeit."
-          ]
+          ],
+          "prompt": "Antworten Sie im Präteritum. Thema: Arztbesuch · Grund: keine Zeit."
         },
         {
           "label": "Dialog 8 · Frage",
           "answers": [
             "Warum hast du nicht gearbeitet?"
-          ]
+          ],
+          "prompt": "Stellen Sie eine Warum-Frage im Perfekt: nicht arbeiten."
         },
         {
           "label": "Dialog 8 · Antwort",
           "answers": [
             "Ich hatte keine Lust."
-          ]
+          ],
+          "prompt": "Antworten Sie im Präteritum. Thema: Arbeit · Grund: keine Lust."
         }
       ]
     },
@@ -54401,79 +56438,92 @@ window.SPEKTRUM_BANKS={
           "label": "c · Perfekt 1",
           "answers": [
             "Sie hat um 7.30 Uhr gefrühstückt."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: Sie frühstückt um 7.30 Uhr."
         },
         {
           "label": "c · Perfekt 2",
           "answers": [
             "Danach hat sie Gymnastik gemacht."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: Danach macht sie Gymnastik."
         },
         {
           "label": "c · Perfekt 3",
           "answers": [
             "Um 8.00 Uhr ist Martina ins Büro gefahren."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: Um 8.00 Uhr fährt Martina ins Büro."
         },
         {
           "label": "c · Perfekt 4",
           "answers": [
             "Von 8.30 bis 12.00 Uhr hat sie gearbeitet."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: Von 8.30 bis 12.00 Uhr arbeitet sie."
         },
         {
           "label": "c · Perfekt 5",
           "answers": [
             "Sie hat Daten analysiert."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: Sie analysiert Daten."
         },
         {
           "label": "c · Perfekt 6",
           "answers": [
             "Sie hat viele E-Mails und Berichte geschrieben."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: Sie schreibt viele E-Mails und Berichte."
         },
         {
           "label": "c · Perfekt 7",
           "answers": [
             "Die Teambesprechung hat um 11.00 Uhr angefangen."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: Die Teambesprechung fängt um 11.00 Uhr an."
         },
         {
           "label": "c · Perfekt 8",
           "answers": [
             "Die Besprechung hat eine Stunde gedauert."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: Die Besprechung dauert eine Stunde."
         },
         {
           "label": "c · Perfekt 9",
           "answers": [
             "Martina hat Kollegen angerufen."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: Martina ruft Kollegen an."
         },
         {
           "label": "c · Perfekt 10",
           "answers": [
             "Sie hat in der Stadt eingekauft."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: Sie kauft in der Stadt ein."
         },
         {
           "label": "c · Perfekt 11",
           "answers": [
             "Danach ist sie mit Freunden in ein Restaurant gegangen."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: Danach geht sie mit Freunden in ein Restaurant."
         },
         {
           "label": "c · Perfekt 12",
           "answers": [
             "Jonas hat ein Seminar besucht."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: Jonas besucht ein Seminar."
         },
         {
           "label": "c · Perfekt 13",
           "answers": [
             "Er ist mit Max und Moritz ausgegangen."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: Er geht mit Max und Moritz aus."
         }
       ]
     },
@@ -54483,38 +56533,44 @@ window.SPEKTRUM_BANKS={
           "label": "Frage 1",
           "answers": [
             "Wann hast du gefrühstückt?"
-          ]
+          ],
+          "prompt": "Fragen Sie mit „wann“ im Perfekt: frühstücken."
         },
         {
           "label": "Frage 2",
           "answers": [
             "Wann bist du ins Büro gefahren?",
             "Wann bist du in die Uni gefahren?"
-          ]
+          ],
+          "prompt": "Fragen Sie mit „wann“ im Perfekt: ins Büro / in die Uni fahren."
         },
         {
           "label": "Frage 3",
           "answers": [
             "Wann hast du Mittagspause gemacht?"
-          ]
+          ],
+          "prompt": "Fragen Sie mit „wann“ im Perfekt: Mittagspause machen."
         },
         {
           "label": "Frage 4",
           "answers": [
             "Wann hast du im Supermarkt eingekauft?"
-          ]
+          ],
+          "prompt": "Fragen Sie mit „wann“ im Perfekt: im Supermarkt einkaufen."
         },
         {
           "label": "Frage 5",
           "answers": [
             "Wann hast du deutsche Vokabeln gelernt?"
-          ]
+          ],
+          "prompt": "Fragen Sie mit „wann“ im Perfekt: deutsche Vokabeln lernen."
         },
         {
           "label": "Frage 6",
           "answers": [
             "Wann hast du deine Freunde besucht?"
-          ]
+          ],
+          "prompt": "Fragen Sie mit „wann“ im Perfekt: deine Freunde besuchen."
         }
       ]
     },
@@ -54524,25 +56580,29 @@ window.SPEKTRUM_BANKS={
           "label": "b · Satz 1",
           "answers": [
             "Ich studiere in Köln."
-          ]
+          ],
+          "prompt": "Hören Sie den ersten Satz über den Studienort und schreiben Sie ihn auf."
         },
         {
           "label": "b · Satz 2",
           "answers": [
             "Das Studium dauert drei Jahre."
-          ]
+          ],
+          "prompt": "Hören Sie den Satz über die Dauer des Studiums und schreiben Sie ihn auf."
         },
         {
           "label": "b · Satz 3",
           "answers": [
             "Ich bezahle Studiengebühren."
-          ]
+          ],
+          "prompt": "Hören Sie den Satz über die Kosten des Studiums und schreiben Sie ihn auf."
         },
         {
           "label": "b · Satz 4",
           "answers": [
             "Ich lerne jeden Tag acht Stunden Statistik."
-          ]
+          ],
+          "prompt": "Hören Sie den Satz über die tägliche Lernzeit und schreiben Sie ihn auf."
         }
       ]
     },
@@ -54552,25 +56612,29 @@ window.SPEKTRUM_BANKS={
           "label": "b · Satz 1",
           "answers": [
             "Thomas lernt viel und er besucht alle Vorlesungen."
-          ]
+          ],
+          "prompt": "Verbinden Sie mit und: lernen · Thomas · viel + er · alle Vorlesungen · besuchen"
         },
         {
           "label": "b · Satz 2",
           "answers": [
             "Elvira möchte ihr Studium abschließen und Paul sucht ein anderes Studienfach."
-          ]
+          ],
+          "prompt": "Verbinden Sie mit und: Elvira · ihr Studium · abschließen · möchte + Paul · ein anderes Studienfach · suchen"
         },
         {
           "label": "b · Satz 3",
           "answers": [
             "André geht abends gern auf Partys und er schläft morgens lange."
-          ]
+          ],
+          "prompt": "Verbinden Sie mit und: Andre · abends · auf Partys · gern · gehen + schlafen · morgens · lange · er"
         },
         {
           "label": "b · Satz 4",
           "answers": [
             "Eva wohnt mit anderen Studenten zusammen und sie kocht gern für alle."
-          ]
+          ],
+          "prompt": "Verbinden Sie mit und: Eva · mit anderen Studenten · zusammen · wohnen + gern · sie · kochen · für alle"
         }
       ]
     },
@@ -54580,158 +56644,183 @@ window.SPEKTRUM_BANKS={
           "label": "a · 1",
           "answers": [
             "Ich habe in Köln gewohnt."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: ich · in Köln wohnen."
         },
         {
           "label": "a · 2",
           "answers": [
             "Ich habe eine Suppe gekocht."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: ich · eine Suppe kochen."
         },
         {
           "label": "a · 3",
           "answers": [
             "Ich habe Fußball gespielt."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: ich · Fußball spielen."
         },
         {
           "label": "a · 4",
           "answers": [
             "Ich habe Deutsch gelernt."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: ich · Deutsch lernen."
         },
         {
           "label": "a · 5",
           "answers": [
             "Ich habe gearbeitet."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: ich · arbeiten."
         },
         {
           "label": "a · 6",
           "answers": [
             "Ich habe Vorlesungen besucht."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: ich · Vorlesungen besuchen."
         },
         {
           "label": "a · 7",
           "answers": [
             "Ich habe Rechnungen bezahlt."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: ich · Rechnungen bezahlen."
         },
         {
           "label": "a · 8",
           "answers": [
             "Ich habe in der Stadt eingekauft."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: ich · in der Stadt einkaufen."
         },
         {
           "label": "b · 1",
           "answers": [
             "Max hat mit Kollegen telefoniert."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: Max · mit Kollegen telefonieren."
         },
         {
           "label": "b · 2",
           "answers": [
             "Er hat ein Dokument kopiert.",
             "Max hat ein Dokument kopiert."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: Max · ein Dokument kopieren."
         },
         {
           "label": "b · 3",
           "answers": [
             "Max hat Informatik studiert."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: Max · Informatik studieren."
         },
         {
           "label": "b · 4",
           "answers": [
             "Max hat eine Projektidee präsentiert."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: Max · eine Projektidee präsentieren."
         },
         {
           "label": "b · 5",
           "answers": [
             "Er hat Fragen formuliert.",
             "Max hat Fragen formuliert."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: Max · Fragen formulieren."
         },
         {
           "label": "c · 1",
           "answers": [
             "Eva ist ins Café gegangen."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: Eva · ins Café gehen."
         },
         {
           "label": "c · 2",
           "answers": [
             "Sie hat einen Tee getrunken.",
             "Eva hat einen Tee getrunken."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: Eva · einen Tee trinken."
         },
         {
           "label": "c · 3",
           "answers": [
             "Eva hat nicht viel geschlafen."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: Eva · nicht viel schlafen."
         },
         {
           "label": "c · 4",
           "answers": [
             "Eva ist nach Bonn gefahren."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: Eva · nach Bonn fahren."
         },
         {
           "label": "c · 5",
           "answers": [
             "Eva hat im Büro Zeitung gelesen."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: Eva · im Büro Zeitung lesen."
         },
         {
           "label": "c · 6",
           "answers": [
             "Sie hat zehn E-Mails geschrieben.",
             "Eva hat zehn E-Mails geschrieben."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: Eva · zehn E-Mails schreiben."
         },
         {
           "label": "c · 7",
           "answers": [
             "Sie hat viel Deutsch gesprochen.",
             "Eva hat viel Deutsch gesprochen."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: Eva · viel Deutsch sprechen."
         },
         {
           "label": "c · 8",
           "answers": [
             "Eva hat eine Pizza gegessen."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: Eva · eine Pizza essen."
         },
         {
           "label": "c · 9",
           "answers": [
             "Eva ist früh aufgestanden."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: Eva · früh aufstehen."
         },
         {
           "label": "c · 10",
           "answers": [
             "Sie hat ferngesehen.",
             "Eva hat ferngesehen."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: Eva · fernsehen."
         },
         {
           "label": "c · 11",
           "answers": [
             "Sie ist mit Moritz ausgegangen.",
             "Eva ist mit Moritz ausgegangen."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: Eva · mit Moritz ausgehen."
         },
         {
           "label": "c · 12",
           "answers": [
             "Eva hat eine gute Note bekommen."
-          ]
+          ],
+          "prompt": "Schreiben Sie im Perfekt: Eva · eine gute Note bekommen."
         }
       ]
     },
@@ -54741,85 +56830,99 @@ window.SPEKTRUM_BANKS={
           "label": "Dialog 1 · Frage",
           "answers": [
             "Warum hast du die E-Mails nicht geschrieben?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach dem Grund im Perfekt: die E-Mails nicht schreiben."
         },
         {
           "label": "Dialog 1 · Antwort",
           "answers": [
             "Tut mir leid, ich hatte keine Zeit."
-          ]
+          ],
+          "prompt": "Entschuldigen Sie sich und nennen Sie den Grund: keine Zeit."
         },
         {
           "label": "Dialog 2 · Frage",
           "answers": [
             "Warum hast du Eva nicht besucht?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach dem Grund im Perfekt: Eva nicht besuchen."
         },
         {
           "label": "Dialog 2 · Antwort",
           "answers": [
             "Tut mir leid, ich hatte kein Auto."
-          ]
+          ],
+          "prompt": "Entschuldigen Sie sich und nennen Sie den Grund: kein Auto."
         },
         {
           "label": "Dialog 3 · Frage",
           "answers": [
             "Warum hast du kein Obst gekauft?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach dem Grund im Perfekt: kein Obst kaufen."
         },
         {
           "label": "Dialog 3 · Antwort",
           "answers": [
             "Tut mir leid, ich war nicht im Supermarkt."
-          ]
+          ],
+          "prompt": "Entschuldigen Sie sich und nennen Sie den Grund: nicht im Supermarkt."
         },
         {
           "label": "Dialog 4 · Frage",
           "answers": [
             "Warum hast du die Rechnung nicht bezahlt?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach dem Grund im Perfekt: die Rechnung nicht bezahlen."
         },
         {
           "label": "Dialog 4 · Antwort",
           "answers": [
             "Tut mir leid, ich hatte kein Geld."
-          ]
+          ],
+          "prompt": "Entschuldigen Sie sich und nennen Sie den Grund: kein Geld."
         },
         {
           "label": "Dialog 5 · Frage",
           "answers": [
             "Warum hast du Frau Müller nicht angerufen?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach dem Grund im Perfekt: Frau Müller nicht anrufen."
         },
         {
           "label": "Dialog 5 · Antwort",
           "answers": [
             "Tut mir leid, ich war nicht im Büro."
-          ]
+          ],
+          "prompt": "Entschuldigen Sie sich und nennen Sie den Grund: nicht im Büro."
         },
         {
           "label": "Dialog 6 · Frage",
           "answers": [
             "Warum bist du nicht ins Fitnessstudio gegangen?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach dem Grund im Perfekt: nicht ins Fitnessstudio gehen."
         },
         {
           "label": "Dialog 6 · Antwort",
           "answers": [
             "Tut mir leid, ich war zu müde."
-          ]
+          ],
+          "prompt": "Entschuldigen Sie sich und nennen Sie den Grund: zu müde."
         },
         {
           "label": "Dialog 7 · Frage",
           "answers": [
             "Warum hast du den Krimi nicht zu Ende gelesen?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach dem Grund im Perfekt: den Krimi nicht zu Ende lesen."
         },
         {
           "label": "Dialog 7 · Antwort",
           "answers": [
             "Tut mir leid, der Krimi war langweilig."
-          ]
+          ],
+          "prompt": "Entschuldigen Sie sich und nennen Sie den Grund: der Krimi war langweilig."
         }
       ]
     },
@@ -54829,55 +56932,64 @@ window.SPEKTRUM_BANKS={
           "label": "Satz 1",
           "answers": [
             "Für mein Studium habe ich 8 000 Euro Studiengebühren im Jahr bezahlt."
-          ]
+          ],
+          "prompt": "Für mein Studium bezahle ich 8 000 Euro Studiengebühren im Jahr. (Perfekt)"
         },
         {
           "label": "Satz 2",
           "answers": [
             "Das war viel Geld."
-          ]
+          ],
+          "prompt": "Das ist viel Geld. (Präteritum)"
         },
         {
           "label": "Satz 3",
           "answers": [
             "Wir waren zehn Studenten in der Studiengruppe."
-          ]
+          ],
+          "prompt": "Wir sind zehn Studenten in der Studiengruppe. (Präteritum)"
         },
         {
           "label": "Satz 4",
           "answers": [
             "Wir haben mit den Dozenten und Professoren immer persönlich gesprochen."
-          ]
+          ],
+          "prompt": "Wir sprechen mit den Dozenten und Professoren immer persönlich. (Perfekt)"
         },
         {
           "label": "Satz 5",
           "answers": [
             "Alle Geräte und Möbel waren neu."
-          ]
+          ],
+          "prompt": "Alle Geräte und Möbel sind neu. (Präteritum)"
         },
         {
           "label": "Satz 6",
           "answers": [
             "Das Studium war interessant."
-          ]
+          ],
+          "prompt": "Das Studium ist interessant. (Präteritum)"
         },
         {
           "label": "Satz 7",
           "answers": [
             "Wir haben viel gelernt und viele Texte geschrieben."
-          ]
+          ],
+          "prompt": "Wir lernen viel und schreiben viele Texte. (Perfekt)"
         },
         {
           "label": "Satz 8",
           "answers": [
             "Wir haben auch kleine Filme gemacht."
-          ]
+          ],
+          "prompt": "Wir machen auch kleine Filme. (Perfekt)"
         },
         {
           "label": "Satz 9",
           "answers": [
             "Wir hatten viele praktische Projekte."
-          ]
+          ],
+          "prompt": "Wir haben viele praktische Projekte. (Präteritum)"
         }
       ]
     },
@@ -54888,53 +57000,61 @@ window.SPEKTRUM_BANKS={
           "answers": [
             "Die Zimmersuche war Wahnsinn!",
             "Die Zimmersuche war schrecklich!"
-          ]
+          ],
+          "prompt": "Wie war das Studium? Ergänzen Sie nach dem Bild: Die Zimmersuche ___"
         },
         {
           "label": "Satz 2",
           "answers": [
             "Die Partys waren toll.",
             "Die Partys waren schön."
-          ]
+          ],
+          "prompt": "Wie war das Studium? Ergänzen Sie nach dem Bild: Die Partys ___"
         },
         {
           "label": "Satz 3",
           "answers": [
             "Das Studium war nicht so interessant.",
             "Das Studium war langweilig."
-          ]
+          ],
+          "prompt": "Wie war das Studium? Ergänzen Sie nach dem Bild: Das Studium ___"
         },
         {
           "label": "Satz 4",
           "answers": [
             "Die Diskussionen waren zu abstrakt."
-          ]
+          ],
+          "prompt": "Wie war das Studium? Ergänzen Sie nach dem Bild: Die Diskussionen ___"
         },
         {
           "label": "Satz 5",
           "answers": [
             "Die Bücher waren langweilig."
-          ]
+          ],
+          "prompt": "Wie war das Studium? Ergänzen Sie nach dem Bild: Die Bücher ___"
         },
         {
           "label": "Satz 6",
           "answers": [
             "Der Kontakt mit den Professoren war unpersönlich."
-          ]
+          ],
+          "prompt": "Wie war das Studium? Ergänzen Sie nach dem Bild: Der Kontakt mit den Professoren ___"
         },
         {
           "label": "Satz 7",
           "answers": [
             "Das Essen in der Mensa war lecker.",
             "Das Essen in der Mensa war gut."
-          ]
+          ],
+          "prompt": "Wie war das Studium? Ergänzen Sie nach dem Bild: Das Essen in der Mensa ___"
         },
         {
           "label": "Satz 8",
           "answers": [
             "Die technischen Geräte waren neu.",
             "Die technischen Geräte waren modern."
-          ]
+          ],
+          "prompt": "Wie war das Studium? Ergänzen Sie nach dem Bild: Die technischen Geräte ___"
         }
       ]
     },
@@ -55039,91 +57159,106 @@ window.SPEKTRUM_BANKS={
           "label": "Franz 1",
           "answers": [
             "Das ist Franz."
-          ]
+          ],
+          "prompt": "Stellen Sie Franz mit Namen vor."
         },
         {
           "label": "Franz 2",
           "answers": [
             "Er kommt aus Deutschland."
-          ]
+          ],
+          "prompt": "Woher kommt die Person oder Gruppe „Franz“?"
         },
         {
           "label": "Franz 3",
           "answers": [
             "Er wohnt in München."
-          ]
+          ],
+          "prompt": "Wo wohnt Franz? Bilden Sie einen Satz."
         },
         {
           "label": "Franz 4",
           "answers": [
             "Er spricht Deutsch."
-          ]
+          ],
+          "prompt": "Welche Sprachen spricht Franz? Bilden Sie einen Satz."
         },
         {
           "label": "Franz 5",
           "answers": [
             "Er spielt gern Fußball."
-          ]
+          ],
+          "prompt": "Was macht Franz gern? Bilden Sie einen Satz."
         },
         {
           "label": "Martina 1",
           "answers": [
             "Das ist Martina."
-          ]
+          ],
+          "prompt": "Stellen Sie Martina mit Namen vor."
         },
         {
           "label": "Martina 2",
           "answers": [
             "Sie kommt aus der Schweiz."
-          ]
+          ],
+          "prompt": "Woher kommt die Person oder Gruppe „Martina“?"
         },
         {
           "label": "Martina 3",
           "answers": [
             "Sie wohnt in Bern."
-          ]
+          ],
+          "prompt": "Wo wohnt Martina? Bilden Sie einen Satz."
         },
         {
           "label": "Martina 4",
           "answers": [
             "Sie spricht Deutsch und Französisch."
-          ]
+          ],
+          "prompt": "Welche Sprachen spricht Martina? Bilden Sie einen Satz."
         },
         {
           "label": "Martina 5",
           "answers": [
             "Sie lernt gern Sprachen."
-          ]
+          ],
+          "prompt": "Was macht Martina gern? Bilden Sie einen Satz."
         },
         {
           "label": "Lars, Rasmus und Johan 1",
           "answers": [
             "Das sind Lars, Rasmus und Johan."
-          ]
+          ],
+          "prompt": "Stellen Sie Lars, Rasmus und Johan mit Namen vor."
         },
         {
           "label": "Lars, Rasmus und Johan 2",
           "answers": [
             "Sie kommen aus Dänemark."
-          ]
+          ],
+          "prompt": "Woher kommt die Person oder Gruppe „Lars, Rasmus und Johan“?"
         },
         {
           "label": "Lars, Rasmus und Johan 3",
           "answers": [
             "Sie wohnen in Kopenhagen."
-          ]
+          ],
+          "prompt": "Wo wohnen Lars, Rasmus und Johan?"
         },
         {
           "label": "Lars, Rasmus und Johan 4",
           "answers": [
             "Sie sprechen Dänisch, Schwedisch und Englisch."
-          ]
+          ],
+          "prompt": "Welche Sprachen sprechen Lars, Rasmus und Johan?"
         },
         {
           "label": "Lars, Rasmus und Johan 5",
           "answers": [
             "Sie spielen gern Jazz."
-          ]
+          ],
+          "prompt": "Was machen Lars, Rasmus und Johan gern?"
         }
       ]
     },
@@ -55306,13 +57441,15 @@ window.SPEKTRUM_BANKS={
             "B-OP 3657",
             "B OP 3657",
             "B-OP3657"
-          ]
+          ],
+          "prompt": "Wie ist das Autokennzeichen in Dialog 1?"
         },
         {
           "label": "b · Stadt 1",
           "answers": [
             "Berlin"
-          ]
+          ],
+          "prompt": "Aus welcher Stadt kommt das Auto in Dialog 1?"
         },
         {
           "label": "b · Kennzeichen 2",
@@ -55320,13 +57457,15 @@ window.SPEKTRUM_BANKS={
             "H-FC 865",
             "H FC 865",
             "H-FC865"
-          ]
+          ],
+          "prompt": "Wie ist das Autokennzeichen in Dialog 2?"
         },
         {
           "label": "b · Stadt 2",
           "answers": [
             "Hannover"
-          ]
+          ],
+          "prompt": "Aus welcher Stadt kommt das Auto in Dialog 2?"
         },
         {
           "label": "b · Kennzeichen 3",
@@ -55334,14 +57473,16 @@ window.SPEKTRUM_BANKS={
             "F-MX 354",
             "F MX 354",
             "F-MX354"
-          ]
+          ],
+          "prompt": "Wie ist das Autokennzeichen in Dialog 3?"
         },
         {
           "label": "b · Stadt 3",
           "answers": [
             "Frankfurt",
             "Frankfurt am Main"
-          ]
+          ],
+          "prompt": "Aus welcher Stadt kommt das Auto in Dialog 3?"
         }
       ]
     },
@@ -55509,44 +57650,51 @@ window.SPEKTRUM_BANKS={
           "label": "a · Satz 1",
           "answers": [
             "Christoph Waltz ist Schauspieler."
-          ]
+          ],
+          "prompt": "Christoph Waltz: Beruf. Schreiben Sie einen Satz."
         },
         {
           "label": "a · Satz 2",
           "answers": [
             "Er kommt aus Österreich."
-          ]
+          ],
+          "prompt": "Christoph Waltz: Herkunft. Schreiben Sie einen Satz."
         },
         {
           "label": "a · Satz 3",
           "answers": [
             "Er wohnt heute in Los Angeles und Berlin."
-          ]
+          ],
+          "prompt": "Christoph Waltz: Wohnorte heute. Schreiben Sie einen Satz."
         },
         {
           "label": "a · Satz 4",
           "answers": [
             "Er ist Oscar- und Golden-Globe-Preisträger."
-          ]
+          ],
+          "prompt": "Christoph Waltz: Auszeichnungen. Schreiben Sie einen Satz."
         },
         {
           "label": "a · Satz 5",
           "answers": [
             "Er arbeitet mit Quentin Tarantino."
-          ]
+          ],
+          "prompt": "Christoph Waltz: Zusammenarbeit mit einem Regisseur. Schreiben Sie einen Satz."
         },
         {
           "label": "a · Satz 6",
           "answers": [
             "Sein berühmtester Film heißt Inglorious Bastards.",
             "Sein berühmtester Film heißt Inglourious Basterds."
-          ]
+          ],
+          "prompt": "Christoph Waltz: sein berühmtester Film. Schreiben Sie einen Satz."
         },
         {
           "label": "a · Satz 7",
           "answers": [
             "Er ist verheiratet."
-          ]
+          ],
+          "prompt": "Christoph Waltz: Familienstand. Schreiben Sie einen Satz."
         }
       ]
     },
@@ -55556,53 +57704,61 @@ window.SPEKTRUM_BANKS={
           "label": "Land / Fläche 1 · Frage",
           "answers": [
             "Spanien ist so groß wie Thailand."
-          ]
+          ],
+          "prompt": "Welches Land ist ungefähr so groß wie Spanien? Schreiben Sie den Vergleich."
         },
         {
           "label": "Land / Fläche 1 · Antwort",
           "answers": [
             "Beide Länder haben eine Fläche von 510 000 km².",
             "Beide Länder haben eine Fläche von 510000 km²."
-          ]
+          ],
+          "prompt": "Welche Fläche haben Spanien und das Vergleichsland?"
         },
         {
           "label": "Land / Fläche 2 · Frage",
           "answers": [
             "Österreich ist so groß wie die Vereinigten Arabischen Emirate."
-          ]
+          ],
+          "prompt": "Welches Land ist ungefähr so groß wie Österreich? Schreiben Sie den Vergleich."
         },
         {
           "label": "Land / Fläche 2 · Antwort",
           "answers": [
             "Beide Länder haben eine Fläche von 83 000 km².",
             "Beide Länder haben eine Fläche von 83000 km²."
-          ]
+          ],
+          "prompt": "Welche Fläche haben Österreich und das Vergleichsland?"
         },
         {
           "label": "Land / Fläche 3 · Frage",
           "answers": [
             "Bosnien-Herzegowina ist so groß wie Costa Rica."
-          ]
+          ],
+          "prompt": "Welches Land ist ungefähr so groß wie Bosnien-Herzegowina? Schreiben Sie den Vergleich."
         },
         {
           "label": "Land / Fläche 3 · Antwort",
           "answers": [
             "Beide Länder haben eine Fläche von 51 000 km².",
             "Beide Länder haben eine Fläche von 51000 km²."
-          ]
+          ],
+          "prompt": "Welche Fläche haben Bosnien-Herzegowina und das Vergleichsland?"
         },
         {
           "label": "Land / Fläche 4 · Frage",
           "answers": [
             "Die Schweiz ist so groß wie die Niederlande."
-          ]
+          ],
+          "prompt": "Welches Land ist ungefähr so groß wie die Schweiz? Schreiben Sie den Vergleich."
         },
         {
           "label": "Land / Fläche 4 · Antwort",
           "answers": [
             "Beide Länder haben eine Fläche von 41 000 km².",
             "Beide Länder haben eine Fläche von 41000 km²."
-          ]
+          ],
+          "prompt": "Welche Fläche haben die Schweiz und das Vergleichsland?"
         }
       ]
     },
@@ -55612,31 +57768,36 @@ window.SPEKTRUM_BANKS={
           "label": "Satz 1",
           "answers": [
             "Annett Louisan ist Sängerin."
-          ]
+          ],
+          "prompt": "Welchen Beruf hat Annett Louisan?"
         },
         {
           "label": "Satz 2",
           "answers": [
             "Sie singt deutsche Lieder und Chansons."
-          ]
+          ],
+          "prompt": "Was singt sie?"
         },
         {
           "label": "Satz 3",
           "answers": [
             "Sie lebt heute in Hamburg."
-          ]
+          ],
+          "prompt": "Wo lebt sie heute?"
         },
         {
           "label": "Satz 4",
           "answers": [
             "Sie ist verheiratet."
-          ]
+          ],
+          "prompt": "Wie ist ihr Familienstand?"
         },
         {
           "label": "Satz 5",
           "answers": [
             "Ihre CDs haben großen Erfolg."
-          ]
+          ],
+          "prompt": "Wie erfolgreich sind ihre CDs?"
         }
       ]
     },
@@ -55860,7 +58021,8 @@ window.SPEKTRUM_BANKS={
           "label": "a · Eingepackt 1 · Frage",
           "answers": [
             "Hast du deinen Führerschein schon eingepackt?"
-          ]
+          ],
+          "prompt": "Fragen Sie im Perfekt nach dem Einpacken: Führerschein."
         },
         {
           "label": "a · Eingepackt 1 · Antwort",
@@ -55868,13 +58030,15 @@ window.SPEKTRUM_BANKS={
             "Nein, ich brauche keinen Führerschein.",
             "Ja, schon lange.",
             "Nein, noch nicht."
-          ]
+          ],
+          "prompt": "Antworten Sie auf die Frage zum Gepäck: Führerschein · nicht brauchen."
         },
         {
           "label": "a · Eingepackt 2 · Frage",
           "answers": [
             "Hast du deinen Laptop schon eingepackt?"
-          ]
+          ],
+          "prompt": "Fragen Sie im Perfekt nach dem Einpacken: Laptop."
         },
         {
           "label": "a · Eingepackt 2 · Antwort",
@@ -55882,107 +58046,124 @@ window.SPEKTRUM_BANKS={
             "Nein, ich brauche keinen Laptop.",
             "Ja, schon lange.",
             "Nein, noch nicht."
-          ]
+          ],
+          "prompt": "Antworten Sie auf die Frage zum Gepäck: Laptop · nicht brauchen."
         },
         {
           "label": "a · Eingepackt 3 · Frage",
           "answers": [
             "Hast du deine Medikamente schon eingepackt?"
-          ]
+          ],
+          "prompt": "Fragen Sie im Perfekt nach dem Einpacken: Medikamente."
         },
         {
           "label": "a · Eingepackt 3 · Antwort",
           "answers": [
             "Ja, schon lange.",
             "Nein, noch nicht."
-          ]
+          ],
+          "prompt": "Antworten Sie auf die Frage zum Gepäck: Medikamente · schon lange."
         },
         {
           "label": "a · Eingepackt 4 · Frage",
           "answers": [
             "Hast du deinen Bikini schon eingepackt?",
             "Hast du deine Badehose schon eingepackt?"
-          ]
+          ],
+          "prompt": "Fragen Sie im Perfekt nach dem Einpacken: Bikini."
         },
         {
           "label": "a · Eingepackt 4 · Antwort",
           "answers": [
             "Nein, noch nicht.",
             "Ja, schon lange."
-          ]
+          ],
+          "prompt": "Antworten Sie auf die Frage zum Gepäck: Bikini · noch nicht."
         },
         {
           "label": "a · Eingepackt 5 · Frage",
           "answers": [
             "Hast du dein Smartphone schon eingepackt?"
-          ]
+          ],
+          "prompt": "Fragen Sie im Perfekt nach dem Einpacken: Smartphone."
         },
         {
           "label": "a · Eingepackt 5 · Antwort",
           "answers": [
             "Ja, schon lange.",
             "Nein, noch nicht."
-          ]
+          ],
+          "prompt": "Antworten Sie auf die Frage zum Gepäck: Smartphone · schon lange."
         },
         {
           "label": "b · Ohne 1 · Frage",
           "answers": [
             "Brauchst du die Sonnenbrille wirklich?"
-          ]
+          ],
+          "prompt": "Fragen Sie, ob der Gegenstand wirklich nötig ist: Sonnenbrille."
         },
         {
           "label": "b · Ohne 1 · Antwort",
           "answers": [
             "Ja, ohne Sonnenbrille fahre ich nicht in den Urlaub."
-          ]
+          ],
+          "prompt": "Antworten Sie mit ohne: Sonnenbrille."
         },
         {
           "label": "b · Ohne 2 · Frage",
           "answers": [
             "Brauchst du die Mütze wirklich?"
-          ]
+          ],
+          "prompt": "Fragen Sie, ob der Gegenstand wirklich nötig ist: Mütze."
         },
         {
           "label": "b · Ohne 2 · Antwort",
           "answers": [
             "Ja, ohne Mütze fahre ich nicht in den Urlaub."
-          ]
+          ],
+          "prompt": "Antworten Sie mit ohne: Mütze."
         },
         {
           "label": "b · Ohne 3 · Frage",
           "answers": [
             "Brauchst du den Fotoapparat wirklich?"
-          ]
+          ],
+          "prompt": "Fragen Sie, ob der Gegenstand wirklich nötig ist: Fotoapparat."
         },
         {
           "label": "b · Ohne 3 · Antwort",
           "answers": [
             "Ja, ohne Fotoapparat fahre ich nicht in den Urlaub."
-          ]
+          ],
+          "prompt": "Antworten Sie mit ohne: Fotoapparat."
         },
         {
           "label": "b · Ohne 4 · Frage",
           "answers": [
             "Brauchst du den Rucksack wirklich?"
-          ]
+          ],
+          "prompt": "Fragen Sie, ob der Gegenstand wirklich nötig ist: Rucksack."
         },
         {
           "label": "b · Ohne 4 · Antwort",
           "answers": [
             "Ja, ohne Rucksack fahre ich nicht in den Urlaub."
-          ]
+          ],
+          "prompt": "Antworten Sie mit ohne: Rucksack."
         },
         {
           "label": "b · Ohne 5 · Frage",
           "answers": [
             "Brauchst du den Terminkalender wirklich?"
-          ]
+          ],
+          "prompt": "Fragen Sie, ob der Gegenstand wirklich nötig ist: Terminkalender."
         },
         {
           "label": "b · Ohne 5 · Antwort",
           "answers": [
             "Ja, ohne Terminkalender fahre ich nicht in den Urlaub."
-          ]
+          ],
+          "prompt": "Antworten Sie mit ohne: Terminkalender."
         }
       ]
     },
@@ -56216,55 +58397,64 @@ window.SPEKTRUM_BANKS={
           "label": "b · Zuordnung 1",
           "answers": [
             "g"
-          ]
+          ],
+          "prompt": "Welches Verb passt? Sport ___."
         },
         {
           "label": "b · Zuordnung 2",
           "answers": [
             "e"
-          ]
+          ],
+          "prompt": "Welches Verb passt? Radio ___."
         },
         {
           "label": "b · Zuordnung 3",
           "answers": [
             "h"
-          ]
+          ],
+          "prompt": "Welches Verb passt? nichts ___."
         },
         {
           "label": "b · Zuordnung 4",
           "answers": [
             "a"
-          ]
+          ],
+          "prompt": "Welches Verb passt? Kuchen ___."
         },
         {
           "label": "b · Zuordnung 5",
           "answers": [
             "b"
-          ]
+          ],
+          "prompt": "Welches Verb passt? über wichtige Dinge ___."
         },
         {
           "label": "b · Zuordnung 6",
           "answers": [
             "d"
-          ]
+          ],
+          "prompt": "Welches Verb passt? im Internet ___."
         },
         {
           "label": "b · Zuordnung 7",
           "answers": [
             "c"
-          ]
+          ],
+          "prompt": "Welches Verb passt? in sozialen Netzwerken ___."
         },
         {
           "label": "b · Zuordnung 8",
           "answers": [
             "j"
-          ]
+          ],
+          "prompt": "Welches Verb passt? Zeitschriften ___."
         },
         {
           "label": "b · Zuordnung 9",
           "answers": [
             "i"
-          ]
+          ],
+          "prompt": "Welches Verb passt? etwas mit Freunden ___."
         }
       ]
     },
@@ -56274,127 +58464,148 @@ window.SPEKTRUM_BANKS={
           "label": "a · Satz 1",
           "answers": [
             "Ich habe Probleme mit meinem Rücken."
-          ]
+          ],
+          "prompt": "Bilden Sie den Satz: ich · Probleme haben · mein Rücken."
         },
         {
           "label": "a · Satz 2",
           "answers": [
             "Der Rücken tut weh."
-          ]
+          ],
+          "prompt": "Bilden Sie den Satz: der Rücken · wehtun."
         },
         {
           "label": "a · Satz 3",
           "answers": [
             "Ich kann nicht mehr richtig sitzen."
-          ]
+          ],
+          "prompt": "Bilden Sie den Satz: ich · nicht mehr richtig sitzen können."
         },
         {
           "label": "a · Satz 4",
           "answers": [
             "Meine Schwester hat Probleme mit ihrer Hand."
-          ]
+          ],
+          "prompt": "Bilden Sie den Satz: meine Schwester · Probleme haben · ihre Hand."
         },
         {
           "label": "a · Satz 5",
           "answers": [
             "Die rechte Hand tut weh."
-          ]
+          ],
+          "prompt": "Bilden Sie den Satz: die rechte Hand · wehtun."
         },
         {
           "label": "a · Satz 6",
           "answers": [
             "Sie kann nicht mehr schreiben."
-          ]
+          ],
+          "prompt": "Bilden Sie den Satz: sie · nicht mehr schreiben können."
         },
         {
           "label": "a · Satz 7",
           "answers": [
             "Der Fußballspieler hat Probleme mit seinem Knie."
-          ]
+          ],
+          "prompt": "Bilden Sie den Satz: der Fußballspieler · Probleme haben · sein Knie."
         },
         {
           "label": "a · Satz 8",
           "answers": [
             "Das linke Knie tut weh."
-          ]
+          ],
+          "prompt": "Bilden Sie den Satz: das linke Knie · wehtun."
         },
         {
           "label": "a · Satz 9",
           "answers": [
             "Er kann heute nicht spielen."
-          ]
+          ],
+          "prompt": "Bilden Sie den Satz: er · heute nicht spielen können."
         },
         {
           "label": "a · Satz 10",
           "answers": [
             "Maria hat Probleme mit ihren Füßen."
-          ]
+          ],
+          "prompt": "Bilden Sie den Satz: Maria · Probleme haben · ihre Füße."
         },
         {
           "label": "a · Satz 11",
           "answers": [
             "Die Füße tun weh."
-          ]
+          ],
+          "prompt": "Bilden Sie den Satz: die Füße · wehtun."
         },
         {
           "label": "a · Satz 12",
           "answers": [
             "Sie kann nicht mehr gut laufen."
-          ]
+          ],
+          "prompt": "Bilden Sie den Satz: sie · nicht mehr gut laufen können."
         },
         {
           "label": "a · Satz 13",
           "answers": [
             "Ich habe Probleme mit meinem Bein."
-          ]
+          ],
+          "prompt": "Bilden Sie den Satz: ich · Probleme haben · mein Bein."
         },
         {
           "label": "a · Satz 14",
           "answers": [
             "Das linke Bein tut weh."
-          ]
+          ],
+          "prompt": "Bilden Sie den Satz: das linke Bein · wehtun."
         },
         {
           "label": "a · Satz 15",
           "answers": [
             "Ich kann diese Woche nicht Tango tanzen."
-          ]
+          ],
+          "prompt": "Bilden Sie den Satz: ich · diese Woche nicht Tango tanzen können."
         },
         {
           "label": "a · Satz 16",
           "answers": [
             "Frau Müller hat Probleme mit ihrer Zehe."
-          ]
+          ],
+          "prompt": "Bilden Sie den Satz: Frau Müller · Probleme haben · ihre Zehe."
         },
         {
           "label": "a · Satz 17",
           "answers": [
             "Die große rechte Zehe tut weh."
-          ]
+          ],
+          "prompt": "Bilden Sie den Satz: die große rechte Zehe · wehtun."
         },
         {
           "label": "a · Satz 18",
           "answers": [
             "Sie kann ihre neuen Schuhe nicht tragen."
-          ]
+          ],
+          "prompt": "Bilden Sie den Satz: sie · ihre neuen Schuhe nicht tragen können."
         },
         {
           "label": "a · Satz 19",
           "answers": [
             "Alex hat Probleme mit seinem Auge."
-          ]
+          ],
+          "prompt": "Bilden Sie den Satz: Alex · Probleme haben · sein Auge."
         },
         {
           "label": "a · Satz 20",
           "answers": [
             "Das rechte Auge tut weh."
-          ]
+          ],
+          "prompt": "Bilden Sie den Satz: das rechte Auge · wehtun."
         },
         {
           "label": "a · Satz 21",
           "answers": [
             "Er kann nicht mehr so lange fernsehen."
-          ]
+          ],
+          "prompt": "Bilden Sie den Satz: er · nicht mehr so lange fernsehen können."
         }
       ]
     },
@@ -56404,31 +58615,36 @@ window.SPEKTRUM_BANKS={
           "label": "a · Verb 1",
           "answers": [
             "Nehmen"
-          ]
+          ],
+          "prompt": "___ Sie Platz."
         },
         {
           "label": "a · Verb 2",
           "answers": [
             "Bleiben"
-          ]
+          ],
+          "prompt": "___ Sie zwei oder drei Tage zu Hause."
         },
         {
           "label": "a · Verb 3",
           "answers": [
             "Trinken"
-          ]
+          ],
+          "prompt": "___ Sie viel Wasser."
         },
         {
           "label": "a · Verb 4",
           "answers": [
             "Essen"
-          ]
+          ],
+          "prompt": "___ Sie Obst und Gemüse."
         },
         {
           "label": "a · Verb 5",
           "answers": [
             "Schlafen"
-          ]
+          ],
+          "prompt": "___ Sie viel."
         },
         {
           "label": "a · Verbposition",
@@ -56442,109 +58658,127 @@ window.SPEKTRUM_BANKS={
           "label": "b · Sie 1",
           "answers": [
             "Trinken Sie heißen Tee mit Honig."
-          ]
+          ],
+          "prompt": "Formulieren Sie den Rat (Sie): heißen Tee mit Honig trinken."
         },
         {
           "label": "b · Sie 2",
           "answers": [
             "Treiben Sie keinen Sport."
-          ]
+          ],
+          "prompt": "Formulieren Sie den Rat (Sie): keinen Sport treiben."
         },
         {
           "label": "b · Sie 3",
           "answers": [
             "Essen Sie gesund."
-          ]
+          ],
+          "prompt": "Formulieren Sie den Rat (Sie): gesund essen."
         },
         {
           "label": "b · Sie 4",
           "answers": [
             "Nehmen Sie regelmäßig Tabletten."
-          ]
+          ],
+          "prompt": "Formulieren Sie den Rat (Sie): regelmäßig Tabletten nehmen."
         },
         {
           "label": "b · Sie 5",
           "answers": [
             "Rauchen Sie nicht."
-          ]
+          ],
+          "prompt": "Formulieren Sie den Rat (Sie): nicht rauchen."
         },
         {
           "label": "b · Sie 6",
           "answers": [
             "Arbeiten Sie nicht."
-          ]
+          ],
+          "prompt": "Formulieren Sie den Rat (Sie): nicht arbeiten."
         },
         {
           "label": "d · du 1",
           "answers": [
             "Trink heißen Tee mit Honig."
-          ]
+          ],
+          "prompt": "Formulieren Sie den Rat (du): heißen Tee mit Honig trinken."
         },
         {
           "label": "d · du 2",
           "answers": [
             "Treib keinen Sport."
-          ]
+          ],
+          "prompt": "Formulieren Sie den Rat (du): keinen Sport treiben."
         },
         {
           "label": "d · du 3",
           "answers": [
             "Iss gesund."
-          ]
+          ],
+          "prompt": "Formulieren Sie den Rat (du): gesund essen."
         },
         {
           "label": "d · du 4",
           "answers": [
             "Nimm regelmäßig Tabletten."
-          ]
+          ],
+          "prompt": "Formulieren Sie den Rat (du): regelmäßig Tabletten nehmen."
         },
         {
           "label": "d · du 5",
           "answers": [
             "Rauch nicht."
-          ]
+          ],
+          "prompt": "Formulieren Sie den Rat (du): nicht rauchen."
         },
         {
           "label": "d · du 6",
           "answers": [
             "Arbeite nicht."
-          ]
+          ],
+          "prompt": "Formulieren Sie den Rat (du): nicht arbeiten."
         },
         {
           "label": "d · ihr 1",
           "answers": [
             "Trinkt heißen Tee mit Honig."
-          ]
+          ],
+          "prompt": "Formulieren Sie den Rat (ihr): heißen Tee mit Honig trinken."
         },
         {
           "label": "d · ihr 2",
           "answers": [
             "Treibt keinen Sport."
-          ]
+          ],
+          "prompt": "Formulieren Sie den Rat (ihr): keinen Sport treiben."
         },
         {
           "label": "d · ihr 3",
           "answers": [
             "Esst gesund."
-          ]
+          ],
+          "prompt": "Formulieren Sie den Rat (ihr): gesund essen."
         },
         {
           "label": "d · ihr 4",
           "answers": [
             "Nehmt regelmäßig Tabletten."
-          ]
+          ],
+          "prompt": "Formulieren Sie den Rat (ihr): regelmäßig Tabletten nehmen."
         },
         {
           "label": "d · ihr 5",
           "answers": [
             "Raucht nicht."
-          ]
+          ],
+          "prompt": "Formulieren Sie den Rat (ihr): nicht rauchen."
         },
         {
           "label": "d · ihr 6",
           "answers": [
             "Arbeitet nicht."
-          ]
+          ],
+          "prompt": "Formulieren Sie den Rat (ihr): nicht arbeiten."
         }
       ]
     },
@@ -56554,19 +58788,22 @@ window.SPEKTRUM_BANKS={
           "label": "b · Früher 1",
           "answers": [
             "im Garten gearbeitet"
-          ]
+          ],
+          "prompt": "Früher: Was haben die Menschen im Garten gemacht? (Perfekt)"
         },
         {
           "label": "b · Früher 2",
           "answers": [
             "ins Kino gegangen"
-          ]
+          ],
+          "prompt": "Früher: Wohin sind sie gegangen, um Filme zu sehen? (Perfekt)"
         },
         {
           "label": "b · Früher 3",
           "answers": [
             "spazieren gegangen"
-          ]
+          ],
+          "prompt": "Früher: Was haben sie zu Fuß in ihrer Freizeit gemacht? (Perfekt)"
         },
         {
           "label": "b · Heute 1",
@@ -56574,31 +58811,36 @@ window.SPEKTRUM_BANKS={
             "auf der Couch sitzen und fernsehen",
             "auf der Couch sitzen",
             "fernsehen"
-          ]
+          ],
+          "prompt": "Heute: Was tun viele lieber auf der Couch?"
         },
         {
           "label": "b · Heute 2",
           "answers": [
             "mit Freunden chatten"
-          ]
+          ],
+          "prompt": "Heute: Wie kommunizieren junge Leute im Netz mit Freunden?"
         },
         {
           "label": "b · Heute 3",
           "answers": [
             "Videos sehen"
-          ]
+          ],
+          "prompt": "Heute: Was sehen sich junge Leute im Netz an?"
         },
         {
           "label": "b · Heute 4",
           "answers": [
             "Onlinespiele spielen"
-          ]
+          ],
+          "prompt": "Heute: Was spielen junge Leute im Netz?"
         },
         {
           "label": "b · Heute 5",
           "answers": [
             "im Internet surfen"
-          ]
+          ],
+          "prompt": "Heute: Wie heißt die Tätigkeit, bei der man Webseiten besucht?"
         }
       ]
     },
@@ -56608,97 +58850,113 @@ window.SPEKTRUM_BANKS={
           "label": "Präsens / früher 1 · Frage",
           "answers": [
             "Siehst du stundenlang fern?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach heute: stundenlang fernsehen."
         },
         {
           "label": "Präsens / früher 1 · Antwort",
           "answers": [
             "Hast du früher stundenlang ferngesehen?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach früher im Perfekt: stundenlang fernsehen."
         },
         {
           "label": "Präsens / früher 2 · Frage",
           "answers": [
             "Surfst du täglich vier Stunden im Internet?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach heute: täglich vier Stunden im Internet surfen."
         },
         {
           "label": "Präsens / früher 2 · Antwort",
           "answers": [
             "Hast du früher täglich vier Stunden im Internet gesurft?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach früher im Perfekt: täglich vier Stunden im Internet surfen."
         },
         {
           "label": "Präsens / früher 3 · Frage",
           "answers": [
             "Gehst du oft ins Kino?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach heute: oft ins Kino gehen."
         },
         {
           "label": "Präsens / früher 3 · Antwort",
           "answers": [
             "Bist du früher oft ins Kino gegangen?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach früher im Perfekt: oft ins Kino gehen."
         },
         {
           "label": "Präsens / früher 4 · Frage",
           "answers": [
             "Fährst du gern Rad?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach heute: gern Rad fahren."
         },
         {
           "label": "Präsens / früher 4 · Antwort",
           "answers": [
             "Bist du früher gern Rad gefahren?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach früher im Perfekt: gern Rad fahren."
         },
         {
           "label": "Präsens / früher 5 · Frage",
           "answers": [
             "Arbeitest du im Garten?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach heute: im Garten arbeiten."
         },
         {
           "label": "Präsens / früher 5 · Antwort",
           "answers": [
             "Hast du früher im Garten gearbeitet?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach früher im Perfekt: im Garten arbeiten."
         },
         {
           "label": "Präsens / früher 6 · Frage",
           "answers": [
             "Machst du Yoga?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach heute: Yoga machen."
         },
         {
           "label": "Präsens / früher 6 · Antwort",
           "answers": [
             "Hast du früher Yoga gemacht?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach früher im Perfekt: Yoga machen."
         },
         {
           "label": "Präsens / früher 7 · Frage",
           "answers": [
             "Spielst du Fußball?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach heute: Fußball spielen."
         },
         {
           "label": "Präsens / früher 7 · Antwort",
           "answers": [
             "Hast du früher Fußball gespielt?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach früher im Perfekt: Fußball spielen."
         },
         {
           "label": "Präsens / früher 8 · Frage",
           "answers": [
             "Chattest du oft mit Freunden?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach heute: oft mit Freunden chatten."
         },
         {
           "label": "Präsens / früher 8 · Antwort",
           "answers": [
             "Hast du früher oft mit Freunden gechattet?"
-          ]
+          ],
+          "prompt": "Fragen Sie nach früher im Perfekt: oft mit Freunden chatten."
         }
       ]
     },
@@ -56708,113 +58966,131 @@ window.SPEKTRUM_BANKS={
           "label": "Präsens / Perfekt 1 · Frage",
           "answers": [
             "Oma und Marie kochen."
-          ]
+          ],
+          "prompt": "Was macht die Person oder Gruppe am Wochenende? Oma und Marie · kochen."
         },
         {
           "label": "Präsens / Perfekt 1 · Antwort",
           "answers": [
             "Oma und Marie haben gekocht."
-          ]
+          ],
+          "prompt": "Was hat die Person oder Gruppe am Wochenende gemacht? Oma und Marie · kochen."
         },
         {
           "label": "Präsens / Perfekt 2 · Frage",
           "answers": [
             "Robert kommuniziert in sozialen Netzwerken."
-          ]
+          ],
+          "prompt": "Was macht die Person oder Gruppe am Wochenende? Robert · in sozialen Netzwerken kommunizieren."
         },
         {
           "label": "Präsens / Perfekt 2 · Antwort",
           "answers": [
             "Robert hat in sozialen Netzwerken kommuniziert."
-          ]
+          ],
+          "prompt": "Was hat die Person oder Gruppe am Wochenende gemacht? Robert · in sozialen Netzwerken kommunizieren."
         },
         {
           "label": "Präsens / Perfekt 3 · Frage",
           "answers": [
             "Herr Klein liest Zeitung."
-          ]
+          ],
+          "prompt": "Was macht die Person oder Gruppe am Wochenende? Herr Klein · Zeitung lesen."
         },
         {
           "label": "Präsens / Perfekt 3 · Antwort",
           "answers": [
             "Herr Klein hat Zeitung gelesen."
-          ]
+          ],
+          "prompt": "Was hat die Person oder Gruppe am Wochenende gemacht? Herr Klein · Zeitung lesen."
         },
         {
           "label": "Präsens / Perfekt 4 · Frage",
           "answers": [
             "Rudolf schläft.",
             "Rudolf schläft lange."
-          ]
+          ],
+          "prompt": "Was macht die Person oder Gruppe am Wochenende? Rudolf · schlafen."
         },
         {
           "label": "Präsens / Perfekt 4 · Antwort",
           "answers": [
             "Rudolf hat geschlafen.",
             "Rudolf hat lange geschlafen."
-          ]
+          ],
+          "prompt": "Was hat die Person oder Gruppe am Wochenende gemacht? Rudolf · schlafen."
         },
         {
           "label": "Präsens / Perfekt 5 · Frage",
           "answers": [
             "Petra tut nichts.",
             "Petra faulenzt."
-          ]
+          ],
+          "prompt": "Was macht die Person oder Gruppe am Wochenende? Petra · nichts tun."
         },
         {
           "label": "Präsens / Perfekt 5 · Antwort",
           "answers": [
             "Petra hat nichts getan.",
             "Petra hat gefaulenzt."
-          ]
+          ],
+          "prompt": "Was hat die Person oder Gruppe am Wochenende gemacht? Petra · nichts tun."
         },
         {
           "label": "Präsens / Perfekt 6 · Frage",
           "answers": [
             "Diana treibt Sport."
-          ]
+          ],
+          "prompt": "Was macht die Person oder Gruppe am Wochenende? Diana · Sport treiben."
         },
         {
           "label": "Präsens / Perfekt 6 · Antwort",
           "answers": [
             "Diana hat Sport getrieben."
-          ]
+          ],
+          "prompt": "Was hat die Person oder Gruppe am Wochenende gemacht? Diana · Sport treiben."
         },
         {
           "label": "Präsens / Perfekt 7 · Frage",
           "answers": [
             "Anna und Klaus trinken Kaffee und reden."
-          ]
+          ],
+          "prompt": "Was macht die Person oder Gruppe am Wochenende? Anna und Klaus · Kaffee trinken und reden."
         },
         {
           "label": "Präsens / Perfekt 7 · Antwort",
           "answers": [
             "Anna und Klaus haben Kaffee getrunken und geredet."
-          ]
+          ],
+          "prompt": "Was hat die Person oder Gruppe am Wochenende gemacht? Anna und Klaus · Kaffee trinken und reden."
         },
         {
           "label": "Präsens / Perfekt 8 · Frage",
           "answers": [
             "Lisa hört Musik."
-          ]
+          ],
+          "prompt": "Was macht die Person oder Gruppe am Wochenende? Lisa · Musik hören."
         },
         {
           "label": "Präsens / Perfekt 8 · Antwort",
           "answers": [
             "Lisa hat Musik gehört."
-          ]
+          ],
+          "prompt": "Was hat die Person oder Gruppe am Wochenende gemacht? Lisa · Musik hören."
         },
         {
           "label": "Präsens / Perfekt 9 · Frage",
           "answers": [
             "Opa arbeitet im Garten."
-          ]
+          ],
+          "prompt": "Was macht die Person oder Gruppe am Wochenende? Opa · im Garten arbeiten."
         },
         {
           "label": "Präsens / Perfekt 9 · Antwort",
           "answers": [
             "Opa hat im Garten gearbeitet."
-          ]
+          ],
+          "prompt": "Was hat die Person oder Gruppe am Wochenende gemacht? Opa · im Garten arbeiten."
         }
       ]
     },
@@ -56824,31 +59100,36 @@ window.SPEKTRUM_BANKS={
           "label": "Satz 1",
           "answers": [
             "Sie gehen nicht mehr so viel spazieren."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: sie · nicht mehr so viel · spazieren gehen"
         },
         {
           "label": "Satz 2",
           "answers": [
             "Junge Leute verbringen viel Zeit im Internet."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: junge Leute · viel Zeit · im Internet · verbringen"
         },
         {
           "label": "Satz 3",
           "answers": [
             "Mehr als 50 Prozent der Deutschen treiben keinen Sport, nur 44 Prozent sind sportlich aktiv."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: mehr als 50 Prozent der Deutschen · keinen Sport · treiben, · nur 44 Prozent · sportlich aktiv · sein"
         },
         {
           "label": "Satz 4",
           "answers": [
             "Die beliebtesten Sportarten sind Fitness und Workout, Wandern und Schwimmen."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: die beliebtesten Sportarten · Fitness und Workout, Wandern und Schwimmen · sein"
         },
         {
           "label": "Satz 5",
           "answers": [
             "Nichtsportler sagen, sie haben für Sport keine Zeit."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: Nichtsportler · sagen, · sie · für Sport · keine Zeit · haben"
         }
       ]
     },
@@ -56858,127 +59139,148 @@ window.SPEKTRUM_BANKS={
           "label": "a · du 1",
           "answers": [
             "Nimm eine Schmerztablette."
-          ]
+          ],
+          "prompt": "Geben Sie Otto einen Rat mit du: eine Schmerztablette nehmen."
         },
         {
           "label": "a · du 2",
           "answers": [
             "Trink heiße Milch mit Honig."
-          ]
+          ],
+          "prompt": "Geben Sie Otto einen Rat mit du: heiße Milch mit Honig trinken."
         },
         {
           "label": "a · du 3",
           "answers": [
             "Trag immer eine Mütze."
-          ]
+          ],
+          "prompt": "Geben Sie Otto einen Rat mit du: immer eine Mütze tragen."
         },
         {
           "label": "a · du 4",
           "answers": [
             "Iss keine Süßigkeiten."
-          ]
+          ],
+          "prompt": "Geben Sie Otto einen Rat mit du: keine Süßigkeiten essen."
         },
         {
           "label": "a · du 5",
           "answers": [
             "Geh ins Bett."
-          ]
+          ],
+          "prompt": "Geben Sie Otto einen Rat mit du: ins Bett gehen."
         },
         {
           "label": "c · ihr 1",
           "answers": [
             "Trinkt heiße Zitrone oder heißen Tee."
-          ]
+          ],
+          "prompt": "Geben Sie den Rat (ihr): heiße Zitrone oder Tee trinken."
         },
         {
           "label": "c · ihr 2",
           "answers": [
             "Bleibt ein paar Tage zu Hause."
-          ]
+          ],
+          "prompt": "Geben Sie den Rat (ihr): ein paar Tage zu Hause bleiben."
         },
         {
           "label": "c · ihr 3",
           "answers": [
             "Besucht einen Deutschkurs."
-          ]
+          ],
+          "prompt": "Geben Sie den Rat (ihr): einen Deutschkurs besuchen."
         },
         {
           "label": "c · ihr 4",
           "answers": [
             "Tragt immer eine Mütze."
-          ]
+          ],
+          "prompt": "Geben Sie den Rat (ihr): immer eine Mütze tragen."
         },
         {
           "label": "c · ihr 5",
           "answers": [
             "Macht Yoga."
-          ]
+          ],
+          "prompt": "Geben Sie den Rat (ihr): Yoga machen."
         },
         {
           "label": "c · ihr 6",
           "answers": [
             "Sitzt weniger vor dem Computer."
-          ]
+          ],
+          "prompt": "Geben Sie den Rat (ihr): weniger vor dem Computer sitzen."
         },
         {
           "label": "c · ihr 7",
           "answers": [
             "Sucht im Internet nach günstigen Angeboten."
-          ]
+          ],
+          "prompt": "Geben Sie den Rat (ihr): im Internet nach günstigen Angeboten suchen."
         },
         {
           "label": "c · ihr 8",
           "answers": [
             "Lest mehr Texte auf Deutsch."
-          ]
+          ],
+          "prompt": "Geben Sie den Rat (ihr): mehr Texte auf Deutsch lesen."
         },
         {
           "label": "c · Sie 1",
           "answers": [
             "Trinken Sie heiße Zitrone oder heißen Tee."
-          ]
+          ],
+          "prompt": "Geben Sie den Rat (Sie): heiße Zitrone oder Tee trinken."
         },
         {
           "label": "c · Sie 2",
           "answers": [
             "Bleiben Sie ein paar Tage zu Hause."
-          ]
+          ],
+          "prompt": "Geben Sie den Rat (Sie): ein paar Tage zu Hause bleiben."
         },
         {
           "label": "c · Sie 3",
           "answers": [
             "Besuchen Sie einen Deutschkurs."
-          ]
+          ],
+          "prompt": "Geben Sie den Rat (Sie): einen Deutschkurs besuchen."
         },
         {
           "label": "c · Sie 4",
           "answers": [
             "Tragen Sie immer eine Mütze."
-          ]
+          ],
+          "prompt": "Geben Sie den Rat (Sie): immer eine Mütze tragen."
         },
         {
           "label": "c · Sie 5",
           "answers": [
             "Machen Sie Yoga."
-          ]
+          ],
+          "prompt": "Geben Sie den Rat (Sie): Yoga machen."
         },
         {
           "label": "c · Sie 6",
           "answers": [
             "Sitzen Sie weniger vor dem Computer."
-          ]
+          ],
+          "prompt": "Geben Sie den Rat (Sie): weniger vor dem Computer sitzen."
         },
         {
           "label": "c · Sie 7",
           "answers": [
             "Suchen Sie im Internet nach günstigen Angeboten."
-          ]
+          ],
+          "prompt": "Geben Sie den Rat (Sie): im Internet nach günstigen Angeboten suchen."
         },
         {
           "label": "c · Sie 8",
           "answers": [
             "Lesen Sie mehr Texte auf Deutsch."
-          ]
+          ],
+          "prompt": "Geben Sie den Rat (Sie): mehr Texte auf Deutsch lesen."
         }
       ]
     },
@@ -56988,57 +59290,66 @@ window.SPEKTRUM_BANKS={
           "label": "Satz 1",
           "answers": [
             "Mein Opa ist schon über 80 und er fährt immer noch mit dem Fahrrad in die Stadt."
-          ]
+          ],
+          "prompt": "Mein Opa ist schon über 80 … (er · immer noch · mit dem Fahrrad in die Stadt fahren)"
         },
         {
           "label": "Satz 2",
           "answers": [
             "Elvira geht einmal in der Woche schwimmen und sie geht zweimal in der Woche ins Fitnessstudio.",
             "Elvira geht einmal in der Woche schwimmen oder sie geht zweimal in der Woche ins Fitnessstudio."
-          ]
+          ],
+          "prompt": "Elvira geht einmal in der Woche schwimmen … (sie · zweimal in der Woche · ins Fitnessstudio gehen)"
         },
         {
           "label": "Satz 3",
           "answers": [
             "Ich lerne sehr schnell Fremdsprachen, aber ich finde Chinesisch schwierig."
-          ]
+          ],
+          "prompt": "Ich lerne sehr schnell Fremdsprachen … (ich · Chinesisch schwierig finden)"
         },
         {
           "label": "Satz 4",
           "answers": [
             "Ich fahre mit dem Fahrrad zur Uni oder ich nehme die Straßenbahn."
-          ]
+          ],
+          "prompt": "Ich fahre mit dem Fahrrad zur Uni … (ich · die Straßenbahn nehmen)"
         },
         {
           "label": "Satz 5",
           "answers": [
             "Hanna denkt, Berlin ist eine interessante Stadt, aber sie findet die Umgebung auch sehr schön.",
             "Hanna denkt, Berlin ist eine interessante Stadt, und sie findet die Umgebung auch sehr schön."
-          ]
+          ],
+          "prompt": "Hanna denkt, Berlin ist eine interessante Stadt … (sie · die Umgebung auch sehr schön finden)"
         },
         {
           "label": "Satz 6",
           "answers": [
             "Früher hat Matthias Tennis gespielt, aber jetzt spielt er lieber Fußball."
-          ]
+          ],
+          "prompt": "Früher hat Matthias Tennis gespielt … (jetzt · er · lieber Fußball spielen)"
         },
         {
           "label": "Satz 7",
           "answers": [
             "Meine Kollegen sind alle nett und sie sind auch sehr kompetent."
-          ]
+          ],
+          "prompt": "Meine Kollegen sind alle nett … (sie · auch sehr kompetent sein)"
         },
         {
           "label": "Satz 8",
           "answers": [
             "Ihr lebt gesund: Ihr trinkt keinen Alkohol und ihr esst viel Obst und Gemüse."
-          ]
+          ],
+          "prompt": "Ihr lebt gesund: Ihr trinkt keinen Alkohol … (ihr · viel Obst und Gemüse essen)"
         },
         {
           "label": "Satz 9",
           "answers": [
             "Wir bestellen die Pizza im Restaurant oder wir machen selbst eine Pizza."
-          ]
+          ],
+          "prompt": "Wir bestellen die Pizza im Restaurant … (wir · selbst eine Pizza machen)"
         }
       ]
     },
@@ -57048,37 +59359,43 @@ window.SPEKTRUM_BANKS={
           "label": "Satz 1",
           "answers": [
             "Ich soll einen Raum für die Besprechung buchen."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz mit sollen: ich • einen Raum für die Besprechung buchen"
         },
         {
           "label": "Satz 2",
           "answers": [
             "Wir sollen heute länger arbeiten."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz mit sollen: wir • heute länger arbeiten"
         },
         {
           "label": "Satz 3",
           "answers": [
             "Ihr sollt Frau Kahn zurückrufen."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz mit sollen: ihr • Frau Kahn • zurückrufen"
         },
         {
           "label": "Satz 4",
           "answers": [
             "Martin soll im Restaurant einen Tisch für das Geschäftsessen am Freitag reservieren."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz mit sollen: Martin • im Restaurant einen Tisch für das Geschäftsessen am Freitag reservieren"
         },
         {
           "label": "Satz 5",
           "answers": [
             "Sie sollen die Gäste vom Hauptbahnhof abholen."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz mit sollen: Sie • die Gäste vom Hauptbahnhof abholen"
         },
         {
           "label": "Satz 6",
           "answers": [
             "Frau Meier und Herr Kluge sollen alle Kollegen über die Termine in der nächsten Woche informieren."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz mit sollen: Frau Meier und Herr Kluge • alle Kollegen • über die Termine in der nächsten Woche • informieren"
         }
       ]
     },
@@ -57088,31 +59405,36 @@ window.SPEKTRUM_BANKS={
           "label": "Anzeige 1",
           "answers": [
             "A"
-          ]
+          ],
+          "prompt": "Sie möchten ein neues Fahrrad kaufen. Welche Anzeige passt, A oder B?"
         },
         {
           "label": "Anzeige 2",
           "answers": [
             "B"
-          ]
+          ],
+          "prompt": "Sie suchen ein Fitnessstudio mit Beratung. Welche Anzeige passt?"
         },
         {
           "label": "Anzeige 3",
           "answers": [
             "B"
-          ]
+          ],
+          "prompt": "Sie möchten einen Deutschkurs besuchen. Welche Anzeige passt?"
         },
         {
           "label": "Anzeige 4",
           "answers": [
             "B"
-          ]
+          ],
+          "prompt": "Sie möchten mit Ihren Freunden italienisch essen. Welche Anzeige passt?"
         },
         {
           "label": "Anzeige 5",
           "answers": [
             "A"
-          ]
+          ],
+          "prompt": "Sie möchten eine Tanzvorstellung sehen. Welche Anzeige passt?"
         }
       ]
     },
@@ -57223,115 +59545,134 @@ window.SPEKTRUM_BANKS={
           "label": "b1 · 1",
           "answers": [
             "studieren"
-          ]
+          ],
+          "prompt": "Ich soll mehr ___ …"
         },
         {
           "label": "b1 · 2",
           "answers": [
             "ausgehen"
-          ]
+          ],
+          "prompt": "… und weniger ___."
         },
         {
           "label": "b1 · 3",
           "answers": [
             "muss"
-          ]
+          ],
+          "prompt": "Aber ein bisschen Spaß ___ sein."
         },
         {
           "label": "b1 · 4",
           "answers": [
             "ist"
-          ]
+          ],
+          "prompt": "Es ___ nachts sehr laut."
         },
         {
           "label": "b1 · 5",
           "answers": [
             "stört"
-          ]
+          ],
+          "prompt": "Aber das ___ mich nicht."
         },
         {
           "label": "b1 · 6",
           "answers": [
             "sind"
-          ]
+          ],
+          "prompt": "Die Wohnungen in Leipzig ___ preiswerter als in anderen Städten."
         },
         {
           "label": "b2 · 1",
           "answers": [
             "fahre"
-          ]
+          ],
+          "prompt": "Ich ___ die Kinder jeden Morgen mit dem Auto zur Schule."
         },
         {
           "label": "b2 · 2",
           "answers": [
             "finde"
-          ]
+          ],
+          "prompt": "Das ___ ich etwas stressig."
         },
         {
           "label": "b2 · 3",
           "answers": [
             "stehe"
-          ]
+          ],
+          "prompt": "Ich ___ oft im Stau."
         },
         {
           "label": "b2 · 4",
           "answers": [
             "haben"
-          ]
+          ],
+          "prompt": "Am Wochenende ___ wir hier absolute Ruhe."
         },
         {
           "label": "b2 · 5",
           "answers": [
             "arbeite"
-          ]
+          ],
+          "prompt": "Ich ___ viel im Garten."
         },
         {
           "label": "b2 · 6",
           "answers": [
             "mag"
-          ]
+          ],
+          "prompt": "Ich ___ meine Blumen und die Pflanzen."
         },
         {
           "label": "c · 1",
           "answers": [
             "Hochhaus"
-          ]
+          ],
+          "prompt": "Ich wohne in einem ___ am Stadtrand."
         },
         {
           "label": "c · 2",
           "answers": [
             "Etage"
-          ]
+          ],
+          "prompt": "Meine Wohnung liegt in der 17. ___."
         },
         {
           "label": "c · 3",
           "answers": [
             "Fahrstuhl"
-          ]
+          ],
+          "prompt": "Manchmal geht der ___ nicht."
         },
         {
           "label": "c · 4",
           "answers": [
             "Treppe"
-          ]
+          ],
+          "prompt": "Dann muss ich die ___ nehmen."
         },
         {
           "label": "c · 5",
           "answers": [
             "Lärm"
-          ]
+          ],
+          "prompt": "Meine Nachbarn machen viel ___."
         },
         {
           "label": "c · 6",
           "answers": [
             "Gegend"
-          ]
+          ],
+          "prompt": "In unserer ___ gibt es viele Hochhäuser."
         },
         {
           "label": "c · 7",
           "answers": [
             "Supermarkt"
-          ]
+          ],
+          "prompt": "Aber es gibt nur einen ___."
         }
       ]
     },
@@ -57369,49 +59710,57 @@ window.SPEKTRUM_BANKS={
           "label": "c · Satz 1",
           "answers": [
             "Otto steht vor der Waschmaschine."
-          ]
+          ],
+          "prompt": "Wo steht Otto? (vor • die Waschmaschine)"
         },
         {
           "label": "c · Satz 2",
           "answers": [
             "Die Wäsche ist im Wäschekorb."
-          ]
+          ],
+          "prompt": "Wo ist die Wäsche? (in • der Wäschekorb)"
         },
         {
           "label": "c · Satz 3",
           "answers": [
             "Der Bücherschrank steht neben der Tür."
-          ]
+          ],
+          "prompt": "Wo steht der Bücherschrank? (neben • die Tür)"
         },
         {
           "label": "c · Satz 4",
           "answers": [
             "Die Kaffeemaschine steht am Fenster."
-          ]
+          ],
+          "prompt": "Wo steht die Kaffeemaschine? (an • das Fenster)"
         },
         {
           "label": "c · Satz 5",
           "answers": [
             "Die Stifte liegen zwischen dem Telefon und dem Laptop."
-          ]
+          ],
+          "prompt": "Wo liegen die Stifte? (zwischen • das Telefon und der Laptop)"
         },
         {
           "label": "c · Satz 6",
           "answers": [
             "Die Medikamente liegen hinter der Kaffeemaschine."
-          ]
+          ],
+          "prompt": "Wo liegen die Medikamente? (hinter • die Kaffeemaschine)"
         },
         {
           "label": "c · Satz 7",
           "answers": [
             "Der Spiegel hängt über dem Schuhschrank."
-          ]
+          ],
+          "prompt": "Wo hängt der Spiegel? (über • der Schuhschrank)"
         },
         {
           "label": "c · Satz 8",
           "answers": [
             "Der Klempner ist unter dem Waschbecken."
-          ]
+          ],
+          "prompt": "Wo ist der Klempner? (unter • das Waschbecken)"
         }
       ]
     },
@@ -57421,61 +59770,71 @@ window.SPEKTRUM_BANKS={
           "label": "Dialog 1 · Pronomen 1",
           "answers": [
             "du"
-          ]
+          ],
+          "prompt": "Kommst ___ mit ins Kino?"
         },
         {
           "label": "Dialog 1 · Pronomen 2",
           "answers": [
             "ich"
-          ]
+          ],
+          "prompt": "Nein, ___ muss noch Staub saugen."
         },
         {
           "label": "Dialog 1 · Pronomen 3",
           "answers": [
             "ich"
-          ]
+          ],
+          "prompt": "Soll ___ dir helfen?"
         },
         {
           "label": "Dialog 1 · Pronomen 4",
           "answers": [
             "dir"
-          ]
+          ],
+          "prompt": "Soll ich ___ helfen?"
         },
         {
           "label": "Dialog 2 · Pronomen 1",
           "answers": [
             "du"
-          ]
+          ],
+          "prompt": "Kommst ___ mit ins Kino?"
         },
         {
           "label": "Dialog 2 · Pronomen 2",
           "answers": [
             "ich"
-          ]
+          ],
+          "prompt": "Nein, ___ muss noch Staub saugen."
         },
         {
           "label": "Dialog 2 · Pronomen 3",
           "answers": [
             "du"
-          ]
+          ],
+          "prompt": "Kannst ___ mir helfen?"
         },
         {
           "label": "Dialog 2 · Pronomen 4",
           "answers": [
             "mir"
-          ]
+          ],
+          "prompt": "Kannst du ___ helfen?"
         },
         {
           "label": "Dialog 2 · Pronomen 5",
           "answers": [
             "mir"
-          ]
+          ],
+          "prompt": "Tut ___ leid …"
         },
         {
           "label": "Dialog 2 · Pronomen 6",
           "answers": [
             "ich"
-          ]
+          ],
+          "prompt": "… ___ habe überhaupt keine Zeit."
         }
       ]
     },
@@ -57485,43 +59844,50 @@ window.SPEKTRUM_BANKS={
           "label": "a · Bild 1",
           "answers": [
             "der Spiegel"
-          ]
+          ],
+          "prompt": "Worin kann man im Flur sein eigenes Gesicht sehen? Schreiben Sie das Nomen mit Artikel."
         },
         {
           "label": "a · Bild 2",
           "answers": [
             "das Bücherregal"
-          ]
+          ],
+          "prompt": "In welches Möbelstück stellt man Bücher?"
         },
         {
           "label": "a · Bild 3",
           "answers": [
             "das Waschbecken"
-          ]
+          ],
+          "prompt": "Wo wäscht man sich im Bad die Hände?"
         },
         {
           "label": "a · Bild 4",
           "answers": [
             "der Teppich"
-          ]
+          ],
+          "prompt": "Was liegt als textiler Belag auf dem Fußboden?"
         },
         {
           "label": "a · Bild 5",
           "answers": [
             "die Vase"
-          ]
+          ],
+          "prompt": "In welches Gefäß stellt man Blumen?"
         },
         {
           "label": "a · Bild 6",
           "answers": [
             "die Toilette"
-          ]
+          ],
+          "prompt": "Welchen Gegenstand im Bad zeigt Bild 6? Schreiben Sie das Nomen mit Artikel."
         },
         {
           "label": "a · Bild 7",
           "answers": [
             "der Küchenschrank"
-          ]
+          ],
+          "prompt": "In welchem Möbelstück in der Küche bewahrt man Geschirr auf?"
         },
         {
           "label": "b · Fernseher → Zimmer",
@@ -57678,55 +60044,64 @@ window.SPEKTRUM_BANKS={
           "label": "Satz 1",
           "answers": [
             "Das Fahrrad liegt unter dem Bett."
-          ]
+          ],
+          "prompt": "Wo befindet sich das Fahrrad? Beschreiben Sie die Lage im Bild in einem Satz."
         },
         {
           "label": "Satz 2",
           "answers": [
             "Der Stuhl steht vor dem Schreibtisch."
-          ]
+          ],
+          "prompt": "Wo befindet sich der Stuhl? Beschreiben Sie die Lage im Bild in einem Satz."
         },
         {
           "label": "Satz 3",
           "answers": [
             "Das Buch liegt auf dem Sofa."
-          ]
+          ],
+          "prompt": "Wo befindet sich das Buch? Beschreiben Sie die Lage im Bild in einem Satz."
         },
         {
           "label": "Satz 4",
           "answers": [
             "Die Pizza liegt auf dem Bett."
-          ]
+          ],
+          "prompt": "Wo befindet sich die Pizza? Beschreiben Sie die Lage im Bild in einem Satz."
         },
         {
           "label": "Satz 5",
           "answers": [
             "Die Tasse steht neben der Tastatur."
-          ]
+          ],
+          "prompt": "Wo befindet sich die Tasse? Beschreiben Sie die Lage im Bild in einem Satz."
         },
         {
           "label": "Satz 6",
           "answers": [
             "Die Blumen sind in der Vase."
-          ]
+          ],
+          "prompt": "Wo sind die Blumen? Beschreiben Sie die Lage im Bild in einem Satz."
         },
         {
           "label": "Satz 7",
           "answers": [
             "Der Kugelschreiber liegt vor der Vase."
-          ]
+          ],
+          "prompt": "Wo befindet sich der Kugelschreiber? Beschreiben Sie die Lage im Bild in einem Satz."
         },
         {
           "label": "Satz 8",
           "answers": [
             "Der Computer steht auf dem Schreibtisch."
-          ]
+          ],
+          "prompt": "Wo befindet sich der Computer? Beschreiben Sie die Lage im Bild in einem Satz."
         },
         {
           "label": "Satz 9",
           "answers": [
             "Das Bild hängt an der Wand."
-          ]
+          ],
+          "prompt": "Wo befindet sich das Bild? Beschreiben Sie die Lage im Bild in einem Satz."
         }
       ]
     },
@@ -57736,103 +60111,120 @@ window.SPEKTRUM_BANKS={
           "label": "Rätsel 1",
           "answers": [
             "EINWEIHUNGSPARTY"
-          ]
+          ],
+          "prompt": "Lieber Peter, kommst du zu meiner ___?"
         },
         {
           "label": "Rätsel 2",
           "answers": [
             "WOHNUNG"
-          ]
+          ],
+          "prompt": "Maria sucht eine neue ___."
         },
         {
           "label": "Rätsel 3",
           "answers": [
             "HOCHHAUS"
-          ]
+          ],
+          "prompt": "In der Großstadt wohnen viele Menschen in einem ___."
         },
         {
           "label": "Rätsel 4",
           "answers": [
             "BALKON"
-          ]
+          ],
+          "prompt": "Ich sitze manchmal draußen auf meinem ___."
         },
         {
           "label": "Rätsel 5",
           "answers": [
             "GARAGE"
-          ]
+          ],
+          "prompt": "Mein Auto steht in meiner ___."
         },
         {
           "label": "Rätsel 6",
           "answers": [
             "KÜCHE"
-          ]
+          ],
+          "prompt": "Ich koche gern in meiner neuen ___."
         },
         {
           "label": "Rätsel 7",
           "answers": [
             "MIETE"
-          ]
+          ],
+          "prompt": "Otto zahlt 950 Euro ___."
         },
         {
           "label": "Rätsel 8",
           "answers": [
             "NACHTEILE"
-          ]
+          ],
+          "prompt": "Wohnen am Stadtrand hat ___."
         },
         {
           "label": "Rätsel 9",
           "answers": [
             "WOHNZIMMER"
-          ]
+          ],
+          "prompt": "Eva hat ein sehr großes ___."
         },
         {
           "label": "Rätsel 10",
           "answers": [
             "GARTEN"
-          ]
+          ],
+          "prompt": "Beate mag die Blumen in ihrem ___."
         },
         {
           "label": "Rätsel 11",
           "answers": [
             "FAHRSTUHL"
-          ]
+          ],
+          "prompt": "Gibt es in eurem Haus einen ___?"
         },
         {
           "label": "Rätsel 12",
           "answers": [
             "NACHBARN"
-          ]
+          ],
+          "prompt": "Ich habe neue ___."
         },
         {
           "label": "Rätsel 13",
           "answers": [
             "RUHE"
-          ]
+          ],
+          "prompt": "In unserer Gegend gibt es keinen Lärm. Hier ist absolute ___."
         },
         {
           "label": "Rätsel 14",
           "answers": [
             "LAND"
-          ]
+          ],
+          "prompt": "Ich wohne auf dem ___."
         },
         {
           "label": "Rätsel 15",
           "answers": [
             "FENSTER"
-          ]
+          ],
+          "prompt": "Die Wohnung ist hell. Sie hat viele ___."
         },
         {
           "label": "Rätsel 16",
           "answers": [
             "ETAGE"
-          ]
+          ],
+          "prompt": "Meine Schwester wohnt in der 17. ___ und hat einen tollen Ausblick."
         },
         {
           "label": "Lösungswort",
           "answers": [
             "Wohngemeinschaft"
-          ]
+          ],
+          "prompt": "Wie lautet das Lösungswort des Wohnungsrätsels?"
         }
       ]
     },
@@ -57889,7 +60281,8 @@ window.SPEKTRUM_BANKS={
             "frei",
             "kein Eintritt",
             "0 Euro"
-          ]
+          ],
+          "prompt": "Wie viel Eintritt zahlen Kinder bis vier Jahre im Fernsehturm?"
         },
         {
           "label": "a · Technikmuseum Dienstag–Freitag",
@@ -58013,43 +60406,50 @@ window.SPEKTRUM_BANKS={
           "label": "Entschuldigung 1",
           "answers": [
             "Bettina konnte gestern Abend nicht kommen, sie musste beruflich nach Rom fliegen."
-          ]
+          ],
+          "prompt": "Warum konnte diese Person gestern Abend nicht kommen? Bettina · beruflich nach Rom fliegen."
         },
         {
           "label": "Entschuldigung 2",
           "answers": [
             "Martin konnte gestern Abend nicht kommen, er musste für eine Prüfung lernen."
-          ]
+          ],
+          "prompt": "Warum konnte diese Person gestern Abend nicht kommen? Martin · für eine Prüfung lernen."
         },
         {
           "label": "Entschuldigung 3",
           "answers": [
             "Sylvia konnte gestern Abend nicht kommen, sie musste noch zwei Patienten behandeln."
-          ]
+          ],
+          "prompt": "Warum konnte diese Person gestern Abend nicht kommen? Sylvia · noch zwei Patienten behandeln."
         },
         {
           "label": "Entschuldigung 4",
           "answers": [
             "Otto konnte gestern Abend nicht kommen, er musste auf den Monteur warten."
-          ]
+          ],
+          "prompt": "Warum konnte diese Person gestern Abend nicht kommen? Otto · auf den Monteur warten."
         },
         {
           "label": "Entschuldigung 5",
           "answers": [
             "Simone konnte gestern Abend nicht kommen, sie musste mit Geschäftspartnern essen gehen."
-          ]
+          ],
+          "prompt": "Warum konnte diese Person gestern Abend nicht kommen? Simone · mit Geschäftspartnern essen gehen."
         },
         {
           "label": "Entschuldigung 6",
           "answers": [
             "Alex konnte gestern Abend nicht kommen, er musste an seiner Präsentation arbeiten."
-          ]
+          ],
+          "prompt": "Warum konnte diese Person gestern Abend nicht kommen? Alex · an seiner Präsentation arbeiten."
         },
         {
           "label": "Entschuldigung 7",
           "answers": [
             "Ich konnte gestern Abend nicht kommen, ich musste meine Hausaufgaben machen."
-          ]
+          ],
+          "prompt": "Warum konnte diese Person gestern Abend nicht kommen? ich · meine Hausaufgaben machen."
         }
       ]
     },
@@ -58059,49 +60459,57 @@ window.SPEKTRUM_BANKS={
           "label": "a · Satz 1",
           "answers": [
             "Sie wollte nicht kommen."
-          ]
+          ],
+          "prompt": "Juliane hat ihre Lieblingsserie gesehen. Wollte, konnte oder durfte die Person nicht kommen?"
         },
         {
           "label": "a · Satz 2",
           "answers": [
             "Er konnte nicht kommen."
-          ]
+          ],
+          "prompt": "Ernst war beruflich in London. Wollte, konnte oder durfte die Person nicht kommen?"
         },
         {
           "label": "a · Satz 3",
           "answers": [
             "Er wollte nicht kommen."
-          ]
+          ],
+          "prompt": "Franz ist mit Freunden ins Fußballstadion gegangen. Wollte, konnte oder durfte die Person nicht kommen?"
         },
         {
           "label": "a · Satz 4",
           "answers": [
             "Er durfte nicht kommen."
-          ]
+          ],
+          "prompt": "Der Arzt von Max hat gesagt, er soll im Bett bleiben. Wollte, konnte oder durfte die Person nicht kommen?"
         },
         {
           "label": "a · Satz 5",
           "answers": [
             "Er konnte nicht kommen."
-          ]
+          ],
+          "prompt": "Herr Klein hatte eine Besprechung. Wollte, konnte oder durfte die Person nicht kommen?"
         },
         {
           "label": "a · Satz 6",
           "answers": [
             "Er wollte nicht kommen."
-          ]
+          ],
+          "prompt": "Mathias war auf einer anderen Party. Wollte, konnte oder durfte die Person nicht kommen?"
         },
         {
           "label": "a · Satz 7",
           "answers": [
             "Sie konnte nicht kommen."
-          ]
+          ],
+          "prompt": "Christine hat zwei Stunden im Stau gestanden. Wollte, konnte oder durfte die Person nicht kommen?"
         },
         {
           "label": "a · Satz 8",
           "answers": [
             "Sie konnte nicht kommen."
-          ]
+          ],
+          "prompt": "Elvira hatte Fieber. Wollte, konnte oder durfte die Person nicht kommen?"
         }
       ]
     },
@@ -58111,97 +60519,113 @@ window.SPEKTRUM_BANKS={
           "label": "a · Auswahl 1",
           "answers": [
             "A"
-          ]
+          ],
+          "prompt": "Wie war Fannys Party? A: sehr lustig · B: sehr langweilig · C: sehr kurz."
         },
         {
           "label": "a · Auswahl 2",
           "answers": [
             "B"
-          ]
+          ],
+          "prompt": "Was war mit den über 40 Leuten? A: Sie konnten nicht kommen. B: Sie waren da. C: Sie haben getanzt."
         },
         {
           "label": "a · Auswahl 3",
           "answers": [
             "B"
-          ]
+          ],
+          "prompt": "Was hat ein Freund von Fanny gemacht? A: eine Gitarre gekauft · B: ein Lied komponiert · C: auch Geburtstag gefeiert."
         },
         {
           "label": "a · Auswahl 4",
           "answers": [
             "C"
-          ]
+          ],
+          "prompt": "Wann ist Fanny ins Bett gegangen? A: um halb zwei · B: um vier · C: um fünf."
         },
         {
           "label": "a · Auswahl 5",
           "answers": [
             "A"
-          ]
+          ],
+          "prompt": "Was hat sie geschenkt bekommen? A: ein Wellness-Wochenende · B: ein Ski-Wochenende · C: einen Tanzkurs."
         },
         {
           "label": "b · Verb 1",
           "answers": [
             "war"
-          ]
+          ],
+          "prompt": "Erzähl mal: Wie ___ deine Party?"
         },
         {
           "label": "b · Verb 2",
           "answers": [
             "konnten"
-          ]
+          ],
+          "prompt": "Einige Freunde ___ leider nicht kommen."
         },
         {
           "label": "b · Verb 3",
           "answers": [
             "waren"
-          ]
+          ],
+          "prompt": "Insgesamt ___ wir über 40 Leute."
         },
         {
           "label": "b · Verb 4",
           "answers": [
             "komponiert"
-          ]
+          ],
+          "prompt": "Christoph hat für meinen Geburtstag ein Lied ___."
         },
         {
           "label": "b · Verb 5",
           "answers": [
             "gespielt"
-          ]
+          ],
+          "prompt": "Er hat Gitarre ___."
         },
         {
           "label": "b · Verb 6",
           "answers": [
             "gesungen"
-          ]
+          ],
+          "prompt": "Er hat das Lied ___."
         },
         {
           "label": "b · Verb 7",
           "answers": [
             "getanzt"
-          ]
+          ],
+          "prompt": "Was haben die Gäste zur Musik gemacht? Wir haben ___."
         },
         {
           "label": "b · Verb 8",
           "answers": [
             "gegessen"
-          ]
+          ],
+          "prompt": "Was haben die Gäste beim Essen gemacht? Wir haben ___."
         },
         {
           "label": "b · Verb 9",
           "answers": [
             "gelacht"
-          ]
+          ],
+          "prompt": "Wir haben viel ___."
         },
         {
           "label": "b · Verb 10",
           "answers": [
             "gegangen"
-          ]
+          ],
+          "prompt": "Ich bin um 5.00 Uhr ins Bett ___."
         },
         {
           "label": "b · Verb 11",
           "answers": [
             "hatte"
-          ]
+          ],
+          "prompt": "Klaus ___ ein Überraschungsgeschenk für mich."
         }
       ]
     },
@@ -58211,73 +60635,85 @@ window.SPEKTRUM_BANKS={
           "label": "Rätsel 1",
           "answers": [
             "EINLADUNG"
-          ]
+          ],
+          "prompt": "Vielen Dank für die ___. Ich komme gerne."
         },
         {
           "label": "Rätsel 2",
           "answers": [
             "VERANSTALTUNG"
-          ]
+          ],
+          "prompt": "Rock am Ring ist die größte Musik___ in Deutschland."
         },
         {
           "label": "Rätsel 3",
           "answers": [
             "TECHNIKMUSEUM"
-          ]
+          ],
+          "prompt": "Im Deutschen ___ können Besucher Flugzeuge und Dampfloks sehen."
         },
         {
           "label": "Rätsel 4",
           "answers": [
             "AUSSICHTSPLATTFORM"
-          ]
+          ],
+          "prompt": "Im Berliner Fernsehturm gibt es in 203 Meter Höhe eine ___."
         },
         {
           "label": "Rätsel 5",
           "answers": [
             "GEBURTSTAG"
-          ]
+          ],
+          "prompt": "Klaus feiert heute seinen 35. ___."
         },
         {
           "label": "Rätsel 6",
           "answers": [
             "LÄNDERSPIEL"
-          ]
+          ],
+          "prompt": "Heute Abend findet das Fußball___ Deutschland gegen Spanien statt."
         },
         {
           "label": "Rätsel 7",
           "answers": [
             "MARKENZEICHEN"
-          ]
+          ],
+          "prompt": "Das Theaterstück Jedermann ist das ___ der Salzburger Festspiele."
         },
         {
           "label": "Rätsel 8",
           "answers": [
             "GESPRÄCHE"
-          ]
+          ],
+          "prompt": "Die ___ mit dem Gast aus China sind im Bundeskanzleramt."
         },
         {
           "label": "Rätsel 9",
           "answers": [
             "TOURISTEN"
-          ]
+          ],
+          "prompt": "In den ersten sechs Monaten haben schon 5,8 Millionen ___ Berlin besucht."
         },
         {
           "label": "Rätsel 10",
           "answers": [
             "PRÄSIDENT"
-          ]
+          ],
+          "prompt": "Im Schloss Bellevue residiert der Bundes___."
         },
         {
           "label": "Rätsel 11",
           "answers": [
             "ÖFFNUNGSZEITEN"
-          ]
+          ],
+          "prompt": "Ich hätte gern Informationen über die ___ des Fernsehturms."
         },
         {
           "label": "Lösungswort",
           "answers": [
             "Nachrichten"
-          ]
+          ],
+          "prompt": "Wie lautet das Lösungswort des Rätsels?"
         }
       ]
     },
@@ -58287,37 +60723,43 @@ window.SPEKTRUM_BANKS={
           "label": "Satz 1",
           "answers": [
             "Ihre Arbeit fängt um 10.00 Uhr an."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: ihre Arbeit · um 10.00 Uhr · anfangen"
         },
         {
           "label": "Satz 2",
           "answers": [
             "Sie beantwortet E-Mails."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: sie · E-Mails · beantworten"
         },
         {
           "label": "Satz 3",
           "answers": [
             "Sie entwickelt mit Klaus ein neues Projekt."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: sie · mit Klaus · ein neues Projekt · entwickeln"
         },
         {
           "label": "Satz 4",
           "answers": [
             "Nach der Arbeit kauft sie ein."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: nach der Arbeit · sie · einkaufen"
         },
         {
           "label": "Satz 5",
           "answers": [
             "Abends sieht sie fern."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: abends · sie · fernsehen"
         },
         {
           "label": "Satz 6",
           "answers": [
             "Sie geht fast nie aus."
-          ]
+          ],
+          "prompt": "Bilden Sie einen Satz: sie · fast nie · ausgehen"
         }
       ]
     },
@@ -58327,37 +60769,43 @@ window.SPEKTRUM_BANKS={
           "label": "Perfekt 1",
           "answers": [
             "Er hat Medizin studiert."
-          ]
+          ],
+          "prompt": "Was hat Dr. Klein früher gemacht? Medizin studieren."
         },
         {
           "label": "Perfekt 2",
           "answers": [
             "Er hat in einem großen Krankenhaus gearbeitet."
-          ]
+          ],
+          "prompt": "Was hat Dr. Klein früher gemacht? in einem großen Krankenhaus arbeiten."
         },
         {
           "label": "Perfekt 3",
           "answers": [
             "Er hat Konferenzen besucht."
-          ]
+          ],
+          "prompt": "Was hat Dr. Klein früher gemacht? Konferenzen besuchen."
         },
         {
           "label": "Perfekt 4",
           "answers": [
             "Er hat oft mit Kollegen gesprochen."
-          ]
+          ],
+          "prompt": "Was hat Dr. Klein früher gemacht? oft mit Kollegen sprechen."
         },
         {
           "label": "Perfekt 5",
           "answers": [
             "Er hat nicht viel geschlafen."
-          ]
+          ],
+          "prompt": "Was hat Dr. Klein früher gemacht? nicht viel schlafen."
         },
         {
           "label": "Perfekt 6",
           "answers": [
             "Er ist im Sommer gern nach Spanien gefahren."
-          ]
+          ],
+          "prompt": "Was hat Dr. Klein früher gemacht? im Sommer gern nach Spanien fahren."
         }
       ]
     },
@@ -58367,19 +60815,22 @@ window.SPEKTRUM_BANKS={
           "label": "Hören Teil 1 · Frage 1",
           "answers": [
             "B"
-          ]
+          ],
+          "prompt": "Der Kollege möchte Frau Gruber … (a: anrufen, b: per E-Mail kontaktieren, c: treffen)."
         },
         {
           "label": "Hören Teil 1 · Frage 2",
           "answers": [
             "A"
-          ]
+          ],
+          "prompt": "Wann trinken die Frauen zusammen Kaffee? (a: morgen um 10 Uhr, b: morgen um 11 Uhr, c: heute um 10 Uhr)"
         },
         {
           "label": "Hören Teil 1 · Frage 3",
           "answers": [
             "B"
-          ]
+          ],
+          "prompt": "Was soll Ursulas Mann nicht kaufen? (a: Brot, b: Milch, c: Paprika)"
         }
       ]
     },
@@ -58389,19 +60840,22 @@ window.SPEKTRUM_BANKS={
           "label": "Hören Teil 1 · Frage 4",
           "answers": [
             "C"
-          ]
+          ],
+          "prompt": "Was isst die Frau nicht? (a: Gemüse, b: Eier, c: Fleisch)"
         },
         {
           "label": "Hören Teil 1 · Frage 5",
           "answers": [
             "B"
-          ]
+          ],
+          "prompt": "Für wen möchte die Frau ein Buch kaufen? (a: für ihre Kinder, b: für ihre Tochter, c: für ihren Sohn)"
         },
         {
           "label": "Hören Teil 1 · Frage 6",
           "answers": [
             "B"
-          ]
+          ],
+          "prompt": "Wie wollen die Studenten in Australien reisen? (a: mit dem Flugzeug, b: mit dem Auto, c: mit dem Bus)"
         },
         {
           "label": "Hören Teil 2 · Frage 7",
@@ -58409,7 +60863,8 @@ window.SPEKTRUM_BANKS={
             "F",
             "falsch",
             "false"
-          ]
+          ],
+          "prompt": "Heute fährt die U1 nicht."
         },
         {
           "label": "Hören Teil 2 · Frage 8",
@@ -58417,7 +60872,8 @@ window.SPEKTRUM_BANKS={
             "R",
             "richtig",
             "true"
-          ]
+          ],
+          "prompt": "Im Zugrestaurant kann man auch Kuchen essen."
         },
         {
           "label": "Hören Teil 2 · Frage 9",
@@ -58425,7 +60881,8 @@ window.SPEKTRUM_BANKS={
             "R",
             "richtig",
             "true"
-          ]
+          ],
+          "prompt": "Diese Woche kann man Schuhe billiger kaufen."
         },
         {
           "label": "Hören Teil 2 · Frage 10",
@@ -58433,7 +60890,8 @@ window.SPEKTRUM_BANKS={
             "F",
             "falsch",
             "false"
-          ]
+          ],
+          "prompt": "Die Touristen können heute zwei Museen besuchen."
         }
       ]
     },
@@ -58443,31 +60901,36 @@ window.SPEKTRUM_BANKS={
           "label": "Hören Teil 3 · Frage 11",
           "answers": [
             "C"
-          ]
+          ],
+          "prompt": "Warum ruft Bettina an? (a: Computer reparieren lassen, b: Computer kaufen, c: Internetadresse bekommen)"
         },
         {
           "label": "Hören Teil 3 · Frage 12",
           "answers": [
             "A"
-          ]
+          ],
+          "prompt": "Wann fängt das Konzert an? (a: Samstag 20.30 Uhr, b: Samstag 9.30 Uhr, c: Sonntag 8 Uhr)"
         },
         {
           "label": "Hören Teil 3 · Frage 13",
           "answers": [
             "B"
-          ]
+          ],
+          "prompt": "Bis wann ist die Praxis geschlossen? (a: bis zum 12. April, b: bis zum 18. April, c: bis zum 19. April)"
         },
         {
           "label": "Hören Teil 3 · Frage 14",
           "answers": [
             "B"
-          ]
+          ],
+          "prompt": "Wann kann Herr Brenner das Auto abholen? (a: morgen, b: heute bis 13 Uhr, c: um 18 Uhr)"
         },
         {
           "label": "Hören Teil 3 · Frage 15",
           "answers": [
             "B"
-          ]
+          ],
+          "prompt": "Warum kann Peter Carl nicht besuchen? (a: Er ist sehr müde, b: Er ist krank, c: Er hat keine Zeit.)"
         },
         {
           "label": "Lesen Teil 1 · Frage 1",
@@ -58475,7 +60938,8 @@ window.SPEKTRUM_BANKS={
             "R",
             "richtig",
             "true"
-          ]
+          ],
+          "prompt": "Herr Bauer ist am 12. August nicht in Deutschland."
         },
         {
           "label": "Lesen Teil 1 · Frage 2",
@@ -58483,7 +60947,8 @@ window.SPEKTRUM_BANKS={
             "R",
             "richtig",
             "true"
-          ]
+          ],
+          "prompt": "Herr Bauer kann Frau Müller am 16. oder 17. August treffen."
         }
       ]
     },
@@ -58495,7 +60960,8 @@ window.SPEKTRUM_BANKS={
             "F",
             "falsch",
             "false"
-          ]
+          ],
+          "prompt": "Dirk möchte Fitnesstrainer werden."
         },
         {
           "label": "Lesen Teil 1 · Frage 4",
@@ -58503,7 +60969,8 @@ window.SPEKTRUM_BANKS={
             "F",
             "falsch",
             "false"
-          ]
+          ],
+          "prompt": "Jens will dieses Jahr mehr Sport machen."
         },
         {
           "label": "Lesen Teil 1 · Frage 5",
@@ -58511,25 +60978,29 @@ window.SPEKTRUM_BANKS={
             "R",
             "richtig",
             "true"
-          ]
+          ],
+          "prompt": "Für die erste Stunde muss Jens nichts bezahlen."
         },
         {
           "label": "Lesen Teil 2 · Frage 6",
           "answers": [
             "A"
-          ]
+          ],
+          "prompt": "Welche Anzeige passt? Die Heizung in Ihrer Wohnung ist kaputt. Sie suchen schnell Hilfe."
         },
         {
           "label": "Lesen Teil 2 · Frage 7",
           "answers": [
             "A"
-          ]
+          ],
+          "prompt": "Welche Anzeige passt? Sie möchten Chinesisch lernen. Sie sind Anfänger."
         },
         {
           "label": "Lesen Teil 2 · Frage 8",
           "answers": [
             "A"
-          ]
+          ],
+          "prompt": "Welche Anzeige passt? Sie brauchen neue Turnschuhe."
         }
       ]
     },
@@ -58539,13 +61010,15 @@ window.SPEKTRUM_BANKS={
           "label": "Lesen Teil 2 · Frage 9",
           "answers": [
             "B"
-          ]
+          ],
+          "prompt": "Welche Anzeige passt? Sie suchen ein günstiges Hotel in München."
         },
         {
           "label": "Lesen Teil 2 · Frage 10",
           "answers": [
             "A"
-          ]
+          ],
+          "prompt": "Welche Anzeige passt? Sie möchten in einem Fitnessstudio Sport machen."
         },
         {
           "label": "Lesen Teil 3 · Frage 11",
@@ -58553,7 +61026,8 @@ window.SPEKTRUM_BANKS={
             "R",
             "richtig",
             "true"
-          ]
+          ],
+          "prompt": "Auf der Straße: Hier dürfen Sie Ihr Auto nicht parken."
         },
         {
           "label": "Lesen Teil 3 · Frage 12",
@@ -58561,7 +61035,8 @@ window.SPEKTRUM_BANKS={
             "R",
             "richtig",
             "true"
-          ]
+          ],
+          "prompt": "Im Geschäft: Das Geschäft ist ab Juni am Montag nicht geöffnet."
         },
         {
           "label": "Lesen Teil 3 · Frage 13",
@@ -58569,7 +61044,8 @@ window.SPEKTRUM_BANKS={
             "F",
             "falsch",
             "false"
-          ]
+          ],
+          "prompt": "Im Friseursalon: Für einen Termin müssen Sie immer anrufen."
         },
         {
           "label": "Lesen Teil 3 · Frage 14",
@@ -58577,7 +61053,8 @@ window.SPEKTRUM_BANKS={
             "R",
             "richtig",
             "true"
-          ]
+          ],
+          "prompt": "Im Geschäft: Das Geschäft hat bald eine neue Adresse."
         },
         {
           "label": "Lesen Teil 3 · Frage 15",
@@ -58585,7 +61062,8 @@ window.SPEKTRUM_BANKS={
             "F",
             "falsch",
             "false"
-          ]
+          ],
+          "prompt": "Im Restaurant: Das Restaurant sucht neue Mitarbeiter in der Küche."
         },
         {
           "label": "Lesen Teil 3 · Frage 16",
@@ -58593,7 +61071,8 @@ window.SPEKTRUM_BANKS={
             "F",
             "falsch",
             "false"
-          ]
+          ],
+          "prompt": "Im Sprachinstitut: Sie können in der Cafeteria eine warme Mahlzeit essen."
         }
       ]
     },
@@ -58603,7 +61082,8 @@ window.SPEKTRUM_BANKS={
           "label": "Schreiben Teil 1 · Stadt",
           "answers": [
             "Bern"
-          ]
+          ],
+          "prompt": "In welcher Stadt wohnt Evelyn Schmidt?"
         },
         {
           "label": "Schreiben Teil 1 · Kategorie",
@@ -58611,14 +61091,16 @@ window.SPEKTRUM_BANKS={
             "Kategorie 3",
             "3",
             "category 3"
-          ]
+          ],
+          "prompt": "Welche Preiskategorie soll sie für die Karten wählen?"
         },
         {
           "label": "Schreiben Teil 1 · Personen",
           "answers": [
             "drei",
             "3"
-          ]
+          ],
+          "prompt": "Für wie viele Personen bestellt sie Karten?"
         },
         {
           "label": "Schreiben Teil 1 · Kinder",
@@ -58626,14 +61108,16 @@ window.SPEKTRUM_BANKS={
             "eins",
             "ein",
             "1"
-          ]
+          ],
+          "prompt": "Wie viele Kinder unter 14 Jahren sind dabei?"
         },
         {
           "label": "Schreiben Teil 1 · Zahlungsweise",
           "answers": [
             "Kreditkarte",
             "mit Kreditkarte"
-          ]
+          ],
+          "prompt": "Wie möchte Frau Schmidt bezahlen?"
         }
       ]
     }
