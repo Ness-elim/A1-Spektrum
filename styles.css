@@ -219,3 +219,5 @@ html[data-theme="dark"] .study-pane-label{color:var(--primary)}
 #mistakeAnswerForm{padding:16px;border:1px solid var(--border);border-radius:12px}
 #mistakeAnswerForm h3{margin:0 0 12px;overflow-wrap:anywhere}#mistakeAnswerForm .answer-input{width:100%}#mistakeAnswerForm .button-row{margin-top:12px}#checkMistake:disabled{opacity:.5;cursor:default}.mistake-feedback{color:var(--warn)}.mistake-feedback.correct{color:var(--good)}.mistake-feedback:empty{margin:0}
 @media(max-width:820px){.mistake-question-layout{grid-template-columns:minmax(0,1fr)}}
+
+.correction-reference{display:block;font-size:.78rem;font-weight:500;color:var(--muted);margin-top:.25rem}

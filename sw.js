@@ -1,4 +1,4 @@
-const CACHE='spektrum-a1-shell-2-11-1';
+const CACHE='spektrum-a1-shell-2-11-2';
 const SHELL=['./','./index.html','./styles.css','./app.js','./state-sync.js','./data/content.js','./data/study-banks.js','./manifest.webmanifest','./assets/icon-192.png','./assets/icon-512.png'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL))));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key.startsWith('spektrum-a1-shell-')&&key!==CACHE).map(key=>caches.delete(key))))));

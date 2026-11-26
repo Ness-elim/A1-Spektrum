@@ -1,6 +1,6 @@
 {
   "name": "spektrum-a1-study",
-  "version": "2.10.1",
+  "version": "2.11.2",
   "private": true,
   "scripts": {
     "test": "node --test",

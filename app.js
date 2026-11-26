@@ -1,7 +1,7 @@
 // Spektrum A1+ — study interface and persistence.
 (()=>{
 'use strict';
-const APP_VERSION='v2.11.1';
+const APP_VERSION='v2.11.2';
 const Sync=window.SpektrumSync;
 // Spektrum A1+ patch v2.0 — cumulative v1.9 base; Word Review removed from UI; Vocabulary Bank split into words vs sentences/phrases
 const D=window.SPEKTRUM_DATA;
@@ -76,10 +76,16 @@ function renderCorrectionFieldInput(field,i,val,spec){
     return '<button type="button" class="wb-corr-pill '+(selected?'selected':'')+'" aria-pressed="'+selected+'" data-value="'+esc(o)+'">'+esc(o==='R'?'R · richtig':o==='F'?'F · falsch':o)+'</button>';
   }).join('')+'</div></div>';
 }
+function renderCorrectionPrompt(field,index){
+  const prompt=field.prompt||field.label||String(index+1);
+  const label=field.label||'';
+  const reference=field.prompt && label!==prompt && /\d/.test(label) ? label.replace(/^(?:Frage|Item) (\d+)$/i,'Nr. $1') : '';
+  return esc(prompt)+(reference?' <small class="correction-reference">'+esc(reference)+'</small>':'');
+}
 function renderCorrectionWorkbench(a,ans,spec){
   const vals=ans.lines||[],model=modelAnswer(a);
   return '<div class="correction-note">✓ Check one answer at a time. Each result is saved.</div><div class="answer-grid correction-grid" id="lineAnswers">'+spec.fields.map((field,i)=>
-    '<div class="correction-row" data-correction-row="'+i+'"><div class="correction-prompt" id="correction-prompt-'+i+'">'+esc(field.prompt||field.label||String(i+1))+'</div><div class="correction-entry">'+renderCorrectionFieldInput(field,i,vals[i],spec)+'<button type="button" class="primary correction-check" data-check-field="'+i+'" aria-describedby="correction-prompt-'+i+'">Check answer</button></div><div class="correction-feedback" id="correction-feedback-'+i+'" data-correction-feedback="'+i+'" role="status" aria-live="polite"></div></div>'
+    '<div class="correction-row" data-correction-row="'+i+'"><div class="correction-prompt" id="correction-prompt-'+i+'">'+renderCorrectionPrompt(field,i)+'</div><div class="correction-entry">'+renderCorrectionFieldInput(field,i,vals[i],spec)+'<button type="button" class="primary correction-check" data-check-field="'+i+'" aria-describedby="correction-prompt-'+i+'">Check answer</button></div><div class="correction-feedback" id="correction-feedback-'+i+'" data-correction-feedback="'+i+'" role="status" aria-live="polite"></div></div>'
   ).join('')+'</div><div class="correction-summary hidden" id="checkSummary" role="status" aria-live="polite"></div><div class="button-row" style="margin-top:10px"><button class="ghost" id="saveCorrection">Save for later</button></div>'+(model?'<details class="model-check"><summary>Self-check / model guidance</summary><p>'+esc(model)+'</p></details>':'');
 }
 function correctionProgress(spec,record={},values=record.lines||[]){
@@ -739,13 +745,12 @@ function renderMistakeQuestion(session, position) {
   const {activity, index} = session[position];
   const spec = correctionSpec(activity), field = spec.fields[index];
   const location = activity.chapter ? 'Kapitel ' + activity.chapter : 'Start Deutsch 1';
-  const prompt = field.prompt || field.label || 'Question ' + (index + 1);
   const panel = $('#pageHost');
   panel.innerHTML = 
     '<article class="panel mistake-session"><div class="mistake-session-head"><span>Question ' + (position + 1) + ' of ' + session.length + '</span><button class="ghost" id="endMistakes">End review</button></div>' +
     '<div class="muted">' + esc(location) + ' · p. ' + esc(activity.page) + '</div><h2>' + esc(activity.label) + ' · ' + esc(activity.title) + '</h2>' +
     '<div class="mistake-question-layout"><div class="mistake-source">' + audioHtml(activity) + renderStudySource(activity) + '</div>' +
-    '<form id="mistakeAnswerForm"><h3 id="correction-prompt-' + index + '">' + esc(prompt) + '</h3>' + renderCorrectionFieldInput(field, index, '', spec) +
+    '<form id="mistakeAnswerForm"><h3 id="correction-prompt-' + index + '">' + renderCorrectionPrompt(field,index) + '</h3>' + renderCorrectionFieldInput(field, index, '', spec) +
     '<div class="button-row"><button class="primary" id="checkMistake" disabled>Check answer</button><button type="button" class="ghost" id="nextMistake">Skip</button></div>' +
     '<p class="mistake-feedback" id="correction-feedback-' + index + '" role="status"></p></form></div></article>';
   drawSourceCanvases();

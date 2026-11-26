@@ -1,4 +1,4 @@
-Spektrum Deutsch A1+ Interactive Study App — v2.10.1
+Spektrum Deutsch A1+ Interactive Study App — v2.11.2
 ===================================================
 
 Run
@@ -6,6 +6,25 @@ Run
 Open index.html directly, or serve this folder over HTTP(S).
 A local HTTP server or HTTPS hosting enables the service worker and offline shell.
 There is no build step and no runtime dependency installation.
+
+v2.11.2 — German prompts for each answer
+---------------------------------------
+Each answer box in the chapters and Start Deutsch 1 shows its German question,
+sentence with a gap, or word cues from the exercise. In picture and listening
+tasks, use the adjacent book image or recording. Review Mistakes displays the
+same prompt when retrying an individual answer.
+
+v2.11.1 — German letters
+------------------------
+Select a text field, then open the ä button to insert a letter at the cursor or
+replace selected text. Press Escape or use the header to collapse the palette.
+
+v2.11.0 — Review Mistakes
+-------------------------
+Open Review Mistakes below Word Review to retry up to five individual questions
+from chapters and Start Deutsch 1. Each question shows the original book visual.
+Repeated wrong answers count once. A correct check in either location clears it.
+The chapter exercise list shows the remaining count next to each activity.
 
 v2.10.1 — keep book images visible
 ---------------------------------
